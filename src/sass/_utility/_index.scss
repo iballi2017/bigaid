@@ -1,0 +1,108 @@
+@use "../_partials/mixins";
+
+.fs-hero-title {
+    font-size: var(--fs-hero-title);
+}
+.fs-plan-card-title {
+    font-size: var(--fs-plan-card-title);
+}
+
+.fs-plan-card-tagline {
+    font-size: var(--fs-plan-card-tagline);
+}
+
+.fs-50 {
+    font-size: var(--fs-50);
+}
+
+.fs-300 {
+    font-size: var(--fs-300);
+}
+.text-white {
+    color: var(--color-white);
+}
+.text-primary {
+    color: var(--color-primary);
+}
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.text-danger {
+    color: var(--color-danger);
+}
+
+.text-blue-link {
+    color: var(--color-blue-link);
+}
+
+.text-success {
+    color: var(--color-success);
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+
+.bg-danger {
+    background-color: var(--color-danger);
+}
+
+.bg-blue-link {
+    background-color: var(--color-blue-link);
+}
+
+.bg-success {
+    background-color: var(--color-success);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+.fw-light {
+    font-weight: var(--fw-light);
+}
+
+.fw-regular {
+    font-weight: var(--fw-regular);
+}
+
+.fw-semi-bold {
+    font-weight: var(--fw-semi-bold);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.lh-200 {
+    line-height: var(--lh-200);
+}
+
+.even-columns {
+    display: grid;
+    gap: 1rem;
+    @include mixins.minmq(50em) {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+}
+
+header.sticky {
+    // position: sticky;
+    background-color: var(--color-secondary);
+    z-index: 1020;
+    transition: 0.5s;
+}

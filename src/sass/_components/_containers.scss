@@ -1,0 +1,14 @@
+// .wrapper {
+//     max-width: 1440px;
+// margin: 0 auto;
+// padding-right: 15px;
+// padding-left: 15px;
+// }
+
+.wrap-container {
+  --max-width: 1222px;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}

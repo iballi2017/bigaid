@@ -1,0 +1,65 @@
+:root {
+  /* COLORS */
+  --color-primary: #00034B;
+  --color-secondary: #FF0099;
+  --color-text: #000000;
+  --color-white: #ffffff;
+  --color-light: #E4E4E4;
+  
+  
+  
+  /* TYPOGRAPHY */
+  --ff-primary: "Poppins", sans-serif;
+  --ff-body: var(--ff-primary);
+
+  // --fs-body: 24px;
+
+  --fs-hero-title: 2.5rem; //40px;
+  --fs-plan-card-title: 1.25rem; //20px;
+  --fs-plan-card-tagline: 1.5rem; //24px;
+  --fs-nav: 1.13rem; //18px;
+  --fs-50: 0.88rem; //14px;
+  --fs-200: 1.25rem; //20px;
+  --fs-300: 1.88rem; //30px;
+
+  /* SIZES */
+  --size-50: 1.88em; //30px;
+  --size-100: 2.63em; //42px;
+  --size-250: 3.81em; //61px;
+  --size-300: 4.88em; //78px;
+  --size-500: 6.25em; //100px;
+
+  /* FONT WEIGHT */
+  --fw-lighter: 100;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 600;
+  --fw-bolder: 700;
+  // --fw-regular: 600;
+  // --fw-semi-bold: 700;
+  // --fw-bold: 900;
+
+  /* LINE HEIGHT*/
+  --lh-200: 60px;
+}
+@media (max-width: 50em) {
+  :root {
+    /* TYPOGRAPHY */
+  --fs-300: 1.56rem; //25px;
+  --fs-200: 1.06rem; //17px;
+
+    /* SIZES */
+    --fs-hero-title: 1.56rem; //25px;
+    line-height: 35px;
+
+    --size-50: 1em; //16px;
+    --size-100: 1.38em; //22px;
+    --size-250: 2.5em; //40px;
+    --size-300: 3.44em; //55px;
+    --size-500: 5em; //80px;
+
+    /* LINE HEIGHT*/
+    --lh-200: 35px;
+  }
+}

@@ -1,0 +1,63 @@
+@use "../_partials/mixins";
+
+button {
+    transition: all 300ms ease-in-out;
+    &:hover {
+        transition: all 300ms ease-in-out;
+    }
+}
+
+.primary-button {
+    padding: 0.5em 1.3em;
+
+    &.nav-link {
+        font-size: 14px;
+        transition: all 300ms ease-in-out;
+        padding: 0.5em 1.3em !important;
+        &:hover {
+            color: #000000;
+            transition: all 300ms ease-in-out;
+        }
+    }
+}
+
+.primary-button,
+.call-to-action {
+    border-radius: 10px;
+    font-weight: var(--fw-light);
+}
+.primary-button,
+.call-to-action {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+    &:hover {
+        background-color: var(--color-white);
+        color: var(--color-primary);
+    }
+}
+
+.call-to-action {
+    padding: 0.7em 2em;
+    // font-size: 18px;
+    font-size: var(--fs-200);
+}
+
+.primary-button[data-type="inverted"],
+.call-to-action[data-type="inverted"] {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+
+    &:hover {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
+}
+
+@include mixins.maxmq(50em) {
+    .primary-button,
+    .call-to-action {
+        padding: 0.4em 1em;
+        font-size: var(--fs-50);
+    }
+}
