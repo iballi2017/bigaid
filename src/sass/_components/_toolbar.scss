@@ -1,102 +1,119 @@
 @use "../_partials/mixins";
 
+header.sticky {
+  // position: sticky;
+  background-color: var(--color-secondary);
+  z-index: 1020;
+  transition: 0.5s;
+
+  &.alt {
+    background-color: var(--color-white);
+    .nav-link {
+      color: var(--color-text);
+      &.primary-button{
+        color: var(--color-white);
+      }
+    }
+  }
+}
+
 .alt-toolbar {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    position: relative;
-    .navbar-brand {
-        max-width: 170px;
-    }
-    .nav-list {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        left: 0;
-        padding-top: 0.4em;
-        padding-bottom: 0.5em;
-        // background-color: #ffffff;
-        background-color: var(--color-secondary);
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  position: relative;
+  .navbar-brand {
+    max-width: 170px;
+  }
+  .nav-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    padding-top: 0.4em;
+    padding-bottom: 0.5em;
+    // background-color: #ffffff;
+    background-color: var(--color-secondary);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
-        &.nav-collapse {
-            display: none;
-        }
-
-        &.nav-collapse[data-visible] {
-            display: block;
-        }
-        .nav-link {
-            color: #000000;
-            font-style: normal;
-            font-weight: 500;
-            display: block;
-            // padding: 0.7em 1.3em;
-            padding-top: 0.7em;
-            padding-bottom: 0.7em;
-            font-size: var(--fs-50);
-        }
-    }
-    .profile-avatar {
-        max-width: 20px;
+    &.nav-collapse {
+      display: none;
     }
 
-    .navbar-toggler {
-        &[aria-expanded="false"] {
-            .menu {
-                display: block;
-            }
-            .close {
-                display: none;
-            }
-        }
-        &[aria-expanded="true"] {
-            .menu {
-                display: none;
-            }
-            .close {
-                display: block;
-            }
-        }
+    &.nav-collapse[data-visible] {
+      display: block;
     }
+    .nav-link {
+      color: #000000;
+      font-style: normal;
+      font-weight: 500;
+      display: block;
+      // padding: 0.7em 1.3em;
+      padding-top: 0.7em;
+      padding-bottom: 0.7em;
+      font-size: var(--fs-50);
+    }
+  }
+  .profile-avatar {
+    max-width: 20px;
+  }
+
+  .navbar-toggler {
+    &[aria-expanded="false"] {
+      .menu {
+        display: block;
+      }
+      .close {
+        display: none;
+      }
+    }
+    &[aria-expanded="true"] {
+      .menu {
+        display: none;
+      }
+      .close {
+        display: block;
+      }
+    }
+  }
 }
 
 @include mixins.minmq(50em) {
-    .alt-toolbar {
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
-        .navbar-toggler {
-            display: none;
-        }
-
-        .nav-list {
-            position: inherit;
-            background-color: unset;
-            box-shadow: none;
-            align-items: center;
-
-            &.nav-collapse {
-                display: flex;
-            }
-            .nav-item {
-                margin-right: 1.5em;
-            }
-            .nav-link {
-                // font-size: 18px;
-                // line-height: 123.9%; /* 22.302px */
-                // letter-spacing: -0.72px;
-                color: #fff;
-                font-size: var(--fs-nav);
-                padding-top: .6em;
-                padding-bottom: .6em;
-                padding-right: 1.3em;
-            }
-        }
+  .alt-toolbar {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    .navbar-toggler {
+      display: none;
     }
+
+    .nav-list {
+      position: inherit;
+      background-color: unset;
+      box-shadow: none;
+      align-items: center;
+
+      &.nav-collapse {
+        display: flex;
+      }
+      .nav-item {
+        margin-right: 1.5em;
+      }
+      .nav-link {
+        // font-size: 18px;
+        // line-height: 123.9%; /* 22.302px */
+        // letter-spacing: -0.72px;
+        color: #fff;
+        font-size: var(--fs-nav);
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+        padding-right: 1.3em;
+      }
+    }
+  }
 }
 
 @include mixins.maxmq(50em) {
-    .nav-list {
-        padding-left: 1.5em;
-        padding-right: 1.5em;
-    }
+  .nav-list {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
 }

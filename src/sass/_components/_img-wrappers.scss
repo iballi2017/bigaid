@@ -1,0 +1,10 @@
+@use "../_partials/mixins";
+.space-traveller-img-container {
+  @include mixins.minmq(50em) {
+    position: absolute;
+    // background-color: red;
+    z-index: -1;
+    left: -20%;
+    width: 700px;
+  }
+}

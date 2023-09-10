@@ -21,6 +21,7 @@
   --fs-50: 0.88rem; //14px;
   --fs-200: 1.25rem; //20px;
   --fs-300: 1.88rem; //30px;
+  --fs-600: 3.75rem; //60px;
 
   /* SIZES */
   --size-50: 1.88em; //30px;
@@ -46,8 +47,9 @@
 @media (max-width: 50em) {
   :root {
     /* TYPOGRAPHY */
-  --fs-300: 1.56rem; //25px;
   --fs-200: 1.06rem; //17px;
+  --fs-300: 1.56rem; //25px;
+  --fs-600: 2.50rem; //40px;
 
     /* SIZES */
     --fs-hero-title: 1.56rem; //25px;

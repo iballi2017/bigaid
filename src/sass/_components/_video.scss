@@ -1,0 +1,58 @@
+@use "../_partials/mixins";
+
+
+.video-container {
+  padding: 2em 0;
+  width: 100%;
+  // max-width: 650px;
+  margin: 0 auto;
+  aspect-ratio: 1.48;
+  .video {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    // video{
+    //     width: 100%;
+    //     height: 100%;
+    // }
+  }
+  .play-button {
+    // --btn-width: 165px;
+    // --btn-height: 121px;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+    --btn-width: 20px;
+    --btn-height: 20px;
+    // background-color: red;
+    position: absolute;
+    // display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: var(--btn-width);
+    top: calc(50% - var(--btn-height) / 2);
+    left: calc(50% - var(--btn-width) / 2);
+    // top: 0;
+    // left: 0;
+  }
+  &:hover {
+    .play-button {
+      //   display: flex;
+      opacity: 1;
+      transition: all 300ms ease-in-out;
+    }
+  }
+
+
+  @include mixins.minmq(50em){
+    .video {
+      border-radius: 19px;
+    }
+    .play-button {
+      --btn-width: 40px;
+      --btn-height: 40px;
+    }
+  }
+}
