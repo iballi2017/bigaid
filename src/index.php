@@ -53,10 +53,10 @@
           <div class="featured-image">
             <!-- <img src=" ./assets/images/Smiley-medic.svg" alt=""> -->
             <div class="img-static">
-              <img src="./assets/images/beautiful-african-american-doctor-couple-white.svg" alt="" class=" animate__animated animate__fadeInUp">
+              <img src="./assets/images/beautiful-african-american-doctor-couple-white.png" alt="" class=" animate__animated animate__fadeInUp">
             </div>
             <div class="img-absolute cursor-pointer">
-              <img src="./assets/images/phone.svg" alt="" class="animate__animated animate__fadeInRight">
+              <img src="./assets/images/phone.png" alt="" class="animate__animated animate__fadeInRight">
             </div>
           </div>
         </div>
@@ -83,11 +83,11 @@
 
         <div class="flex">
           <div class="animate__animated animate__fadeInLeft">
-            <img src="./assets/images/lady-holding-a-phone-arrow.svg" alt="">
+            <img src="./assets/images/lady-holding-a-phone-arrow.png" alt="">
           </div>
           <!-- <div class="bga-mt-50" style="margin-left: -70px;"> -->
           <div class="animate__animated animate__fadeInRight" style="margin-top: 9%; margin-left: -3.5%;">
-            <img src="./assets/images/we-understand-the-challenges.svg" alt="">
+            <img src="./assets/images/we-understand-the-challenges.png" alt="">
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@
           </div>
           <div class="md:col-span-5 order-1 md:order-2 relative">
             <div class="space-traveller-img-container">
-              <img src="./assets/images/space-traveller.svg" alt="">
+              <img src="./assets/images/space-traveller.png" alt="">
             </div>
           </div>
         </div>
