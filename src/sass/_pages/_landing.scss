@@ -66,7 +66,6 @@
   // }
 
   + section {
-    // min-height: 300vh;
     position: relative;
     &::after {
       content: "";
@@ -74,7 +73,7 @@
       background-color: #ffffff;
       padding: 1.5em 0;
       position: absolute;
-      bottom: -1em;
+      bottom: 0;
       right: 0;
       left: 0;
     }

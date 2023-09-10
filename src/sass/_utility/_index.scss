@@ -3,12 +3,9 @@
 .fs-hero-title {
   font-size: var(--fs-hero-title);
 }
-.fs-plan-card-title {
-  font-size: var(--fs-plan-card-title);
-}
 
-.fs-plan-card-tagline {
-  font-size: var(--fs-plan-card-tagline);
+.fs-section-title {
+  font-size: var(--fs-section-title);
 }
 
 .fs-50 {
@@ -60,6 +57,10 @@
 
 .bg-danger {
   background-color: var(--color-danger);
+}
+
+.bg-light {
+  background-color: var(--color-light);
 }
 
 .bg-blue-link {
@@ -126,6 +127,13 @@
 .lh-200 {
   line-height: var(--lh-200);
 }
+.lh-100 {
+  line-height: var(--lh-100);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
 
 .even-columns {
   display: grid;
@@ -135,5 +143,3 @@
     grid-auto-columns: 1fr;
   }
 }
-
-

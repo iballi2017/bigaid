@@ -61,20 +61,21 @@ svg {
 }
 :root {
   /* COLORS */
-  --color-primary: #00034B;
-  --color-secondary: #FF0099;
+  --color-primary: #00034b;
+  --color-secondary: #ff0099;
   --color-text: #000000;
   --color-white: #ffffff;
-  --color-light: #E4E4E4;
+  --color-light: #e4e4e4;
   /* TYPOGRAPHY */
   --ff-primary: "Poppins", sans-serif;
   --ff-body: var(--ff-primary);
   --fs-hero-title: 2.5rem;
-  --fs-plan-card-title: 1.25rem;
-  --fs-plan-card-tagline: 1.5rem;
+  --fs-section-title: 2.13em;
   --fs-nav: 1.13rem;
   --fs-50: 0.88rem;
+  --fs-100: 1.13rem;
   --fs-200: 1.25rem;
+  --fs-250: 1.56rem;
   --fs-300: 1.88rem;
   --fs-600: 3.75rem;
   /* SIZES */
@@ -91,6 +92,7 @@ svg {
   --fw-bold: 600;
   --fw-bolder: 700;
   /* LINE HEIGHT*/
+  --lh-100: 40px;
   --lh-200: 60px;
 }
 
@@ -99,7 +101,7 @@ svg {
     /* TYPOGRAPHY */
     --fs-200: 1.06rem;
     --fs-300: 1.56rem;
-    --fs-600: 2.50rem;
+    --fs-600: 2.5rem;
     /* SIZES */
     --fs-hero-title: 1.56rem;
     line-height: 35px;
@@ -146,12 +148,8 @@ html {
   font-size: var(--fs-hero-title);
 }
 
-.fs-plan-card-title {
-  font-size: var(--fs-plan-card-title);
-}
-
-.fs-plan-card-tagline {
-  font-size: var(--fs-plan-card-tagline);
+.fs-section-title {
+  font-size: var(--fs-section-title);
 }
 
 .fs-50 {
@@ -208,6 +206,10 @@ html {
 
 .bg-danger {
   background-color: var(--color-danger);
+}
+
+.bg-light {
+  background-color: var(--color-light);
 }
 
 .bg-blue-link {
@@ -270,6 +272,14 @@ html {
 
 .lh-200 {
   line-height: var(--lh-200);
+}
+
+.lh-100 {
+  line-height: var(--lh-100);
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .even-columns {
@@ -535,12 +545,12 @@ button:hover {
   }
 }
 
-.article {
-  font-size: var(--fs-200);
+.article p {
+  font-size: var(--fs-250);
 }
 @media (min-width: 50em) {
-  .article {
-    font-size: var(--fs-300);
+  .article p {
+    font-size: var(--fs-250);
   }
 }
 
@@ -594,7 +604,7 @@ button:hover {
   background-color: #ffffff;
   padding: 1.5em 0;
   position: absolute;
-  bottom: -1em;
+  bottom: 0;
   right: 0;
   left: 0;
 }

@@ -1,12 +1,13 @@
 @use "../_partials/mixins";
 
 .article {
-  // .title{
-
-  // }
-  font-size: var(--fs-200);
+  p {
+    font-size: var(--fs-250);
+  }
 
   @include mixins.minmq(50em) {
-    font-size: var(--fs-300);
+    p {
+      font-size: var(--fs-250);
+    }
   }
 }

@@ -1,13 +1,11 @@
 :root {
   /* COLORS */
-  --color-primary: #00034B;
-  --color-secondary: #FF0099;
+  --color-primary: #00034b;
+  --color-secondary: #ff0099;
   --color-text: #000000;
   --color-white: #ffffff;
-  --color-light: #E4E4E4;
-  
-  
-  
+  --color-light: #e4e4e4;
+
   /* TYPOGRAPHY */
   --ff-primary: "Poppins", sans-serif;
   --ff-body: var(--ff-primary);
@@ -15,11 +13,12 @@
   // --fs-body: 24px;
 
   --fs-hero-title: 2.5rem; //40px;
-  --fs-plan-card-title: 1.25rem; //20px;
-  --fs-plan-card-tagline: 1.5rem; //24px;
+  --fs-section-title: 2.13em; // 34px
   --fs-nav: 1.13rem; //18px;
   --fs-50: 0.88rem; //14px;
+  --fs-100: 1.13rem; //18px;
   --fs-200: 1.25rem; //20px;
+  --fs-250: 1.56rem; //25px;
   --fs-300: 1.88rem; //30px;
   --fs-600: 3.75rem; //60px;
 
@@ -42,14 +41,15 @@
   // --fw-bold: 900;
 
   /* LINE HEIGHT*/
+  --lh-100: 40px;
   --lh-200: 60px;
 }
 @media (max-width: 50em) {
   :root {
     /* TYPOGRAPHY */
-  --fs-200: 1.06rem; //17px;
-  --fs-300: 1.56rem; //25px;
-  --fs-600: 2.50rem; //40px;
+    --fs-200: 1.06rem; //17px;
+    --fs-300: 1.56rem; //25px;
+    --fs-600: 2.5rem; //40px;
 
     /* SIZES */
     --fs-hero-title: 1.56rem; //25px;

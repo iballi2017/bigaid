@@ -64,7 +64,7 @@
     </section>
 
     <section class="bg-primary">
-      <div class="wrap-container">
+      <div class="wrap-container py-16">
         <div class="video-container">
           <div class="video">
             <video id="video1" width="100%" height="100%">
@@ -93,17 +93,17 @@
       </div>
     </section>
 
-    <article class="article">
-      <div class="wrap-container">
-        <h2 class="fw-bold fs-600 text-primary">The Mission</h2>
+    <article class="article overflow-hidden">
+      <div class="wrap-container py-8">
+        <h2 class="fw-bold fs-section-title lh-100 mb-4 text-primary">The Mission</h2>
 
         <div class="grid md:grid-cols-12">
-          <div class="md:col-span-7 order-2 md:order-1">
-            <p class="" style="max-width: 100%;">BIGAiD Foundation, a non-governmental organization, is committed to revolutionizing healthcare access for individuals across rural and urban areas, low- & mid-income earners, especially in Nigeria and Africa.
+          <div class="md:col-span-6 order-2 md:order-1">
+            <p class="lh-100" style="max-width: 100%;">BIGAiD Foundation, a non-governmental organization, is committed to revolutionizing healthcare access for individuals across rural and urban areas, low- & mid-income earners, especially in Nigeria and Africa.
               In the face of inadequate healthcare systems, our mission is clear - to provide essential healthcare knowledge, education, and professional intervention through a user-friendly web & mobile app. Our goal is to make healthcare accessible, communication effortless, and instant intervention to help SAVE LIVES.
             </p>
           </div>
-          <div class="md:col-span-5 order-1 md:order-2 relative">
+          <div class="md:col-span-6 order-1 md:order-2 relative">
             <div class="space-traveller-img-container">
               <img src="./assets/images/space-traveller.png" alt="">
             </div>
@@ -114,8 +114,57 @@
 
 
     <section>
-      <div class="wrap-container">
-        <h2 class="fw-bold fs-600 text-primary">Our Advocacy & Community Projects In Pictures</h2>
+      <div class="wrap-container py-16">
+        <h2 class="fw-bold fs-section-title lh-100 mb-4 text-primary text-center mx-auto" style="max-width: 600px;">Our Advocacy & Community Projects In Pictures</h2>
+
+
+        <ul role="list" class="gallery-type-1 | grid grid-cols-12 gap-4">
+          <li class="col-span-6 md:col-span-3">
+            <img src="./assets/images/Rectangle-45.png" alt="">
+          </li>
+          <li class="col-span-6 md:col-span-3">
+            <img src="./assets/images/Rectangle-46.png" alt="">
+          </li>
+          <li class="col-span-6 md:col-span-3">
+            <img src="./assets/images/Rectangle-47.png" alt="">
+          </li>
+          <li class="col-span-6 md:col-span-3">
+            <img src="./assets/images/Rectangle-48.png" alt="">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <article class="article | bg-light">
+      <div class="wrap-container py-16">
+        <div class="grid grid-cols-12 gap-x-12">
+          <div class="col-span-12 md:col-span-6">
+            <h2 class="fw-bold fs-section-title lh-100 mb-4 text-primary">Your Donation Equals Many Lives Saved</h2>
+            <div class="mb-6">
+              <img src="./assets/images/donation-featured-image.png" alt="">
+            </div>
+            <p>Donating to the BIGAiD App & Health Education project gives you the opportunity to save a life, help millions with the opportunity to good healthcare access, contribute to community social good, and help meet the UNSDGs #Envision2030 Goal 3 of global health & well-being vision.
+              The state of healthcare in Nigeria and most African Countries has always been of pressing concern.
+            </p>
+            <br />
+          </div>
+
+          <div class="col-span-12 md:col-span-6">
+            <p>The avoidable loss of lives and the breakdown of citizens’ health and well-being due to the several factors associated with the worsening healthcare system, lack of adequate health education, poverty, and the brain drain syndrome of our medical professionals to the West for reasons linked to lack or inadequate economic and social amenities, is now the story of millions of families today.
+              BIGAiD recognizes the dire need for prompt intervention and intensive advocacy for all to access.</p>
+            <br />
+            <p>
+              Through our innovative app and creative education programs, we aim to bridge the gap between individuals and quality healthcare. Our platform enables easy connectivity with healthcare providers, hospitals, and doctors, empowering users to access medical assistance promptly.</p>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <section>
+      <div class="wrap-container py-16">
+        <h2 class="fw-bold fs-section-title lh-100 text-center mb-4 text-primary">5 Key Features Of The App</h2>
       </div>
     </section>
   </main>
