@@ -1,16 +1,19 @@
+@use "../_partials/mixins";
 .blog-highlights {
-    .featured-phone-image {
-        background-color: blue;
-    }
+    // .featured-phone-image {
+    //     // background-color: blue;
+    // }
     .blob-list {
-        .blob-item{
-            // height: 200px;
-            // width: 200px;
+        .blob-item {
+            // background-color: red;
+            position: relative;
+            .blob {
+                position: absolute;
+            }
+        }
+    }
 
-            // max-width: 250px;
-            background-color: red;
-        }
-        li:nth-child(even) {
-        }
+    @include mixins.maxmq(50em) {
+        overflow-x: auto;
     }
 }

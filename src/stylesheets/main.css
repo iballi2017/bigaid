@@ -555,12 +555,61 @@ button:hover {
   }
 }
 
-.blog-highlights .featured-phone-image {
-  background-color: blue;
+.skew-bg-article {
+  position: relative;
+  --bottom-margin: 8em;
+  margin-bottom: var(--bottom-margin);
 }
+.skew-bg-article::before, .skew-bg-article::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 150px;
+  background-color: var(--color-light);
+  left: 0;
+  right: 0;
+  transform: skew(0deg, -4deg);
+  transform-origin: left;
+  position: absolute;
+  z-index: -1;
+}
+.skew-bg-article::before {
+  top: -5px;
+}
+.skew-bg-article::after {
+  bottom: calc(var(--bottom-margin) * -1);
+}
+.skew-bg-article .featured-image {
+  margin-bottom: -8em;
+}
+@media (min-width: 50em) {
+  .skew-bg-article .featured-image {
+    max-width: 600px;
+    position: absolute;
+    top: 0;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 50em) {
+  .skew-bg-article {
+    padding-top: 3em;
+    margin-top: 4.5em;
+    margin-bottom: calc(var(--bottom-margin) + 3em);
+  }
+}
+
 .blog-highlights .blob-list .blob-item {
-  background-color: red;
+  position: relative;
 }
+.blog-highlights .blob-list .blob-item .blob {
+  position: absolute;
+}
+@media (max-width: 50em) {
+  .blog-highlights {
+    overflow-x: auto;
+  }
+}
+
 .hero h1 {
   font-size: 50px;
   font-weight: var(--fw-semi-bold);
