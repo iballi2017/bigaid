@@ -64,7 +64,7 @@
     </section>
 
     <section class="bg-primary">
-      <div class="wrap-container py-16">
+      <div class="wrap-container">
         <div class="video-container">
           <div class="video">
             <video id="video1" width="100%" height="100%">
@@ -165,6 +165,82 @@
     <section>
       <div class="wrap-container py-16">
         <h2 class="fw-bold fs-section-title lh-100 text-center mb-4 text-primary">5 Key Features Of The App</h2>
+
+
+        <div class="blog-highlights | flex">
+          <!-- <div class="featured-phone-image">
+            <img src="./assets/images/phone-2.png" alt="">
+          </div> -->
+          <ul class="blob-list | grid grid-flow-row-dense grid-cols-3 grid-rows-5 gap-4">
+            <li class="blob-item">
+            </li>
+            <li class="blob-item">
+            </li>
+            <li class="blob-item">
+            </li>
+            <li class="blob-item row-span-2">
+              <img src="./assets/images/phone-2.png" alt="">
+            </li>
+            <li class="blob-item">
+            </li>
+            <li class="blob-item">
+            </li>
+            <li class="blob-item">
+            </li>
+            <li class="blob-item">
+            </li>
+            <li class="blob-item">
+            </li>
+            <li class="blob-item">
+            </li>
+            <li class="blob-item">
+            </li>
+          </ul>
+        </div>
+
+
+
+
+
+        <div class="hidden grid grid-cols-3 grid-rows-5">
+          <div class="col-span-1">A</div>
+          <div class="col-span-1">
+            <div>
+              <img src="./assets/images/blob-1.png" alt="">
+            </div>
+          </div>
+          <div class="col-span-1">
+            <div>
+              <img src="./assets/images/blob-2.png" alt="">
+            </div>
+          </div>
+          <div class="col-span-1 row-span-3">
+            <div>
+              <img src="./assets/images/phone-2.png" alt="">
+            </div>
+          </div>
+          <div class="col-span-1">
+            <div>
+              <img src="./assets/images/blob-3.png" alt="">
+            </div>
+          </div>
+          <div class="col-span-1">A</div>
+          <div class="col-span-1">A</div>
+          <div class="col-span-1">A</div>
+          <div class="col-span-1">
+            <div>
+              <img src="./assets/images/blob-5.png" alt="">
+            </div>
+          </div>
+          <div class="col-span-1">
+            <div>
+              <img src="./assets/images/blob-4.png" alt="">
+            </div>
+          </div>
+          <div class="col-span-1">A</div>
+          <div class="col-span-1">A</div>
+          <div class="col-span-1">A</div>
+        </div>
       </div>
     </section>
   </main>

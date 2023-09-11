@@ -1,0 +1,16 @@
+.blog-highlights {
+    .featured-phone-image {
+        background-color: blue;
+    }
+    .blob-list {
+        .blob-item{
+            // height: 200px;
+            // width: 200px;
+
+            // max-width: 250px;
+            background-color: red;
+        }
+        li:nth-child(even) {
+        }
+    }
+}

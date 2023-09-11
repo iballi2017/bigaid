@@ -50,9 +50,10 @@ svg {
   html:focus-within {
     scroll-behavior: auto;
   }
+
   *,
-  *::before,
-  *::after {
+*::before,
+*::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -296,7 +297,7 @@ html {
 .wrap-container {
   --max-width: 1222px;
   --padding: 1rem;
-  width: min(var(--max-width), 100% - var(--padding) * 2);
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
 }
 
@@ -491,7 +492,7 @@ button:hover {
 
 @media (max-width: 50em) {
   .primary-button,
-  .call-to-action {
+.call-to-action {
     padding: 0.4em 1em;
     font-size: var(--fs-50);
   }
@@ -554,6 +555,12 @@ button:hover {
   }
 }
 
+.blog-highlights .featured-phone-image {
+  background-color: blue;
+}
+.blog-highlights .blob-list .blob-item {
+  background-color: red;
+}
 .hero h1 {
   font-size: 50px;
   font-weight: var(--fw-semi-bold);
