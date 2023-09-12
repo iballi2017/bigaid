@@ -2,7 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{html,js,php,css,scss}"],
   theme: {
-    extend: {},
+    extend: {
+      "rounded-xl": "50px"
+    },
   },
   plugins: [],
 }
