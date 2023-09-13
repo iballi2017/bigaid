@@ -227,50 +227,6 @@
               </li>
             </ul>
           </div>
-
-
-
-
-
-          <div class="hidden grid grid-cols-3 grid-rows-5">
-            <div class="col-span-1">A</div>
-            <div class="col-span-1">
-              <div>
-                <img src="./assets/images/blob-1.png" alt="">
-              </div>
-            </div>
-            <div class="col-span-1">
-              <div>
-                <img src="./assets/images/blob-2.png" alt="">
-              </div>
-            </div>
-            <div class="col-span-1 row-span-3">
-              <div>
-                <img src="./assets/images/phone-2.png" alt="">
-              </div>
-            </div>
-            <div class="col-span-1">
-              <div>
-                <img src="./assets/images/blob-3.png" alt="">
-              </div>
-            </div>
-            <div class="col-span-1">A</div>
-            <div class="col-span-1">A</div>
-            <div class="col-span-1">A</div>
-            <div class="col-span-1">
-              <div>
-                <img src="./assets/images/blob-5.png" alt="">
-              </div>
-            </div>
-            <div class="col-span-1">
-              <div>
-                <img src="./assets/images/blob-4.png" alt="">
-              </div>
-            </div>
-            <div class="col-span-1">A</div>
-            <div class="col-span-1">A</div>
-            <div class="col-span-1">A</div>
-          </div>
         </div>
       </div>
     </section>
@@ -305,15 +261,21 @@
         <div class="wrap-container">
           <h2 class="fw-bold fs-section-title text-center lh-100 mb-8 text-primary">Empower & Save Lives with BIGAiD</h2>
 
-          <div class="grid grid-cols-12">
-            <div class="md:col-span-5">
-              A
-              <!-- <div class="donation-info-card bg-secondary text-white text-center rounded-3xl">
+
+
+
+          <div class="grid grid-cols-12 items-center">
+            <div class="md:col-span-6">
+              <div class="donation-info-card bg-secondary text-white text-center">
                 <h3 class="fs-300 fw-bolder">How to Donate</h3>
                 <p class="fs-250 fw-semi-bold">Click the "Donate Now" button below to make a secure online contribution.<br />Together, we can make a substantial impact and raise funds to transform healthcare in Nigeria and Africa.</p>
-              </div> -->
+              </div>
             </div>
-            <div class="md:col-span-7">B</div>
+            <div class="md:col-span-6">
+              <div class="featured-image">
+                <img src="./assets/images/lady-card-transaction.png" alt="">
+              </div>
+            </div>
           </div>
         </div>
       </div>
