@@ -104,7 +104,7 @@
     <article class="article overflow-hidden">
       <div class="container mx-auto">
         <div class="wrap-container py-8">
-          <h2 class="fw-bold fs-section-title lh-100 mb-4 text-primary">The Mission</h2>
+          <h2 class="fw-bold fs-section-title lh-section-title mb-4 text-primary">The Mission</h2>
 
           <div class="grid md:grid-cols-12">
             <div class="md:col-span-6 order-2 md:order-1">
@@ -126,7 +126,7 @@
     <section>
       <div class="container mx-auto">
         <div class="wrap-container py-16">
-          <h2 class="fw-bold fs-section-title lh-100 mb-4 text-primary text-center mx-auto" style="max-width: 600px;">Our Advocacy & Community Projects In Pictures</h2>
+          <h2 class="fw-bold fs-section-title lh-section-title mb-4 text-primary text-center mx-auto" style="max-width: 900px">Our Advocacy & Community Projects In Pictures</h2>
 
 
           <ul role="list" class="gallery-type-1 | grid grid-cols-12 gap-4">
@@ -151,9 +151,32 @@
     <article class="article">
       <div class="bg-light container mx-auto">
         <div class="wrap-container py-16">
-          <div class="grid grid-cols-12 gap-4 md:gap-x-12">
+
+          <div class="donation-article-1">
+            <div class="column-1">
+              <h2 class="fw-bold fs-section-title lh-section-title mb-8 text-primary">Your Donation Equals Many Lives Saved</h2>
+              <div class="featured-image | mb-6">
+                <img src="./assets/images/donation-featured-image.png" alt="">
+              </div>
+              <p>Donating to the BIGAiD App & Health Education project gives you the opportunity to save a life, help millions with the opportunity to good healthcare access, contribute to community social good, and help meet the UNSDGs #Envision2030 Goal 3 of global health & well-being vision.
+                The state of healthcare in Nigeria and most African Countries has always been of pressing concern.
+              </p>
+            </div>
+            <div class="column-2">
+              <p>The avoidable loss of lives and the breakdown of citizens’ health and well-being due to the several factors associated with the worsening healthcare system, lack of adequate health education, poverty, and the brain drain syndrome of our medical professionals to the West for reasons linked to lack or inadequate economic and social amenities, is now the story of millions of families today.
+                BIGAiD recognizes the dire need for prompt intervention and intensive advocacy for all to access.</p>
+              <br /> <br />
+              <p>
+                Through our innovative app and creative education programs, we aim to bridge the gap between individuals and quality healthcare. Our platform enables easy connectivity with healthcare providers, hospitals, and doctors, empowering users to access medical assistance promptly.</p>
+            </div>
+          </div>
+
+
+
+
+          <div class="hidden grid grid-cols-12 gap-4 md:gap-x-12">
             <div class="col-span-12 md:col-span-6">
-              <h2 class="fw-bold fs-section-title lh-100 mb-4 text-primary">Your Donation Equals Many Lives Saved</h2>
+              <h2 class="fw-bold fs-section-title lh-section-title mb-4 text-primary">Your Donation Equals Many Lives Saved</h2>
               <div class="mb-6">
                 <img src="./assets/images/donation-featured-image.png" alt="">
               </div>
@@ -179,7 +202,7 @@
     <section>
       <div class="container mx-auto">
         <div class="wrap-container py-16">
-          <h2 class="fw-bold fs-section-title lh-100 text-center mb-8 text-primary">5 Key Features Of The App</h2>
+          <h2 class="fw-bold fs-section-title lh-section-title text-center mb-8 text-primary">5 Key Features Of The App</h2>
 
 
           <div class="blog-highlights | flex">
@@ -236,15 +259,15 @@
       <div class="bg-light container mx-auto">
         <div class="skew-bg-article">
           <div class="wrap-container">
-            <h2 class="fw-bold fs-section-title lh-100 mb-8 text-primary" style="max-width: 600px">Your Wellness Power Through Health Education</h2>
-            <div class="grid md:grid-cols-12 gap-4">
+            <h2 class="fw-bold fs-section-title lh-section-title mb-8 text-primary" style="max-width: 1100px">Your Wellness Power Through Health Education</h2>
+            <div class="grid md:grid-cols-12 md:gap-4">
               <div class="col-span-5">
                 <p>We empower communities to prioritize health through. a variety of wellness Programs and initiatives BIGAiD’s upcoming projects extend beyond immediate medical intervention.</p>
                 <br />
                 <p> Our initiatives like the BIGAiD Walk4Wellness Campaign Project and the monthly H&W Media Chat are advocacy that focuses on spreading awareness and empowering individuals with accurate health management information through platforms like the Media Convert podcast.</p>
               </div>
               <div class="col-span-7 relative">
-                <div class="featured-image">
+                <div class="float-featured-image">
                   <img src="./assets/images/man-carry-child.png" alt="">
                 </div>
               </div>
@@ -259,28 +282,125 @@
     <section>
       <div class="container mx-auto">
         <div class="wrap-container">
-          <h2 class="fw-bold fs-section-title text-center lh-100 mb-8 text-primary">Empower & Save Lives with BIGAiD</h2>
+          <h2 class="fw-bold fs-section-title lh-section-title lh-section-title text-center mb-8 text-primary">Empower & Save Lives with BIGAiD</h2>
 
-
-
-
-          <div class="grid grid-cols-12 items-center">
-            <div class="md:col-span-6">
-              <div class="donation-info-card bg-secondary text-white text-center">
-                <h3 class="fs-300 fw-bolder">How to Donate</h3>
-                <p class="fs-250 fw-semi-bold">Click the "Donate Now" button below to make a secure online contribution.<br />Together, we can make a substantial impact and raise funds to transform healthcare in Nigeria and Africa.</p>
+          <div class="donation-info">
+            <div class="donation-card">
+              <h3 class="fw-bolder">How to Donate</h3>
+              <p class="fw-semi-bold">Click the "Donate Now" button below to make a secure online contribution.<br />Together, we can make a substantial impact and raise funds to transform healthcare in Nigeria and Africa.</p>
+            </div>
+            <div class="featured-image-container">
+              <div class="featured-image">
+                <img src="./assets/images/lady-card-transaction-alt.png" alt="">
               </div>
             </div>
-            <div class="md:col-span-6">
-              <div class="featured-image">
-                <img src="./assets/images/lady-card-transaction.png" alt="">
+          </div>
+
+          <div style="max-width: 900px; margin: 0 auto;">
+            <form action="" class="py-8">
+              <div class="form-group mb-8">
+                <input type="text" id="Name" placeholder="Name" class="init-control block w-full">
+              </div>
+              <div class="form-group mb-8">
+                <input type="text" id="Email" placeholder="Email" class="init-control block w-full">
+              </div>
+
+              <div class="text-center">
+                <button class="call-to-action">Donate Now</button>
+              </div>
+            </form>
+
+            <p class="text-center fs-300 fw-light">BIGAiD Foundation is a registered non-profit organization.
+              Your donation is tax-deductible, and you'll receive a receipt for your contribution. Together, let's create a healthier, brighter future through accessible healthcare.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section>
+      <div class="container mx-auto">
+        <div class="wrap-container py-16">
+          <h2 class="fw-bold fs-section-title text-center lh-100 mb-8 text-primary">Donation Milestone</h2>
+
+          <ul class="milestones-graph">
+            <li class="milestone">
+              <!-- A -->
+              <div class="label">
+                <div class="amount-target">Target $100,000</div>
+                <div class="amount-raised">$5000 Raised</div>
+              </div>
+              <div class="guage africa">
+                <input class="donation-raised" type="text" hidden readonly value="6">
+              </div>
+            </li>
+            <li class="milestone">
+              <!-- B -->
+              <div class="label">
+                <div class="amount-target">Target $100</div>
+                <div class="amount-raised">%10</div>
+              </div>
+              <div class="guage europe">
+                <input class="donation-raised" type="text" hidden readonly value="20">
+              </div>
+            </li>
+            <li class="milestone">
+              <!-- C -->
+              <div class="label">
+                <div class="amount-target">No of Persons</div>
+                <div class="amount-raised">2,124 Donated</div>
+              </div>
+              <div class="guage america">
+                <input class="donation-raised" type="text" hidden readonly value="90">
+              </div>
+            </li>
+          </ul>
+
+
+          <div class="pie-chart-image">
+            <img src="./assets/images/donation-pie-chart.png" alt="">
+          </div>
+
+
+          <ul class="milestones-pie-chart mx-auto hidden">
+            <li class="pie-item africa">
+              <!-- <div class="pie africa"></div> -->
+            </li>
+            <li class="pie-item europe">
+              <!-- <div class="pie europe"></div> -->
+            </li>
+            <li class="pie-item america">
+              <!-- <div class="pie america"></div> -->
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+
+    <article>
+      <div class="bg-light container mx-auto">
+        <div class="skew-bg-article">
+          <div class="wrap-container">
+            <div class="donation-article">
+              <div class="article-card">
+                <h2 class="fw-bold fs-section-title lh-section-title mb-2 md:mb-8 text-primary">Changing Lives</h2>
+                <h3 class="text-secondary fw-regular fs-450 lh-200 mb-2 md:mb-8">Your Donation, <br />Many Lives Saved</h3>
+                <p class="fw-light fs-300 lh-150">Every contribution you make directly impacts the lives of those in need. By donating, you're actively participating in reshaping healthcare access for the undeserved and saving lives</p>
+              </div>
+              <div class="featured-image-container">
+                <div class="featured-image">
+                  <img src="./assets/images/man-woman-laughs.png" alt="">
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-    </section>
+    </article>
   </main>
 
   <!-- <div class="skew-design wrapper">

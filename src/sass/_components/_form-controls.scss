@@ -1,0 +1,29 @@
+@use "../_partials/mixins";
+
+.form-group {
+    .init-control {
+        border: 1px solid #AFAFAF;
+        border-radius: 5px;
+        &:focus {
+            box-shadow: none;
+            border: 1px solid var(--color-primary);
+        }
+    }
+}
+
+
+@include mixins.minmq(60em) {
+
+    .form-group {
+        .init-control {
+            padding: .5em .5em;
+            position: relative;
+            border-radius: 13px;
+            height: 60px;    
+            display: block;
+            width: 100%;
+            font-size: 1.2rem;
+        }
+    }
+    
+}

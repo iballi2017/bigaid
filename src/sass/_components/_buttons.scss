@@ -57,7 +57,7 @@ button {
 @include mixins.maxmq(50em) {
     .primary-button,
     .call-to-action {
-        padding: 0.4em 1em;
+        padding: 0.7em 1em;
         font-size: var(--fs-50);
     }
 }

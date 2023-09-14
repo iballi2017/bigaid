@@ -13,13 +13,16 @@
   // --fs-body: 24px;
 
   --fs-hero-title: 2.5rem; //40px;
-  --fs-section-title: 2.13em; // 34px
+  // --fs-section-title: 2.13em; // 34px
+  --fs-section-title: 3.75em; // 34px
   --fs-nav: 1.13rem; //18px;
   --fs-50: 0.88rem; //14px;
   --fs-100: 1.13rem; //18px;
   --fs-200: 1.25rem; //20px;
   --fs-250: 1.56rem; //25px;
   --fs-300: 1.88rem; //30px;
+  --fs-400: 2.5rem; //40px;
+  --fs-450: 2.81rem; //45px;
   --fs-600: 3.75rem; //60px;
 
   /* SIZES */
@@ -42,17 +45,23 @@
 
   /* LINE HEIGHT*/
   --lh-100: 40px;
+  --lh-150: 50px;
   --lh-200: 60px;
+  --lh-section-title: 60px;
 }
 @media (max-width: 50em) {
   :root {
     /* TYPOGRAPHY */
     --fs-200: 1.06rem; //17px;
-    --fs-300: 1.56rem; //25px;
+    --fs-250: 1.13rem; //20px;
+    // --fs-300: 1.56rem; //25px;
+    --fs-300: 1.38rem; //22px;
+    --fs-450: 1.56rem; //25px;
     --fs-600: 2.5rem; //40px;
 
     /* SIZES */
     --fs-hero-title: 1.56rem; //25px;
+    --fs-section-title: 1.25em; // 20px
     line-height: 35px;
 
     --size-50: 1em; //16px;
@@ -62,6 +71,9 @@
     --size-500: 5em; //80px;
 
     /* LINE HEIGHT*/
+    --lh-section-title: 25px;
     --lh-200: 35px;
+    --lh-150: 32px;
+    --lh-100: 28px;
   }
 }

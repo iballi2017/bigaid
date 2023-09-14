@@ -1,0 +1,110 @@
+@use "../_partials/mixins";
+
+.donation-info {
+  text-align: center;
+  position: relative;
+  --margin-bottom: 3rem;
+  margin-bottom: var(--margin-bottom);
+  &::after {
+    content: "";
+    height: var(--margin-bottom);
+    width: var(--margin-bottom);
+    background-image: url(../assets/icons/caret-right-blue.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    right: 3.5%;
+    bottom: calc((var(--margin-bottom)) * -1);
+  }
+  .donation-card {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border-radius: 25px;
+    padding: 1.5em;
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .featured-image-container {
+    flex-basis: 50%;
+    .featured-image {
+      max-width: 590px;
+      margin: 0 auto;
+    }
+  }
+
+  @include mixins.minmq(60em) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    .donation-card {
+      border-radius: 50px;
+      padding: 3em;
+      flex-basis: 50%;
+      line-height: 200%;
+      height: 100%;
+      h3 {
+        font-size: 2.3rem;
+      }
+    }
+  }
+}
+
+.donation-article {
+  display: flex;
+  // align-items: flex-end;
+  // justify-content: space-between;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  .article-card {
+    flex-basis: 100%;
+    height: 100%;
+    // font-size: 1.7rem;
+  }
+  .featured-image-container {
+    flex-basis: 100%;
+    .featured-image {
+      max-width: 590px;
+      margin: 0 auto;
+    }
+  }
+  @include mixins.minmq(60em) {
+    // display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 4em;
+    .article-card,
+    .featured-image-container {
+      flex-basis: 50%;
+    }
+  }
+}
+
+.donation-article-1 {
+  @include mixins.minmq(60em) {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+    p {
+      font-size: 30px;
+      // max-width: 95%;
+    }
+    .column-1 {
+      flex-basis: 60%;
+      .featured-image {
+        // max-width: 85%;
+      }
+      p {
+        max-width: 75%;
+      }
+    }
+    .column-2 {
+      flex-basis: 40%;
+    }
+  }
+}

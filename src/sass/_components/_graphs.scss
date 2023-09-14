@@ -1,0 +1,137 @@
+@use "../_partials/mixins";
+
+.milestones-graph {
+    margin-top: 3em;
+    .milestone {
+        height: 13px;
+        background-color: #d9d9d9;
+        margin-bottom: 4em;
+        border-radius: 50px;
+        position: relative;
+        .label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // background-color: red;
+            position: absolute;
+            // top: -100%;
+            top: -36px;
+            left: 0;
+            right: 0;
+        }
+        .guage {
+            height: 100%;
+            border-radius: 50px;
+            width: 30%;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            &::after {
+                content: "";
+                display: block;
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
+                position: absolute;
+                right: -10px;
+                z-index: 10;
+            }
+            &.africa {
+                background-color: #ff00e7;
+                &::after {
+                    background-color: #ff00e7;
+                }
+            }
+
+            &.europe {
+                background-color: #48cbff;
+                &::after {
+                    background-color: #48cbff;
+                }
+            }
+
+            &.america {
+                background-color: #0a0559;
+                &::after {
+                    background-color: #0a0559;
+                }
+            }
+        }
+    }
+}
+
+.pie-chart-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.milestones-pie-chart {
+    border: 2px solid lightgrey;
+    width: 400px;
+    height: 400px;
+    // margin: 10% 50px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50%;
+    color: black;
+    overflow: hidden;
+    .pie-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &.africa {
+            background-color: pink;
+            height: 50%;
+            position: absolute;
+            top: 0px;
+            right: 0;
+            width: 50%;
+            // clip-path: polygon(0 0, 100% 0%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0%, 0% 100%);
+        }
+        &.europe {
+            display: none;
+            background-color: purple;
+            height: 50%;
+            width: 50%;
+            right: 0;
+            top: 0;
+            position: absolute;
+            clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+        }
+        &.america {
+            display: none;
+            background-color: #0a0559;
+            height: 50%;
+            width: 50%;
+            right: 0;
+            top: 50%;
+            position: absolute;
+            // clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+        }
+    }
+}
+
+@include mixins.minmq(50em) {
+    .milestones-graph {
+        .milestone {
+            height: 30px;
+            .guage {
+                &::after {
+                    content: "";
+                    display: block;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    position: absolute;
+                    right: -25px;
+                    z-index: 10;
+                }
+            }
+        }
+    }
+}

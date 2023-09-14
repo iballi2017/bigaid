@@ -6,6 +6,7 @@ module.exports = {
       "rounded-xl": "50px"
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),],
 }
 
