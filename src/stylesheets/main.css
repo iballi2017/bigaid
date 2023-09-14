@@ -317,6 +317,10 @@ html {
   overflow: hidden;
 }
 
+.negative-top-margin-300 {
+  margin-top: calc(-1 * var(--size-250));
+}
+
 .even-columns {
   display: grid;
   gap: 1rem;
@@ -591,14 +595,14 @@ button:hover {
 
 .skew-bg-article {
   position: relative;
-  --bottom-margin: 25em;
+  --bottom-margin: 10em;
   margin-bottom: var(--bottom-margin);
 }
 .skew-bg-article::before, .skew-bg-article::after {
   content: "";
   display: block;
   width: 100%;
-  height: 350px;
+  height: 135px;
   background-color: var(--color-light);
   left: 0;
   right: 0;
@@ -607,16 +611,31 @@ button:hover {
   position: absolute;
   z-index: -1;
 }
-.skew-bg-article::before {
-  top: -25px;
-}
-.skew-bg-article::after {
-  height: 255px;
-}
 .skew-bg-article .float-featured-image {
   margin-bottom: -8em;
 }
 @media (min-width: 50em) {
+  .skew-bg-article {
+    --bottom-margin: 25em;
+  }
+  .skew-bg-article::before, .skew-bg-article::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 350px;
+    left: 0;
+    right: 0;
+    transform: skew(0deg, 354deg);
+    transform-origin: left;
+    position: absolute;
+    z-index: -1;
+  }
+  .skew-bg-article::before {
+    top: -25px;
+  }
+  .skew-bg-article::after {
+    height: 255px;
+  }
   .skew-bg-article .float-featured-image {
     max-width: 701px;
     position: absolute;
@@ -624,10 +643,8 @@ button:hover {
     margin-bottom: 0;
   }
 }
-@media (max-width: 50em) {
+@media (min-width: 50em) {
   .skew-bg-article {
-    padding-top: 3em;
-    margin-top: 4.5em;
     margin-bottom: calc(var(--bottom-margin) + 3em);
   }
 }
@@ -702,6 +719,7 @@ button:hover {
   display: flex;
   gap: 1.5em;
   flex-wrap: wrap;
+  margin-top: 5.5em;
 }
 .donation-article .article-card {
   flex-basis: 100%;

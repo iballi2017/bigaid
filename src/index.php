@@ -125,7 +125,7 @@
 
     <section>
       <div class="container mx-auto">
-        <div class="wrap-container py-16">
+        <div class="wrap-container md:py-16">
           <h2 class="fw-bold fs-section-title lh-section-title mb-4 text-primary text-center mx-auto" style="max-width: 900px">Our Advocacy & Community Projects In Pictures</h2>
 
 
@@ -150,7 +150,7 @@
 
     <article class="article">
       <div class="bg-light container mx-auto">
-        <div class="wrap-container py-16">
+        <div class="wrap-container py-8 md:py-16">
 
           <div class="donation-article-1">
             <div class="column-1">
@@ -165,7 +165,7 @@
             <div class="column-2">
               <p>The avoidable loss of lives and the breakdown of citizens’ health and well-being due to the several factors associated with the worsening healthcare system, lack of adequate health education, poverty, and the brain drain syndrome of our medical professionals to the West for reasons linked to lack or inadequate economic and social amenities, is now the story of millions of families today.
                 BIGAiD recognizes the dire need for prompt intervention and intensive advocacy for all to access.</p>
-              <br /> <br />
+              <br class="hidden md:block" /> <br />
               <p>
                 Through our innovative app and creative education programs, we aim to bridge the gap between individuals and quality healthcare. Our platform enables easy connectivity with healthcare providers, hospitals, and doctors, empowering users to access medical assistance promptly.</p>
             </div>
@@ -201,14 +201,11 @@
 
     <section>
       <div class="container mx-auto">
-        <div class="wrap-container py-16">
+        <div class="wrap-container pt-8 md:pt-16">
           <h2 class="fw-bold fs-section-title lh-section-title text-center mb-8 text-primary">5 Key Features Of The App</h2>
 
 
           <div class="blog-highlights | flex">
-            <!-- <div class="featured-phone-image">
-            <img src="./assets/images/phone-2.png" alt="">
-          </div> -->
             <ul class="blob-list | grid grid-flow-row-dense grid-cols-3 grid-rows-5 gap-4">
               <li class="blob-item">
               </li>
@@ -255,8 +252,9 @@
     </section>
 
 
-    <article class="article" style="margin-top: -15em">
-      <div class="bg-light container mx-auto">
+    <!-- <article class="article" style="margin-top: -15em"> -->
+    <article class="article">
+      <div class="bg-light container mx-auto negative-top-margin-300">
         <div class="skew-bg-article">
           <div class="wrap-container">
             <h2 class="fw-bold fs-section-title lh-section-title mb-8 text-primary" style="max-width: 1100px">Your Wellness Power Through Health Education</h2>
@@ -399,8 +397,32 @@
           </div>
         </div>
       </div>
-
     </article>
+
+
+
+    <article>
+      <div class="container mx-auto">
+        <div class="wrap-container">
+          <div class="stay-updated-article">
+            <div>
+              <div class="featured-image">
+                <img src="./assets/images/illustration-one.png" alt="">
+              </div>
+            </div>
+            <div>
+              <h2 class="fw-bold fs-section-title lh-section-title mb-8 text-secondary">Stay<br />Updated</h2>
+              <p class="fw-light fs-300 lh-150">Be the first to know when we go live. Follow Exciting health tips & advice from our blog, Know what’s new about the App and Launch Date, Get insights on every stage of meeting the funding benchmark on donations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+
+
+
+
   </main>
 
   <!-- <div class="skew-design wrapper">
