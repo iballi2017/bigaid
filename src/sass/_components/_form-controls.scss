@@ -2,7 +2,7 @@
 
 .form-group {
     .init-control {
-        border: 1px solid #AFAFAF;
+        border: 1px solid #afafaf;
         border-radius: 5px;
         &:focus {
             box-shadow: none;
@@ -11,19 +11,26 @@
     }
 }
 
-
+.init-textarea-control {
+    border: 1px solid #afafaf;
+    border-radius: 5px;
+}
 @include mixins.minmq(60em) {
-
     .form-group {
         .init-control {
-            padding: .5em .5em;
+            padding: 0.5em 0.5em;
             position: relative;
             border-radius: 13px;
-            height: 60px;    
+            height: 60px;
             display: block;
             width: 100%;
             font-size: 1.2rem;
         }
     }
-    
+    .init-textarea-control {
+        padding: 0.8em 0.5em;
+        border: 1px solid #afafaf;
+        border-radius: 13px;
+        font-size: 1.2rem;
+    }
 }

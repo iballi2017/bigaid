@@ -50,9 +50,10 @@ svg {
   html:focus-within {
     scroll-behavior: auto;
   }
+
   *,
-  *::before,
-  *::after {
+*::before,
+*::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -317,7 +318,7 @@ html {
 }
 
 .negative-top-margin-300 {
-  margin-top: calc(-1 * (var(--size-250)));
+  margin-top: calc(-1 * var(--size-250));
 }
 
 .even-columns {
@@ -334,7 +335,7 @@ html {
 .wrap-container {
   --max-width: 1222px;
   --padding: 1rem;
-  width: min(var(--max-width), 100% - var(--padding) * 2);
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
 }
 
@@ -531,7 +532,7 @@ button:hover {
 
 @media (max-width: 50em) {
   .primary-button,
-  .call-to-action {
+.call-to-action {
     padding: 0.7em 1em;
     font-size: var(--fs-50);
   }
@@ -692,7 +693,7 @@ button:hover {
   display: block;
   position: absolute;
   right: 3.5%;
-  bottom: calc((var(--margin-bottom)) * -1);
+  bottom: calc(var(--margin-bottom) * -1);
 }
 .donation-info .donation-card {
   background-color: var(--color-secondary);
@@ -755,7 +756,7 @@ button:hover {
     gap: 4em;
   }
   .donation-article .article-card,
-  .donation-article .featured-image-container {
+.donation-article .featured-image-container {
     flex-basis: 50%;
   }
 }
@@ -781,12 +782,17 @@ button:hover {
 }
 
 .form-group .init-control {
-  border: 1px solid #AFAFAF;
+  border: 1px solid #afafaf;
   border-radius: 5px;
 }
 .form-group .init-control:focus {
   box-shadow: none;
   border: 1px solid var(--color-primary);
+}
+
+.init-textarea-control {
+  border: 1px solid #afafaf;
+  border-radius: 5px;
 }
 
 @media (min-width: 60em) {
@@ -797,6 +803,13 @@ button:hover {
     height: 60px;
     display: block;
     width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .init-textarea-control {
+    padding: 0.8em 0.5em;
+    border: 1px solid #afafaf;
+    border-radius: 13px;
     font-size: 1.2rem;
   }
 }

@@ -296,10 +296,10 @@
 
           <div style="max-width: 900px; margin: 0 auto;">
             <form action="" class="py-8">
-              <div class="form-group mb-8">
+              <div class="form-group mb-4 md:mb-8">
                 <input type="text" id="Name" placeholder="Name" class="init-control block w-full">
               </div>
-              <div class="form-group mb-8">
+              <div class="form-group mb-4 md:mb-8">
                 <input type="text" id="Email" placeholder="Email" class="init-control block w-full">
               </div>
 
@@ -411,7 +411,7 @@
               </div>
             </div>
             <div>
-              <h2 class="fw-bold fs-section-title lh-section-title mb-8 text-secondary">Stay<br />Updated</h2>
+              <h2 class="fw-bold fs-section-title lh-section-title mb-4 md:mb-8 text-secondary">Stay<br />Updated</h2>
               <p class="fw-light fs-300 lh-150">Be the first to know when we go live.<br />Follow Exciting health tips & advice from our blog, Know what’s new about the App and Launch Date, Get insights on every stage of meeting the funding benchmark on donations.</p>
             </div>
           </div>
@@ -419,32 +419,38 @@
       </div>
     </article>
 
+    <!-- SIGN UP -->
+    <section>
+      <div class="container mx-auto md:py-14">
+        <div class="wrap-container">
+          <div class="grid grid-cols-12 gap-4 md:gap-0">
+            <div class="col-span-12 md:col-span-6">
+              <div class="featured-image">
+                <img src="./assets/images/handshakes.png" alt="">
+              </div>
+            </div>
+
+            <div class="col-span-12 md:col-span-6 md:px-16">
+              <h2 class="fw-bold fs-section-title lh-section-title mb-2 md:mb-8 text-primary">Sign Up Today</h2>
+              <h3 class="fs-450 text-secondary lh-150">Become a Volunteer or Partner</h3>
+              <p class="fw-light fs-300 lh-150 mb-4 md:mb-8">We invite you to be part of the change and social impact in the health & wellness Sector (This is strictly for Medical professionals, Institutions and health Emergency service providers)</p>
+
+              <button class="call-to-action">Join Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- CONTACT US -->
     <section>
-      <div class="container mx-auto">
+      <div class="container mx-auto py-8 md:py-16">
         <div class="wrap-container">
           <h2 class="fw-bold fs-section-title lh-section-title mb-2 md:mb-8 text-primary">Contact Us</h2>
-          <div class="grid grid-cols-12">
+          <div class="grid grid-cols-12 md:gap-12">
             <div class="col-span-12 md:col-span-6">
-
-              <form action="">
-                <div class="form-group mb-8">
-                  <input type="text" id="Name" placeholder="Name" class="init-control block w-full">
-                </div>
-                <div class="form-group mb-8">
-                  <input type="text" id="Email" placeholder="Email" class="init-control block w-full">
-                </div>
-
-                <div class="form-group mb-8">
-                  <input type="text" id="Email" placeholder="Email" class="init-control block w-full">
-                  <textarea name="Message" id="" cols="30" rows="10" placeholder="Email"></textarea>
-                </div>
-
-                <div>
-                  <button class="call-to-action">Submit</button>
-                </div>
-              </form>
+              <?php include_once("./components/contact-us-form.php"); ?>
             </div>
 
             <div class="col-span-12 md:col-span-6">
