@@ -412,7 +412,7 @@
             </div>
             <div>
               <h2 class="fw-bold fs-section-title lh-section-title mb-8 text-secondary">Stay<br />Updated</h2>
-              <p class="fw-light fs-300 lh-150">Be the first to know when we go live. Follow Exciting health tips & advice from our blog, Know what’s new about the App and Launch Date, Get insights on every stage of meeting the funding benchmark on donations.</p>
+              <p class="fw-light fs-300 lh-150">Be the first to know when we go live.<br />Follow Exciting health tips & advice from our blog, Know what’s new about the App and Launch Date, Get insights on every stage of meeting the funding benchmark on donations.</p>
             </div>
           </div>
         </div>
@@ -420,8 +420,42 @@
     </article>
 
 
+    <!-- CONTACT US -->
+    <section>
+      <div class="container mx-auto">
+        <div class="wrap-container">
+          <h2 class="fw-bold fs-section-title lh-section-title mb-2 md:mb-8 text-primary">Contact Us</h2>
+          <div class="grid grid-cols-12">
+            <div class="col-span-12 md:col-span-6">
 
+              <form action="">
+                <div class="form-group mb-8">
+                  <input type="text" id="Name" placeholder="Name" class="init-control block w-full">
+                </div>
+                <div class="form-group mb-8">
+                  <input type="text" id="Email" placeholder="Email" class="init-control block w-full">
+                </div>
 
+                <div class="form-group mb-8">
+                  <input type="text" id="Email" placeholder="Email" class="init-control block w-full">
+                  <textarea name="Message" id="" cols="30" rows="10" placeholder="Email"></textarea>
+                </div>
+
+                <div>
+                  <button class="call-to-action">Submit</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-span-12 md:col-span-6">
+              <div class="featured-image">
+                <img src="./assets/images/illustration-customer-agent.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -441,6 +475,11 @@
 
 
   <!-- FOOTER -->
+  <footer class="bg-primary">
+    <?php
+    include_once("./components/footer.php")
+    ?>
+  </footer>
 
 
 

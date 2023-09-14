@@ -85,3 +85,19 @@
     margin-bottom: calc((var(--bottom-margin) + 3em));
   }
 }
+
+
+.stay-updated-article{
+  @include mixins.minmq(50em) {
+    display: flex;
+    gap: 3.5em;
+    div:first-child{
+      flex-basis: 60%;
+      // background-color: lawngreen;
+      +div{
+        flex-basis: 40%;
+        padding: 2em;
+      }
+    }
+  }
+}

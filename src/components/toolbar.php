@@ -1,4 +1,4 @@
-<nav class="alt-toolbar">
+<nav class="alt-toolbar toolbar-bg">
     <div class="wrap-container">
         <!-- <div class="mx-auto max-w-screen-xl px-2 md:px-6 lg:px-8"> -->
         <div class="flex items-center justify-between">

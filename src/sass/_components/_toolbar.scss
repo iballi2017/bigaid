@@ -2,16 +2,18 @@
 
 header.sticky {
   // position: sticky;
-  background-color: var(--color-secondary);
-  z-index: 1020;
-  transition: 0.5s;
-
-  &.alt {
-    background-color: var(--color-white);
-    .nav-link {
-      color: var(--color-text);
-      &.primary-button{
-        color: var(--color-white);
+    z-index: 1020;
+    transition: 0.5s;
+  .toolbar-bg{
+    background-color: var(--color-secondary);
+  
+    &.alt {
+      background-color: var(--color-white);
+      .nav-link {
+        color: var(--color-text);
+        &.primary-button{
+          color: var(--color-white);
+        }
       }
     }
   }
