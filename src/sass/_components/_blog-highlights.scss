@@ -1,4 +1,12 @@
 @use "../_partials/mixins";
+
+.blob-list-wrapper {
+    + article {
+        @include mixins.minmq(900px) {
+            margin-top: -12em;
+        }
+    }
+}
 .blog-highlights {
     // .featured-phone-image {
     //     // background-color: blue;

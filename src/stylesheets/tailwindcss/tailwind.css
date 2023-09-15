@@ -1106,6 +1106,10 @@ select {
   justify-content: space-between;
 }
 
+.gap-0 {
+  gap: 0px;
+}
+
 .gap-12 {
   gap: 3rem;
 }
@@ -1122,8 +1126,8 @@ select {
   gap: 2rem;
 }
 
-.gap-0 {
-  gap: 0px;
+.gap-24 {
+  gap: 6rem;
 }
 
 .gap-x-12 {
@@ -1237,12 +1241,17 @@ select {
   padding: 1rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .p-8 {
   padding: 2rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .px-2 {
@@ -1280,6 +1289,11 @@ select {
   padding-bottom: 0.25rem;
 }
 
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1300,16 +1314,6 @@ select {
   padding-bottom: 2rem;
 }
 
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.py-14 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1326,8 +1330,20 @@ select {
   padding-right: 0px;
 }
 
+.pr-12 {
+  padding-right: 3rem;
+}
+
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
 }
 
 .pt-16 {
@@ -1344,18 +1360,6 @@ select {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pr-8 {
-  padding-right: 2rem;
-}
-
-.pr-6 {
-  padding-right: 1.5rem;
-}
-
-.pr-12 {
-  padding-right: 3rem;
 }
 
 .text-center {
@@ -1580,6 +1584,10 @@ select {
     margin-left: 1.5rem;
   }
 
+  .md\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1600,6 +1608,18 @@ select {
     justify-content: space-between;
   }
 
+  .md\:gap-0 {
+    gap: 0px;
+  }
+
+  .md\:gap-12 {
+    gap: 3rem;
+  }
+
+  .md\:gap-16 {
+    gap: 4rem;
+  }
+
   .md\:gap-4 {
     gap: 1rem;
   }
@@ -1608,12 +1628,8 @@ select {
     gap: 2rem;
   }
 
-  .md\:gap-12 {
-    gap: 3rem;
-  }
-
-  .md\:gap-0 {
-    gap: 0px;
+  .md\:gap-24 {
+    gap: 6rem;
   }
 
   .md\:gap-x-12 {
@@ -1621,8 +1637,9 @@ select {
          column-gap: 3rem;
   }
 
-  .md\:p-6 {
-    padding: 1.5rem;
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .md\:px-6 {
@@ -1630,31 +1647,18 @@ select {
     padding-right: 1.5rem;
   }
 
-  .md\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .md\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
   .md\:py-14 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
   }
 
+  .md\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .md\:pt-16 {
     padding-top: 4rem;
-  }
-
-  .md\:pr-8 {
-    padding-right: 2rem;
-  }
-
-  .md\:pr-12 {
-    padding-right: 3rem;
   }
 }
 

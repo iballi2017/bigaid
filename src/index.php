@@ -199,7 +199,7 @@
       </div>
     </article>
 
-    <section>
+    <section class="blob-list-wrapper">
       <div class="container mx-auto">
         <div class="wrap-container pt-8 md:pt-16">
           <h2 class="fw-bold fs-section-title lh-section-title text-center mb-8 text-primary">5 Key Features Of The App</h2>
@@ -254,7 +254,7 @@
 
     <!-- <article class="article" style="margin-top: -15em"> -->
     <article class="article">
-      <div class="bg-light container mx-auto negative-top-margin-300">
+      <div class="bg-light container mx-auto negative-top-margin-500">
         <div class="skew-bg-article">
           <div class="wrap-container">
             <h2 class="fw-bold fs-section-title lh-section-title mb-8 text-primary" style="max-width: 1100px">Your Wellness Power Through Health Education</h2>
@@ -319,7 +319,7 @@
 
     <section>
       <div class="container mx-auto">
-        <div class="wrap-container py-16">
+        <div class="wrap-container py-8 md:py-16">
           <h2 class="fw-bold fs-section-title text-center lh-100 mb-8 text-primary">Donation Milestone</h2>
 
           <ul class="milestones-graph">
@@ -413,6 +413,48 @@
             <div>
               <h2 class="fw-bold fs-section-title lh-section-title mb-4 md:mb-8 text-secondary">Stay<br />Updated</h2>
               <p class="fw-light fs-300 lh-150">Be the first to know when we go live.<br />Follow Exciting health tips & advice from our blog, Know what’s new about the App and Launch Date, Get insights on every stage of meeting the funding benchmark on donations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+
+    <section>
+      <div class="container mx-auto">
+        <div class="wrap-container py-8 md:py-16">
+          <div class="grid grid-cols-12 items-center">
+            <div class="col-span-5">
+              <h2 class="fw-bold fs-section-title lh-section-title mb-2 md:mb-8 text-primary">Sign Up to our<br />Newsletter</h2>
+              <!-- NEWSLETTER FORM -->
+              <?php include_once("./components/newsletter-form.php"); ?>
+            </div>
+            <div class="col-span-7">
+              <div class="featured-image">
+                <img src="./assets/images/illustration-email-messaging.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <article>
+      <div class="container mx-auto bg-primary">
+        <div class="primary-bg-skew text-white">
+          <div class="wrap-container">
+            <h2 class="fw-bold fs-section-title lh-section-title mb-2 md:mb-16 text-center">Join Us in Transforming<br />Healthcare</h2>
+
+            <div class="grid grid-cols-12 gap-4 md:gap-16">
+              <div class="col-span-12 md:col-span-5">
+                <p class="fw-light fs-300 lh-200">The BIGAiD Foundation, in partnership with individuals, NGOs, organizations, governments, and businesses, is working towards a healthier future. Your support is crucial in making quality healthcare accessible to all.</p>
+              </div>
+              <div class="col-span-12 md:col-span-7">
+                <div class="featured-image">
+                  <img src="./assets/images/doctor-hand-gloves.png" alt="">
+                </div>
+              </div>
             </div>
           </div>
         </div>
