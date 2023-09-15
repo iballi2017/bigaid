@@ -2,16 +2,9 @@
     <div class="wrap-container">
         <!-- <div class="mx-auto max-w-screen-xl px-2 md:px-6 lg:px-8"> -->
         <div class="flex items-center justify-between">
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-               <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-            </button> -->
-
-
             <!-- Brand logo -->
             <a class="navbar-brand" href="#">
-                <img src="./assets/images/brand-logo-white.png">
+                <img src="../assets/images/brand-logo-white.png">
             </a>
 
 
