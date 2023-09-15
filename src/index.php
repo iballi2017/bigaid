@@ -40,7 +40,7 @@
     <!-- HERO -->
     <section>
       <div class="container mx-auto">
-        <div class="hero | bg-secondary">
+        <div class="hero | bg-secondary relative">
           <div class="wrap-container">
             <div class="content-columns">
               <div class="text-wrap">
@@ -64,13 +64,14 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="bg-primary container mx-auto">
+      <div class="bg-primary container mx-auto wave">
         <div class="wrap-container">
           <div class="video-container">
             <div class="video">
