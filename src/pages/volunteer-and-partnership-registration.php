@@ -173,20 +173,41 @@ include_once("../components/header.php");
                 <fieldset>
                     <legend class="fs-200 fw-bold">Address</legend>
                     <div class="grid grid-cols-12 gap-4">
-                        <div class="col-span-12 md:col-span-6">
+                        <div class="col-span-12 md:col-span-12">
                             <label for="Address" class="block mb-2 cursor-pointer">Address</label>
                             <input type="text" class="form-control block w-full rounded" id="Address">
                         </div>
-                        <div class="col-span-12 md:col-span-2">
+                        <div class="col-span-6 md:col-span-2">
                             <label for="City" class="block mb-2 cursor-pointer">City</label>
                             <input type="text" class="form-control block w-full rounded" id="City">
                         </div>
-                        <div class="col-span-12 md:col-span-4">
+                        <div class="col-span-6 md:col-span-2">
+                            <label for="PostalCode" class="block mb-2 cursor-pointer">Postal Code</label>
+                            <input type="text" class="form-control block w-full rounded" id="PostalCode">
+                        </div>
+                        <div class="col-span-6 md:col-span-4">
                             <label for="State" class="block mb-2 cursor-pointer">State</label>
                             <input type="text" class="form-control block w-full rounded" id="State">
                         </div>
+                        <div class="col-span-6 md:col-span-4">
+                            <label for="Country" class="block mb-2 cursor-pointer">Country</label>
+                            <input type="text" class="form-control block w-full rounded" id="Country">
+                        </div>
                     </div>
                 </fieldset>
+
+                <hr class="my-8" />
+                <fieldset>
+                    <label for="why-would-you-want-to-volunteer-with-BIGAiD" class="block mb-2 cursor-pointer">Why Would You Want To Volunteer With BIGAiD?</label>
+                    <input type="text" class="form-control block w-full rounded" id="why-would-you-want-to-volunteer-with-BIGAiD">
+                </fieldset>
+                <hr class="my-8" />
+
+                <div>
+                    <input type="checkbox" name="terms-and-condition" id="terms-and-condition" class="mr-2">
+                    <label for="terms-and-condition">Accept our <a href="#" class="text-secondary fw-bold">terms and conditions</a>
+                and <a href="#" class="text-secondary fw-bold">content policy</a>.</label>
+                </div>
 
                 <!-- <div class="grid grid-cols-12 gap-4">
 

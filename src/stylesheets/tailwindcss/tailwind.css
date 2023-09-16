@@ -951,6 +951,10 @@ select {
   margin-top: 1rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1619,6 +1623,10 @@ select {
 
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .md\:col-span-12 {
+    grid-column: span 12 / span 12;
   }
 
   .md\:mb-16 {
