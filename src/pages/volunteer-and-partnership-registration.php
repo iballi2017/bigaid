@@ -61,7 +61,7 @@ include_once("../components/header.php");
                             <option value="1995-2012">Generation Z – born 1995-2012</option>
                         </select>
                     </div>
-                    <div class="col-span-12 md:col-span-4">
+                    <!-- <div class="col-span-12 md:col-span-4">
                         <label for="TypeOfMedicalProfession" class="block mb-2 cursor-pointer">Type Of Medical Profession</label>
                         <select name="TypeOfMedicalProfession" id="TypeOfMedicalProfession" class="form-control block w-full rounded">
                             <option value="" selected>--Select Medical Profession--</option>
@@ -70,6 +70,17 @@ include_once("../components/header.php");
                             <option value="3">Physician Associate</option>
                             <option value="4">Dentist</option>
                         </select>
+                    </div> -->
+                    <div class="col-span-12 md:col-span-4">
+                        <label for="TypeOfMedicalProfession" class="block mb-2 cursor-pointer">Type Of Medical Profession</label>
+                        <input list="TypeOfMedicalProfessions" id="TypeOfMedicalProfession" class="form-control block w-full rounded">
+                        <datalist name="TypeOfMedicalProfession" id="TypeOfMedicalProfessions">
+                            <!-- <option value="" selected>--Select Medical Profession--</option> -->
+                            <option value="Health professional" />
+                            <option value="Pharmacist" />
+                            <option value="Physician Associate" />
+                            <option value="Dentist" />
+                        </datalist>
                     </div>
                     <div class="col-span-12 md:col-span-4">
                         <label for="AreaOfSpecialization " class="block mb-2 cursor-pointer">Area of Specialization </label>
