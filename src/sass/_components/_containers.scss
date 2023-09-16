@@ -12,3 +12,37 @@
   width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
 }
+
+.wave {
+  // height: 200px;
+  // background-color: black;
+  // color: white;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    background-color: var(--color-primary);
+    height: 200px;
+    // border-top-right-radius: 190px;
+    // transform: rotate(-10deg);
+    // transform-origin: left;
+    position: absolute;
+    // left: -2em;
+    // right: -2em;
+    left: 0;
+    right: 0;
+    top: -200px;
+
+    //
+
+    // --mask: radial-gradient(275.92px at 50% 375.2px, #000 99%, #0000 101%) calc(50% - 268px) 0/536px 100%,
+    //   radial-gradient(275.92px at 50% -241.2px, #0000 99%, #000 101%) 50% 134px/536px 100% repeat-x;
+    // -webkit-mask: var(--mask);
+    // mask: var(--mask);
+
+    --mask: radial-gradient(275.92px at 50% 375.2px, #000 99%, #0000 101%) calc(50% - 268px) 0/536px 100%,
+      radial-gradient(275.92px at 50% -241.2px, #0000 99%, #000 101%) 50% 134px/536px 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+  }
+}

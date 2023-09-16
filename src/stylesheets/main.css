@@ -334,6 +334,24 @@ html {
   margin-inline: auto;
 }
 
+.wave {
+  position: relative;
+}
+.wave::before {
+  content: "";
+  display: block;
+  background-color: var(--color-primary);
+  height: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -200px;
+  --mask: radial-gradient(275.92px at 50% 375.2px, #000 99%, #0000 101%) calc(50% - 268px) 0/536px 100%,
+    radial-gradient(275.92px at 50% -241.2px, #0000 99%, #000 101%) 50% 134px/536px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
 .toolbar {
   background-color: #00034B;
   color: #FFFFFF;
@@ -479,19 +497,23 @@ button:hover {
   transition: all 300ms ease-in-out;
 }
 
-.primary-button {
+.primary-button,
+.secondary-button {
   padding: 0.5em 1.3em;
 }
-.primary-button.nav-link {
+.primary-button.nav-link,
+.secondary-button.nav-link {
   font-size: 14px;
   transition: all 300ms ease-in-out;
   padding: 0.5em 1.3em !important;
 }
-.primary-button.nav-link:hover {
+.primary-button.nav-link:hover,
+.secondary-button.nav-link:hover {
   color: #000000;
   transition: all 300ms ease-in-out;
 }
 
+.secondary-button,
 .primary-button,
 .call-to-action {
   border-radius: 10px;
@@ -502,11 +524,19 @@ button:hover {
 .call-to-action {
   background-color: var(--color-primary);
   color: var(--color-white);
+  border: 1px solid var(--color-primary);
 }
 .primary-button:hover,
 .call-to-action:hover {
   background-color: var(--color-white);
   color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.secondary-button {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border: 1px solid var(--color-secondary);
 }
 
 .call-to-action {
@@ -527,6 +557,7 @@ button:hover {
 
 @media (max-width: 50em) {
   .primary-button,
+  .secondary-button,
   .call-to-action {
     padding: 0.7em 1em;
     font-size: var(--fs-50);
@@ -1015,6 +1046,20 @@ button:hover {
   .footer .partners-logos {
     justify-content: flex-end;
   }
+}
+
+.title-bg-one {
+  background-image: url(../assets/images/beautiful-african-american-doctor-couple-white.png);
+  background-color: rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  background-position: center;
+  color: var(--color-white);
+}
+.title-bg-one .title {
+  font-size: 2.8rem;
+  font-weight: 600;
 }
 
 .hero h1 {

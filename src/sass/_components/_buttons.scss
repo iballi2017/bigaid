@@ -7,7 +7,8 @@ button {
     }
 }
 
-.primary-button {
+.primary-button,
+.secondary-button {
     padding: 0.5em 1.3em;
 
     &.nav-link {
@@ -21,6 +22,7 @@ button {
     }
 }
 
+.secondary-button,
 .primary-button,
 .call-to-action {
     border-radius: 10px;
@@ -30,11 +32,18 @@ button {
 .call-to-action {
     background-color: var(--color-primary);
     color: var(--color-white);
+    border: 1px solid var(--color-primary);
 
     &:hover {
         background-color: var(--color-white);
         color: var(--color-primary);
+        border: 1px solid var(--color-primary);
     }
+}
+.secondary-button {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border: 1px solid var(--color-secondary);
 }
 
 .call-to-action {
@@ -56,6 +65,7 @@ button {
 
 @include mixins.maxmq(50em) {
     .primary-button,
+    .secondary-button,
     .call-to-action {
         padding: 0.7em 1em;
         font-size: var(--fs-50);
