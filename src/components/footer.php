@@ -8,43 +8,43 @@
                         <li class="social-icon">
                             <a href="#">
                                 <span class="sr-only">LinkedIn</span>
-                                <img src="./assets/icons/icon-linkedIn.svg" alt="">
+                                <img src="../assets/icons/icon-linkedIn.svg" alt="">
                             </a>
                         </li>
                         <li class="social-icon">
                             <a href="#">
                                 <span class="sr-only">Facebook</span>
-                                <img src="./assets/icons/icon-facebook.svg" alt="">
+                                <img src="../assets/icons/icon-facebook.svg" alt="">
                             </a>
                         </li>
                         <li class="social-icon">
                             <a href="#">
                                 <span class="sr-only">Twitter</span>
-                                <img src="./assets/icons/icon-twitter.svg" alt="">
+                                <img src="../assets/icons/icon-twitter.svg" alt="">
                             </a>
                         </li>
                         <li class="social-icon">
                             <a href="#">
                                 <span class="sr-only">Instagram</span>
-                                <img src="./assets/icons/icon-instagram.svg" alt="">
+                                <img src="../assets/icons/icon-instagram.svg" alt="">
                             </a>
                         </li>
                         <li class="social-icon">
                             <a href="#">
                                 <span class="sr-only">Youtube</span>
-                                <img src="./assets/icons/icon-youtube.svg" alt="">
+                                <img src="../assets/icons/icon-youtube.svg" alt="">
                             </a>
                         </li>
                         <li class="social-icon">
                             <a href="#">
                                 <span class="sr-only">Tiktok</span>
-                                <img src="./assets/icons/icon-tiktok.svg" alt="">
+                                <img src="../assets/icons/icon-tiktok.svg" alt="">
                             </a>
                         </li>
                         <li class="social-icon">
                             <a href="#">
                                 <span class="sr-only">Gmail</span>
-                                <img src="./assets/icons/icon-gmail.svg" alt="">
+                                <img src="../assets/icons/icon-gmail.svg" alt="">
                             </a>
                         </li>
                     </ul>
@@ -58,10 +58,10 @@
 
                     <ul class="partners-logos">
                         <li>
-                            <img src="./assets/images/BIGAID-foundation-logo.png" alt="">
+                            <img src="../assets/images/BIGAID-foundation-logo.png" alt="">
                         </li>
                         <li>
-                            <img src="./assets/images/SDG-logo.png" alt="">
+                            <img src="../assets/images/SDG-logo.png" alt="">
                         </li>
                     </ul>
                 </div>
@@ -70,3 +70,13 @@
     </div>
 
 </footer>
+
+
+
+<!-- jquery-3.7.0 -->
+<script src="../libs/jquery-3.7.0.min.js"></script>
+<script src="../scripts/main.js"></script>
+<script src="../scripts/main.jquery.js"></script>
+</body>
+
+</html>

@@ -23,16 +23,21 @@
   <!-- HEADER -->
   <header class="sticky">
     <div class="container mx-auto bg-wrap">
-      <?php
-      // include_once("./components/toolbar.php")
-      ?><nav class="alt-toolbar toolbar-bg">
+      <nav class="alt-toolbar toolbar-bg">
         <div class="wrap-container">
           <!-- <div class="mx-auto max-w-screen-xl px-2 md:px-6 lg:px-8"> -->
           <div class="flex items-center justify-between">
             <!-- Brand logo -->
-            <a class="navbar-brand" href="#">
+            <!-- <a class="navbar-brand" href="#">
               <img src="assets/images/brand-logo-white.png">
+            </a> -->
+            <a class="navbar-brand" href="#" id="primary-img">
+              <img src="./assets/images/brand-logo-white.png">
             </a>
+            <a class="navbar-brand hidden" href="#" id="secondary-img">
+              <img src="./assets/images/brand-logo-primary.png">
+            </a>
+
 
 
             <!-- Mobile menu button-->
@@ -577,10 +582,78 @@
 
 
   <!-- FOOTER -->
-    <?php
-    include_once("./components/footer.php")
-    ?>
+  <footer class="bg-primary">
+    <div class="footer container mx-auto">
+      <div class="wrap-container">
+        <div class="grid grid-cols-12 gap-4">
+          <div class="col-span-12 md:col-span-7">
+            <p class="mb-4">BIGAiD Foundation is a non-profit organization that promotes the advancement of health, nutrition, well-being, and social good. Our goal is to enable individuals, families, and communities to meet the global UNSDGs 2030 by improving our world and ensuring health and well-being for all to enjoy healthy and satisfying lives via advocacy, education, and intervention.</p>
+            <ul class="social-media-handles mb-4">
+              <li class="social-icon">
+                <a href="#">
+                  <span class="sr-only">LinkedIn</span>
+                  <img src="./assets/icons/icon-linkedIn.svg" alt="">
+                </a>
+              </li>
+              <li class="social-icon">
+                <a href="#">
+                  <span class="sr-only">Facebook</span>
+                  <img src="./assets/icons/icon-facebook.svg" alt="">
+                </a>
+              </li>
+              <li class="social-icon">
+                <a href="#">
+                  <span class="sr-only">Twitter</span>
+                  <img src="./assets/icons/icon-twitter.svg" alt="">
+                </a>
+              </li>
+              <li class="social-icon">
+                <a href="#">
+                  <span class="sr-only">Instagram</span>
+                  <img src="./assets/icons/icon-instagram.svg" alt="">
+                </a>
+              </li>
+              <li class="social-icon">
+                <a href="#">
+                  <span class="sr-only">Youtube</span>
+                  <img src="./assets/icons/icon-youtube.svg" alt="">
+                </a>
+              </li>
+              <li class="social-icon">
+                <a href="#">
+                  <span class="sr-only">Tiktok</span>
+                  <img src="./assets/icons/icon-tiktok.svg" alt="">
+                </a>
+              </li>
+              <li class="social-icon">
+                <a href="#">
+                  <span class="sr-only">Gmail</span>
+                  <img src="./assets/icons/icon-gmail.svg" alt="">
+                </a>
+              </li>
+            </ul>
 
+            <div class="copyright-and-policy">
+              <div>Copyright © 2023, BIGAiD Foundation. All Rights Reserved</div>
+              <div>Privacy Policy | Terms & Condition</div>
+            </div>
+          </div>
+          <div class="col-span-12 md:col-span-5 flex items-end">
+
+            <ul class="partners-logos">
+              <li>
+                <img src="./assets/images/BIGAID-foundation-logo.png" alt="">
+              </li>
+              <li>
+                <img src="./assets/images/SDG-logo.png" alt="">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
 
 
 

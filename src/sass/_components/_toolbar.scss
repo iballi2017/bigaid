@@ -2,16 +2,16 @@
 
 header.sticky {
   // position: sticky;
-    z-index: 1020;
-    transition: 0.5s;
-  .toolbar-bg{
+  z-index: 1020;
+  transition: 0.5s;
+  .toolbar-bg {
     background-color: var(--color-secondary);
-  
+
     &.alt {
       background-color: var(--color-white);
       .nav-link {
         color: var(--color-text);
-        &.primary-button{
+        &.primary-button {
           color: var(--color-white);
         }
       }
@@ -60,21 +60,38 @@ header.sticky {
   }
 
   .navbar-toggler {
+    transition: all 230ms ease-in-out;
+    position: relative;
+    width: 25px;
+    .close,
+    .menu {
+      position: absolute;
+      display: block;
+      transition: all 230ms ease-in-out;
+    }
     &[aria-expanded="false"] {
       .menu {
-        display: block;
+        // display: block;
+        visibility: visible;
       }
       .close {
-        display: none;
+        // display: none;
+        visibility: hidden;
       }
     }
     &[aria-expanded="true"] {
       .menu {
-        display: none;
+        // display: none;
+        visibility: hidden;
       }
       .close {
-        display: block;
+        // display: block;
+        visibility: visible;
       }
+    }
+
+    &.scrolled-offset {
+      color: var(--color-secondary);
     }
   }
 }

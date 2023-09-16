@@ -62,9 +62,12 @@ svg {
 :root {
   /* COLORS */
   --color-primary: #00034b;
+  --color-primary-100: hsl(238, 100%, 10%);
+  --color-primary-500: hsl(238, 100%, 0%);
   --color-secondary: #ff0099;
   --color-text: #000000;
   --color-white: #ffffff;
+  --color-white-100: hsl(0, 0%, 80%);
   --color-light: #e4e4e4;
   /* TYPOGRAPHY */
   --ff-primary: "Poppins", sans-serif;
@@ -443,17 +446,31 @@ header.sticky .toolbar-bg.alt .nav-link.primary-button {
 .alt-toolbar .profile-avatar {
   max-width: 20px;
 }
-.alt-toolbar .navbar-toggler[aria-expanded=false] .menu {
+.alt-toolbar .navbar-toggler {
+  transition: all 230ms ease-in-out;
+  position: relative;
+  width: 25px;
+}
+.alt-toolbar .navbar-toggler .close,
+.alt-toolbar .navbar-toggler .menu {
+  position: absolute;
   display: block;
+  transition: all 230ms ease-in-out;
+}
+.alt-toolbar .navbar-toggler[aria-expanded=false] .menu {
+  visibility: visible;
 }
 .alt-toolbar .navbar-toggler[aria-expanded=false] .close {
-  display: none;
+  visibility: hidden;
 }
 .alt-toolbar .navbar-toggler[aria-expanded=true] .menu {
-  display: none;
+  visibility: hidden;
 }
 .alt-toolbar .navbar-toggler[aria-expanded=true] .close {
-  display: block;
+  visibility: visible;
+}
+.alt-toolbar .navbar-toggler.scrolled-offset {
+  color: var(--color-secondary);
 }
 
 @media (min-width: 50em) {
@@ -528,9 +545,7 @@ button:hover {
 }
 .primary-button:hover,
 .call-to-action:hover {
-  background-color: var(--color-white);
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary-100);
 }
 
 .secondary-button {
@@ -551,8 +566,7 @@ button:hover {
 }
 .primary-button[data-type=inverted]:hover,
 .call-to-action[data-type=inverted]:hover {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: var(--color-white-100);
 }
 
 @media (max-width: 50em) {
@@ -1062,6 +1076,40 @@ button:hover {
   font-weight: 600;
 }
 
+.tab-nav {
+  border-bottom: 1px solid var(--color-primary);
+}
+.tab-nav.vertical {
+  display: flex;
+}
+.tab-nav .tab-nav-item label {
+  display: block;
+  padding: 0.5em 2em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: border-bottom 300ms ease-in-out;
+}
+.tab-nav .tab-nav-item input[type=radio] {
+  position: absolute;
+  left: -10000%;
+}
+.tab-nav .tab-nav-item input[type=radio]:checked + label {
+  border-bottom: 2px solid var(--color-primary);
+  transition: border-bottom 300ms ease-in-out;
+}
+
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+
+@media (max-width: 500px) {
+  .tab-nav .tab-nav-item {
+    flex-basis: 50%;
+  }
+}
 .hero h1 {
   font-size: 50px;
   font-weight: var(--fw-semi-bold);
