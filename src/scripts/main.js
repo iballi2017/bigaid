@@ -98,6 +98,23 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
   console.log("test: ", volunteerFormRadio.checked);
 
+
+  // Cancel Notification
+  var cancelNotification = document.querySelectorAll(".cancel-notification");
+  var overlay = document.querySelector(".overlay");
+  var overlayContent = document.querySelectorAll(".overlay-content");
+
+  for (let index = 0; index < cancelNotification.length; index++) {
+    const element = cancelNotification[index];
+    element.addEventListener("click", () => {
+      // alert("hi")
+      if (overlay) {
+        overlay.classList.remove("show")
+      }
+    })
+
+  }
+
   mainToolbarStateToggle();
   playPauseVideo();
 });

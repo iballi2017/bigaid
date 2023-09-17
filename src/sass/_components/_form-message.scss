@@ -1,0 +1,18 @@
+
+.form-message{
+    display: none;
+    &.card-body{
+        position: relative;
+    }
+    .cancel-btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
+
+    &.show{
+        display: block;
+    }
+    
+}

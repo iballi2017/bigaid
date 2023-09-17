@@ -24,10 +24,12 @@ include_once("../components/header.php");
                 <div class="tab-nav-item">
                     <input type="radio" value="volunteer" name="signup-forms" id="volunteer-form-radio" checked="true">
                     <label for="volunteer-form-radio">Volunteer</label>
+                    <span class="horiline"></span>
                 </div>
                 <div class="tab-nav-item">
                     <input type="radio" value="partner" name="signup-forms" id="partner-form-radio">
                     <label for="partner-form-radio">Partner</label>
+                    <span class="horiline"></span>
                 </div>
             </div>
 
@@ -42,11 +44,13 @@ include_once("../components/header.php");
             <div id="partner-form" class="tab-content">
                 <?php include_once("../components/partnership-form.php") ?>
             </div>
+
+
+            <!-- signup success message -->
+            <?php include_once("../components/signup-success-message.php"); ?>
         </div>
     </div>
 </section>
-
-
 
 <?php
 include_once("../components/footer.php");

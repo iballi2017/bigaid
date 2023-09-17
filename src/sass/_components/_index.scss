@@ -14,3 +14,20 @@
 @forward "./footer";
 @forward "./page-title";
 @forward "./tabs";
+@forward "./overlay";
+@forward "./form-message";
+
+.smiley-wrapper {
+    max-width: 20px;
+    animation: bounce 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, -20px, 0);
+    }
+}

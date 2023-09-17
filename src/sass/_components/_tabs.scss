@@ -1,18 +1,37 @@
 @use "../_partials/mixins";
 
 .tab-nav {
-    border-bottom: 1px solid var(--color-primary);;
+  border-bottom: 1px solid var(--color-primary);
   &.vertical {
     display: flex;
   }
   .tab-nav-item {
+    &:nth-of-type(1){
+      label{
+        + .horiline {
+          transform-origin: right;
+        }
+      }
+    }
+    &:nth-of-type(2){
+      label{
+        + .horiline {
+          transform-origin: left;
+        }
+      }
+    }
     label {
-      // background-color: red;
       display: block;
       padding: 0.5em 2em;
       cursor: pointer;
       font-weight: bold;
-      transition: border-bottom 300ms ease-in-out;
+      + .horiline {
+        display: block;
+        height: 2px;
+        background-color: var(--color-primary);
+        transform: scale(0);
+        transition: transform 250ms ease-in-out;
+      }
     }
     input[type="radio"] {
       position: absolute;
@@ -20,23 +39,25 @@
 
       &:checked {
         & + label {
-          // background-color: blue;
-          border-bottom: 2px solid var(--color-primary);
-          transition: border-bottom 300ms ease-in-out;
+          transition: border-bottom 250ms ease-in-out;
+          + .horiline {
+            transform: scale(1);
+            transition: background-color 250ms ease-in-out;
+          }
         }
       }
     }
   }
 }
 
-.tab-content{
+.tab-content {
   display: none;
-  &.active{
+  &.active {
     display: block;
   }
 }
 
-@include mixins.maxmq(500px){
+@include mixins.maxmq(500px) {
   .tab-nav {
     .tab-nav-item {
       flex-basis: 50%;
