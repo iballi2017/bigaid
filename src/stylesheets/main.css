@@ -66,6 +66,7 @@ svg {
   --color-primary-100: hsl(238, 100%, 10%);
   --color-primary-500: hsl(238, 100%, 0%);
   --color-secondary: #ff0099;
+  --color-danger: #dc3545;
   --color-text: #000000;
   --color-white: #ffffff;
   --color-white-100: hsl(0, 0%, 80%);
@@ -510,6 +511,9 @@ header.sticky .toolbar-bg.alt .nav-link.primary-button {
   .alt-toolbar .nav-list .nav-item {
     margin-right: 1.5em;
   }
+  .alt-toolbar .nav-list .nav-item:last-child {
+    margin-right: 0;
+  }
   .alt-toolbar .nav-list .nav-link {
     color: #fff;
     font-size: var(--fs-nav);
@@ -893,6 +897,26 @@ button:hover {
   border-radius: 5px;
 }
 
+label.required::after {
+  content: "*";
+  color: var(--color-danger);
+}
+
+.error-msg {
+  display: none;
+  color: var(--color-danger);
+}
+
+input.invalid {
+  border-color: var(--color-danger);
+}
+input.invalid + .error-msg {
+  display: block;
+}
+input.invalid:focus {
+  border-color: var(--color-danger);
+}
+
 @media (min-width: 60em) {
   .form-group .init-control {
     padding: 0.5em 0.5em;
@@ -1164,20 +1188,19 @@ button:hover {
   /* Add a pointer on hover */
 }
 .overlay.show {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .overlay-content {
-  position: absolute;
-  top: 25%;
-  right: 0;
-  left: 0;
-  z-index: 1022;
   max-width: 500px;
   margin: 0 auto;
 }
 
 .form-message {
+  color: var(--color-primary);
+  font-weight: var(--fw-semi-bold);
   display: none;
 }
 .form-message.card-body {
@@ -1193,7 +1216,7 @@ button:hover {
 }
 
 .smiley-wrapper {
-  max-width: 20px;
+  max-width: 40px;
   animation: bounce 0.5s;
   animation-direction: alternate;
   animation-iteration-count: infinite;

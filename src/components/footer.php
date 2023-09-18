@@ -1,5 +1,5 @@
-<footer class="bg-primary">
-    <div class="footer container mx-auto">
+<footer>
+    <div class="footer bg-primary container mx-auto">
         <div class="wrap-container">
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-12 md:col-span-7">
@@ -70,7 +70,9 @@
     </div>
 
     <!-- OVERLAY -->
-    <div class="overlay show"></div>
+    <div class="overlay">        
+    <?php include_once("../components/signup-success-message.php"); ?>
+    </div>
 </footer>
 
 

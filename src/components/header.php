@@ -64,7 +64,7 @@
               <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
               <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
               <li class="nav-item"><a href="#" class="nav-link">Volunteer</a></li>
-              <li class="nav-item"><a href="#" class="nav-link btn primary-button">Donate</a></li>
+              <li class="nav-item"><a href="../#donate-now" class="nav-link btn primary-button">Donate</a></li>
             </ul>
 
             <!-- <div class="profile-avatar">

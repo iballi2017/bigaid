@@ -1,18 +1,18 @@
-
-.form-message{
+.form-message {
+    // background-color: rgb(13, 202, 240);
+    color: var(--color-primary);
+    font-weight: var(--fw-semi-bold);
     display: none;
-    &.card-body{
+    &.card-body {
         position: relative;
     }
-    .cancel-btn{
+    .cancel-btn {
         position: absolute;
         top: 0;
         right: 0;
-
     }
 
-    &.show{
+    &.show {
         display: block;
     }
-    
 }

@@ -1,12 +1,14 @@
 <div class="card overlay-content form-message show">
     <div class="card-body text-center py-4">
-        <div class="fw-bold mb-4">Thank You for Signing Up!</div>
+        <div class="fw-bolder fs-200 mb-4">Thank You for Signing Up!</div>
         <p> A confirmation mail has been sent to your registered email</p>
         <div class="flex items-center justify-center w-full mt-8">
             <div>We are thrilled to have you </div>
             <div class="mx-2"></div>
-            <div class="smiley-wrapper toggle">
-                <img src="../assets/icons/629a085f1c4b9bf3e8c85c0d_Free Emoji.png" alt="" class="smiley-icon">
+            <div class="smiley-wrapper">
+                <div class="flex items-center">
+                    <img src="../assets/icons/smiley-emoji-removebg-preview.png" alt="" class="smiley-icon">
+                </div>
             </div>
         </div>
 

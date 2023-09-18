@@ -6,28 +6,29 @@
         <legend class="fs-200 fw-bold">Personal Information</legend>
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12 md:col-span-4">
-                <label for="FirstName" class="block mb-2 cursor-pointer">First Name</label>
-                <input type="text" class="form-control block w-full rounded" id="FirstName">
+                <label for="FirstName" class="block mb-2 cursor-pointer required">First Name</label>
+                <input type="text" class="form-control block w-full rounded invalid" id="FirstName" required>
+                <small class="error-msg">This field is required</small>
             </div>
             <div class="col-span-12 md:col-span-4">
                 <label for="MiddleName" class="block mb-2 cursor-pointer">Middle Name</label>
                 <input type="text" class="form-control block w-full rounded" id="MiddleName">
             </div>
             <div class="col-span-12 md:col-span-4">
-                <label for="LastName" class="block mb-2 cursor-pointer">Last Name</label>
-                <input type="text" class="form-control block w-full rounded" id="LastName">
+                <label for="LastName" class="block mb-2 cursor-pointer required">Last Name</label>
+                <input type="text" class="form-control block w-full rounded" id="LastName" required>
             </div>
             <div class="col-span-12 md:col-span-4">
-                <label for="Email" class="block mb-2 cursor-pointer">Email Address</label>
-                <input type="text" class="form-control block w-full rounded" id="Email">
+                <label for="Email" class="block mb-2 cursor-pointer required">Email Address</label>
+                <input type="text" class="form-control block w-full rounded" id="Email" required>
             </div>
             <div class="col-span-12 md:col-span-4">
-                <label for="PhoneNumber" class="block mb-2 cursor-pointer">Phone Number</label>
-                <input type="text" class="form-control block w-full rounded" id="PhoneNumber">
+                <label for="PhoneNumber" class="block mb-2 cursor-pointer required">Phone Number</label>
+                <input type="text" class="form-control block w-full rounded" id="PhoneNumber" required>
             </div>
             <div class="col-span-12 md:col-span-4">
-                <label for="DateOfBirth" class="block mb-2 cursor-pointer">Date Of Birth</label>
-                <input type="date" class="form-control block w-full rounded" id="DateOfBirth">
+                <label for="DateOfBirth" class="block mb-2 cursor-pointer required">Date Of Birth</label>
+                <input type="date" class="form-control block w-full rounded" id="DateOfBirth" required>
             </div>
             <div class="col-span-12 md:col-span-4">
                 <label for="AgeRange" class="block mb-2 cursor-pointer">Age Range</label>
@@ -40,8 +41,8 @@
                 </select>
             </div>
             <div class="col-span-12 md:col-span-4">
-                <label for="TypeOfMedicalProfession" class="block mb-2 cursor-pointer">Type Of Medical Profession</label>
-                <input list="TypeOfMedicalProfessions" id="TypeOfMedicalProfession" class="form-control block w-full rounded">
+                <label for="TypeOfMedicalProfession" class="block mb-2 cursor-pointer required">Type Of Medical Profession</label>
+                <input list="TypeOfMedicalProfessions" id="TypeOfMedicalProfession" class="form-control block w-full rounded" required>
                 <datalist name="TypeOfMedicalProfession" id="TypeOfMedicalProfessions">
                     <!-- <option value="" selected>--Select Medical Profession--</option> -->
                     <option value="Health professional" />
@@ -51,8 +52,8 @@
                 </datalist>
             </div>
             <div class="col-span-12 md:col-span-4">
-                <label for="AreaOfSpecialization " class="block mb-2 cursor-pointer">Area of Specialization </label>
-                <input type="text" class="form-control block w-full rounded" id="AreaOfSpecialization ">
+                <label for="AreaOfSpecialization " class="block mb-2 cursor-pointer required">Area of Specialization </label>
+                <input type="text" class="form-control block w-full rounded" id="AreaOfSpecialization" required>
             </div>
         </div>
     </fieldset>
@@ -60,15 +61,15 @@
     <fieldset>
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12">
-                <legend for="are-you-an-independent-medical-professional" class="block mb-2 cursor-pointer">Are you an are you an independent Medical Professional?</legend>
+                <label for="are-you-an-independent-medical-professional" class="block mb-2 cursor-pointer required">Are you an are you an independent Medical Professional?</label>
                 <ul class="flex">
                     <li>
-                        <input type="radio" name="are-you-an-independent-medical-professional" class="" id="are-you-an-independent-medical-professional-Yes">
+                        <input type="radio" name="are-you-an-independent-medical-professional" class="" id="are-you-an-independent-medical-professional-Yes" required>
                         <label for="are-you-an-independent-medical-professional-Yes" class="cursor-pointer">Yes</label>
                     </li>
                     <li class="mx-2"></li>
                     <li>
-                        <input type="radio" name="are-you-an-independent-medical-professional" class="" id="are-you-an-independent-medical-professional-No">
+                        <input type="radio" name="are-you-an-independent-medical-professional" class="" id="are-you-an-independent-medical-professional-No" required>
                         <label for="are-you-an-independent-medical-professional-No" class="cursor-pointer">No</label>
                     </li>
                 </ul>
@@ -84,7 +85,7 @@
         <legend class="fs-200 fw-bold">Healthcare Institution</legend>
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12">
-                <p for="are-you-attached-to-a-healthcare-institution" class="block mb-2 cursor-pointer">Are you attached to a Healthcare Institution? </p>
+                <label for="are-you-attached-to-a-healthcare-institution" class="block mb-2 cursor-pointer required">Are you attached to a Healthcare Institution? </label>
                 <ul class="flex">
                     <li>
                         <input type="radio" name="attached-to-a-healthcare-institution" class="" id="attached-to-a-healthcare-institution-Yes">

@@ -67,8 +67,8 @@
               <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
               <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
               <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Volunteer</a></li>
-              <li class="nav-item"><a href="#" class="nav-link btn primary-button">Donate</a></li>
+              <li class="nav-item"><a href="./pages/volunteer-and-partnership-registration.php" class="nav-link">Volunteer</a></li>
+              <li class="nav-item"><a href="./#donate-now" class="nav-link btn primary-button">Donate</a></li>
             </ul>
 
             <!-- <div class="profile-avatar">
@@ -353,7 +353,7 @@
             </div>
           </div>
 
-          <div style="max-width: 900px; margin: 0 auto;">
+          <div style="max-width: 900px; margin: 0 auto;" id="donate-now">
             <form action="" class="py-8">
               <div class="form-group mb-4 md:mb-8">
                 <input type="text" id="Name" placeholder="Name" class="init-control block w-full">
@@ -536,7 +536,7 @@
               <h3 class="fs-450 text-secondary lh-150">Become a Volunteer or Partner</h3>
               <p class="fw-light fs-300 lh-150 mb-4 md:mb-8">We invite you to be part of the change and social impact in the health & wellness Sector (This is strictly for Medical professionals, Institutions and health Emergency service providers)</p>
 
-              <button class="call-to-action">Join Now</button>
+              <a href="./pages/volunteer-and-partnership-registration.php" class="call-to-action">Join Now</a>
             </div>
           </div>
         </div>

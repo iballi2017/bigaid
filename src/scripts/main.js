@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", (event) => {
+
+  function Init() {
+
+    mainToolbarStateToggle();
+    playPauseVideo();
+    donationMileStoneGraph();
+  }
+
+
   /**main Toolbar State Toggle */
   function mainToolbarStateToggle() {
     const navbarToggler = document.querySelector(".navbar-toggler");
@@ -58,48 +67,33 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   }
 
-  donationMileStoneGraph();
 
+  /**SIGNUP FORM TABS */
   const volunteerFormRadio = document.querySelector("#volunteer-form-radio");
   const partnerFormRadio = document.querySelector("#partner-form-radio");
   const volunteerForm = document.querySelector("#volunteer-form");
   const partnerForm = document.querySelector("#partner-form");
 
-  partnerFormRadio.addEventListener("click", () => {
-    console.log("partnerFormRadio.checked: ", partnerFormRadio.checked);
-    console.log("partnerFormRadio: ", partnerForm.classList);
-    // toggleForms()
-    if (partnerFormRadio.checked) {
-      volunteerForm?.classList?.remove("active");
-      partnerForm?.classList?.add("active");
-    }
+  partnerFormRadio?.addEventListener("click", () => {
+    toggleForms();
   });
 
-  volunteerFormRadio.addEventListener("click", () => {
-    console.log("volunteerFormRadio.checked: ", volunteerFormRadio.checked);
-    console.log("volunteerFormRadio: ", volunteerForm.classList);
-    // toggleForms()
-    volunteerForm?.classList?.add("active");
-    partnerForm?.classList?.remove("active");
+  volunteerFormRadio?.addEventListener("click", () => {
+    toggleForms();
   });
 
   function toggleForms() {
     if (partnerFormRadio.checked) {
-      // if (volunteerForm?.classList.contains("hidden")) {
       volunteerForm?.classList?.remove("active");
       partnerForm?.classList?.add("active");
-      // }
     } else {
-      // if (volunteerForm?.classList.contains("active")) {
       volunteerForm?.classList?.add("active");
       partnerForm?.classList?.remove("active");
-      // }
     }
   }
-  console.log("test: ", volunteerFormRadio.checked);
 
 
-  // Cancel Notification
+  /* NOTIFICATION POPUPS */
   var cancelNotification = document.querySelectorAll(".cancel-notification");
   var overlay = document.querySelector(".overlay");
   var overlayContent = document.querySelectorAll(".overlay-content");
@@ -107,14 +101,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
   for (let index = 0; index < cancelNotification.length; index++) {
     const element = cancelNotification[index];
     element.addEventListener("click", () => {
-      // alert("hi")
       if (overlay) {
-        overlay.classList.remove("show")
+        overlay.classList.remove("show");
+
+        for (let index = 0; index < overlayContent.length; index++) {
+          const element = overlayContent[index];
+          element.addEventListener("click", () => {
+            if (element) {
+              element.classList.remove("show");
+            }
+          })
+
+        }
       }
     })
 
   }
 
-  mainToolbarStateToggle();
-  playPauseVideo();
+  Init();
 });

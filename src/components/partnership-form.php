@@ -4,19 +4,19 @@
             <!-- <legend class="fs-200 fw-bold">Personal Information</legend> -->
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-12 md:col-span-4">
-                    <label for="NameOfInstitution" class="block mb-2 cursor-pointer">Name of Institution</label>
+                    <label for="NameOfInstitution" class="block mb-2 cursor-pointer required">Name of Institution</label>
                     <input type="text" class="form-control block w-full rounded" id="NameOfInstitution">
                 </div>
                 <div class="col-span-12 md:col-span-4">
-                    <label for="InstitutionType" class="block mb-2 cursor-pointer">Institution Type</label>
+                    <label for="InstitutionType" class="block mb-2 cursor-pointer required">Institution Type</label>
                     <input type="text" class="form-control block w-full rounded" id="InstitutionType">
                 </div>
                 <div class="col-span-12 md:col-span-4">
-                    <label for="AreaOfSpecialization" class="block mb-2 cursor-pointer">Area of Specialization</label>
+                    <label for="AreaOfSpecialization" class="block mb-2 cursor-pointer required">Area of Specialization</label>
                     <input type="text" class="form-control block w-full rounded" id="AreaOfSpecialization">
                 </div>
                 <div class="col-span-12 md:col-span-4">
-                    <label for="Ownership" class="block mb-2 cursor-pointer">Ownership</label>
+                    <label for="Ownership" class="block mb-2 cursor-pointer required">Ownership</label>
                     <select name="Ownership" id="Ownership" class="form-control block w-full rounded">
                         <option value="" selected>--Select Ownership--</option>
                         <option value="Public">Public</option>
@@ -26,7 +26,7 @@
                     </select>
                 </div>
                 <div class="col-span-12 md:col-span-4">
-                    <label for="Email" class="block mb-2 cursor-pointer">Email Address</label>
+                    <label for="Email" class="block mb-2 cursor-pointer required">Email Address</label>
                     <input type="text" class="form-control block w-full rounded" id="Email">
                 </div>
                 <div class="col-span-12 md:col-span-4">

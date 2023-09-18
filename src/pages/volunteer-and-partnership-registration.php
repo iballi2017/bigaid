@@ -44,10 +44,6 @@ include_once("../components/header.php");
             <div id="partner-form" class="tab-content">
                 <?php include_once("../components/partnership-form.php") ?>
             </div>
-
-
-            <!-- signup success message -->
-            <?php include_once("../components/signup-success-message.php"); ?>
         </div>
     </div>
 </section>

@@ -15,6 +15,31 @@
     border: 1px solid #afafaf;
     border-radius: 5px;
 }
+
+
+label{
+    &.required{
+        &::after{
+            content: "*";
+            color: var(--color-danger);
+        }
+    }
+}
+
+.error-msg {
+    display: none;
+    color: var(--color-danger);
+}
+
+input.invalid {
+    border-color: var(--color-danger);
+    + .error-msg {
+        display: block;
+    }
+    &:focus {
+        border-color: var(--color-danger);
+    }
+}
 @include mixins.minmq(60em) {
     .form-group {
         .init-control {

@@ -115,6 +115,9 @@ header.sticky {
       }
       .nav-item {
         margin-right: 1.5em;
+        &:last-child {
+          margin-right: 0;
+        }
       }
       .nav-link {
         // font-size: 18px;
