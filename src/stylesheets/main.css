@@ -901,6 +901,9 @@ button:hover {
   border-radius: 5px;
 }
 
+label {
+  cursor: pointer;
+}
 label.required::after {
   content: "*";
   color: var(--color-danger);
