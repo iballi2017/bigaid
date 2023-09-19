@@ -28,6 +28,10 @@ include_once("../components/header.php");
                             <label for="EmailAddress" class="block mb-2 cursor-pointer required">Email Address</label>
                             <input type="text" class="form-control block w-full rounded" id="EmailAddress">
                         </div>
+                        <div class="col-span-12">
+                            <label for="Subject" class="block mb-2 cursor-pointer required">Subject</label>
+                            <input type="text" class="form-control block w-full rounded" id="Subject">
+                        </div>
                         <div class="col-span-12 md:col-span-12">
                             <label for="Message" class="block mb-2 cursor-pointer required">Message</label>
                             <textarea name="Message" id="Message" cols="30" rows="10" class="form-control block w-full rounded"></textarea>
