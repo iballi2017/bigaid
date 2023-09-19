@@ -31,10 +31,10 @@
             <!-- <a class="navbar-brand" href="#">
               <img src="assets/images/brand-logo-white.png">
             </a> -->
-            <a class="navbar-brand" href="#" id="primary-img">
+            <a class="navbar-brand" href="./" id="primary-img">
               <img src="./assets/images/brand-logo-white.png">
             </a>
-            <a class="navbar-brand hidden" href="#" id="secondary-img">
+            <a class="navbar-brand hidden" href="./" id="secondary-img">
               <img src="./assets/images/brand-logo-primary.png">
             </a>
 

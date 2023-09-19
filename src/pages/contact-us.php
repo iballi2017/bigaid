@@ -17,16 +17,18 @@ include_once("../components/header.php");
     <div class="container mx-auto py-8 md:py-16">
         <div class="wrap-container">
             <div class="bg-light rounded p-4">
-                <h2 class="fs-250 fw-bold text-center mb-8">Get in touch today</h2>
+                <h2 class="fs-250 fw-bold text-center mb-8 text-capitalize">Get in touch</h2>
                 <form action="">
                     <div class="grid grid-cols-12 gap-4">
                         <div class="col-span-12 md:col-span-6">
                             <label for="Name" class="block mb-2 cursor-pointer required">Name</label>
-                            <input type="text" class="form-control block w-full rounded" id="Name">
+                            <input type="text" class="form-control block w-full rounded invalid" id="Name" required>
+                            <small class="error-msg">This field is required</small>
                         </div>
                         <div class="col-span-12 md:col-span-6">
                             <label for="EmailAddress" class="block mb-2 cursor-pointer required">Email Address</label>
-                            <input type="text" class="form-control block w-full rounded" id="EmailAddress">
+                            <input type="text" class="form-control block w-full rounded invalid" id="EmailAddress">
+                            <small class="error-msg">Email is required</small>
                         </div>
                         <div class="col-span-12">
                             <label for="Subject" class="block mb-2 cursor-pointer required">Subject</label>

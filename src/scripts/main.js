@@ -118,5 +118,54 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   }
 
+
+  function toggleDonationAmountSelect() {
+
+    const Curr = {
+      USD: "USD",
+      Naira: "Naira",
+    }
+
+    var ele = document.getElementsByName('Currency');
+    const nairaSelect = document.getElementById("nairaSelect");
+    const usdSelect = document.getElementById("usdSelect");
+
+    console.log("ele: ", ele)
+
+    for (i = 0; i < ele.length; i++) {
+      if (ele[i].checked) {
+        switch (ele[i].value) {
+          case Curr.USD:
+            console.log("hi: ", ele[i].value)
+            nairaSelect.classList.add("hidden")
+            usdSelect.classList.remove("hidden")
+            break;
+
+          case Curr.Naira:
+            console.log("hello: ", ele[i].value)
+            nairaSelect.classList.remove("hidden")
+            usdSelect.classList.add("hidden")
+            break;
+
+          default:
+            break;
+        }
+      }
+    }
+  }
+
+  const currencyRadio = document.querySelectorAll("input[name='Currency']");
+  console.log("currencyRadio: ", currencyRadio)
+  for (let i = 0; i < currencyRadio.length; i++) {
+    const element = currencyRadio[i];
+    element.addEventListener("click", () => {
+      if (element.checked) {
+        toggleDonationAmountSelect()
+      }
+    })
+  }
+
+  toggleDonationAmountSelect();
+
   Init();
 });

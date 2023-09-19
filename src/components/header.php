@@ -28,10 +28,10 @@
           <!-- <div class="mx-auto max-w-screen-xl px-2 md:px-6 lg:px-8"> -->
           <div class="flex items-center justify-between">
             <!-- Brand logo -->
-            <a class="navbar-brand" href="#" id="primary-img">
+            <a class="navbar-brand" href="../" id="primary-img">
               <img src="../assets/images/brand-logo-white.png">
             </a>
-            <a class="navbar-brand hidden" href="#" id="secondary-img">
+            <a class="navbar-brand hidden" href="../" id="secondary-img">
               <img src="../assets/images/brand-logo-primary.png">
             </a>
 

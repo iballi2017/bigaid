@@ -322,6 +322,10 @@ html {
   overflow: hidden;
 }
 
+.text-capitalize {
+  text-transform: capitalize;
+}
+
 .even-columns {
   display: grid;
   gap: 1rem;

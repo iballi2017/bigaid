@@ -69,8 +69,8 @@
         </div>
     </div>
 
-    <!-- OVERLAY -->
-    <div class="overlay show">        
+    <!-- SIGNUP SUCCESS MESSAGE -->
+    <div class="overlay">        
     <?php include_once("../components/signup-success-message.php"); ?>
     </div>
 </footer>
