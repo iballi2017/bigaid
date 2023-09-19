@@ -5,7 +5,7 @@ include_once("../components/header.php");
 <section class="page-header title-bg-one">
     <div class="container mx-auto py-8 md:py-16">
         <div class="wrap-container">
-            <h1 class="title">Donation</h1>
+            <h1 class="title">Your Receipt</h1>
         </div>
     </div>
 </section>
@@ -15,7 +15,7 @@ include_once("../components/header.php");
         <!-- Donation successful -->
         <div class="card">
             <div class="card-body">
-                <table>
+                <table class="table mb-4 bordered">
                     <tbody>
                         <tr>
                             <th scope="row">Donation Number:</th>
@@ -36,26 +36,28 @@ include_once("../components/header.php");
                     </tbody>
                 </table>
                 <p> Thank you for your donation. We will contact you shortly for payment.</p>
-                <!-- <ul>
-                    <li class="flex">
-                        <div class="fw-semi-bold mr-4">Donation Number:</div>
-                        <div>1344</div>
-                    </li>
-                </ul> -->
+                
 
-
-                <!-- Date:
-                September 18, 2023
-                Total:
-                $566
-                Payment Method:
-                Offline Donation
-                Thank you for your donation. We will contact you shortly for payment.
-
-                Your Donation
-                Campaign Total
-                Give African Child a Good Education. $566
-                Total $566 -->
+                <div style="max-width: 400px">
+                    <table class="table my-4">
+                        <thead>
+                            <tr>
+                                <th scope="row">Campaign</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Access to quality Healthcare</th>
+                                <td>$599</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Total</th>
+                                <td>$599</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

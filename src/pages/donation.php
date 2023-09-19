@@ -29,13 +29,6 @@ include_once("../components/header.php");
     <section>
         <div class="wrap-container">
 
-            <!-- Donation successful -->
-            <div class="card">
-                <div class="card-body">
-                    ddd
-                </div>
-            </div>
-
 
             <form action="" class="mb-4">
                 <fieldset>

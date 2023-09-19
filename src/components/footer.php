@@ -70,7 +70,7 @@
     </div>
 
     <!-- OVERLAY -->
-    <div class="overlay">        
+    <div class="overlay show">        
     <?php include_once("../components/signup-success-message.php"); ?>
     </div>
 </footer>

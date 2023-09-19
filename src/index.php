@@ -64,7 +64,7 @@
 
             <!-- <div class="flex items-center"> -->
             <ul class="nav-list nav-collapse drop-shadow-sm" id="primary-navigation">
-              <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="./" class="nav-link">Home</a></li>
               <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
               <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
               <li class="nav-item"><a href="./pages/volunteer-and-partnership-registration.php" class="nav-link">Volunteer</a></li>
@@ -125,11 +125,30 @@
 
           </div>
         </div>
+
+        
+        <!-- <div class="hidden container mx-auto">
+          <div class="hero-alt">
+            <div class="wrap-container">
+              <div class="text-wrap">
+                <h1 class="animate__animated animate__fadeIn">Goal<br />Mission</h1>
+                <p>Saving Lives…</p>
+                <p>Unleashing The Power to Health & <br />Wellness through the BIGAiD Web & <br />Mobile App, transforming lives.</p>
+                <div class="py-2 lg:py-4"></div>
+                <div class="flex">
+                  <button class="call-to-action animate__animated animate__fadeInLeft">Donate</button>
+                  <div class="px-2"></div>
+                  <button class="call-to-action animate__animated animate__fadeInRight" data-type="inverted">Partner With Us</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
       </div>
     </section>
 
     <section>
-      <div class="bg-primary container mx-auto wave">
+      <div class="bg-primary container mx-auto">
         <div class="wrap-container">
           <div class="video-container">
             <div class="video">
@@ -483,12 +502,12 @@
       <div class="container mx-auto">
         <div class="wrap-container py-8 md:py-16">
           <div class="grid grid-cols-12 items-center">
-            <div class="col-span-5">
+            <div class="col-span-12 md:col-span-5">
               <h2 class="fw-bold fs-section-title lh-section-title mb-2 md:mb-8 text-primary">Sign Up to our<br />Newsletter</h2>
               <!-- NEWSLETTER FORM -->
               <?php include_once("./components/newsletter-form.php"); ?>
             </div>
-            <div class="col-span-7">
+            <div class="col-span-12 md:col-span-7">
               <div class="featured-image">
                 <img src="./assets/images/illustration-email-messaging.png" alt="">
               </div>

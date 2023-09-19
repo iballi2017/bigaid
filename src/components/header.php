@@ -60,10 +60,10 @@
 
             <!-- <div class="flex items-center"> -->
             <ul class="nav-list nav-collapse drop-shadow-sm" id="primary-navigation">
-              <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="../" class="nav-link">Home</a></li>
               <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
               <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Volunteer</a></li>
+              <li class="nav-item"><a href="../pages/volunteer-and-partnership-registration.php" class="nav-link">Volunteer</a></li>
               <li class="nav-item"><a href="../#donate-now" class="nav-link btn primary-button">Donate</a></li>
             </ul>
 

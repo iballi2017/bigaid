@@ -1,0 +1,21 @@
+.table{
+    // background-color: red;
+    width: 100%;
+    th, td{
+        text-align: left;
+        padding: .4em;
+    }
+
+    th{
+        font-weight: var(--fw-bold);
+    }
+
+    &.bordered{
+        border: 1px solid var(--color-light-400);
+        th, td{
+            border-color: var(--color-light-400);
+            border-style: solid;
+            border-bottom-width:1px;
+        }
+    }
+}

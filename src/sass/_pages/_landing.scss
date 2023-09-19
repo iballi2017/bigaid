@@ -1,6 +1,6 @@
 @use "../_partials/mixins";
 
-.hero {
+.hero ,.hero-alt {
   // min-height: 80vh;
   h1 {
     font-size: 50px;
@@ -149,5 +149,19 @@
         // padding-top: 3em;
       }
     }
+  }
+}
+
+//
+.hero-alt {
+  // height: 1200px;
+  aspect-ratio: 11 / 9;
+  background-image: url(../assets/images/hero-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  .call-to-action{
+    margin-bottom: 4em;
   }
 }

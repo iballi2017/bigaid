@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     );
     for (let index = 0; index < milestones.length; index++) {
       const element = milestones[index];
-      console.log("element: ", element.querySelector(".label"));
+      // console.log("element: ", element.querySelector(".label"));
       const donationRaisedLength = element.querySelector(".guage");
       const inputControl = donationRaisedLength.querySelector(
         "input.donation-raised"

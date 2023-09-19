@@ -45,14 +45,19 @@ header.sticky {
       display: block;
     }
     .nav-link {
-      color: #000000;
+      color: var(--color-text);
       font-style: normal;
       font-weight: 500;
-      display: block;
+      // display: block;
+      display: inline-flex;
       // padding: 0.7em 1.3em;
       padding-top: 0.7em;
       padding-bottom: 0.7em;
       font-size: var(--fs-50);
+      &.primary-button,
+      &.secondary-button {
+        color: var(--color-white);
+      }
     }
   }
   .profile-avatar {

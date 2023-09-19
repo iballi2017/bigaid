@@ -71,6 +71,7 @@ svg {
   --color-white: #ffffff;
   --color-white-100: hsl(0, 0%, 80%);
   --color-light: #e4e4e4;
+  --color-light-400: rgba(0, 0, 0, 0.175);
   /* TYPOGRAPHY */
   --ff-primary: "Poppins", sans-serif;
   --ff-body: var(--ff-primary);
@@ -453,13 +454,16 @@ header.sticky .toolbar-bg.alt .nav-link.primary-button {
   display: block;
 }
 .alt-toolbar .nav-list .nav-link {
-  color: #000000;
+  color: var(--color-text);
   font-style: normal;
   font-weight: 500;
-  display: block;
+  display: inline-flex;
   padding-top: 0.7em;
   padding-bottom: 0.7em;
   font-size: var(--fs-50);
+}
+.alt-toolbar .nav-list .nav-link.primary-button, .alt-toolbar .nav-list .nav-link.secondary-button {
+  color: var(--color-white);
 }
 .alt-toolbar .profile-avatar {
   max-width: 20px;
@@ -1215,6 +1219,25 @@ input.invalid:focus {
   display: block;
 }
 
+.table {
+  width: 100%;
+}
+.table th, .table td {
+  text-align: left;
+  padding: 0.4em;
+}
+.table th {
+  font-weight: var(--fw-bold);
+}
+.table.bordered {
+  border: 1px solid var(--color-light-400);
+}
+.table.bordered th, .table.bordered td {
+  border-color: var(--color-light-400);
+  border-style: solid;
+  border-bottom-width: 1px;
+}
+
 .smiley-wrapper {
   max-width: 40px;
   animation: bounce 0.5s;
@@ -1230,7 +1253,7 @@ input.invalid:focus {
     transform: translate3d(0, -20px, 0);
   }
 }
-.hero h1 {
+.hero h1, .hero-alt h1 {
   font-size: 50px;
   font-weight: var(--fw-semi-bold);
   color: #ffffff;
@@ -1239,27 +1262,27 @@ input.invalid:focus {
   align-items: center;
   margin-top: 0.5em;
 }
-.hero h1::before {
+.hero h1::before, .hero-alt h1::before {
   content: "1";
   display: block;
   font-size: 120px;
   font-weight: var(--fw-bold);
 }
-.hero h1 + p {
+.hero h1 + p, .hero-alt h1 + p {
   font-size: 47px;
   font-weight: var(--fw-bold);
   color: #ffffff;
   margin-bottom: 0.6em;
 }
-.hero p {
+.hero p, .hero-alt p {
   font-size: 20px;
   color: #ffffff;
   font-weight: var(--fw-light);
 }
-.hero .featured-image {
+.hero .featured-image, .hero-alt .featured-image {
   position: relative;
 }
-.hero .featured-image .img-absolute {
+.hero .featured-image .img-absolute, .hero-alt .featured-image .img-absolute {
   position: absolute;
   bottom: -1em;
   left: 20%;
@@ -1267,14 +1290,14 @@ input.invalid:focus {
   display: inline-block;
   transition: all 300ms ease-in-out;
 }
-.hero .featured-image .img-absolute:hover {
+.hero .featured-image .img-absolute:hover, .hero-alt .featured-image .img-absolute:hover {
   transform: scale(1.05);
   transition: all 300ms ease-in-out;
 }
-.hero + section {
+.hero + section, .hero-alt + section {
   position: relative;
 }
-.hero + section::after {
+.hero + section::after, .hero-alt + section::after {
   content: "";
   display: block;
   background-color: #ffffff;
@@ -1285,42 +1308,54 @@ input.invalid:focus {
   left: 0;
 }
 @media (min-width: 50em) {
-  .hero + section .video-container {
+  .hero + section .video-container, .hero-alt + section .video-container {
     aspect-ratio: 1.88;
   }
-  .hero .content-columns {
+  .hero .content-columns, .hero-alt .content-columns {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
   }
-  .hero .content-columns .text-wrap {
+  .hero .content-columns .text-wrap, .hero-alt .content-columns .text-wrap {
     flex-basis: 40%;
   }
-  .hero .content-columns h1 {
+  .hero .content-columns h1, .hero-alt .content-columns h1 {
     font-size: 50px;
     line-height: 50px;
     display: inline-flex;
     align-items: center;
     margin-top: 2.5em;
   }
-  .hero .content-columns h1::before {
+  .hero .content-columns h1::before, .hero-alt .content-columns h1::before {
     content: "1";
     display: block;
     font-size: 120px;
     font-weight: var(--fw-bold);
   }
-  .hero .content-columns h1 + p {
+  .hero .content-columns h1 + p, .hero-alt .content-columns h1 + p {
     font-size: 47px;
     margin-bottom: 0;
   }
-  .hero .content-columns p {
+  .hero .content-columns p, .hero-alt .content-columns p {
     font-size: 24px;
     color: #ffffff;
     font-weight: var(--fw-light);
   }
-  .hero .content-columns .featured-image {
+  .hero .content-columns .featured-image, .hero-alt .content-columns .featured-image {
     flex-basis: 60%;
   }
+}
+
+.hero-alt {
+  aspect-ratio: 11/9;
+  background-image: url(../assets/images/hero-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.hero-alt .call-to-action {
+  margin-bottom: 4em;
 }
 
 /*# sourceMappingURL=main.css.map */
