@@ -52,7 +52,7 @@
                 </datalist>
             </div>
             <div class="col-span-12 md:col-span-4">
-                <label for="AreaOfSpecialization " class="block mb-2 cursor-pointer required">Area of Specialization </label>
+                <label for="AreaOfSpecialization" class="block mb-2 cursor-pointer required">Area of Specialization</label>
                 <input type="text" class="form-control block w-full rounded" id="AreaOfSpecialization" required>
             </div>
         </div>
@@ -61,7 +61,7 @@
     <fieldset>
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12">
-                <label for="are-you-an-independent-medical-professional" class="block mb-2 cursor-pointer required">Are you an are you an independent Medical Professional?</label>
+                <legend class="block mb-2 cursor-pointer required">Are you an are you an independent Medical Professional?</legend>
                 <ul class="flex">
                     <li>
                         <input type="radio" name="are-you-an-independent-medical-professional" class="" id="are-you-an-independent-medical-professional-Yes" required>
@@ -85,7 +85,7 @@
         <legend class="fs-200 fw-bold">Healthcare Institution</legend>
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12">
-                <label for="are-you-attached-to-a-healthcare-institution" class="block mb-2 cursor-pointer required">Are you attached to a Healthcare Institution? </label>
+                <legend class="block mb-2 cursor-pointer required">Are you attached to a Healthcare Institution? </legend>
                 <ul class="flex">
                     <li>
                         <input type="radio" name="attached-to-a-healthcare-institution" class="" id="attached-to-a-healthcare-institution-Yes">
@@ -125,11 +125,17 @@
                 <label for="department" class="block mb-2 cursor-pointer">Department</label>
                 <input type="text" class="form-control block w-full rounded" id="department">
             </div>
-            <div class="col-span-12 md:col-span-6">
+            <div class="col-span-12">
+                <div class="flex items-center">
+                    <input type="checkbox" class="mr-2" id="currentlyWorkHere">
+                    <label for="currentlyWorkHere" class="block cursor-pointer">I currently work here</label>
+                </div>
+            </div>
+            <div class="col-span-12 md:col-span-6" id="startDateContainer">
                 <label for="startDate" class="block mb-2 cursor-pointer">Start date</label>
                 <input type="date" class="form-control block w-full rounded" id="startDate">
             </div>
-            <div class="col-span-12 md:col-span-6">
+            <div class="col-span-12 md:col-span-6" id="endDateContainer">
                 <label for="endDate" class="block mb-2 cursor-pointer">End date</label>
                 <input type="date" class="form-control block w-full rounded" id="endDate">
             </div>
@@ -171,8 +177,22 @@
             </div>
         </div>
     </fieldset>
+    <hr class="my-8" />
+    <fieldset>
+        <legend class="fs-200 fw-bold">Purpose</legend>
+        <label for="why-would-you-want-to-volunteer-with-BIGAiD" class="block mb-2 cursor-pointer">Why Would You Want To Volunteer With BIGAiD?</label>
+        <input type="text" class="form-control block w-full rounded" id="why-would-you-want-to-volunteer-with-BIGAiD">
+    </fieldset>
+    <hr class="my-8" />
+
+    <div>
+        <input type="checkbox" name="terms-and-condition" id="terms-and-condition" class="mr-2">
+        <label for="terms-and-condition">I have read and agree the <a href="#" class="text-secondary fw-bold">terms and conditions</a>
+            and <a href="#" class="text-secondary fw-bold">content policy</a>.</label>
+    </div>
+
 
     <div class="my-4">
-        <button class="primary-button">Sign Up</button>
+        <button class="primary-button">Submit</button>
     </div>
 </form>

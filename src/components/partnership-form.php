@@ -41,7 +41,7 @@
                     <label for="socialMediaName" class="block mb-2 cursor-pointer">Social media name</label>
                     <input type="text" class="form-control block w-full rounded" id="socialMediaName">
                 </div>
-                <div class="col-span-12 md:col-span-4">
+                <div class="col-span-12">
                     <label for="TypeOfMedicalProfession" class="block mb-2 cursor-pointer">Type Of Medical Profession</label>
                     <input list="TypeOfMedicalProfessions" id="TypeOfMedicalProfession" class="form-control block w-full rounded">
                     <datalist name="TypeOfMedicalProfession" id="TypeOfMedicalProfessions">
@@ -52,9 +52,29 @@
                         <option value="Dentist" />
                     </datalist>
                 </div>
-                <div class="col-span-12 md:col-span-4">
-                    <label for="AreaOfSpecialization " class="block mb-2 cursor-pointer">Area of Specialization </label>
-                    <input type="text" class="form-control block w-full rounded" id="AreaOfSpecialization ">
+                <div class="col-span-12 md:col-span-6">
+                    <label for="NumberOfBranches" class="block mb-2 cursor-pointer">Number of Branches</label>
+                    <input type="number" class="form-control block w-full rounded" id="NumberOfBranches">
+                </div>
+                <div class="col-span-12 md:col-span-6">
+                    <label for="ListLocations" class="block mb-2 cursor-pointer required">List Locations <small>Separated by commas</small></label>
+                    <input type="text" class="form-control block w-full rounded" id="ListLocations" required>
+                </div>
+                <div class="col-span-12 md:col-span-6">
+                    <label for="NumberOfFacilities" class="block mb-2 cursor-pointer">Number of Facilities</label>
+                    <input type="number" class="form-control block w-full rounded" id="NumberOfFacilities">
+                </div>
+                <div class="col-span-12 md:col-span-6">
+                    <label for="NumberOfMedicalProfessionals" class="block mb-2 cursor-pointer">Number of Medical Professionals</label>
+                    <input type="number" class="form-control block w-full rounded" id="NumberOfMedicalProfessionals">
+                </div>
+                <div class="col-span-12 md:col-span-6">
+                    <label for="NumberOfMedicalSpecialists" class="block mb-2 cursor-pointer">Number of Medical Specialists</label>
+                    <input type="number" class="form-control block w-full rounded" id="NumberOfMedicalSpecialists">
+                </div>
+                <div class="col-span-12 md:col-span-6">
+                    <label for="NameOfMedicalDirector" class="block mb-2 cursor-pointer">Name of Medical Director</label>
+                    <input type="text" class="form-control block w-full rounded" id="NameOfMedicalDirector">
                 </div>
             </div>
         </fieldset>
@@ -112,6 +132,7 @@
 
         <hr class="my-8" />
         <fieldset>
+            <legend class="fs-200 fw-bold">Purpose</legend>
             <label for="why-would-you-want-to-volunteer-with-BIGAiD" class="block mb-2 cursor-pointer">Why Would You Want To Volunteer With BIGAiD?</label>
             <input type="text" class="form-control block w-full rounded" id="why-would-you-want-to-volunteer-with-BIGAiD">
         </fieldset>
@@ -119,13 +140,13 @@
 
         <div>
             <input type="checkbox" name="terms-and-condition" id="terms-and-condition" class="mr-2">
-            <label for="terms-and-condition">Accept our <a href="#" class="text-secondary fw-bold">terms and conditions</a>
+            <label for="terms-and-condition">I have read and agree the <a href="#" class="text-secondary fw-bold">terms and conditions</a>
                 and <a href="#" class="text-secondary fw-bold">content policy</a>.</label>
         </div>
 
 
         <div class="my-4">
-            <button class="primary-button">Sign Up</button>
+            <button class="primary-button">Submit</button>
         </div>
 
     </form>

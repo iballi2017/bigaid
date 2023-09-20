@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     mainToolbarStateToggle();
     playPauseVideo();
     donationMileStoneGraph();
+    controlDonationCurrency();
+    toggleDonationAmountSelect();
+    controlCurrentlyWorkHere();
   }
 
 
@@ -130,8 +133,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const nairaSelect = document.getElementById("nairaSelect");
     const usdSelect = document.getElementById("usdSelect");
 
-    console.log("ele: ", ele)
-
     for (i = 0; i < ele.length; i++) {
       if (ele[i].checked) {
         switch (ele[i].value) {
@@ -154,18 +155,40 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   }
 
-  const currencyRadio = document.querySelectorAll("input[name='Currency']");
-  console.log("currencyRadio: ", currencyRadio)
-  for (let i = 0; i < currencyRadio.length; i++) {
-    const element = currencyRadio[i];
-    element.addEventListener("click", () => {
-      if (element.checked) {
-        toggleDonationAmountSelect()
+  function controlDonationCurrency() {
+    const currencyRadio = document.querySelectorAll("input[name='Currency']");
+    for (let i = 0; i < currencyRadio.length; i++) {
+      const element = currencyRadio[i];
+      element.addEventListener("click", () => {
+        if (element.checked) {
+          toggleDonationAmountSelect()
+        }
+      })
+    }
+  }
+
+
+  function controlCurrentlyWorkHere() {
+    const currentlyWorkHere = document.querySelector("#currentlyWorkHere");
+    const endDateContainer = document.querySelector("#endDateContainer");
+    const startDateContainer = document.querySelector("#startDateContainer");
+    currentlyWorkHere.addEventListener("click", () => {
+      if (currentlyWorkHere.checked) {
+        if (!endDateContainer?.classList.contains("hidden"))
+          endDateContainer?.classList.add("hidden");
+        if (startDateContainer?.classList.contains("md:col-span-6"))
+          startDateContainer?.classList.remove("md:col-span-6");
+        return;
       }
+      if (endDateContainer?.classList.contains("hidden"))
+        endDateContainer?.classList.remove("hidden")
+      if (!startDateContainer?.classList.contains("md:col-span-6"))
+        startDateContainer?.classList.add("md:col-span-6");
+
     })
   }
 
-  toggleDonationAmountSelect();
+
 
   Init();
 });
