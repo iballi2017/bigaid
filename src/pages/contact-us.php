@@ -65,10 +65,37 @@ include_once("../components/header.php");
                         </div>
                     </div>
                     <small>We treat your personal information confidentially and will not transfer such details to any third parties. </small>
+
+                    <div class="captcha py-4">
+                        <i>reCAPTCHA code snippet here</i>
+                    </div>
                     <div class="my-4">
                         <button class="primary-button">Submit</button>
                     </div>
                 </form>
+            </div>
+
+
+
+            <!-- SUCCESS MESSAGE -->
+            <div class="card my-8">
+                <div class="card-body text-center py-4">
+                    <div class="fw-bolder fs-200 mb-4">Thank You for contacting us at BIGAiD</div>
+                    <p>Our team will review your request and get back to you in the shortest available time.</p>
+                    <div class="flex items-center justify-center w-full mt-8">
+                        <div>Cheers!!!</div>
+                        <div class="mx-2"></div>
+                        <div class="smiley-wrapper">
+                            <div class="flex items-center">
+                                <img src="../assets/icons/smiley-emoji-removebg-preview.png" alt="" class="smiley-icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#" class="text-secondary fs-100 block mt-4">Continue...</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
