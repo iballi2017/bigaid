@@ -1,0 +1,9 @@
+.partner-rep-list {
+    li {
+        &:not(&:last-child) {
+            border-bottom: 2px solid var(--color-light);
+            margin-bottom: 1.3em;
+            padding-bottom: 1.3em;
+        }
+    }
+}

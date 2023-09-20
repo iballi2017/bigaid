@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     mainToolbarStateToggle();
     playPauseVideo();
+    toggleForms()
     donationMileStoneGraph();
     controlDonationCurrency();
     toggleDonationAmountSelect();
@@ -89,11 +90,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
     if (partnerFormRadio.checked) {
       volunteerForm?.classList?.remove("active");
       partnerForm?.classList?.add("active");
-    } else {
+    } else if (volunteerFormRadio.checked) {
       volunteerForm?.classList?.add("active");
       partnerForm?.classList?.remove("active");
+    } else {
+      return
     }
   }
+
 
 
   /* NOTIFICATION POPUPS */

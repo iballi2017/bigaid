@@ -1,7 +1,7 @@
     <h3 class="fs-250 fw-bold">SIGN UP AS A PARTNER</h3>
     <form action="" class="my-4">
         <fieldset>
-            <!-- <legend class="fs-200 fw-bold">Personal Information</legend> -->
+            <legend class="fs-200 fw-bold">Institution Information</legend>
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-12 md:col-span-4">
                     <label for="NameOfInstitution" class="block mb-2 cursor-pointer required">Name of Institution</label>
@@ -80,6 +80,64 @@
         </fieldset>
         <hr class="my-8" />
         <fieldset>
+            <legend class="fs-200 fw-bold mb-4">Representatives</legend>
+            <div class="card">
+                <div class="card-body">
+                    <ol aria-label="numbering" class="partner-rep-list">
+                        <li>
+                            <div class="grid grid-cols-12 gap-4">
+                                <div class="col-span-12 md:col-span-4">
+                                    <label for="FirstRepFirstName" class="block mb-2 cursor-pointer required">First Name</label>
+                                    <input type="text" class="form-control block w-full rounded" id="FirstRepFirstName">
+                                </div>
+                                <div class="col-span-12 md:col-span-4">
+                                    <label for="FirstRepMiddleName" class="block mb-2 cursor-pointer required">Middle Name</label>
+                                    <input type="text" class="form-control block w-full rounded" id="FirstRepMiddleName">
+                                </div>
+                                <div class="col-span-12 md:col-span-4">
+                                    <label for="FirstRepLastName" class="block mb-2 cursor-pointer required">Last Name</label>
+                                    <input type="text" class="form-control block w-full rounded" id="FirstRepLastName">
+                                </div>
+                                <div class="col-span-12 md:col-span-6">
+                                    <label for="FirstRepEmailAddress" class="block mb-2 cursor-pointer required">Email Address</label>
+                                    <input type="email" class="form-control block w-full rounded" id="FirstRepEmailAddress">
+                                </div>
+                                <div class="col-span-12 md:col-span-6">
+                                    <label for="FirstRepPhoneNumber" class="block mb-2 cursor-pointer required">Phone Number</label>
+                                    <input type="tel" class="form-control block w-full rounded" id="FirstRepPhoneNumber">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="grid grid-cols-12 gap-4">
+                                <div class="col-span-12 md:col-span-4">
+                                    <label for="SecondRepFirstName" class="block mb-2 cursor-pointer required">First Name</label>
+                                    <input type="text" class="form-control block w-full rounded" id="SecondRepFirstName">
+                                </div>
+                                <div class="col-span-12 md:col-span-4">
+                                    <label for="SecondRepMiddleName" class="block mb-2 cursor-pointer required">Middle Name</label>
+                                    <input type="text" class="form-control block w-full rounded" id="SecondRepMiddleName">
+                                </div>
+                                <div class="col-span-12 md:col-span-4">
+                                    <label for="SecondRepLastName" class="block mb-2 cursor-pointer required">Last Name</label>
+                                    <input type="text" class="form-control block w-full rounded" id="SecondRepLastName">
+                                </div>
+                                <div class="col-span-12 md:col-span-6">
+                                    <label for="SecondRepEmailAddress" class="block mb-2 cursor-pointer required">Email Address</label>
+                                    <input type="email" class="form-control block w-full rounded" id="SecondRepEmailAddress">
+                                </div>
+                                <div class="col-span-12 md:col-span-6">
+                                    <label for="SecondRepPhoneNumber" class="block mb-2 cursor-pointer required">Phone Number</label>
+                                    <input type="tel" class="form-control block w-full rounded" id="SecondRepPhoneNumber">
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </fieldset>
+        <hr class="my-8" />
+        <fieldset>
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-12">
                     <legend for="are-you-an-independent-medical-professional" class="block mb-2 cursor-pointer">Are you an are you an independent Medical Professional?</legend>
@@ -105,7 +163,7 @@
         <hr class="my-8" />
 
         <fieldset>
-            <legend class="fs-200 fw-bold">Address of institution</legend>
+            <legend class="fs-200 fw-bold">Address of Institution</legend>
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-12 md:col-span-12">
                     <label for="Address" class="block mb-2 cursor-pointer">Address</label>

@@ -1260,6 +1260,19 @@ input.invalid:focus {
     transform: translate3d(0, -20px, 0);
   }
 }
+ol {
+  padding-left: 1em;
+}
+ol[aria-label=numbering] {
+  list-style-type: decimal;
+}
+
+.partner-rep-list li:not(.partner-rep-list li:last-child) {
+  border-bottom: 2px solid var(--color-light);
+  margin-bottom: 1.3em;
+  padding-bottom: 1.3em;
+}
+
 .hero h1, .hero-alt h1 {
   font-size: 50px;
   font-weight: var(--fw-semi-bold);

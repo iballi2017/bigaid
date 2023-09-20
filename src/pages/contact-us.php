@@ -21,7 +21,7 @@ include_once("../components/header.php");
                 Interested? Let’s connect and set up a discovery call. Contact Our Business Development Team.<br />
                 <strong>Use the form below to Submit an Inquiry.</strong>
             </p>
-            <div class="bg-light rounded p-4">
+            <div>
                 <form action="">
                     <div class="grid grid-cols-12 gap-4">
                         <div class="col-span-12 md:col-span-6">

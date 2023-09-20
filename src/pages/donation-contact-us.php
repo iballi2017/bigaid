@@ -124,6 +124,10 @@ include_once("../components/header.php");
                     </div>
                 </fieldset>
 
+                <div class="captcha py-4">
+                    <i>reCAPTCHA code snippet here</i>
+                </div>
+
                 <div class="my-4">
                     <button class="secondary-button">Submit</button>
                 </div>
