@@ -16,13 +16,22 @@ include_once("../components/header.php");
 <section>
     <div class="container mx-auto py-8 md:py-16">
         <div class="wrap-container">
+            <h2 class="fs-250 fw-bold mb-4 text-capitalize">Stand Up, Join the Campaign.</h2>
+            <p class="mb-4">
+                Interested? Let’s connect and set up a discovery call. Contact Our Business Development Team.<br />
+                <strong>Use the form below to Submit an Inquiry.</strong>
+            </p>
             <div class="bg-light rounded p-4">
-                <h2 class="fs-250 fw-bold text-center mb-8 text-capitalize">Get in touch</h2>
                 <form action="">
                     <div class="grid grid-cols-12 gap-4">
                         <div class="col-span-12 md:col-span-6">
-                            <label for="Name" class="block mb-2 cursor-pointer required">Name</label>
-                            <input type="text" class="form-control block w-full rounded invalid" id="Name" required>
+                            <label for="FirstName" class="block mb-2 cursor-pointer required">FirstName</label>
+                            <input type="text" class="form-control block w-full rounded invalid" id="FirstName" required>
+                            <small class="error-msg">This field is required</small>
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="LastName" class="block mb-2 cursor-pointer required">LastName</label>
+                            <input type="text" class="form-control block w-full rounded invalid" id="LastName" required>
                             <small class="error-msg">This field is required</small>
                         </div>
                         <div class="col-span-12 md:col-span-6">
@@ -30,15 +39,32 @@ include_once("../components/header.php");
                             <input type="text" class="form-control block w-full rounded invalid" id="EmailAddress">
                             <small class="error-msg">Email is required</small>
                         </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="PhoneNumber" class="block mb-2 cursor-pointer required">Phone Number</label>
+                            <input type="tel" class="form-control block w-full rounded invalid" id="PhoneNumber">
+                            <small class="error-msg">Email is required</small>
+                        </div>
                         <div class="col-span-12">
                             <label for="Subject" class="block mb-2 cursor-pointer required">Subject</label>
-                            <input type="text" class="form-control block w-full rounded" id="Subject">
+                            <select name="Subject" id="Subject" class="form-control block w-full rounded">
+                                <option value="" selected>--Select Subject--</option>
+                                <option value="Enquiry">Enquiry</option>
+                                <option value="Volunteer">Volunteer</option>
+                                <option value="Partner">Partner</option>
+                                <option value="Donation">Donation</option>
+                                <option value="Project">Project</option>
+                            </select>
                         </div>
-                        <div class="col-span-12 md:col-span-12">
+                        <div class="col-span-12">
                             <label for="Message" class="block mb-2 cursor-pointer required">Message</label>
                             <textarea name="Message" id="Message" cols="30" rows="10" class="form-control block w-full rounded"></textarea>
                         </div>
+                        <div class="col-span-12">
+                            <input type="checkbox" name="terms-and-condition" id="terms-and-condition" class="mr-2">
+                            <label for="terms-and-condition">Yes, I would love to receive Updates from the BIGAiD Foundation</label>
+                        </div>
                     </div>
+                    <small>We treat your personal information confidentially and will not transfer such details to any third parties. </small>
                     <div class="my-4">
                         <button class="primary-button">Submit</button>
                     </div>
