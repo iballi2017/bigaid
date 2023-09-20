@@ -191,7 +191,7 @@ include_once("../components/header.php");
                     </div>
                 </fieldset>
 
-                <div class="my-4">
+                <div class="my-8">
                     <button class="secondary-button">Continue to Payment</button>
                 </div>
             </form>
