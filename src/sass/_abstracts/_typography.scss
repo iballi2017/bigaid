@@ -10,6 +10,8 @@
 .section-title {
     font-size: 1.6rem;
     font-weight: var(--fw-bold);
+    line-height: 25px;
+    color: var(--color-primary);
 }
 
 .md-text-size {
@@ -20,6 +22,7 @@
 @include mixins.minmq(65em) {
     .section-title {
         font-size: 2.2rem;
+        line-height: 35px;
     }
 
     .md-text-size {

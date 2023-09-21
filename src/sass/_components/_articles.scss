@@ -143,3 +143,13 @@
     }
   }
 }
+
+.home {
+  @include mixins.minmq(50em) {
+    .skew-bg-article {
+      .float-featured-image {
+        max-width: 558px;
+      }
+    }
+  }
+}

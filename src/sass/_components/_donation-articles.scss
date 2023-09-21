@@ -109,3 +109,78 @@
     }
   }
 }
+
+.home {
+  .donation-info {
+    text-align: center;
+    position: relative;
+    --margin-bottom: 3rem;
+    margin-bottom: var(--margin-bottom);
+    &::after {
+      content: "";
+      height: var(--margin-bottom);
+      width: var(--margin-bottom);
+      background-image: url(../assets/icons/caret-right-blue.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: block;
+      position: absolute;
+      right: 3.5%;
+      bottom: calc((var(--margin-bottom)) * -1);
+    }
+    .donation-card {
+      background-color: var(--color-secondary);
+      color: var(--color-white);
+      border-radius: 25px;
+      padding: 1.5em;
+      h3 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5em;
+      }
+    }
+
+    .featured-image-container {
+      flex-basis: 50%;
+      .featured-image {
+        max-width: 590px;
+        margin: 0 auto;
+      }
+    }
+
+    @include mixins.minmq(60em) {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      font-size: 1.7rem;
+      .donation-card {
+        border-radius: 50px;
+        padding: 3em;
+        flex-basis: 50%;
+        line-height: 200%;
+        height: 100%;
+        h3 {
+          font-size: 2.3rem;
+        }
+      }
+    }
+  }
+
+  #donate-now {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@include mixins.minmq(60em) {
+  .home {
+    .donation-info {
+      .donation-card {
+        border-radius: 50px;
+        padding: 3em;
+        flex-basis: 50%;
+        line-height: 34px;
+        height: 100%;
+      }
+    }
+  }
+}
