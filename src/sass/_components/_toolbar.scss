@@ -101,7 +101,7 @@ header.sticky {
   }
 }
 
-@include mixins.minmq(50em) {
+@include mixins.minmq(65em) {
   .alt-toolbar {
     padding-top: 0.5em;
     padding-bottom: 0.5em;

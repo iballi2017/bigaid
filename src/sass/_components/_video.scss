@@ -1,12 +1,12 @@
 @use "../_partials/mixins";
 
-
 .video-container {
   padding: 2em 0;
   width: 100%;
   // max-width: 650px;
   margin: 0 auto;
-  aspect-ratio: 1.48;
+  // aspect-ratio: 1.48;
+  aspect-ratio: 1.40;
   .video {
     height: 100%;
     width: 100%;
@@ -18,6 +18,24 @@
     //     width: 100%;
     //     height: 100%;
     // }
+
+    position: relative;
+    &.thumbnail{
+      &::before {
+        content: "";
+        display: block;
+        // background-color: red;
+        background-image: url(../assets/images/video-thumbnail.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-position: center;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+    }
   }
   .play-button {
     // --btn-width: 165px;
@@ -45,8 +63,8 @@
     }
   }
 
-
-  @include mixins.minmq(50em){
+  @include mixins.minmq(50em) {
+    aspect-ratio: 1.98;
     .video {
       border-radius: 19px;
     }

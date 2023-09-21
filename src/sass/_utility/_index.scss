@@ -155,12 +155,76 @@
   overflow: hidden;
 }
 
-.text-capitalize{
+.text-capitalize {
   text-transform: capitalize;
 }
 
+.min-full-width {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
+.pseudo-before-bottom-primary-tape {
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    background-color: var(--color-primary);
+    display: block;
+    height: 3rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+}
+.pseudo-after-bottom-primary-tape {
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    background-color: var(--color-primary);
+    display: block;
+    height: 3rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+}
 
+.pseudo-before-bottom-white-tape {
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    background-color: var(--color-white);
+    display: block;
+    height: 3rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+}
+.pseudo-after-bottom-white-tape {
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    background-color: var(--color-white);
+    display: block;
+    height: 3rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+}
 
 .even-columns {
   display: grid;

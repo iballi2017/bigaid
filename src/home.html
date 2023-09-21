@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font family -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet"> -->
+    <!-- Animate.Style -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Tailwind css -->
+    <link rel="stylesheet" href="./stylesheets/tailwindcss/tailwind.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="sticky">
+      <div class="container mx-auto bg-wrap">
+        <nav class="alt-toolbar toolbar-bg">
+          <div class="wrap-container">
+            <!-- <div class="mx-auto max-w-screen-xl px-2 md:px-6 lg:px-8"> -->
+            <div class="flex items-center justify-between">
+              <!-- Brand logo -->
+              <!-- <a class="navbar-brand" href="#">
+              <img src="assets/images/brand-logo-white.png">
+            </a> -->
+              <a class="navbar-brand" href="./" id="primary-img">
+                <img src="./assets/images/brand-logo-white.png" />
+              </a>
+              <a class="navbar-brand hidden" href="./" id="secondary-img">
+                <img src="./assets/images/brand-logo-primary.png" />
+              </a>
+
+              <!-- Mobile menu button-->
+              <button
+                type="button"
+                class="navbar-toggler | relative inline-flex items-center justify-center rounded-md p-2 text-white"
+                aria-controls="primary-navigation"
+                aria-expanded="false"
+              >
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!--
+                    Icon when menu is closed.
+        
+                    Menu open: "hidden", Menu closed: "block"
+                  -->
+                <svg
+                  class="menu h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+                <!--
+                    Icon when menu is open.
+        
+                    Menu open: "block", Menu closed: "hidden"
+                  -->
+                <svg
+                  class="close h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+
+              <!-- <div class="flex items-center"> -->
+              <ul
+                class="nav-list nav-collapse drop-shadow-sm"
+                id="primary-navigation"
+              >
+                <li class="nav-item"><a href="./" class="nav-link">Home</a></li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="./pages/volunteer-and-partnership-registration.php"
+                    class="nav-link"
+                    >Volunteer</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="./#donate-now" class="nav-link btn primary-button"
+                    >Donate</a
+                  >
+                </li>
+              </ul>
+
+              <!-- <div class="profile-avatar">
+                      <img src="./assets/icons/profile-avatar.svg" alt="profile avatar">
+                  </div>
+                  <button type="button" class="relative p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                      <span class="absolute -inset-1.5"></span>
+                      <span class="sr-only">View profile</span>
+                      <svg class="h-6 w-6" width="22" height="23" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.23987 1.65752C8.24896 0.598507 9.65837 0.0153198 11.214 0.0153198C12.7779 0.0153198 14.192 0.594979 15.1964 1.64744C16.2118 2.71149 16.7064 4.15761 16.5903 5.71916C16.3601 8.79992 13.9483 11.3061 11.214 11.3061C8.47971 11.3061 6.0721 8.80043 5.83824 5.72017C5.72053 4.17273 6.21833 2.72964 7.23987 1.65752Z" fill="white" />
+                          <path d="M2.08759 22.5968H20.3404C20.5793 22.5998 20.8159 22.5511 21.033 22.454C21.2501 22.357 21.4422 22.2141 21.5953 22.0358C21.9324 21.6442 22.0682 21.1094 21.9676 20.5685C21.53 18.2085 20.1641 16.2261 18.0173 14.8344C16.1101 13.599 13.6942 12.919 11.214 12.919C8.7338 12.919 6.31789 13.5995 4.41068 14.8344C2.2639 16.2256 0.89805 18.208 0.460398 20.568C0.359798 21.1089 0.495657 21.6437 0.832712 22.0353C0.98579 22.2137 1.17786 22.3566 1.39494 22.4538C1.61201 22.5509 1.84864 22.5998 2.08759 22.5968Z" fill="white" />
+                      </svg>
+                  </button> -->
+              <!-- </div> -->
+            </div>
+            <!-- </div> -->
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="home">
+      <!-- HERO -->
+      <section>
+        <div class="container mx-auto">
+          <div class="hero | bg-secondary relative">
+            <div class="wrap-container">
+              <div class="content-columns">
+                <div class="text-wrap">
+                  <h1 class="animate__animated animate__fadeIn">
+                    Goal<br />Mission
+                  </h1>
+                  <p class="tagline">Saving Lives…</p>
+                  <p>
+                    Unleashing The Power to Health & Wellness through the BIGAiD
+                    Web & Mobile App, transforming lives.
+                  </p>
+                  <div class="py-2 lg:py-4"></div>
+                  <div class="flex">
+                    <button
+                      class="call-to-action animate__animated animate__fadeInLeft"
+                    >
+                      Donate
+                    </button>
+                    <div class="mx-1 md:px-2"></div>
+                    <button
+                      class="call-to-action animate__animated animate__fadeInRight"
+                      data-type="inverted"
+                    >
+                      Partner With Us
+                    </button>
+                  </div>
+                </div>
+                <div class="featured-image">
+                  <!-- <img src=" ./assets/images/Smiley-medic.svg" alt=""> -->
+                  <div class="img-static">
+                    <img
+                      src="./assets/images/beautiful-african-american-doctor-couple-white.png"
+                      alt=""
+                      class="animate__animated animate__fadeInUp"
+                    />
+                  </div>
+                  <div class="img-absolute cursor-pointer">
+                    <img
+                      src="./assets/images/phone.png"
+                      alt=""
+                      class="animate__animated animate__fadeInRight"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="hidden container mx-auto">
+          <div class="hero-alt">
+            <div class="wrap-container">
+              <div class="text-wrap">
+                <h1 class="animate__animated animate__fadeIn">Goal<br />Mission</h1>
+                <p>Saving Lives…</p>
+                <p>Unleashing The Power to Health & <br />Wellness through the BIGAiD Web & <br />Mobile App, transforming lives.</p>
+                <div class="py-2 lg:py-4"></div>
+                <div class="flex">
+                  <button class="call-to-action animate__animated animate__fadeInLeft">Donate</button>
+                  <div class="px-2"></div>
+                  <button class="call-to-action animate__animated animate__fadeInRight" data-type="inverted">Partner With Us</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        </div>
+      </section>
+
+      <section>
+        <div
+          class="bg-primary container mx-auto pseudo-after-bottom-white-tape"
+        >
+          <div class="wrap-container">
+            <div class="video-container">
+              <div class="video thumbnail">
+                <video id="video1" width="100%" height="100%">
+                  <source
+                    src="./assets/videos/yt1s.com - Nature Beautiful short video 720p HD_480p.mp4"
+                    type="video/mp4"
+                  />
+                  <source src="mov_bbb.ogg" type="video/ogg" />
+                  Your browser does not support HTML video.
+                </video>
+                <button class="play-button">
+                  <!-- <img src="./assets/icons/icon-video-play-button.svg" alt="video play button icon">
+            <img src="./assets/icons/icon-video-pause-button.svg" alt="video pause button icon"> -->
+                  <img
+                    src="./assets/icons/icon-play-solid.svg"
+                    alt="video play button icon"
+                  />
+                  <img
+                    src="./assets/icons/icon-pause-solid.svg"
+                    alt="video pause button icon"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="min-full-width flex">
+              <div class="animate__animated animate__fadeInLeft">
+                <img
+                  src="./assets/images/lady-holding-a-phone-arrow.png"
+                  alt=""
+                />
+              </div>
+              <!-- <div class="bga-mt-50" style="margin-left: -70px;"> -->
+              <div
+                class="animate__animated animate__fadeInRight"
+                style="margin-top: 9%; margin-left: -3.5%"
+              >
+                <img
+                  src="./assets/images/we-understand-the-challenges.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <article class="overflow-hidden">
+        <div class="container mx-auto">
+          <div class="wrap-container py-8">
+            <h2 class="section-title mb-4">The Mission</h2>
+
+            <div class="grid md:grid-cols-12">
+              <div class="md:col-span-6 order-2 md:order-1">
+                <p class="md-text-size">
+                  BIGAiD Foundation, a non-governmental organization, is
+                  committed to revolutionizing healthcare access for individuals
+                  across rural and urban areas, low- & mid-income earners,
+                  especially in Nigeria and Africa. In the face of inadequate
+                  healthcare systems, our mission is clear - to provide
+                  essential healthcare knowledge, education, and professional
+                  intervention through a user-friendly web & mobile app. Our
+                  goal is to make healthcare accessible, communication
+                  effortless, and instant intervention to help SAVE LIVES.
+                </p>
+              </div>
+              <div class="md:col-span-6 order-1 md:order-2 relative">
+                <div class="featured-image">
+                  <img src="./assets/images/space-traveller.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="overflow-hidden">
+        <div class="container mx-auto">
+          <div class="wrap-container py-8">
+            <h2 class="section-title mb-4">Our Advocacy & Community Projects In Pictures</h2>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!-- <div class="skew-design wrapper">
+      <section class="first-section">
+        <div class="container">
+          <h2>First Section</h2>
+        </div>
+      </section>
+
+      <section class="second-section">
+        <div class="container">
+          <h2>Second Section</h2>
+        </div>
+      </section>
+    </div> -->
+
+    <!-- FOOTER -->
+    <footer class="bg-primary">
+      <div class="footer container mx-auto">
+        <div class="wrap-container">
+          <div class="grid grid-cols-12 gap-4">
+            <div class="col-span-12 md:col-span-7">
+              <p class="mb-4">
+                BIGAiD Foundation is a non-profit organization that promotes the
+                advancement of health, nutrition, well-being, and social good.
+                Our goal is to enable individuals, families, and communities to
+                meet the global UNSDGs 2030 by improving our world and ensuring
+                health and well-being for all to enjoy healthy and satisfying
+                lives via advocacy, education, and intervention.
+              </p>
+              <ul class="social-media-handles mb-4">
+                <li class="social-icon">
+                  <a href="#">
+                    <span class="sr-only">LinkedIn</span>
+                    <img src="./assets/icons/icon-linkedIn.svg" alt="" />
+                  </a>
+                </li>
+                <li class="social-icon">
+                  <a href="#">
+                    <span class="sr-only">Facebook</span>
+                    <img src="./assets/icons/icon-facebook.svg" alt="" />
+                  </a>
+                </li>
+                <li class="social-icon">
+                  <a href="#">
+                    <span class="sr-only">Twitter</span>
+                    <img src="./assets/icons/icon-twitter.svg" alt="" />
+                  </a>
+                </li>
+                <li class="social-icon">
+                  <a href="#">
+                    <span class="sr-only">Instagram</span>
+                    <img src="./assets/icons/icon-instagram.svg" alt="" />
+                  </a>
+                </li>
+                <li class="social-icon">
+                  <a href="#">
+                    <span class="sr-only">Youtube</span>
+                    <img src="./assets/icons/icon-youtube.svg" alt="" />
+                  </a>
+                </li>
+                <li class="social-icon">
+                  <a href="#">
+                    <span class="sr-only">Tiktok</span>
+                    <img src="./assets/icons/icon-tiktok.svg" alt="" />
+                  </a>
+                </li>
+                <li class="social-icon">
+                  <a href="#">
+                    <span class="sr-only">Gmail</span>
+                    <img src="./assets/icons/icon-gmail.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+
+              <div class="copyright-and-policy">
+                <div>
+                  Copyright © 2023, BIGAiD Foundation. All Rights Reserved
+                </div>
+                <div>Privacy Policy | Terms & Condition</div>
+              </div>
+            </div>
+            <div class="col-span-12 md:col-span-5 flex items-end">
+              <ul class="partners-logos">
+                <li>
+                  <img
+                    src="./assets/images/BIGAID-foundation-logo.png"
+                    alt=""
+                  />
+                </li>
+                <li>
+                  <img src="./assets/images/SDG-logo.png" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COOKIES NOTIFICATION BANNER -->
+      <div>
+        <?php include_once("./components/cookies-notification-banner.php"); ?>
+      </div>
+    </footer>
+
+    <!-- jquery-3.7.0 -->
+    <script src="./libs/jquery-3.7.0.min.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/main.jquery.js"></script>
+  </body>
+</html>

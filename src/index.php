@@ -672,6 +672,13 @@
       </div>
     </div>
 
+
+    
+    <!-- COOKIES NOTIFICATION BANNER -->
+    <div>
+        <?php include_once("./components/cookies-notification-banner.php"); ?>
+    </div>
+
   </footer>
 
 

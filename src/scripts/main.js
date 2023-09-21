@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     controlDonationCurrency();
     toggleDonationAmountSelect();
     controlCurrentlyWorkHere();
+    dismissCookiesNotificationBanner();
   }
 
 
@@ -36,6 +37,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       playPauseBtn.addEventListener("click", async () => {
         // console.log("promise: ", myPromise);
         if (!isPlay) {
+          myVideo.parentElement.classList.remove("thumbnail")
           myVideo.play();
           isPlay = true;
           playPauseBtn.lastElementChild?.classList?.remove("hidden");
@@ -47,6 +49,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           isPlay = false;
           playPauseBtn.lastElementChild?.classList?.add("hidden");
           playPauseBtn.firstElementChild?.classList?.remove("hidden");
+          myVideo.parentElement.classList.add("thumbnail")
           return;
         }
       });
@@ -87,12 +90,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   function toggleForms() {
-    if (partnerFormRadio.checked) {
-      volunteerForm?.classList?.remove("active");
-      partnerForm?.classList?.add("active");
-    } else if (volunteerFormRadio.checked) {
-      volunteerForm?.classList?.add("active");
-      partnerForm?.classList?.remove("active");
+    if (partnerFormRadio) {
+      if (partnerFormRadio.checked) {
+        volunteerForm?.classList?.remove("active");
+        partnerForm?.classList?.add("active");
+      }
+    } else if (volunteerFormRadio) {
+      if (volunteerFormRadio.checked) {
+        volunteerForm?.classList?.add("active");
+        partnerForm?.classList?.remove("active");
+      }
     } else {
       return
     }
@@ -176,7 +183,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const currentlyWorkHere = document.querySelector("#currentlyWorkHere");
     const endDateContainer = document.querySelector("#endDateContainer");
     const startDateContainer = document.querySelector("#startDateContainer");
-    currentlyWorkHere.addEventListener("click", () => {
+    currentlyWorkHere?.addEventListener("click", () => {
       if (currentlyWorkHere.checked) {
         if (!endDateContainer?.classList.contains("hidden"))
           endDateContainer?.classList.add("hidden");
@@ -192,6 +199,40 @@ document.addEventListener("DOMContentLoaded", (event) => {
     })
   }
 
+
+  function dismissCookiesNotificationBanner() {
+    // alert("hello")
+    const cookiesNotificationBanner = document.querySelector("#cookiesNotificationBanner");
+    const rejectCookiesButton = document.querySelector("#rejectCookiesButton");
+    const acceptCookiesButton = document.querySelector("#acceptCookiesButton");
+
+
+    /**SHOW COOKIES NOTIFICATION BANNER */
+    function showCookiesNotificationBanner() {
+      cookiesNotificationBanner ? cookiesNotificationBanner.classList.remove("hidden") : null;
+    }
+    showCookiesNotificationBanner();
+
+
+    /**REJECT COOKIES NOTIFICATION BANNER */
+    rejectCookiesButton ? rejectCookiesButton.addEventListener("click", () => {
+      if (cookiesNotificationBanner) {
+        cookiesNotificationBanner.classList.add("hidden");
+        // more codes...
+      }
+    }) : null
+
+    /**ACCEPT COOKIES NOTIFICATION BANNER */
+    acceptCookiesButton ? acceptCookiesButton.addEventListener("click", () => {
+      if (cookiesNotificationBanner) {
+        cookiesNotificationBanner.classList.add("hidden");
+        // more codes...
+      }
+    }) : null
+
+
+
+  }
 
 
   Init();

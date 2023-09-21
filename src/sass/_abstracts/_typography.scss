@@ -1,8 +1,28 @@
 // @use "../_abstracts/colors";
-// @use "../_partials/mixins";
+@use "../_partials/mixins";
 // @use "../_partials/variables";
 
 // /* TYPOGRAPHY */
 // $bodyFontFamily: var(--ff-body) !important;
 // $titleFontFamily: var(--ff-secondary);
 // $fontStack: var(--ff-body);
+
+.section-title {
+    font-size: 1.6rem;
+    font-weight: var(--fw-bold);
+}
+
+.md-text-size {
+    font-size: 1.15rem;
+    line-height: 2rem;
+}
+
+@include mixins.minmq(65em) {
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .md-text-size {
+        font-size: 1.3rem;
+    }
+}
