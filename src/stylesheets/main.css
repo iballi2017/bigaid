@@ -821,7 +821,7 @@ button:hover {
 }
 
 .primary-bg-skew {
-  --bottom-margin: 10em;
+  --bottom-margin: 7em;
   margin-top: var(--bottom-margin);
   margin-bottom: var(--bottom-margin);
   position: relative;
@@ -830,7 +830,7 @@ button:hover {
   content: "";
   display: block;
   width: 100%;
-  height: 135px;
+  height: 55px;
   background-color: var(--color-primary);
   left: 0;
   right: 0;
@@ -839,15 +839,20 @@ button:hover {
   position: absolute;
   z-index: -1;
 }
+@media screen and (max-width: 50em) and (min-width: 30em) {
+  .primary-bg-skew::before, .primary-bg-skew::after {
+    height: 85px;
+  }
+}
 @media (min-width: 50em) {
   .primary-bg-skew {
-    --bottom-margin: 15em;
+    --bottom-margin: 10em;
   }
   .primary-bg-skew::before, .primary-bg-skew::after {
     content: "";
     display: block;
     width: 100%;
-    height: 350px;
+    height: 164px;
     left: 0;
     right: 0;
     transform: skew(0deg, 354deg);
@@ -856,7 +861,7 @@ button:hover {
     z-index: -1;
   }
   .primary-bg-skew::after {
-    height: 250px;
+    height: 164px;
   }
 }
 

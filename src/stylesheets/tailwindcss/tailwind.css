@@ -1168,6 +1168,10 @@ select {
   gap: 4rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-24 {
   gap: 6rem;
 }
