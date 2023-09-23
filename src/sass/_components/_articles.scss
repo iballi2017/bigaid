@@ -171,7 +171,8 @@
       @include mixins.minmq(50em) {
         display: flex;
         align-items: center;
-        gap: 1.5em;
+        // gap: 1.5em;
+        gap: 2rem;
         max-width: 950px;
         margin: 0 auto;
         div:first-child {
