@@ -31,10 +31,10 @@
             <!-- <a class="navbar-brand" href="#">
               <img src="assets/images/brand-logo-white.png">
             </a> -->
-            <a class="navbar-brand" href="./" id="primary-img">
+            <a class="navbar-brand" href="#" id="primary-img">
               <img src="./assets/images/brand-logo-white.png">
             </a>
-            <a class="navbar-brand hidden" href="./" id="secondary-img">
+            <a class="navbar-brand hidden" href="#" id="secondary-img">
               <img src="./assets/images/brand-logo-primary.png">
             </a>
 
@@ -66,7 +66,7 @@
             <ul class="nav-list nav-collapse drop-shadow-sm" id="primary-navigation">
               <li class="nav-item"><a href="./" class="nav-link">Home</a></li>
               <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+              <li class="nav-item"><a href="./pages/" class="nav-link">Contact Us</a></li>
               <li class="nav-item"><a href="./pages/volunteer-and-partnership-registration.php" class="nav-link">Volunteer</a></li>
               <li class="nav-item"><a href="./#donate-now" class="nav-link btn primary-button">Donate</a></li>
             </ul>
@@ -126,7 +126,7 @@
           </div>
         </div>
 
-
+        
         <!-- <div class="hidden container mx-auto">
           <div class="hero-alt">
             <div class="wrap-container">
@@ -670,13 +670,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-
-    
-    <!-- COOKIES NOTIFICATION BANNER -->
-    <div>
-        <?php include_once("./components/cookies-notification-banner.php"); ?>
     </div>
 
   </footer>

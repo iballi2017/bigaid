@@ -940,7 +940,7 @@ button:hover {
   .home .stay-updated-article {
     display: flex;
     align-items: center;
-    gap: 1.5em;
+    gap: 2rem;
     max-width: 950px;
     margin: 0 auto;
   }
@@ -1251,10 +1251,8 @@ input.invalid:focus {
   background-color: #0a0559;
 }
 
-.pie-chart-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.pie-chart {
+  max-width: 500px;
 }
 
 .milestones-pie-chart {
