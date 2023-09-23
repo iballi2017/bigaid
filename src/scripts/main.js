@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     toggleDonationAmountSelect();
     controlCurrentlyWorkHere();
     dismissCookiesNotificationBanner();
+    handleScrollToTop();
+    handleAnimateOnViewportIntercept();
   }
 
 
@@ -231,6 +233,63 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }) : null
 
 
+
+  }
+
+
+  /**SCROLL TOP */
+  function handleScrollToTop() {
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    mybutton.addEventListener("click", () => {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    })
+  }
+
+  /**Animate content on viewport intercept */
+
+  function handleAnimateOnViewportIntercept() {
+    /* Page Content Intersection Observer */
+    const faders = document.querySelectorAll(".fade-in");
+    const fromLeft = document.querySelectorAll(".from-left");
+    const fromRight = document.querySelectorAll(".from-right");
+    const sliders = document.querySelectorAll(".slide-in");
+
+    const appearOptions = {
+      threshold: 0,
+      rootMargin: "0px 0px -250px 0px",
+    };
+    const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("appear");
+        appearOnScroll.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach((fader) => {
+      appearOnScroll.observe(fader);
+    });
+    fromLeft.forEach((fader) => {
+      appearOnScroll.observe(fader);
+    });
+    fromRight.forEach((fader) => {
+      appearOnScroll.observe(fader);
+    });
+
+    sliders.forEach((slider) => {
+      appearOnScroll.observe(slider);
+    });
 
   }
 
