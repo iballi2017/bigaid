@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+  <!-- favicon -->
+  <link rel="icon" href="./assets/icons/favicon.png" type="image/png" sizes="16x16">
   <!-- Font family -->
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,13 +35,13 @@
           <div class="flex items-center justify-between">
             <!-- Brand logo -->
             <!-- <a class="navbar-brand" href="#">
-              <img src="assets/images/brand-logo-white.png">
+              <img src="assets/images/brand-logo-white.png" loading="lazy"/>
             </a> -->
             <a class="navbar-brand" href="./" id="primary-img">
-              <img src="./assets/images/brand-logo-white.png" />
+              <img src="./assets/images/brand-logo-white.png" loading="lazy" />
             </a>
             <a class="navbar-brand hidden" href="./" id="secondary-img">
-              <img src="./assets/images/brand-logo-primary.png" />
+              <img src="./assets/images/brand-logo-primary.png" loading="lazy" />
             </a>
 
             <!-- Mobile menu button-->
@@ -82,7 +84,7 @@
             </ul>
 
             <!-- <div class="profile-avatar">
-                      <img src="./assets/icons/profile-avatar.svg" alt="profile avatar">
+                      <img src="./assets/icons/profile-avatar.svg" alt="profile avatar" loading="lazy"/>
                   </div>
                   <button type="button" class="relative p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span class="absolute -inset-1.5"></span>
@@ -129,12 +131,12 @@
                 </div>
               </div>
               <div class="featured-image">
-                <!-- <img src=" ./assets/images/Smiley-medic.svg" alt=""> -->
+                <!-- <img src=" ./assets/images/Smiley-medic.svg" alt="" loading="lazy"/> -->
                 <div class="img-static">
-                  <img src="./assets/images/beautiful-african-american-doctor-couple-white.png" alt="" class="animate__animated animate__fadeInUp" />
+                  <img src="./assets/images/beautiful-african-american-doctor-couple-white.png" alt="" class="animate__animated animate__fadeInUp" loading="lazy" />
                 </div>
                 <div class="img-absolute cursor-pointer">
-                  <img src="./assets/images/phone.png" alt="" class="animate__animated animate__fadeInRight" />
+                  <img src="./assets/images/phone.png" alt="" class="animate__animated animate__fadeInRight" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -166,27 +168,27 @@
         <div class="wrap-container fade-in">
           <div class="video-container">
             <div class="video thumbnail">
-              <video id="video1" width="100%" height="100%">
+              <video id="video1" width="100%" height="100%" loading="lazy">
                 <source src="./assets/videos/yt1s.com - Nature Beautiful short video 720p HD_480p.mp4" type="video/mp4" />
                 <source src="mov_bbb.ogg" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
               <button class="play-button">
-                <!-- <img src="./assets/icons/icon-video-play-button.svg" alt="video play button icon">
-            <img src="./assets/icons/icon-video-pause-button.svg" alt="video pause button icon"> -->
-                <img src="./assets/icons/icon-play-solid.svg" alt="video play button icon" />
-                <img src="./assets/icons/icon-pause-solid.svg" alt="video pause button icon" />
+                <!-- <img src="./assets/icons/icon-video-play-button.svg" alt="video play button icon"  loading="lazy"/>
+            <img src="./assets/icons/icon-video-pause-button.svg" alt="video pause button icon" loading="lazy"/> -->
+                <img src="./assets/icons/icon-play-solid.svg" alt="video play button icon" loading="lazy" />
+                <img src="./assets/icons/icon-pause-solid.svg" alt="video pause button icon" loading="lazy" />
               </button>
             </div>
           </div>
 
           <div class="min-full-width flex fade-in">
             <div class="">
-              <img src="./assets/images/lady-holding-a-phone-arrow.png" alt="" />
+              <img src="./assets/images/lady-holding-a-phone-arrow.png" alt="" loading="lazy" />
             </div>
             <!-- <div class="bga-mt-50" style="margin-left: -70px;"> -->
             <div class="" style="margin-top: 9%; margin-left: -3.5%">
-              <img src="./assets/images/we-understand-the-challenges.png" alt="" />
+              <img src="./assets/images/we-understand-the-challenges.png" alt="" loading="lazy" />
             </div>
           </div>
         </div>
@@ -214,7 +216,7 @@
             </div>
             <div class="md:col-span-6 order-1 md:order-2 relative fade-in">
               <div class="featured-image">
-                <img src="./assets/images/space-traveller.png" alt="" />
+                <img src="./assets/images/space-traveller.png" alt="" loading="lazy" />
               </div>
             </div>
           </div>
@@ -230,16 +232,16 @@
           </h2>
           <ul role="list" class="gallery-type-1 | grid grid-cols-12 gap-2 md:gap-4 fade-in">
             <li class="col-span-6 md:col-span-3">
-              <img src="./assets/images/Rectangle-45.png" alt="" />
+              <img src="./assets/images/Rectangle-45.png" alt="" loading="lazy" />
             </li>
             <li class="col-span-6 md:col-span-3">
-              <img src="./assets/images/Rectangle-46.png" alt="" />
+              <img src="./assets/images/Rectangle-46.png" alt="" loading="lazy" />
             </li>
             <li class="col-span-6 md:col-span-3">
-              <img src="./assets/images/Rectangle-47.png" alt="" />
+              <img src="./assets/images/Rectangle-47.png" alt="" loading="lazy" />
             </li>
             <li class="col-span-6 md:col-span-3">
-              <img src="./assets/images/Rectangle-48.png" alt="" />
+              <img src="./assets/images/Rectangle-48.png" alt="" loading="lazy" />
             </li>
           </ul>
         </div>
@@ -264,7 +266,7 @@
                   ">
                 <!-- <img
                     src="./assets/images/donation-featured-image.png"
-                    alt=""
+                    alt="" loading="lazy"
                   /> -->
               </div>
               <p class="md-text-size fade-in">
@@ -316,34 +318,34 @@
               <li class="blob-item"></li>
               <li class="blob-item">
                 <div class="blob fade-in" style="left: -15%">
-                  <img src="./assets/images/blob-1.png" alt="" />
+                  <img src="./assets/images/blob-1.png" alt="" loading="lazy" />
                 </div>
               </li>
               <li class="blob-item"></li>
               <li class="blob-item row-span-2 fade-in">
-                <img src="./assets/images/phone-2.png" alt="" />
+                <img src="./assets/images/phone-2.png" alt="" loading="lazy" />
               </li>
               <li class="blob-item col-span-2 fade-in">
                 <div class="blob" style="top: -45%; left: 8%">
-                  <img src="./assets/images/blob-2.png" alt="" />
+                  <img src="./assets/images/blob-2.png" alt="" loading="lazy" />
                 </div>
               </li>
               <li class="blob-item fade-in">
                 <div class="blob" style="top: -60%; right: -15%">
-                  <img src="./assets/images/blob-3.png" alt="" />
+                  <img src="./assets/images/blob-3.png" alt="" loading="lazy" />
                 </div>
               </li>
               <li class="blob-item"></li>
               <li class="blob-item"></li>
               <li class="blob-item col-span-2 fade-in">
                 <div class="blob" style="top: -80%; right: -10%">
-                  <img src="./assets/images/blob-4.png" alt="" />
+                  <img src="./assets/images/blob-4.png" alt="" loading="lazy" />
                 </div>
               </li>
               <li class="blob-item"></li>
               <li class="blob-item fade-in">
                 <div class="blob" style="top: -125%; left: -15%">
-                  <img src="./assets/images/blob-5.png" alt="" />
+                  <img src="./assets/images/blob-5.png" alt="" loading="lazy" />
                 </div>
               </li>
             </ul>
@@ -378,10 +380,10 @@
               </div>
               <div class="col-span-7 relative">
                 <!-- <div class="float-featured-image">
-                    <img src="./assets/images/man-carry-child.png" alt="">
+                    <img src="./assets/images/man-carry-child.png" alt="" loading="lazy">
                   </div> -->
                 <div class="float-featured-image fade-in">
-                  <img src="./assets/images/man-carry-child.png" alt="" />
+                  <img src="./assets/images/man-carry-child.png" alt="" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -408,7 +410,7 @@
             </div>
             <div class="featured-image-container">
               <div class="featured-image fade-in">
-                <img src="./assets/images/lady-card-transaction-alt.png" alt="" />
+                <img src="./assets/images/lady-card-transaction-alt.png" alt="" loading="lazy" />
               </div>
             </div>
           </div>
@@ -519,7 +521,7 @@
                       height: 400px;
                       background-position: center;
                     ">
-                  <!-- <img src="./assets/images/man-woman-laughs.png" alt="" /> -->
+                  <!-- <img src="./assets/images/man-woman-laughs.png" alt="" loading="lazy" /> -->
                 </div>
               </div>
             </div>
@@ -535,7 +537,7 @@
           <div class="stay-updated-article">
             <div>
               <div class="featured-image fade-in">
-                <img src="./assets/images/illustration-one.png" alt="" />
+                <img src="./assets/images/illustration-one.png" alt="" loading="lazy" />
               </div>
             </div>
             <div>
@@ -578,7 +580,7 @@
             </div>
             <div class="col-span-12 md:col-span-7">
               <div class="featured-image fade-in">
-                <img src="./assets/images/illustration-email-messaging.png" alt="" />
+                <img src="./assets/images/illustration-email-messaging.png" alt="" loading="lazy" />
               </div>
             </div>
           </div>
@@ -605,7 +607,7 @@
               </div>
               <div class="col-span-12 md:col-span-6">
                 <div class="featured-image rounded-lg overflow-hidden fade-in" style="max-width: 400px; margin: 0 auto">
-                  <img src="./assets/images/doctor-hand-gloves-alt.png" alt="" />
+                  <img src="./assets/images/doctor-hand-gloves-alt.png" alt="" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -621,7 +623,7 @@
           <div class="grid grid-cols-12 gap-2 md:gap-8">
             <div class="col-span-12 md:col-span-6">
               <div class="featured-image rounded-lg overflow-hidden fade-in">
-                <img src="./assets/images/handshakes-alt.png" alt="" />
+                <img src="./assets/images/handshakes-alt.png" alt="" loading="lazy" />
               </div>
             </div>
 
@@ -664,7 +666,7 @@
 
   <!-- Go to top -->
   <button id="myBtn" title="Go to top">
-    <img src="./assets/icons/arrow-up-solid.png" alt="">
+    <img src="./assets/icons/arrow-up-solid.png" alt="" loading="lazy"/>
   </button>
 
   <!--  -->
@@ -686,43 +688,43 @@
               <li class="social-icon">
                 <a href="#">
                   <span class="sr-only">LinkedIn</span>
-                  <img src="./assets/icons/icon-linkedIn.svg" alt="" />
+                  <img src="./assets/icons/icon-linkedIn.svg" alt="" loading="lazy" />
                 </a>
               </li>
               <li class="social-icon">
                 <a href="#">
                   <span class="sr-only">Facebook</span>
-                  <img src="./assets/icons/icon-facebook.svg" alt="" />
+                  <img src="./assets/icons/icon-facebook.svg" alt="" loading="lazy" />
                 </a>
               </li>
               <li class="social-icon">
                 <a href="#">
                   <span class="sr-only">Twitter</span>
-                  <img src="./assets/icons/icon-twitter.svg" alt="" />
+                  <img src="./assets/icons/icon-twitter.svg" alt="" loading="lazy" />
                 </a>
               </li>
               <li class="social-icon">
                 <a href="#">
                   <span class="sr-only">Instagram</span>
-                  <img src="./assets/icons/icon-instagram.svg" alt="" />
+                  <img src="./assets/icons/icon-instagram.svg" alt="" loading="lazy" />
                 </a>
               </li>
               <li class="social-icon">
                 <a href="#">
                   <span class="sr-only">Youtube</span>
-                  <img src="./assets/icons/icon-youtube.svg" alt="" />
+                  <img src="./assets/icons/icon-youtube.svg" alt="" loading="lazy" />
                 </a>
               </li>
               <li class="social-icon">
                 <a href="#">
                   <span class="sr-only">Tiktok</span>
-                  <img src="./assets/icons/icon-tiktok.svg" alt="" />
+                  <img src="./assets/icons/icon-tiktok.svg" alt="" loading="lazy" />
                 </a>
               </li>
               <li class="social-icon">
                 <a href="#">
                   <span class="sr-only">Gmail</span>
-                  <img src="./assets/icons/icon-gmail.svg" alt="" />
+                  <img src="./assets/icons/icon-gmail.svg" alt="" loading="lazy" />
                 </a>
               </li>
             </ul>
@@ -737,10 +739,10 @@
           <div class="col-span-12 md:col-span-5 flex items-end">
             <ul class="partners-logos">
               <li>
-                <img src="./assets/images/BIGAID-foundation-logo.png" alt="" />
+                <img src="./assets/images/BIGAID-foundation-logo.png" alt="" loading="lazy" />
               </li>
               <li>
-                <img src="./assets/images/SDG-logo.png" alt="" />
+                <img src="./assets/images/SDG-logo.png" alt="" loading="lazy" />
               </li>
             </ul>
           </div>
