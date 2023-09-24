@@ -45,7 +45,7 @@ header.sticky {
       display: block;
     }
     .nav-link {
-      color: var(--color-text);
+      color: var(--color-white);
       font-style: normal;
       font-weight: 500;
       // display: block;
@@ -101,7 +101,8 @@ header.sticky {
   }
 }
 
-@include mixins.minmq(65em) {
+// @include mixins.minmq(65em) {
+@include mixins.minmq(1031px) {
   .alt-toolbar {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -138,7 +139,8 @@ header.sticky {
   }
 }
 
-@include mixins.maxmq(50em) {
+// @include mixins.maxmq(50em) {
+@include mixins.maxmq(1031px) {
   .nav-list {
     padding-left: 1.5em;
     padding-right: 1.5em;

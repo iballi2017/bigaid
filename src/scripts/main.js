@@ -294,5 +294,24 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
 
 
+  /**RESIZE SCREEN */
+
+  function reportWindowSize() {
+    // console.log(" window.innerHeight: ", window.innerHeight);
+    // console.log(" window.innerWidth: ", window.innerWidth);
+
+
+    /**RESET NAVIGATION LOOK */
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    const primaryNavigation = document.querySelector(".nav-list.nav-collapse");
+
+    primaryNavigation?.removeAttribute("data-visible");
+    !primaryNavigation?.hasAttribute("data-visible")
+      ? navbarToggler.setAttribute("aria-expanded", false)
+      : null
+  }
+  window.onresize = reportWindowSize;
+
+
   Init();
 });

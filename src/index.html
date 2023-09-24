@@ -305,7 +305,7 @@
     </article>
 
     <section class="blob-list-wrapper">
-      <div class="container mx-auto">
+      <div class="container mx-auto mb-8">
         <div class="wrap-container pt-8 md:pt-16">
           <h2 class="section-title text-primary text-center mb-4 fade-in">
             5 Key Features Of The App
