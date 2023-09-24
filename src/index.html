@@ -68,9 +68,9 @@
 
             <!-- <div class="flex items-center"> -->
             <ul class="nav-list nav-collapse drop-shadow-sm" id="primary-navigation">
-              <li class="nav-item"><a href="./" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="./pages/contact-us.php" class="nav-link">Home</a></li>
               <li class="nav-item">
-                <a href="#" class="nav-link">About Us</a>
+                <a href="./pages/about-us.php" class="nav-link">About Us</a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">Contact Us</a>

@@ -9,9 +9,11 @@ header.sticky {
 
     &.alt {
       background-color: var(--color-white);
+      .nav-list{
+        background-color: white;
+      }
       .nav-link {
-        // color: var(--color-text);
-        color: var(--color-white);
+        color: var(--color-text);
         &.primary-button {
           color: var(--color-white);
         }
@@ -29,7 +31,7 @@ header.sticky {
   }
   .nav-list {
     position: absolute;
-    top: 100%;
+    top: calc(100% - .3em);
     right: 0;
     left: 0;
     padding-top: 0.4em;
@@ -133,7 +135,7 @@ header.sticky {
         // font-size: 18px;
         // line-height: 123.9%; /* 22.302px */
         // letter-spacing: -0.72px;
-        color: #fff;
+        // color: #fff;
         font-size: var(--fs-nav);
         padding-top: 0.6em;
         padding-bottom: 0.6em;

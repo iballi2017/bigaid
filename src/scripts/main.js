@@ -91,19 +91,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
     toggleForms();
   });
 
+
   function toggleForms() {
+    console.log("click")
     if (partnerFormRadio) {
       if (partnerFormRadio.checked) {
         volunteerForm?.classList?.remove("active");
         partnerForm?.classList?.add("active");
       }
-    } else if (volunteerFormRadio) {
+    }
+    if (volunteerFormRadio) {
       if (volunteerFormRadio.checked) {
         volunteerForm?.classList?.add("active");
         partnerForm?.classList?.remove("active");
       }
-    } else {
-      return
     }
   }
 
@@ -244,16 +245,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
+        if (mybutton) { mybutton.style.display = "block"; }
       } else {
-        mybutton.style.display = "none";
+        if (mybutton) { mybutton.style.display = "none"; }
       }
     }
 
-    mybutton.addEventListener("click", () => {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    })
+    if (mybutton) {
+      mybutton.addEventListener("click", () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      })
+    }
   }
 
   /**Animate content on viewport intercept */
