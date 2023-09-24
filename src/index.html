@@ -483,7 +483,7 @@
 
           <div class="pie-chart | mx-auto text-center">
             <canvas id="myChart" class="fade-in"></canvas>
-            <p class="mx-auto fw-bolder text-primary fs-250 mt-8 fade-in">
+            <p class="mx-auto fw-bolder text-primary fs-250 mt-4 fade-in">
               Donation by Region/Country
             </p>
           </div>
