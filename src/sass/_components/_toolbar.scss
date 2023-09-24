@@ -10,7 +10,8 @@ header.sticky {
     &.alt {
       background-color: var(--color-white);
       .nav-link {
-        color: var(--color-text);
+        // color: var(--color-text);
+        color: var(--color-white);
         &.primary-button {
           color: var(--color-white);
         }

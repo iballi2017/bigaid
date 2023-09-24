@@ -566,7 +566,7 @@ header.sticky .toolbar-bg.alt {
   background-color: var(--color-white);
 }
 header.sticky .toolbar-bg.alt .nav-link {
-  color: var(--color-text);
+  color: var(--color-white);
 }
 header.sticky .toolbar-bg.alt .nav-link.primary-button {
   color: var(--color-white);
