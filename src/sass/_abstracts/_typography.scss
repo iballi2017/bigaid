@@ -11,9 +11,7 @@
     font-size: 1.6rem;
     font-weight: var(--fw-bolder);
     line-height: 25px;
-    // color: var(--color-primary);
 }
-
 
 .section-tagline {
     font-size: 1.5rem;
@@ -22,10 +20,13 @@
 }
 
 .md-text-size {
-    // font-size: 1.15rem;
-    // line-height: 2rem;
     font-size: 1rem;
     line-height: 1.6rem;
+
+    @include mixins.minmq(65em) {
+        font-size: 1.15rem;
+        line-height: 2rem;
+    }
 }
 
 @include mixins.minmq(65em) {
