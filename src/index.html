@@ -441,7 +441,7 @@
 
     <section>
       <div class="container mx-auto min-full-width">
-        <div class="wrap-container py-8 md:py-16">
+        <div class="wrap-container pt-8 md:py-16">
           <h2 class="section-title text-primary mb-4 text-center fade-in">
             Donation Milestone
           </h2>

@@ -1091,7 +1091,7 @@ button:hover {
   display: flex;
   gap: 1.5em;
   flex-wrap: wrap;
-  margin-top: 5.5em;
+  margin-top: 3.5em;
 }
 .donation-article .article-card {
   flex-basis: 100%;
@@ -1106,6 +1106,7 @@ button:hover {
 }
 @media (min-width: 60em) {
   .donation-article {
+    margin-top: 5.5em;
     align-items: flex-end;
     justify-content: space-between;
     flex-wrap: nowrap;
