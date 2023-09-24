@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+  <!-- favicon -->
+  <link rel="icon" href="../assets/icons/favicon.png" type="image/png" sizes="16x16">
   <!-- Font family -->
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +18,9 @@
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <!-- Custom css -->
   <link rel="stylesheet" href="../stylesheets/main.css" />
+  <!-- Toastr -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 </head>
 
 <body>
@@ -61,8 +66,8 @@
             <!-- <div class="flex items-center"> -->
             <ul class="nav-list nav-collapse drop-shadow-sm" id="primary-navigation">
               <li class="nav-item"><a href="../" class="nav-link">Home</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+              <li class="nav-item"><a href="../pages/about-us.php" class="nav-link">About Us</a></li>
+              <li class="nav-item"><a href="../pages/contact-us.php" class="nav-link">Contact Us</a></li>
               <li class="nav-item"><a href="../pages/volunteer-and-partnership-registration.php" class="nav-link">Volunteer</a></li>
               <li class="nav-item"><a href="../#donate-now" class="nav-link btn primary-button">Donate</a></li>
             </ul>

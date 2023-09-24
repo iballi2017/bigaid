@@ -22,12 +22,12 @@ include_once("../components/header.php");
             <!-- TAB NAVIGATION -->
             <div class="tab-nav vertical mb-8">
                 <div class="tab-nav-item">
-                    <input type="radio" value="volunteer" name="signup-forms" id="volunteer-form-radio" checked="false">
+                    <input type="radio" value="volunteer" name="signup-forms" id="volunteer-form-radio" checked>
                     <label for="volunteer-form-radio">Volunteer</label>
                     <span class="horiline"></span>
                 </div>
                 <div class="tab-nav-item">
-                    <input type="radio" value="partner" name="signup-forms" id="partner-form-radio" checked="true">
+                    <input type="radio" value="partner" name="signup-forms" id="partner-form-radio">
                     <label for="partner-form-radio">Partner</label>
                     <span class="horiline"></span>
                 </div>
@@ -36,7 +36,7 @@ include_once("../components/header.php");
             <!-- TAB CONTENT -->
 
             <!-- Volunteer Form -->
-            <div id="volunteer-form" class="tab-content active">
+            <div id="volunteer-form" class="tab-content">
                 <?php include_once("../components/volunteer-form.php") ?>
             </div>
 
