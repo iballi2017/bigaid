@@ -228,7 +228,7 @@
           <h2 class="section-title text-primary text-center mb-4 fade-in">
             Our Advocacy & Community<br />Projects In Pictures
           </h2>
-          <ul role="list" class="gallery-type-1 | grid grid-cols-12 gap-4 fade-in">
+          <ul role="list" class="gallery-type-1 | grid grid-cols-12 gap-2 md:gap-4 fade-in">
             <li class="col-span-6 md:col-span-3">
               <img src="./assets/images/Rectangle-45.png" alt="" />
             </li>
