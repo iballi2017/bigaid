@@ -21,8 +21,8 @@
 }
 
 .md-text-size {
-  font-size: 1.15rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.7rem;
 }
 
 @media (min-width: 65em) {
