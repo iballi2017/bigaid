@@ -24,7 +24,7 @@ header.sticky {
   padding-bottom: 1em;
   position: relative;
   .navbar-brand {
-    max-width: 170px;
+    max-width: 130px;
   }
   .nav-list {
     position: absolute;
@@ -106,6 +106,9 @@ header.sticky {
   .alt-toolbar {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+    .navbar-brand {
+      max-width: 170px;
+    }
     .navbar-toggler {
       display: none;
     }

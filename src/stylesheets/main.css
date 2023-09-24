@@ -578,7 +578,7 @@ header.sticky .toolbar-bg.alt .nav-link.primary-button {
   position: relative;
 }
 .alt-toolbar .navbar-brand {
-  max-width: 170px;
+  max-width: 130px;
 }
 .alt-toolbar .nav-list {
   position: absolute;
@@ -642,6 +642,9 @@ header.sticky .toolbar-bg.alt .nav-link.primary-button {
   .alt-toolbar {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+  }
+  .alt-toolbar .navbar-brand {
+    max-width: 170px;
   }
   .alt-toolbar .navbar-toggler {
     display: none;
