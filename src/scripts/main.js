@@ -96,15 +96,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
     console.log("click")
     if (partnerFormRadio) {
       if (partnerFormRadio.checked) {
-        console.log("partnerFormRadio.checked")
         volunteerForm?.classList?.remove("active");
         partnerForm?.classList?.add("active");
       }
     }
     if (volunteerFormRadio) {
-      console.log("volunteerFormRadio: ", volunteerFormRadio)
       if (volunteerFormRadio.checked) {
-        console.log("volunteerFormRadio.checked")
         volunteerForm?.classList?.add("active");
         partnerForm?.classList?.remove("active");
       }
