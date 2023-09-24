@@ -125,7 +125,8 @@ button {
 }
 
 
-@include mixins.maxmq(50em) {
+// @include mixins.maxmq(50em) {
+    @include mixins.maxmq(1031px) {
     .primary-button,
     .secondary-button,
     .call-to-action {
