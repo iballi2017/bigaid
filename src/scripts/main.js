@@ -93,7 +93,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
   function toggleForms() {
-    console.log("click")
     if (partnerFormRadio) {
       if (partnerFormRadio.checked) {
         volunteerForm?.classList?.remove("active");
