@@ -824,10 +824,6 @@ button:hover {
   position: relative;
   position: relative;
 }
-.video-container .video .video1 {
-  width: 100%;
-  height: 100%;
-}
 .video-container .video.thumbnail::before {
   content: "";
   display: block;
