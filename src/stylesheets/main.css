@@ -471,8 +471,12 @@ html {
   transform: translateX(5em);
 }
 
-.from-bottom {
+.from-top {
   transform: translateY(-50%);
+}
+
+.from-bottom {
+  transform: translateY(50%);
 }
 
 .card {
