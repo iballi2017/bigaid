@@ -22,7 +22,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Toastr -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 </head>
 
 <body>
@@ -38,10 +38,10 @@
               <img src="assets/images/brand-logo-white.png" loading="lazy"/>
             </a> -->
             <a class="navbar-brand" href="./" id="primary-img">
-              <img src="./assets/images/brand-logo-white.png" loading="lazy" />
+              <img src="./assets/images/brand-logo-white.png" alt="BIGAiD" loading="lazy">
             </a>
             <a class="navbar-brand hidden" href="./" id="secondary-img">
-              <img src="./assets/images/brand-logo-primary.png" loading="lazy" />
+              <img src="./assets/images/brand-logo-primary.png" alt="BIGAiD" loading="lazy">
             </a>
 
             <!-- Mobile menu button-->
@@ -112,7 +112,7 @@
             <div class="content-columns">
               <div class="text-wrap">
                 <h1 class="animate__animated animate__fadeIn">
-                  Goal<br />Mission
+                  Goal<br>Mission
                 </h1>
                 <p class="tagline">Saving Lives…</p>
                 <p>
@@ -133,10 +133,10 @@
               <div class="featured-image">
                 <!-- <img src=" ./assets/images/Smiley-medic.svg" alt="" loading="lazy"/> -->
                 <div class="img-static">
-                  <img src="./assets/images/beautiful-african-american-doctor-couple-white.png" alt="" class="animate__animated animate__fadeInUp" loading="lazy" />
+                  <img src="./assets/images/beautiful-african-american-doctor-couple-white.png" alt="Hero featured image" class="animate__animated animate__fadeInUp" loading="lazy">
                 </div>
                 <div class="img-absolute cursor-pointer">
-                  <img src="./assets/images/phone.png" alt="" class="animate__animated animate__fadeInRight" loading="lazy" />
+                  <img src="./assets/images/phone.png" alt="Phone image" class="animate__animated animate__fadeInRight" loading="lazy">
                 </div>
               </div>
             </div>
@@ -150,9 +150,9 @@
           <div class="hero-alt">
             <div class="wrap-container">
               <div class="text-wrap">
-                <h1 class="animate__animated animate__fadeIn">Goal<br />Mission</h1>
+                <h1 class="animate__animated animate__fadeIn">Goal<br>Mission</h1>
                 <p>Saving Lives…</p>
-                <p>Unleashing The Power to Health & <br />Wellness through the BIGAiD Web & <br />Mobile App, transforming lives.</p>
+                <p>Unleashing The Power to Health & <br>Wellness through the BIGAiD Web & <br>Mobile App, transforming lives.</p>
                 <div class="py-2 lg:py-4"></div>
                 <div class="flex">
                   <button class="call-to-action animate__animated animate__fadeInLeft">Donate</button>
@@ -176,8 +176,9 @@
         <div class="wrap-container fade-in">
           <div class="video-container">
             <div class="video thumbnail">
-              <video id="video1" width="100%" height="100%" loading="lazy">
-                <source src="./assets/videos/yt1s.com - Nature Beautiful short video 720p HD_480p.mp4" type="video/mp4" />
+              <!-- <video id="video1" width="100%" height="100%"> -->
+              <video id="video1">
+                <source src="./assets/videos/sample-video.mp4" type="video/mp4" />
                 <source src="mov_bbb.ogg" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
@@ -236,7 +237,7 @@
       <div class="container mx-auto">
         <div class="wrap-container py-8">
           <h2 class="section-title text-primary text-center mb-4 fade-in">
-            Our Advocacy & Community<br />Projects In Pictures
+            Our Advocacy & Community<br>Projects In Pictures
           </h2>
           <ul role="list" class="gallery-type-1 | grid grid-cols-12 gap-2 md:gap-4 fade-in">
             <li class="col-span-6 md:col-span-3">
@@ -262,7 +263,7 @@
           <div class="grid grid-cols-12 gap-4 md:gap-8">
             <div class="col-span-12 md:col-span-6">
               <h2 class="section-title text-primary mb-4 fade-in">
-                Your Donation Equals <br />Many Lives Saved
+                Your Donation Equals <br>Many Lives Saved
               </h2>
               <div class="featured-image | mb-6 fade-in" style="
                     max-height: 300px;
@@ -300,7 +301,7 @@
                 access.
               </p>
               <br class="hidden md:block" />
-              <br />
+              <br>
               <p class="md-text-size fade-in">
                 Through our innovative app and creative education programs, we
                 aim to bridge the gap between individuals and quality
@@ -367,7 +368,7 @@
         <div class="skew-bg-article">
           <div class="wrap-container">
             <h2 class="section-title text-primary mb-4 fade-in">
-              Your Wellness Power Through <br />Health Education
+              Your Wellness Power Through <br>Health Education
             </h2>
             <div class="grid md:grid-cols-12 md:gap-4">
               <div class="col-span-5">
@@ -377,7 +378,7 @@
                   upcoming projects extend beyond immediate medical
                   intervention.
                 </p>
-                <br />
+                <br>
                 <p class="md-text-size fade-in">
                   Our initiatives like the BIGAiD Walk4Wellness Campaign
                   Project and the monthly H&W Media Chat are advocacy that
@@ -412,7 +413,7 @@
               <h3 class="fw-bolder fade-in">How to Donate</h3>
               <p class="fw-semi-bold fade-in">
                 Click the "Donate Now" button below to make a secure online
-                contribution.<br />Together, we can make a substantial impact
+                contribution.<br>Together, we can make a substantial impact
                 and raise funds to transform healthcare in Nigeria and Africa.
               </p>
             </div>
@@ -511,7 +512,7 @@
                   Changing Lives
                 </h2>
                 <h3 class="text-secondary section-tagline fade-in">
-                  Your Donation, <br />Many Lives Saved
+                  Your Donation, <br>Many Lives Saved
                 </h3>
                 <p class="md-text-size fade-in">
                   Every contribution you make directly impacts the lives of
@@ -550,10 +551,10 @@
             </div>
             <div>
               <h2 class="section-title text-secondary mb-4 fade-in">
-                Stay<br />Updated
+                Stay<br>Updated
               </h2>
               <p class="md-text-size fade-in">
-                Be the first to know when we go live.<br />Follow Exciting
+                Be the first to know when we go live.<br>Follow Exciting
                 health tips & advice from our blog, Know what’s new about the
                 App and Launch Date, Get insights on every stage of meeting
                 the funding benchmark on donations.
@@ -570,7 +571,7 @@
           <div class="grid grid-cols-12 items-center">
             <div class="col-span-12 md:col-span-5">
               <h2 class="section-title mb-4 text-primary fade-in">
-                Sign Up to our<br />Newsletter
+                Sign Up to our<br>Newsletter
               </h2>
               <!-- NEWSLETTER FORM -->
               <form action="">
@@ -601,7 +602,7 @@
         <div class="primary-bg-skew text-white">
           <div class="wrap-container">
             <h2 class="section-title mb-2 md:mb-16 text-center fade-in">
-              Join Us in Transforming<br />Healthcare
+              Join Us in Transforming<br>Healthcare
             </h2>
 
             <div class="grid grid-cols-12 gap-4">
