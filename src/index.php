@@ -141,6 +141,9 @@
               </div>
             </div>
           </div>
+            <div class="skew-wave">
+              <div class="line"></div>
+            </div>
         </div>
 
         <!-- <div class="hidden container mx-auto">
@@ -163,7 +166,12 @@
       </div>
     </section>
 
-    <section>
+    <!-- 
+  <div class="skew-wave">
+    <div class="line"></div>
+  </div> -->
+
+    <section class="video-section-wrapper">
       <div class="bg-primary container mx-auto pseudo-after-bottom-white-tape">
         <div class="wrap-container fade-in">
           <div class="video-container">
@@ -666,7 +674,7 @@
 
   <!-- Go to top -->
   <button id="myBtn" title="Go to top">
-    <img src="./assets/icons/arrow-up-solid.png" alt="" loading="lazy"/>
+    <img src="./assets/icons/arrow-up-solid.png" alt="" loading="lazy" />
   </button>
 
   <!--  -->
