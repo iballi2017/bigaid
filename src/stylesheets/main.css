@@ -145,6 +145,7 @@ svg {
   --lh-150: 50px;
   --lh-200: 60px;
   --lh-section-title: 65px;
+  --skew-wave-top-margin: -6.8em;
 }
 
 @media (max-width: 50em) {
@@ -516,8 +517,8 @@ html {
 }
 
 .toolbar {
-  background-color: #00034B;
-  color: #FFFFFF;
+  background-color: #00034b;
+  color: #ffffff;
 }
 
 .wrapper {
@@ -526,14 +527,14 @@ html {
 }
 
 .first-section {
-  background-color: #FF0099;
+  background-color: #ff0099;
   color: #ffffff;
   min-height: 1152px;
   position: relative;
 }
 
 .second-section {
-  background-color: #00034B;
+  background-color: #00034b;
   color: #ffffff;
   height: 300px;
   position: relative;
@@ -542,7 +543,7 @@ html {
   content: "";
   display: block;
   height: 200px;
-  background-color: #00034B;
+  background-color: #00034b;
   color: #ffffff;
   position: absolute;
   left: 0;
@@ -553,6 +554,38 @@ html {
   transform-origin: left;
 }
 
+.skew-wave {
+  display: none;
+}
+
+.video-section-wrapper {
+  margin-top: 0;
+}
+
+@media (min-width: 1222px) {
+  .skew-wave {
+    display: block;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin-top: var(--skew-wave-top-margin);
+  }
+  .skew-wave .line {
+    background-color: var(--color-primary);
+    position: absolute;
+    z-index: 2;
+    left: -5em;
+    top: 5.8em;
+    bottom: -8em;
+    right: -7em;
+    border-radius: 0 550px 0 0;
+    transform: rotate(-10deg);
+  }
+  .video-section-wrapper {
+    margin-top: calc(var(--skew-wave-top-margin) - 3.5em);
+  }
+}
 header.sticky {
   z-index: 1020;
   transition: 0.5s;
