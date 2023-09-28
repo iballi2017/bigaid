@@ -58,10 +58,10 @@
 
                     <ul class="partners-logos">
                         <li>
-                            <img src="../assets/images/BIGAID-foundation-logo.png" alt="">
+                            <img src="../assets/images/BIGAID-foundation-logo-min.png" alt="">
                         </li>
                         <li>
-                            <img src="../assets/images/SDG-logo.png" alt="">
+                            <img src="../assets/images/SDG-logo-min.png" alt="">
                         </li>
                     </ul>
                 </div>

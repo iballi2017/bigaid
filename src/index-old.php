@@ -32,10 +32,10 @@
               <img src="assets/images/brand-logo-white.png">
             </a> -->
             <a class="navbar-brand" href="#" id="primary-img">
-              <img src="./assets/images/brand-logo-white.png">
+              <img src="./assets/images/brand-logo-white-min.png">
             </a>
             <a class="navbar-brand hidden" href="#" id="secondary-img">
-              <img src="./assets/images/brand-logo-primary.png">
+              <img src="./assets/images/brand-logo-primary-min.png">
             </a>
 
 
@@ -115,10 +115,10 @@
               <div class="featured-image">
                 <!-- <img src=" ./assets/images/Smiley-medic.svg" alt=""> -->
                 <div class="img-static">
-                  <img src="./assets/images/beautiful-african-american-doctor-couple-white.png" alt="" class=" animate__animated animate__fadeInUp">
+                  <img src="./assets/images/beautiful-african-american-doctor-couple-white-min.png" alt="" class=" animate__animated animate__fadeInUp">
                 </div>
                 <div class="img-absolute cursor-pointer">
-                  <img src="./assets/images/phone.png" alt="" class="animate__animated animate__fadeInRight">
+                  <img src="./assets/images/phone-min.png" alt="" class="animate__animated animate__fadeInRight">
                 </div>
               </div>
             </div>
@@ -168,11 +168,11 @@
 
           <div class="flex">
             <div class="animate__animated animate__fadeInLeft">
-              <img src="./assets/images/lady-holding-a-phone-arrow.png" alt="">
+              <img src="./assets/images/lady-holding-a-phone-arrow-min.png" alt="">
             </div>
             <!-- <div class="bga-mt-50" style="margin-left: -70px;"> -->
             <div class="animate__animated animate__fadeInRight" style="margin-top: 9%; margin-left: -3.5%;">
-              <img src="./assets/images/we-understand-the-challenges.png" alt="">
+              <img src="./assets/images/we-understand-the-challenges-min.png" alt="">
             </div>
           </div>
         </div>
@@ -192,7 +192,7 @@
             </div>
             <div class="md:col-span-6 order-1 md:order-2 relative">
               <div class="space-traveller-img-container">
-                <img src="./assets/images/space-traveller.png" alt="">
+                <img src="./assets/images/space-traveller-min.png" alt="">
               </div>
             </div>
           </div>
@@ -209,16 +209,16 @@
 
           <ul role="list" class="gallery-type-1 | grid grid-cols-12 gap-4">
             <li class="col-span-6 md:col-span-3">
-              <img src="./assets/images/Rectangle-45.png" alt="">
+              <img src="./assets/images/Rectangle-45-min.png" alt="">
             </li>
             <li class="col-span-6 md:col-span-3">
-              <img src="./assets/images/Rectangle-46.png" alt="">
+              <img src="./assets/images/Rectangle-46-min.png" alt="">
             </li>
             <li class="col-span-6 md:col-span-3">
-              <img src="./assets/images/Rectangle-47.png" alt="">
+              <img src="./assets/images/Rectangle-47-min.png" alt="">
             </li>
             <li class="col-span-6 md:col-span-3">
-              <img src="./assets/images/Rectangle-48.png" alt="">
+              <img src="./assets/images/Rectangle-48-min.png" alt="">
             </li>
           </ul>
         </div>
@@ -234,7 +234,7 @@
             <div class="column-1">
               <h2 class="fw-bold fs-section-title lh-section-title mb-8 text-primary">Your Donation Equals Many Lives Saved</h2>
               <div class="featured-image | mb-6">
-                <img src="./assets/images/donation-featured-image.png" alt="">
+                <img src="./assets/images/donation-featured-image-min.png" alt="">
               </div>
               <p>Donating to the BIGAiD App & Health Education project gives you the opportunity to save a life, help millions with the opportunity to good healthcare access, contribute to community social good, and help meet the UNSDGs #Envision2030 Goal 3 of global health & well-being vision.
                 The state of healthcare in Nigeria and most African Countries has always been of pressing concern.
@@ -256,7 +256,7 @@
             <div class="col-span-12 md:col-span-6">
               <h2 class="fw-bold fs-section-title lh-section-title mb-4 text-primary">Your Donation Equals Many Lives Saved</h2>
               <div class="mb-6">
-                <img src="./assets/images/donation-featured-image.png" alt="">
+                <img src="./assets/images/donation-featured-image-min.png" alt="">
               </div>
               <p>Donating to the BIGAiD App & Health Education project gives you the opportunity to save a life, help millions with the opportunity to good healthcare access, contribute to community social good, and help meet the UNSDGs #Envision2030 Goal 3 of global health & well-being vision.
                 The state of healthcare in Nigeria and most African Countries has always been of pressing concern.
@@ -289,22 +289,22 @@
               </li>
               <li class="blob-item">
                 <div class="blob" style="left: -15%">
-                  <img src="./assets/images/blob-1.png" alt="">
+                  <img src="./assets/images/blob-1-min.png" alt="">
                 </div>
               </li>
               <li class="blob-item">
               </li>
               <li class="blob-item row-span-2">
-                <img src="./assets/images/phone-2.png" alt="">
+                <img src="./assets/images/phone-2-min.png" alt="">
               </li>
               <li class="blob-item col-span-2">
                 <div class="blob" style="top: -45%; left: 8%">
-                  <img src="./assets/images/blob-2.png" alt="">
+                  <img src="./assets/images/blob-2-min.png" alt="">
                 </div>
               </li>
               <li class="blob-item">
                 <div class="blob" style="top: -60%; right: -15%">
-                  <img src="./assets/images/blob-3.png" alt="">
+                  <img src="./assets/images/blob-3-min.png" alt="">
                 </div>
               </li>
               <li class="blob-item">
@@ -313,14 +313,14 @@
               </li>
               <li class="blob-item col-span-2">
                 <div class="blob" style="top: -80%; right: -10%">
-                  <img src="./assets/images/blob-4.png" alt="">
+                  <img src="./assets/images/blob-4-min.png" alt="">
                 </div>
               </li>
               <li class="blob-item">
               </li>
               <li class="blob-item">
                 <div class="blob" style="top: -125%; left: -15%">
-                  <img src="./assets/images/blob-5.png" alt="">
+                  <img src="./assets/images/blob-5-min.png" alt="">
                 </div>
               </li>
             </ul>
@@ -344,7 +344,7 @@
               </div>
               <div class="col-span-7 relative">
                 <div class="float-featured-image">
-                  <img src="./assets/images/man-carry-child.png" alt="">
+                  <img src="./assets/images/man-carry-child-min.png" alt="">
                 </div>
               </div>
             </div>
@@ -367,7 +367,7 @@
             </div>
             <div class="featured-image-container">
               <div class="featured-image">
-                <img src="./assets/images/lady-card-transaction-alt.png" alt="">
+                <img src="./assets/images/lady-card-transaction-alt-min.png" alt="">
               </div>
             </div>
           </div>
@@ -435,7 +435,7 @@
 
 
           <div class="pie-chart-image">
-            <img src="./assets/images/donation-pie-chart.png" alt="">
+            <img src="./assets/images/donation-pie-chart-min.png" alt="">
           </div>
 
 
@@ -468,7 +468,7 @@
               </div>
               <div class="featured-image-container">
                 <div class="featured-image">
-                  <img src="./assets/images/man-woman-laughs.png" alt="">
+                  <img src="./assets/images/man-woman-laughs-min.png" alt="">
                 </div>
               </div>
             </div>
@@ -485,7 +485,7 @@
           <div class="stay-updated-article">
             <div>
               <div class="featured-image">
-                <img src="./assets/images/illustration-one.png" alt="">
+                <img src="./assets/images/illustration-one-min.png" alt="">
               </div>
             </div>
             <div>
@@ -509,7 +509,7 @@
             </div>
             <div class="col-span-12 md:col-span-7">
               <div class="featured-image">
-                <img src="./assets/images/illustration-email-messaging.png" alt="">
+                <img src="./assets/images/illustration-email-messaging-min.png" alt="">
               </div>
             </div>
           </div>
@@ -530,7 +530,7 @@
               </div>
               <div class="col-span-12 md:col-span-7">
                 <div class="featured-image">
-                  <img src="./assets/images/doctor-hand-gloves.png" alt="">
+                  <img src="./assets/images/doctor-hand-gloves-min.png" alt="">
                 </div>
               </div>
             </div>
@@ -546,7 +546,7 @@
           <div class="grid grid-cols-12 gap-4 md:gap-0">
             <div class="col-span-12 md:col-span-6">
               <div class="featured-image">
-                <img src="./assets/images/handshakes.png" alt="">
+                <img src="./assets/images/handshakes-min.png" alt="">
               </div>
             </div>
 
@@ -575,7 +575,7 @@
 
             <div class="col-span-12 md:col-span-6">
               <div class="featured-image">
-                <img src="./assets/images/illustration-customer-agent.png" alt="">
+                <img src="./assets/images/illustration-customer-agent-min.png" alt="">
               </div>
             </div>
           </div>
@@ -661,10 +661,10 @@
 
             <ul class="partners-logos">
               <li>
-                <img src="./assets/images/BIGAID-foundation-logo.png" alt="">
+                <img src="./assets/images/BIGAID-foundation-logo-min.png" alt="">
               </li>
               <li>
-                <img src="./assets/images/SDG-logo.png" alt="">
+                <img src="./assets/images/SDG-logo-min.png" alt="">
               </li>
             </ul>
           </div>

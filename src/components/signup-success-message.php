@@ -7,7 +7,7 @@
             <div class="mx-2"></div>
             <div class="smiley-wrapper">
                 <div class="flex items-center">
-                    <img src="../assets/icons/smiley-emoji-removebg-preview.png" alt="" class="smiley-icon">
+                    <img src="../assets/icons/smiley-emoji-removebg-preview-min.png" alt="" class="smiley-icon">
                 </div>
             </div>
         </div>
