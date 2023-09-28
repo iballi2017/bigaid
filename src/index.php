@@ -188,11 +188,11 @@
 
           <div class="min-full-width flex fade-in">
             <div class="">
-              <img src="./assets/images/lady-holding-a-phone-arrow.png" alt="" loading="lazy" />
+              <img src="./assets/images/lady-holding-a-phone-arrow-min.png" alt="" loading="lazy" />
             </div>
             <!-- <div class="bga-mt-50" style="margin-left: -70px;"> -->
             <div class="" style="margin-top: 9%; margin-left: -3.5%">
-              <img src="./assets/images/we-understand-the-challenges.png" alt="" loading="lazy" />
+              <img src="./assets/images/we-understand-the-challenges-min.png" alt="" loading="lazy" />
             </div>
           </div>
         </div>
