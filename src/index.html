@@ -73,7 +73,7 @@
                 <a href="./pages/about-us.php" class="nav-link">About Us</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Contact Us</a>
+                <a href="./pages/contact-us.php" class="nav-link">Contact Us</a>
               </li>
               <li class="nav-item">
                 <a href="./pages/volunteer-and-partnership-registration.php" class="nav-link">Volunteer</a>
