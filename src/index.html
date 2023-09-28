@@ -269,7 +269,7 @@
                     background-position: center;
                   ">
               </div>
-              <p class="md-text-size fade-in">
+              <p class="md-text-size">
                 Donating to the BIGAiD App & Health Education project gives
                 you the opportunity to save a life, help millions with the
                 opportunity to good healthcare access, contribute to community
