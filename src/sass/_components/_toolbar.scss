@@ -9,9 +9,6 @@ header.sticky {
 
     &.alt {
       background-color: var(--color-white);
-      .nav-list{
-        background-color: white;
-      }
       .nav-link {
         color: var(--color-text);
         &.primary-button {
@@ -31,7 +28,7 @@ header.sticky {
   }
   .nav-list {
     position: absolute;
-    top: calc(100% - .3em);
+    top: calc(100% - 0.3em);
     right: 0;
     left: 0;
     padding-top: 0.4em;
@@ -147,6 +144,15 @@ header.sticky {
 
 // @include mixins.maxmq(50em) {
 @include mixins.maxmq(1031px) {
+  header.sticky {
+    .toolbar-bg {
+      &.alt {
+        .nav-list {
+          background-color: white;
+        }
+      }
+    }
+  }
   .nav-list {
     padding-left: 1.5em;
     padding-right: 1.5em;
