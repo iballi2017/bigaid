@@ -1,46 +1,46 @@
 @use "../_partials/mixins";
 
 .blob-list-wrapper {
-    + article {
-        @include mixins.minmq(900px) {
-            margin-top: -12em;
-        }
+  + article {
+    @include mixins.minmq(900px) {
+      margin-top: -12em;
     }
+  }
 }
 .blog-highlights {
-    // .featured-phone-image {
-    //     // background-color: blue;
+  // .featured-phone-image {
+  //     // background-color: blue;
+  // }
+  .blob-list {
+    .blob-item {
+      min-height: 300px; // create horizontal space should incase images are not loaded
+      position: relative;
+      .blob {
+        position: absolute;
+      }
+    }
+  }
+
+  @include mixins.maxmq(50em) {
+    overflow-x: auto;
+
+    /* width */
+    // &::-webkit-scrollbar {
+    //     width: 1px;
     // }
-    .blob-list {
-        .blob-item {
-            // background-color: red;
-            position: relative;
-            .blob {
-                position: absolute;
-            }
-        }
-    }
 
-    @include mixins.maxmq(50em) {
-        overflow-x: auto;
+    // /* Track */
+    // // &::-webkit-scrollbar-track {
+    // //     box-shadow: inset 0 0 5px grey;
+    // // }
 
-        /* width */
-        // &::-webkit-scrollbar {
-        //     width: 1px;
-        // }
-
-        // /* Track */
-        // // &::-webkit-scrollbar-track {
-        // //     box-shadow: inset 0 0 5px grey;
-        // // }
-
-        // /* Handle */
-        // &::-webkit-scrollbar-thumb {
-        //     // background: var(--color-primary);
-        //     background-color: white;
-        //     // &:hover {
-        //     //     background: var(--color-secondary);
-        //     // }
-        // }
-    }
+    // /* Handle */
+    // &::-webkit-scrollbar-thumb {
+    //     // background: var(--color-primary);
+    //     background-color: white;
+    //     // &:hover {
+    //     //     background: var(--color-secondary);
+    //     // }
+    // }
+  }
 }

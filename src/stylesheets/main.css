@@ -864,7 +864,7 @@ button:hover {
 .video-container .video.thumbnail::before {
   content: "";
   display: block;
-  background-image: url(../assets/images/video-thumbnail.jpg);
+  background-image: url(../assets/images/video-thumbnail-min.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
@@ -1067,6 +1067,7 @@ button:hover {
 }
 
 .blog-highlights .blob-list .blob-item {
+  min-height: 300px;
   position: relative;
 }
 .blog-highlights .blob-list .blob-item .blob {
@@ -1474,7 +1475,7 @@ input.invalid:focus {
 
 .title-bg-one {
   --fontSize: 2.8rem;
-  background-image: url(../assets/images/beautiful-african-american-doctor-couple-white.png);
+  background-image: url(../assets/images/beautiful-african-american-doctor-couple-white-min.png);
   background-color: rgba(0, 0, 0, 0.4);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1845,7 +1846,7 @@ ol[aria-label=numbering] {
     min-height: 400px;
     display: flex;
     align-items: center;
-    background-image: url(../assets/images/beautiful-african-american-doctor-couple-white.png);
+    background-image: url(../assets/images/beautiful-african-american-doctor-couple-white-min.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.5);
