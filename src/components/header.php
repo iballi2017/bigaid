@@ -2,23 +2,41 @@
 <html lang="en">
 
 <head>
+  <!-- META CHARSET -->
   <meta charset="UTF-8" />
+  <!-- META VIEWPORT -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <!-- favicon -->
-  <link rel="icon" href="../assets/icons/favicon.png" type="image/png" sizes="16x16">
+  <!-- META EDGE -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- TITLE -->
+  <title>BIGAiD | Saving lives</title>
+  <!-- META DESCRIPTION -->
+  <meta name="description" content="Unleashing The Power to Health and Wellness through the BIGAiD Web and Mobile App, transforming lives.">
+  <!-- META KEYWORDS -->
+  <meta name="keywords" content="Partnership, Partners, Volunteers, Healthcare, Donation, Foundation">
+  <!-- FAVICON -->
+  <!-- <link rel="icon" href="../assets/icons/favicon.png" type="image/png" sizes="16x16"> -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  
   <!-- Font family -->
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet"> -->
+
   <!-- Animate.Style -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!-- Tailwind css -->
+
+  <!-- TAILWIND STYLES -->
   <link rel="stylesheet" href="../stylesheets/tailwindcss/tailwind.css" />
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-  <!-- Custom css -->
+
+  <!-- CUSTOM STYLES -->
   <link rel="stylesheet" href="../stylesheets/main.css" />
-  <!-- Toastr -->
+
+  <!-- TOASTR -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 </head>

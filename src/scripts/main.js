@@ -1,10 +1,8 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-
   function Init() {
-
     mainToolbarStateToggle();
     playPauseVideo();
-    toggleForms()
+    toggleForms();
     donationMileStoneGraph();
     controlDonationCurrency();
     toggleDonationAmountSelect();
@@ -13,7 +11,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     handleScrollToTop();
     handleAnimateOnViewportIntercept();
   }
-
 
   /**main Toolbar State Toggle */
   function mainToolbarStateToggle() {
@@ -39,7 +36,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       playPauseBtn.addEventListener("click", async () => {
         // console.log("promise: ", myPromise);
         if (!isPlay) {
-          myVideo.parentElement.classList.remove("thumbnail")
+          myVideo.parentElement.classList.remove("thumbnail");
           myVideo.play();
           isPlay = true;
           playPauseBtn.lastElementChild?.classList?.remove("hidden");
@@ -51,7 +48,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           isPlay = false;
           playPauseBtn.lastElementChild?.classList?.add("hidden");
           playPauseBtn.firstElementChild?.classList?.remove("hidden");
-          myVideo.parentElement.classList.add("thumbnail")
+          myVideo.parentElement.classList.add("thumbnail");
           return;
         }
       });
@@ -76,7 +73,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   }
 
-
   /**SIGNUP FORM TABS */
   const volunteerFormRadio = document.querySelector("#volunteer-form-radio");
   const partnerFormRadio = document.querySelector("#partner-form-radio");
@@ -90,7 +86,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   volunteerFormRadio?.addEventListener("click", () => {
     toggleForms();
   });
-
 
   function toggleForms() {
     if (partnerFormRadio) {
@@ -106,8 +101,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
       }
     }
   }
-
-
 
   /* NOTIFICATION POPUPS */
   var cancelNotification = document.querySelectorAll(".cancel-notification");
@@ -126,23 +119,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
             if (element) {
               element.classList.remove("show");
             }
-          })
-
+          });
         }
       }
-    })
-
+    });
   }
 
-
   function toggleDonationAmountSelect() {
-
     const Curr = {
       USD: "USD",
       Naira: "Naira",
-    }
+    };
 
-    var ele = document.getElementsByName('Currency');
+    var ele = document.getElementsByName("Currency");
     const nairaSelect = document.getElementById("nairaSelect");
     const usdSelect = document.getElementById("usdSelect");
 
@@ -150,15 +139,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
       if (ele[i].checked) {
         switch (ele[i].value) {
           case Curr.USD:
-            console.log("hi: ", ele[i].value)
-            nairaSelect.classList.add("hidden")
-            usdSelect.classList.remove("hidden")
+            console.log("hi: ", ele[i].value);
+            nairaSelect.classList.add("hidden");
+            usdSelect.classList.remove("hidden");
             break;
 
           case Curr.Naira:
-            console.log("hello: ", ele[i].value)
-            nairaSelect.classList.remove("hidden")
-            usdSelect.classList.add("hidden")
+            console.log("hello: ", ele[i].value);
+            nairaSelect.classList.remove("hidden");
+            usdSelect.classList.add("hidden");
             break;
 
           default:
@@ -174,12 +163,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
       const element = currencyRadio[i];
       element.addEventListener("click", () => {
         if (element.checked) {
-          toggleDonationAmountSelect()
+          toggleDonationAmountSelect();
         }
-      })
+      });
     }
   }
-
 
   function controlCurrentlyWorkHere() {
     const currentlyWorkHere = document.querySelector("#currentlyWorkHere");
@@ -194,59 +182,68 @@ document.addEventListener("DOMContentLoaded", (event) => {
         return;
       }
       if (endDateContainer?.classList.contains("hidden"))
-        endDateContainer?.classList.remove("hidden")
+        endDateContainer?.classList.remove("hidden");
       if (!startDateContainer?.classList.contains("md:col-span-6"))
         startDateContainer?.classList.add("md:col-span-6");
-
-    })
+    });
   }
-
 
   function dismissCookiesNotificationBanner() {
     // alert("hello")
-    const cookiesNotificationBanner = document.querySelector("#cookiesNotificationBanner");
+    const cookiesNotificationBanner = document.querySelector(
+      "#cookiesNotificationBanner"
+    );
     const rejectCookiesButton = document.querySelector("#rejectCookiesButton");
     const acceptCookiesButton = document.querySelector("#acceptCookiesButton");
 
-
     /**SHOW COOKIES NOTIFICATION BANNER */
     function showCookiesNotificationBanner() {
-      cookiesNotificationBanner ? cookiesNotificationBanner.classList.remove("hidden") : null;
+      cookiesNotificationBanner
+        ? cookiesNotificationBanner.classList.remove("hidden")
+        : null;
     }
     showCookiesNotificationBanner();
 
-
     /**REJECT COOKIES NOTIFICATION BANNER */
-    rejectCookiesButton ? rejectCookiesButton.addEventListener("click", () => {
-      if (cookiesNotificationBanner) {
-        cookiesNotificationBanner.classList.add("hidden");
-        // more codes...
-      }
-    }) : null
+    rejectCookiesButton
+      ? rejectCookiesButton.addEventListener("click", () => {
+          if (cookiesNotificationBanner) {
+            cookiesNotificationBanner.classList.add("hidden");
+            // more codes...
+          }
+        })
+      : null;
 
     /**ACCEPT COOKIES NOTIFICATION BANNER */
-    acceptCookiesButton ? acceptCookiesButton.addEventListener("click", () => {
-      if (cookiesNotificationBanner) {
-        cookiesNotificationBanner.classList.add("hidden");
-        // more codes...
-      }
-    }) : null
-
-
-
+    acceptCookiesButton
+      ? acceptCookiesButton.addEventListener("click", () => {
+          if (cookiesNotificationBanner) {
+            cookiesNotificationBanner.classList.add("hidden");
+            // more codes...
+          }
+        })
+      : null;
   }
-
 
   /**SCROLL TOP */
   function handleScrollToTop() {
     let mybutton = document.getElementById("myBtn");
-    window.onscroll = function () { scrollFunction() };
+    window.onscroll = function () {
+      scrollFunction();
+    };
 
     function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        if (mybutton) { mybutton.style.display = "block"; }
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        if (mybutton) {
+          mybutton.style.display = "block";
+        }
       } else {
-        if (mybutton) { mybutton.style.display = "none"; }
+        if (mybutton) {
+          mybutton.style.display = "none";
+        }
       }
     }
 
@@ -254,7 +251,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       mybutton.addEventListener("click", () => {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
-      })
+      });
     }
   }
 
@@ -265,19 +262,24 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const faders = document.querySelectorAll(".fade-in");
     const fromLeft = document.querySelectorAll(".from-left");
     const fromRight = document.querySelectorAll(".from-right");
+    const fromBottom = document.querySelectorAll(".from-bottom");
+    const fromTop = document.querySelectorAll(".from-top");
     const sliders = document.querySelectorAll(".slide-in");
 
     const appearOptions = {
       threshold: 0,
       rootMargin: "0px 0px -250px 0px",
     };
-    const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("appear");
-        appearOnScroll.unobserve(entry.target);
-      });
-    }, appearOptions);
+    const appearOnScroll = new IntersectionObserver(
+      (entries, appearOnScroll) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("appear");
+          appearOnScroll.unobserve(entry.target);
+        });
+      },
+      appearOptions
+    );
 
     faders.forEach((fader) => {
       appearOnScroll.observe(fader);
@@ -288,20 +290,23 @@ document.addEventListener("DOMContentLoaded", (event) => {
     fromRight.forEach((fader) => {
       appearOnScroll.observe(fader);
     });
+    fromTop.forEach((fader) => {
+      appearOnScroll.observe(fader);
+    });
+    fromBottom.forEach((fader) => {
+      appearOnScroll.observe(fader);
+    });
 
     sliders.forEach((slider) => {
       appearOnScroll.observe(slider);
     });
-
   }
-
 
   /**RESIZE SCREEN */
 
   function reportWindowSize() {
     // console.log(" window.innerHeight: ", window.innerHeight);
     // console.log(" window.innerWidth: ", window.innerWidth);
-
 
     /**RESET NAVIGATION LOOK */
     const navbarToggler = document.querySelector(".navbar-toggler");
@@ -310,10 +315,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     primaryNavigation?.removeAttribute("data-visible");
     !primaryNavigation?.hasAttribute("data-visible")
       ? navbarToggler.setAttribute("aria-expanded", false)
-      : null
+      : null;
   }
   window.onresize = reportWindowSize;
-
 
   Init();
 });

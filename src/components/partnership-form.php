@@ -27,7 +27,7 @@
                 </div>
                 <div class="col-span-12 md:col-span-4">
                     <label for="Email" class="block mb-2 cursor-pointer required">Email Address</label>
-                    <input type="text" class="form-control block w-full rounded" id="Email">
+                    <input type="text" class="form-control block w-full rounded" id="Email" autocomplete="email">
                 </div>
                 <div class="col-span-12 md:col-span-4">
                     <label for="Website" class="block mb-2 cursor-pointer">Website</label>
@@ -143,19 +143,19 @@
                     <legend for="are-you-an-independent-medical-professional" class="block mb-2 cursor-pointer">Are you an are you an independent Medical Professional?</legend>
                     <ul class="flex">
                         <li>
-                            <input type="radio" name="are-you-an-independent-medical-professional" class="" id="are-you-an-independent-medical-professional-Yes">
+                            <input type="radio" name="are-you-an-independent-medical-professional" id="are-you-an-independent-medical-professional-Yes">
                             <label for="are-you-an-independent-medical-professional-Yes" class="cursor-pointer">Yes</label>
                         </li>
                         <li class="mx-2"></li>
                         <li>
-                            <input type="radio" name="are-you-an-independent-medical-professional" class="" id="are-you-an-independent-medical-professional-No">
+                            <input type="radio" name="are-you-an-independent-medical-professional" id="are-you-an-independent-medical-professional-No">
                             <label for="are-you-an-independent-medical-professional-No" class="cursor-pointer">No</label>
                         </li>
                     </ul>
                 </div>
                 <div class="col-span-12">
-                    <label for="idYesSTateHow" class="block mb-2 cursor-pointer">If Yes, State Clearly How </label>
-                    <input type="text" class="form-control block w-full rounded" id="idYesSTateHow">
+                    <label for="idYesStateHow" class="block mb-2 cursor-pointer">If "Yes", state clearly how </label>
+                    <input type="text" class="form-control block w-full rounded" id="idYesStateHow">
                 </div>
             </div>
         </fieldset>
@@ -167,7 +167,7 @@
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-12 md:col-span-12">
                     <label for="Address" class="block mb-2 cursor-pointer">Address</label>
-                    <input type="text" class="form-control block w-full rounded" id="Address">
+                    <input type="text" class="form-control block w-full rounded" id="Address" autocomplete="street-address">
                 </div>
                 <div class="col-span-12 md:col-span-3">
                     <label for="City" class="block mb-2 cursor-pointer">City</label>
@@ -183,7 +183,12 @@
                 </div>
                 <div class="col-span-12 md:col-span-3">
                     <label for="Country" class="block mb-2 cursor-pointer">Country</label>
-                    <input type="text" class="form-control block w-full rounded" id="Country">
+                    <!-- <input type="text" class="form-control block w-full rounded" id="Country"> -->
+                    <select name="Country" id="Country" class="form-control block w-full rounded" autocomplete="address-level2">
+                        <option value="" selected>--Select Country--</option>
+                        <option value="afghanistan">Afghanistan</option>
+                        <option value="argentina">Argentina</option>
+                    </select>
                 </div>
             </div>
         </fieldset>
