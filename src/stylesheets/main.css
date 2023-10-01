@@ -1067,7 +1067,7 @@ button:hover {
 }
 
 .blog-highlights .blob-list .blob-item {
-  min-height: 300px;
+//  min-height: 300px;
   position: relative;
 }
 .blog-highlights .blob-list .blob-item .blob {
