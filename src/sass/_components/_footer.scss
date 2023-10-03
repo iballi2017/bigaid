@@ -40,7 +40,11 @@
         max-width: 57px;
         &:first-child {
           margin-right: 1.5em;
-          max-width: 40px;
+          // max-width: 40px;
+        }
+        &:last-child {
+          max-width: 70px;
+          // background-color: red;
         }
     }
   }

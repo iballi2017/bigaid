@@ -39,6 +39,11 @@
   <!-- JQUERY -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+  <!-- OWL CAROUSEL -->
+  <link rel="stylesheet" href="./libs/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="./libs/owlcarousel/owl.theme.default.min.css">
+
+
   <!-- TOASTR -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
@@ -231,10 +236,10 @@
     <article class="overflow-hidden">
       <div class="container mx-auto">
         <div class="wrap-container py-8">
-          <h2 class="section-title text-primary text-center mb-4 fade-in">
+          <h2 class="section-title text-primary text-center mb-8 fade-in">
             Our Advocacy & Community<br>Projects In Pictures
           </h2>
-          <ul role="list" class="gallery-type-1 | grid grid-cols-12 gap-2 md:gap-4 fade-in">
+          <!-- <ul role="list" class="gallery-type-1 | grid grid-cols-12 gap-2 md:gap-4 fade-in">
             <li class="col-span-6 md:col-span-3">
               <img src="./assets/images/Rectangle-45-min.png" alt="Project image" loading="lazy" />
             </li>
@@ -247,7 +252,63 @@
             <li class="col-span-6 md:col-span-3">
               <img src="./assets/images/Rectangle-48-min.png" alt="Project image" loading="lazy" />
             </li>
-          </ul>
+          </ul> -->
+
+          <!--  -->
+          <!-- Set up your HTML -->
+          <div class="slider-container mb-8">
+            <ul class="project-slider | owl-carousel">
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-1-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-2-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-3-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-4-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
+                </div>
+              </li>
+              <!-- <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/Rectangle-45-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/Rectangle-46-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/Rectangle-47-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/Rectangle-48-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
+                </div>
+              </li> -->
+            </ul>
+
+            <div class="slider-controls | hidden">
+              <button class="control previous">
+                <span class="sr-only">Previous</span>
+              </button>
+              <button class="control next">
+                <span class="sr-only">Next</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </article>
@@ -769,6 +830,8 @@
 
   <!-- jquery-3.7.0 -->
   <script src="./libs/jquery-3.7.0.min.js"></script>
+  <!-- OWL CAROUSEL -->
+  <script src="./libs/owlcarousel/owl.carousel.min.js"></script>
   <script src="./scripts/main.js"></script>
   <script src="./scripts/main.jquery.js"></script>
   <!-- Pie Chart -->
