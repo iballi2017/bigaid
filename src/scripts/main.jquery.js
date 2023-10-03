@@ -61,10 +61,10 @@ $(document).ready(function () {
     margin: 20,
     nav: false,
     autoplay: true,
-    autoplayTimeout: 7000,
+    // autoplayTimeout: 7000,
     lazyLoad: true,
     animateOut: 'fadeOut',
-    smartSpeed: 500,
+    // smartSpeed: 500,
     responsive: {
       0: {
         items: 1
