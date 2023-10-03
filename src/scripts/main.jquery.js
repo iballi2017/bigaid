@@ -52,6 +52,48 @@ $(document).ready(function () {
     'hideMethod': 'fadeOut',
   }
 
+
+
+  /**PROJECT SLIDER */
+  var projectSlider = $(".project-slider")
+  projectSlider.owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 7000,
+    lazyLoad: true,
+    animateOut: 'fadeOut',
+    smartSpeed: 500,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 4
+      }
+    },
+    onInitialize: callback
+  });
+
+
+  function callback(event) {
+    // console.log("start")
+    /**Show custom nav controls when slider initialize */
+    $(".slider-controls").removeClass("hidden")
+  }
+
+  $(".control.previous").click(function () {
+    projectSlider.trigger('prev.owl.carousel', [300]);
+  })
+  $(".control.next").click(function () {
+    projectSlider.trigger('next.owl.carousel', [300]);
+  })
+
+
 });
 
 
@@ -69,5 +111,5 @@ $('#error').click(function (event) {
 });
 $('#warning').click(function (event) {
   toastr.options.progressBar = true,
-  toastr.warning('You clicked Warning Toast')
+    toastr.warning('You clicked Warning Toast')
 });
