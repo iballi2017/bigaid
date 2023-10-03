@@ -367,7 +367,41 @@
       </div>
     </article>
 
-    <section class="blob-list-wrapper">
+    <section class="small-screen-show large-screen-hide">
+      <div class="container mx-auto mb-8">
+        <div class="wrap-container pt-8 md:pt-16">
+          <h2 class="section-title text-primary text-center mb-4 fade-in">
+            5 Key Features Of The App
+          </h2>
+          <ol class="key-features">
+            <li class="key-highlight bg-secondary rounded-lg p-4 fade-in">
+              <div class="card-body">
+                <div class="title | fw-bolder">1. Seamless Connectivity</div>
+                <p class="fw-semi-bold">BIGAiD’s web & mobile app is designed for effortless communication between users and healthcare professionals, facilitating easy access to medical guidance and consultations.</p>
+              </div>
+            </li>
+            <li class="key-highlight bg-secondary-100 rounded-lg p-4 fade-in">
+              <div class="title | fw-bolder">2. Affordable Access</div>
+              <p>We believe that healthcare is a basic right. With minimal monthly, quarterly, or yearly sign-up fees, our app is accessible to low - and mid-income earners.</p>
+            </li>
+            <li class="key-highlight bg-light-500 rounded-lg p-4 fade-in">
+              <div class="title | fw-bolder">3. Connecting with Healthcare Professionals</div>
+              <p>The app facilitates direct connections with health providers, ensuring timely and on-the-go appointments.</p>
+            </li>
+            <li class="key-highlight bg-secondary rounded-lg p-4 fade-in">
+              <div class="title | fw-bolder">4. Institutional Partners</div>
+              <p>Our app streamlines the process of seeking medical care, making hospital interactions more efficient with our intervention partners.</p>
+            </li>
+            <li class="key-highlight bg-secondary-100 rounded-lg p-4 fade-in">
+              <div class="title | fw-bolder">5. BIGAiD Promax</div>
+              <p>Our app identifies the need to act as a mediator and aid people in dire need of saving from life-threatening situations with or without income. We give full support on pro-bono cases.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="blob-list-wrapper small-screen-hide large-screen-show"">
       <div class="container mx-auto mb-8">
         <div class="wrap-container pt-8 md:pt-16">
           <h2 class="section-title text-primary text-center mb-4 fade-in">
@@ -414,6 +448,9 @@
         </div>
       </div>
     </section>
+
+
+
 
     <article>
       <div class="bg-light container mx-auto negative-top-margin-500">
@@ -510,8 +547,8 @@
             <li class="milestone fade-in">
               <!-- A -->
               <div class="label">
-                <div class="amount-target">Target $100,000</div>
                 <div class="amount-raised">$5000 Raised</div>
+                <div class="amount-target">Target $100,000</div>
               </div>
               <div class="guage africa">
                 <input class="donation-raised" type="text" hidden readonly value="6" />
@@ -520,8 +557,8 @@
             <li class="milestone fade-in">
               <!-- B -->
               <div class="label">
-                <div class="amount-target">Target $100</div>
                 <div class="amount-raised">%10</div>
+                <div class="amount-target">Target $100</div>
               </div>
               <div class="guage europe">
                 <input class="donation-raised" type="text" hidden readonly value="20" />
