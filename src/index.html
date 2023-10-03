@@ -260,22 +260,22 @@
             <ul class="project-slider | owl-carousel">
               <li>
                 <div class="img-wrap">
-                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-1-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
+                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-1-min.png" alt="Project image" class="owl-lazy" />
                 </div>
               </li>
               <li>
                 <div class="img-wrap">
-                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-2-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
+                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-2-min.png" alt="Project image" class="owl-lazy" />
                 </div>
               </li>
               <li>
                 <div class="img-wrap">
-                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-3-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
+                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-3-min.png" alt="Project image" class="owl-lazy" />
                 </div>
               </li>
               <li>
                 <div class="img-wrap">
-                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-4-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
+                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-4-min.png" alt="Project image" class="owl-lazy" />
                 </div>
               </li>
               <!-- <li>
