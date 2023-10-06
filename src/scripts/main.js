@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     dismissCookiesNotificationBanner();
     handleScrollToTop();
     handleAnimateOnViewportIntercept();
+    counters();
   }
 
   /**main Toolbar State Toggle */
@@ -55,21 +56,154 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   }
 
-  /**donationMileStoneGraph */
+  /**DONATION MILESTONES GRAPH */
   function donationMileStoneGraph() {
     const milestones = document.querySelectorAll(
       ".milestones-graph .milestone"
     );
     for (let index = 0; index < milestones.length; index++) {
       const element = milestones[index];
-      // console.log("element: ", element.querySelector(".label"));
+
       const donationRaisedLength = element.querySelector(".guage");
       const inputControl = donationRaisedLength.querySelector(
         "input.donation-raised"
       );
+
       donationRaisedLength.style.width = inputControl?.value
         ? inputControl?.value + "%"
         : "0%";
+    }
+  }
+
+
+  /**DONATION PIE-CHART DATASET */
+  var continentDataList = [
+    {
+      title: "Africa",
+      data: 15,
+      color: "#FF00E7",
+    }, {
+      title: "Europe",
+      data: 5,
+      color: "#48CBFF",
+    }, {
+      title: "America",
+      data: 80,
+      color: "#0A0559",
+    }
+  ];
+
+  const ctx = document.getElementById("myChart");
+  var continentTitles = []
+  var continentData = []
+  var continentColor = []
+  continentDataList.forEach((continent) => {
+    continentTitles.push(continent.title)
+    continentData.push(continent.data)
+    continentColor.push(continent.color)
+  })
+
+  var chartOptions = {
+    type: "pie",
+    data: {
+      // labels: ["Africa", "Europe", "America"],
+      labels: continentTitles,
+      datasets: [{
+        label: " % Donation",
+        data: continentData.map((num) => {
+          return num / 100;
+        }),
+        backgroundColor: continentColor,
+        borderWidth: 5,
+      },],
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: "bottom",
+        },
+        title: {
+          display: false,
+          text: "Donation by Region/Country",
+        },
+      },
+    },
+  }
+  var chart = new Chart(ctx, chartOptions);
+
+  /**DONATION DATA COUNTERS */
+  function counters() {
+    var milestones = document.getElementsByClassName("milestone");
+    var inc = [];
+    var milestonesGraph = document.querySelector(".milestones-graph");
+
+
+    window.onscroll = () => {
+
+
+      /**Handle Pie-chart Data Update On Scroll */
+      handlePieChart()
+
+      var timer = setInterval(() => {
+        var topElem = milestonesGraph.offsetTop;
+        var bottomElem = milestonesGraph.offsetTop + milestonesGraph.clientHeight;
+
+        var topScreen = window.pageYOffset
+        var bottomScreen = window.pageYOffset + window.innerHeight;
+
+        if (bottomScreen > topElem && topScreen < bottomElem) {
+          intervalFunc();
+
+        } else {
+          clearInterval(timer);
+          milestones[i].querySelector(".amount-raised").querySelector(".count").innerHTML = 1;
+          inc = [];
+        }
+      }, 100);
+    }
+
+    function intervalFunc() {
+      for (let i = 0; i < milestones.length; i++) {
+        const raisedCount = milestones[i].querySelector(".amount-raised").querySelector(".count");
+        const target = milestones[i].querySelector(".amount-target").querySelector(".count");
+
+        inc.push(1)
+
+        const donationRaisedLength = milestones[i].querySelector(".guage");
+
+        if (inc[i] != raisedCount.getAttribute("max-data")) {
+
+          var percentageIncrease = (inc[i] * 100) / target.getAttribute("max-data");
+
+          if (percentageIncrease < 100) {
+            donationRaisedLength.style.width = percentageIncrease
+              ? percentageIncrease + "%"
+              : "0%";
+          }
+          inc[i]++;
+
+        }
+
+        raisedCount.innerHTML = inc[i]
+
+      }
+    }
+
+
+    function handlePieChart() {
+      var milestonesPieChart = document.querySelector(".pie-chart");
+      var topElem = milestonesPieChart.offsetTop;
+      var bottomElem = milestonesPieChart.offsetTop + milestonesPieChart.clientHeight;
+
+      var topScreen = window.pageYOffset
+      var bottomScreen = window.pageYOffset + window.innerHeight;
+
+      if (bottomScreen > topElem && topScreen < bottomElem) {
+        chart.show(0, 2);
+      } else {
+        chart.hide(0, 2);
+      }
     }
   }
 
@@ -207,21 +341,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
     /**REJECT COOKIES NOTIFICATION BANNER */
     rejectCookiesButton
       ? rejectCookiesButton.addEventListener("click", () => {
-          if (cookiesNotificationBanner) {
-            cookiesNotificationBanner.classList.add("hidden");
-            // more codes...
-          }
-        })
+        if (cookiesNotificationBanner) {
+          cookiesNotificationBanner.classList.add("hidden");
+          // more codes...
+        }
+      })
       : null;
 
     /**ACCEPT COOKIES NOTIFICATION BANNER */
     acceptCookiesButton
       ? acceptCookiesButton.addEventListener("click", () => {
-          if (cookiesNotificationBanner) {
-            cookiesNotificationBanner.classList.add("hidden");
-            // more codes...
-          }
-        })
+        if (cookiesNotificationBanner) {
+          cookiesNotificationBanner.classList.add("hidden");
+          // more codes...
+        }
+      })
       : null;
   }
 
@@ -318,6 +452,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       : null;
   }
   window.onresize = reportWindowSize;
+
 
   Init();
 });
