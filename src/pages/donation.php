@@ -14,11 +14,11 @@ include_once("../components/header.php");
     <article>
         <section>
             <div class="wrap-container mb-4">
-                <p><strong>Over 60% </strong>
-                    population lacks access to quality primary healthcare services in Nigeria. The National Primary Healthcare Development Agency (NPHCDA) Stated in 2022 report. Also, a survey conducted by NOI Polls revealed only 17% of the country's population has health insurance coverage in Nigeria, May 2023 report.
+                <p><strong style="font-size: 22px;">Over 60% <br/></strong>
+                    Population lacks access to quality primary healthcare services in Nigeria. The National Primary Healthcare Development Agency (NPHCDA) Stated in 2022 report. Also, a survey conducted by NOI Polls revealed only 17% of the country's population has health insurance coverage in Nigeria, May 2023 report.
                 </p>
                 <br />
-                <p><strong>Over 600,000,000 (million)</strong>
+                <p><strong style="font-size: 22px;">Over 600,000,000 (million)<br/></strong>
                     Africans, representing 48% of the continent's population, still lack access to the quality health care they need, WHO Regional Director for Africa, Matshidiso Moeti stated, in an April 2023 report.
                 </p>
                 <br />

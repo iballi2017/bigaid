@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
     playPauseVideo();
     toggleForms();
     donationMileStoneGraph();
+    // counters();
     controlDonationCurrency();
     toggleDonationAmountSelect();
     controlCurrentlyWorkHere();
     dismissCookiesNotificationBanner();
     handleScrollToTop();
     handleAnimateOnViewportIntercept();
-    counters();
   }
 
   /**main Toolbar State Toggle */
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     {
       title: "Africa",
       data: 15,
-      color: "#FF00E7",
+      color: "#FF00E7"
     }, {
       title: "Europe",
       data: 5,
@@ -90,6 +90,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
       title: "America",
       data: 80,
       color: "#0A0559",
+    },
+    {
+      title: "Asia",
+      data: 30,
+      color: "red",
     }
   ];
 
@@ -130,7 +135,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       },
     },
   }
-  var chart = new Chart(ctx, chartOptions);
+  // var chart = new Chart(ctx, chartOptions);
 
   /**DONATION DATA COUNTERS */
   function counters() {
