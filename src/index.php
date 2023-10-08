@@ -51,9 +51,9 @@
 
 <body>
   <!-- HEADER -->
-  <header class="sticky">
+  <header class="sticky toolbar-bg">
     <div class="container mx-auto bg-wrap">
-      <nav class="alt-toolbar toolbar-bg">
+      <nav class="alt-toolbar">
         <div class="wrap-container">
           <div class="flex items-center justify-between">
             <!-- Brand logo -->
@@ -92,7 +92,7 @@
             <ul class="nav-list nav-collapse drop-shadow-sm" id="primary-navigation">
               <li class="nav-item"><a href="./pages/contact-us.php" class="nav-link">Home</a></li>
               <li class="nav-item">
-                <a href="./pages/about-us.php" class="nav-link">About Us</a>
+                <a href="https://biggulfgroup.com/bigaid" class="nav-link">About Us</a>
               </li>
               <li class="nav-item">
                 <a href="./pages/contact-us.php" class="nav-link">Contact Us</a>
@@ -113,7 +113,7 @@
   <!-- MAIN -->
   <main class="home">
     <!-- HERO -->
-    <section>
+    <section class="bg-secondary">
       <div class="container mx-auto">
         <div class="hero | bg-secondary relative">
           <div class="wrap-container">
@@ -173,8 +173,8 @@
       </div>
     </section>
 
-    <section class="video-section-wrapper">
-      <div class="bg-primary container mx-auto pseudo-after-bottom-white-tape">
+    <section class="video-section-wrapper bg-primary pseudo-after-bottom-white-tape">
+      <div class="bg-primary container mx-auto">
         <div class="wrap-container fade-in">
           <div class="video-container">
             <div class="video thumbnail">
@@ -191,13 +191,14 @@
             </div>
           </div>
 
-          <div class="min-full-width flex fade-in">
+          <div class="min-full-width flex fade-in" style="min-height: 280px">
             <div class="">
               <img src="./assets/images/lady-holding-a-phone-arrow-min.png" alt="Featured image" loading="lazy" />
             </div>
             <!-- <div class="bga-mt-50" style="margin-left: -70px;"> -->
             <div class="" style="margin-top: 9%; margin-left: -3.5%">
-              <img src="./assets/images/we-understand-the-challenges-min.png" alt="Featured image" loading="lazy" />
+              <img class="hidden md:block" src="./assets/images/we-understand-the-challenges-min.png" alt="Featured image" loading="lazy" />
+              <img class="block md:hidden" src="./assets/images/we-understand-the-challenges-mobile.png" alt="Featured image" loading="lazy" />
             </div>
           </div>
         </div>
@@ -313,23 +314,18 @@
       </div>
     </article>
 
-    <article class="">
-      <div class="bg-light container mx-auto">
+    <article class="bg-light">
+      <div class="container mx-auto">
         <div class="wrap-container py-8 md:py-16">
           <div class="grid grid-cols-12 gap-4 md:gap-8">
             <div class="col-span-12 md:col-span-6">
               <h2 class="section-title text-primary mb-4 fade-in">
                 Your Donation Equals <br>Many Lives Saved
               </h2>
-              <div class="featured-image | mb-6 fade-in" style="
-                    max-height: 300px;
-                    overflow: hidden;
-                    border-radius: 34px;
-                    background-image: url(./assets/images/donation-featured-image-min.png);
-                    height: 300px;
-                    background-position: center;
-                  ">
+              <div class="featured-image | mb-6 fade-in rounded-3xl overflow-hidden">
+                <img src="./assets/images/donation-featured-image.png" alt="" loading="lazy">
               </div>
+
               <p class="md-text-size">
                 Donating to the BIGAiD App & Health Education project gives
                 you the opportunity to save a life, help millions with the
@@ -352,7 +348,7 @@
                 for prompt intervention and intensive advocacy for all to
                 access.
               </p>
-              <br class="hidden md:block" />
+              <!-- <br class="hidden md:block" /> -->
               <br>
               <p class="md-text-size fade-in">
                 Through our innovative app and creative education programs, we
@@ -374,13 +370,13 @@
             5 Key Features Of The App
           </h2>
           <ol class="key-features">
-            <li class="key-highlight bg-secondary rounded-lg p-4 fade-in">
+            <li class="key-highlight  rounded-lg p-4 fade-in">
               <div class="card-body">
                 <div class="title | fw-bolder">1. Seamless Connectivity</div>
                 <p class="fw-semi-bold">BIGAiD’s web & mobile app is designed for effortless communication between users and healthcare professionals, facilitating easy access to medical guidance and consultations.</p>
               </div>
             </li>
-            <li class="key-highlight bg-secondary-100 rounded-lg p-4 fade-in">
+            <li class="key-highlight -100 rounded-lg p-4 fade-in">
               <div class="title | fw-bolder">2. Affordable Access</div>
               <p>We believe that healthcare is a basic right. With minimal monthly, quarterly, or yearly sign-up fees, our app is accessible to low - and mid-income earners.</p>
             </li>
@@ -388,11 +384,11 @@
               <div class="title | fw-bolder">3. Connecting with Healthcare Professionals</div>
               <p>The app facilitates direct connections with health providers, ensuring timely and on-the-go appointments.</p>
             </li>
-            <li class="key-highlight bg-secondary rounded-lg p-4 fade-in">
+            <li class="key-highlight  rounded-lg p-4 fade-in">
               <div class="title | fw-bolder">4. Institutional Partners</div>
               <p>Our app streamlines the process of seeking medical care, making hospital interactions more efficient with our intervention partners.</p>
             </li>
-            <li class="key-highlight bg-secondary-100 rounded-lg p-4 fade-in">
+            <li class="key-highlight -100 rounded-lg p-4 fade-in">
               <div class="title | fw-bolder">5. BIGAiD Promax</div>
               <p>Our app identifies the need to act as a mediator and aid people in dire need of saving from life-threatening situations with or without income. We give full support on pro-bono cases.</p>
             </li>
@@ -547,32 +543,26 @@
             <li class="milestone">
               <!-- A -->
               <div class="label">
-                <div class="amount-raised">$<span class="count" max-data="50">1</span> Raised</div>
-                <div class="amount-target">Target $<span class="count" max-data="100">100000</span></div>
+                <div class="amount-raised">$<span class="count" max-data="70">70</span> Raised</div>
+                <div class="amount-target">Target $<span class="count" max-data="230">230</span></div>
               </div>
-              <div class="guage africa">
-                <input class="donation-raised" type="text" hidden readonly value="6" />
-              </div>
+              <div class="guage africa"></div>
             </li>
             <li class="milestone">
               <!-- B -->
               <div class="label">
-                <div class="amount-raised">%<span class="count" max-data="10">1</span></div>
-                <div class="amount-target">Target $<span class="count" max-data="100">100</span></div>
+                <div class="amount-raised">%<span class="count" max-data="50">50</span></div>
+                <div class="amount-target">%<span class="count" max-data="100">100</span></div>
               </div>
-              <div class="guage europe">
-                <input class="donation-raised" type="text" hidden readonly value="20" />
-              </div>
+              <div class="guage europe"></div>
             </li>
             <li class="milestone">
               <!-- C -->
               <div class="label">
                 <div class="amount-target">No of Persons (<span class="count" max-data="200">200</span>)</div>
-                <div class="amount-raised"><span class="count" max-data="30">1</span> Donated</div>
+                <div class="amount-raised"><span class="count" max-data="30">30</span> Donated</div>
               </div>
-              <div class="guage america">
-                <input class="donation-raised" type="text" hidden readonly value="90" />
-              </div>
+              <div class="guage america"></div>
             </li>
           </ul>
 
@@ -815,7 +805,7 @@
                 </a>
               </li>
               <li class="social-icon">
-                <a href="#">
+                <a href="mailto:wecare@bigaid.org">
                   <span class="sr-only">Gmail</span>
                   <img src="./assets/icons/icon-gmail.svg" alt="gmail" loading="lazy" />
                 </a>
@@ -887,8 +877,6 @@
     //     },
     //   },
     // });
-
-    
   </script>
 </body>
 

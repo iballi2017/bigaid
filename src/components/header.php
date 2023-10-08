@@ -44,9 +44,9 @@
 <body>
 
   <!-- HEADER -->
-  <header class="sticky">
+  <header class="sticky toolbar-bg">
     <div class="container mx-auto bg-wrap">
-      <nav class="alt-toolbar toolbar-bg">
+      <nav class="alt-toolbar">
         <div class="wrap-container">
           <!-- <div class="mx-auto max-w-screen-xl px-2 md:px-6 lg:px-8"> -->
           <div class="flex items-center justify-between">
