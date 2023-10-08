@@ -3,8 +3,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     mainToolbarStateToggle();
     playPauseVideo();
     toggleForms();
-    donationMileStoneGraph();
-    // counters();
+    // donationMileStoneGraph();
     controlDonationCurrency();
     toggleDonationAmountSelect();
     controlCurrentlyWorkHere();
@@ -57,23 +56,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
 
   /**DONATION MILESTONES GRAPH */
-  function donationMileStoneGraph() {
-    const milestones = document.querySelectorAll(
-      ".milestones-graph .milestone"
-    );
-    for (let index = 0; index < milestones.length; index++) {
-      const element = milestones[index];
+  // function donationMileStoneGraph() {
+  //   const milestones = document.querySelectorAll(
+  //     ".milestones-graph .milestone"
+  //   );
+  //   for (let index = 0; index < milestones.length; index++) {
+  //     const element = milestones[index];
 
-      const donationRaisedLength = element.querySelector(".guage");
-      const inputControl = donationRaisedLength.querySelector(
-        "input.donation-raised"
-      );
+  //     const donationRaisedLength = element.querySelector(".guage");
+  //     const inputControl = donationRaisedLength.querySelector(
+  //       "input.donation-raised"
+  //     );
 
-      donationRaisedLength.style.width = inputControl?.value
-        ? inputControl?.value + "%"
-        : "0%";
-    }
-  }
+  //     donationRaisedLength.style.width = inputControl?.value
+  //       ? inputControl?.value + "%"
+  //       : "0%";
+  //   }
+  // }
+
+
 
 
   /**DONATION PIE-CHART DATASET */
@@ -144,7 +145,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     var milestonesGraph = document.querySelector(".milestones-graph");
 
 
-    window.onscroll = () => {
+    // window.onscroll = () => {
+    window.addEventListener("scroll", () => {
       /**Handle Pie-chart Data Update On Scroll */
       handlePieChart()
 
@@ -152,8 +154,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         var topElem = milestonesGraph.offsetTop;
         var bottomElem = milestonesGraph.offsetTop + milestonesGraph.clientHeight;
 
-        var topScreen = window.pageYOffset
-        var bottomScreen = window.pageYOffset + window.innerHeight;
+        var topScreen = window.scrollY
+        var bottomScreen = window.scrollY + window.innerHeight;
 
         if (bottomScreen > topElem && topScreen < bottomElem) {
           intervalFunc();
@@ -164,7 +166,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
           inc = [];
         }
       }, 100);
-    }
+    })
+    // }
 
     function intervalFunc() {
       for (let i = 0; i < milestones.length; i++) {
@@ -199,8 +202,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
       var topElem = milestonesPieChart.offsetTop;
       var bottomElem = milestonesPieChart.offsetTop + milestonesPieChart.clientHeight;
 
-      var topScreen = window.pageYOffset
-      var bottomScreen = window.pageYOffset + window.innerHeight;
+      var topScreen = window.scrollY
+      var bottomScreen = window.scrollY + window.innerHeight;
 
       if (bottomScreen > topElem && topScreen < bottomElem) {
         chart.show(0, 2);
