@@ -87,6 +87,8 @@
 
 <!-- jquery-3.7.0 -->
 <script src="../libs/jquery-3.7.0.min.js"></script>
+<!-- Pie Chart -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="../scripts/main.js"></script>
 <script src="../scripts/main.jquery.js"></script>
 </body>

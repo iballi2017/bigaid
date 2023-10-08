@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     dismissCookiesNotificationBanner();
     handleScrollToTop();
     handleAnimateOnViewportIntercept();
-    counters();
+    // counters();
   }
 
   /**main Toolbar State Toggle */
@@ -130,6 +130,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
       },
     },
   }
+
+
   var chart = new Chart(ctx, chartOptions);
 
   /**DONATION DATA COUNTERS */
@@ -140,8 +142,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
     window.onscroll = () => {
-
-
       /**Handle Pie-chart Data Update On Scroll */
       handlePieChart()
 

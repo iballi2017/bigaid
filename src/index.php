@@ -853,10 +853,10 @@
   <script src="./libs/jquery-3.7.0.min.js"></script>
   <!-- OWL CAROUSEL -->
   <script src="./libs/owlcarousel/owl.carousel.min.js"></script>
-  <script src="./scripts/main.js"></script>
-  <script src="./scripts/main.jquery.js"></script>
   <!-- Pie Chart -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./scripts/main.js"></script>
+  <script src="./scripts/main.jquery.js"></script>
 
   <script>
     // const ctx = document.getElementById("myChart");
