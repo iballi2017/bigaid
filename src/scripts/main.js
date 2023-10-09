@@ -5,12 +5,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
     toggleForms();
     donationMileStoneGraph();
     doDataCount();
+    handlePieChart();
     controlDonationCurrency();
     toggleDonationAmountSelect();
     controlCurrentlyWorkHere();
     dismissCookiesNotificationBanner();
     handleScrollToTop();
     handleAnimateOnViewportIntercept();
+    handleAccordion();
   }
 
   /**main Toolbar State Toggle */
@@ -95,7 +97,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     {
       title: "Asia",
       data: 30,
-      color: "red",
+      color: "#FF00aa",
     },
   ];
 
@@ -141,14 +143,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
   var chart = new Chart(ctx, chartOptions);
 
   var _promise = new Promise((resolve, reject) => {
-    if (doSomething()) {
+    if (loadPercentageGuage()) {
       resolve(true);
     } else {
       reject("Error");
     }
   });
 
-  function doSomething() {
+  function loadPercentageGuage() {
     var donationResult = document.querySelector(".donation-result");
     var donationPercentage = document.querySelector(".donation-percentage");
 
@@ -171,14 +173,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     const x = percentageIncrease ? percentageIncrease + "%" : "0%";
 
-    console.log("data: ", {
-      donationRaisedResult: donationRaisedResult,
-      donationTargetResult: donationTargetResult,
-    });
-    console.log("x: ", x);
+    // console.log("data: ", {
+    //   donationRaisedResult: donationRaisedResult,
+    //   donationTargetResult: donationTargetResult,
+    // });
+    // console.log("x: ", x);
 
     if (percentageIncrease < 100 || percentageIncrease === 100) {
-      console.log("x!!!!: ", x);
+      // console.log("x!!!!: ", x);
       if (x < 0) return false;
       donationPercentage
         .querySelector(".amount-raised")
@@ -197,7 +199,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
     return false;
   }
-  doSomething();
+  loadPercentageGuage();
 
   /**DONATION DATA COUNTERS */
 
@@ -209,7 +211,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
       })
       .catch((err) => {
-        console.log("err: ", err);
         throw new Error("There was Donation milestone data error!");
       });
   }
@@ -221,7 +222,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     window.addEventListener("scroll", () => {
       /**Handle Pie-chart Data Update On Scroll */
-      handlePieChart();
 
       var timer = setInterval(() => {
         var topElem = milestonesGraph.offsetTop;
@@ -273,16 +273,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
         raisedCount.innerHTML = inc[i];
       }
     }
+  }
 
-    function handlePieChart() {
+  function handlePieChart() {
+
+    /**Handle Pie-chart Data Update On Scroll */
+    window.addEventListener("scroll", () => {
+      display()
+    })
+
+    function display() {
       var milestonesPieChart = document.querySelector(".pie-chart");
       var topElem = milestonesPieChart.offsetTop;
       var bottomElem =
         milestonesPieChart.offsetTop + milestonesPieChart.clientHeight;
-
       var topScreen = window.pageYOffset;
       var bottomScreen = window.pageYOffset + window.innerHeight;
-
       if (bottomScreen > topElem && topScreen < bottomElem) {
         chart.show(0, 2);
       } else {
@@ -425,21 +431,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
     /**REJECT COOKIES NOTIFICATION BANNER */
     rejectCookiesButton
       ? rejectCookiesButton.addEventListener("click", () => {
-          if (cookiesNotificationBanner) {
-            cookiesNotificationBanner.classList.add("hidden");
-            // more codes...
-          }
-        })
+        if (cookiesNotificationBanner) {
+          cookiesNotificationBanner.classList.add("hidden");
+          // more codes...
+        }
+      })
       : null;
 
     /**ACCEPT COOKIES NOTIFICATION BANNER */
     acceptCookiesButton
       ? acceptCookiesButton.addEventListener("click", () => {
-          if (cookiesNotificationBanner) {
-            cookiesNotificationBanner.classList.add("hidden");
-            // more codes...
-          }
-        })
+        if (cookiesNotificationBanner) {
+          cookiesNotificationBanner.classList.add("hidden");
+          // more codes...
+        }
+      })
       : null;
   }
 
@@ -536,6 +542,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
       : null;
   }
   window.onresize = reportWindowSize;
+
+
+
+
+  /**ACCORDION */
+  function handleAccordion() {
+    var accordionItems = document.getElementsByClassName("accordion-item")
+    console.log("accordionItems: ", accordionItems);
+
+    for (let i = 0; i < accordionItems.length; i++) {
+      const accordionItem = accordionItems[i];
+      console.log("accordionItem: ", accordionItem);
+      var btn = accordionItem.querySelector(".accordion-button")
+      console.log("btn: ", btn);
+    }
+  }
 
   Init();
 });

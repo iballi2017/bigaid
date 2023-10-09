@@ -36,6 +36,7 @@
     font-size: 2.2rem;
     line-height: 35px;
   }
+
   .md-text-size {
     font-size: 1.3rem;
   }
@@ -90,9 +91,10 @@ svg {
   html:focus-within {
     scroll-behavior: auto;
   }
+
   *,
-  *::before,
-  *::after {
+*::before,
+*::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -493,6 +495,7 @@ html {
   .large-screen-hide {
     display: none;
   }
+
   .large-screen-show {
     display: block;
   }
@@ -501,6 +504,7 @@ html {
   .small-screen-show {
     display: block;
   }
+
   .small-screen-hide {
     display: none;
   }
@@ -524,7 +528,7 @@ html {
 .wrap-container {
   --max-width: 1222px;
   --padding: 1rem;
-  width: min(var(--max-width), 100% - var(--padding) * 2);
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
 }
 
@@ -612,6 +616,7 @@ html {
     border-radius: 0 550px 0 0;
     transform: rotate(-10deg);
   }
+
   .video-section-wrapper {
     margin-top: calc(var(--skew-wave-top-margin) - 3.95em);
   }
@@ -746,6 +751,7 @@ header.sticky.toolbar-bg.alt .nav-link.primary-button {
   header.sticky .toolbar-bg.alt .nav-list {
     background-color: white;
   }
+
   .nav-list {
     padding-left: 1.5em;
     padding-right: 1.5em;
@@ -876,8 +882,8 @@ button:hover {
 
 @media (max-width: 1031px) {
   .primary-button,
-  .secondary-button,
-  .call-to-action {
+.secondary-button,
+.call-to-action {
     padding: 0.7em 1em;
     font-size: var(--fs-50);
   }
@@ -1129,7 +1135,7 @@ button:hover {
   display: block;
   position: absolute;
   right: 3.5%;
-  bottom: calc((var(--margin-bottom)) * -1);
+  bottom: calc(var(--margin-bottom) * -1);
 }
 .donation-info .donation-card {
   background-color: var(--color-secondary);
@@ -1193,7 +1199,7 @@ button:hover {
     gap: 4em;
   }
   .donation-article .article-card,
-  .donation-article .featured-image-container {
+.donation-article .featured-image-container {
     flex-basis: 50%;
   }
 }
@@ -1234,7 +1240,7 @@ button:hover {
   display: block;
   position: absolute;
   right: 3.5%;
-  bottom: calc((var(--margin-bottom)) * -1);
+  bottom: calc(var(--margin-bottom) * -1);
 }
 .home .donation-info .donation-card {
   background-color: var(--color-secondary);
@@ -1332,6 +1338,7 @@ input.invalid:focus {
     width: 100%;
     font-size: 1.2rem;
   }
+
   .init-textarea-control {
     padding: 0.8em 0.5em;
     border: 1px solid #afafaf;
@@ -1578,17 +1585,24 @@ input.invalid:focus {
   }
 }
 .overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-  z-index: 1021; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 1021;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
 }
 .overlay.show {
   display: flex;
@@ -1673,7 +1687,7 @@ ol[aria-label=numbering] {
   z-index: 10000;
   padding-top: 1.3em;
   padding-bottom: 1.3em;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   color: var(--color-white);
   font-size: 0.8rem;
 }
@@ -1706,7 +1720,7 @@ ol[aria-label=numbering] {
   top: 40%;
   z-index: 2;
   opacity: 0.3;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   height: 50px;
   width: 50px;
   display: flex;
@@ -1758,6 +1772,26 @@ ol[aria-label=numbering] {
 }
 .key-features li:last-child {
   margin-bottom: 0;
+}
+
+.accordion-list .accordion-item .title button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background-color: black;
+  color: #ffffff;
+  padding: 0.5em;
+}
+.accordion-list .accordion-item .title + .body {
+  display: none;
+}
+.accordion-list .accordion-item .title + .body.show {
+  display: block;
+}
+.accordion-list .accordion-item .title + .body.collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
 }
 
 .hero h1, .hero-alt h1 {

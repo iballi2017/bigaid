@@ -369,6 +369,37 @@
           <h2 class="section-title text-primary text-center mb-4 fade-in">
             5 Key Features Of The App
           </h2>
+
+
+          <!-- Accordion -->
+          <h6 class="text-red-400 fw-bolder">Accordion</h6>
+          <ol class="accordion-list pl-0">
+            <li class="accordion-item">
+              <div class="title">
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Title 1</button>
+              </div>
+              <div id="collapseOne" class="body accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                Body 1
+              </div>
+            </li>
+            <li class="accordion-item">
+              <div class="title">
+                <button type="button">Title 2</button>
+              </div>
+              <div class="body">Body 2</div>
+            </li>
+            <li class="accordion-item">
+              <div class="title">
+                <button type="button">Title 3</button>
+              </div>
+              <div class="body">Body 3</div>
+            </li>
+          </ol>
+
+
+
+
+
           <ol class="key-features">
             <li class="key-highlight  rounded-lg p-4 fade-in">
               <div class="card-body">
@@ -597,15 +628,9 @@
                   lives
                 </p>
               </div>
-              <div class="featured-image-container">
-                <div class="featured-image fade-in" style="
-                      max-height: 400px;
-                      overflow: hidden;
-                      border-radius: 34px;
-                      background-image: url(./assets/images/man-woman-laughs-min.png);
-                      height: 400px;
-                      background-position: center;
-                    ">
+              <div class="featured-image-container fade-in">
+                <div class="rounded-3xl overflow-hidden">
+                  <img src="./assets/images/medium-shot-black-family-posing-studio.jpg" alt="featured image" loading="lazy">
                 </div>
               </div>
             </div>
@@ -769,45 +794,45 @@
             </p>
             <ul class="social-media-handles mb-4">
               <li class="social-icon">
-                <a href="#">
+                <a href="https://www.linkedin.com/company/bigaid/" target="_blank">
                   <span class="sr-only">LinkedIn</span>
-                  <img src="./assets/icons/icon-linkedIn.svg" alt="linkedIn" loading="lazy" />
+                  <img src="./assets/icons/icon-linkedIn.svg" alt="">
                 </a>
               </li>
               <li class="social-icon">
-                <a href="#">
+                <a href="https://facebook.com/bigaidfoundation" target="_blank">
                   <span class="sr-only">Facebook</span>
-                  <img src="./assets/icons/icon-facebook.svg" alt="facebook" loading="lazy" />
+                  <img src="./assets/icons/icon-facebook.svg" alt="">
                 </a>
               </li>
               <li class="social-icon">
-                <a href="#">
+                <a href="https://twitter.com/BIGAiDApp" target="_blank">
                   <span class="sr-only">Twitter</span>
-                  <img src="./assets/icons/icon-twitter.svg" alt="twitter" loading="lazy" />
+                  <img src="./assets/icons/icon-twitter.svg" alt="">
                 </a>
               </li>
               <li class="social-icon">
-                <a href="#">
+                <a href="https://www.instagram.com/bigaidfoundation/" target="_blank">
                   <span class="sr-only">Instagram</span>
-                  <img src="./assets/icons/icon-instagram.svg" alt="instagram" loading="lazy" />
+                  <img src="./assets/icons/icon-instagram.svg" alt="">
                 </a>
               </li>
               <li class="social-icon">
-                <a href="#">
+                <a href="https://www.youtube.com/@BIGAiDFoundation" target="_blank">
                   <span class="sr-only">Youtube</span>
-                  <img src="./assets/icons/icon-youtube.svg" alt="youtube" loading="lazy" />
+                  <img src="./assets/icons/icon-youtube.svg" alt="">
                 </a>
               </li>
               <li class="social-icon">
-                <a href="#">
+                <a href="http://tiktok.com/@bigaidfoundation" target="_blank">
                   <span class="sr-only">Tiktok</span>
-                  <img src="./assets/icons/icon-tiktok.svg" alt="tiktok" loading="lazy" />
+                  <img src="./assets/icons/icon-tiktok.svg" alt="">
                 </a>
               </li>
               <li class="social-icon">
-                <a href="mailto:wecare@bigaid.org">
+                <a href="mailto:wecare@bigaid.org" target="_blank">
                   <span class="sr-only">Gmail</span>
-                  <img src="./assets/icons/icon-gmail.svg" alt="gmail" loading="lazy" />
+                  <img src="./assets/icons/icon-gmail.svg" alt="">
                 </a>
               </li>
             </ul>
