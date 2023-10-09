@@ -543,24 +543,24 @@
             <li class="milestone">
               <!-- A -->
               <div class="label">
-                <div class="amount-raised">$<span class="count" max-data="70">70</span> Raised</div>
-                <div class="amount-target">Target $<span class="count" max-data="230">230</span></div>
+                <div class="amount-raised">$<span class="count" src-data="70">70</span> Raised</div>
+                <div class="amount-target">Target $<span class="count" src-data="230">230</span></div>
               </div>
               <div class="guage africa"></div>
             </li>
             <li class="milestone">
               <!-- B -->
               <div class="label">
-                <div class="amount-raised">%<span class="count" max-data="50">50</span></div>
-                <div class="amount-target">%<span class="count" max-data="100">100</span></div>
+                <div class="amount-raised">%<span class="count" src-data="50">50</span></div>
+                <div class="amount-target">%<span class="count" src-data="100">100</span></div>
               </div>
               <div class="guage europe"></div>
             </li>
             <li class="milestone">
               <!-- C -->
               <div class="label">
-                <div class="amount-target">No of Persons (<span class="count" max-data="200">200</span>)</div>
-                <div class="amount-raised"><span class="count" max-data="30">30</span> Donated</div>
+                <div class="amount-target">No of Persons<span class="count" src-data="200"></span></div>
+                <div class="amount-raised"><span class="count" src-data="30">30</span> Donated</div>
               </div>
               <div class="guage america"></div>
             </li>
