@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     playPauseVideo();
     toggleForms();
     donationMileStoneGraph();
-    counters();
+    doDataCount();
     controlDonationCurrency();
     toggleDonationAmountSelect();
     controlCurrentlyWorkHere();
@@ -140,7 +140,80 @@ document.addEventListener("DOMContentLoaded", (event) => {
   };
   var chart = new Chart(ctx, chartOptions);
 
+  var _promise = new Promise((resolve, reject) => {
+    if (doSomething()) {
+      resolve(true);
+    } else {
+      reject("Error");
+    }
+  });
+
+  function doSomething() {
+    var donationResult = document.querySelector(".donation-result");
+    var donationPercentage = document.querySelector(".donation-percentage");
+
+    /**For result */
+    var donationRaisedResult = donationResult
+      .querySelector(".amount-raised")
+      .querySelector(".count")
+      .getAttribute("src-data");
+    var donationTargetResult = donationResult
+      .querySelector(".amount-target")
+      .querySelector(".count")
+      .getAttribute("src-data");
+
+    /**For percentage */
+
+    // var donationResultAmountRaise = document.querySelector(".donation-result");
+
+    var percentageIncrease =
+      (donationRaisedResult * 100) / donationTargetResult;
+
+    const x = percentageIncrease ? percentageIncrease + "%" : "0%";
+
+    console.log("data: ", {
+      donationRaisedResult: donationRaisedResult,
+      donationTargetResult: donationTargetResult,
+    });
+    console.log("x: ", x);
+
+    if (percentageIncrease < 100 || percentageIncrease === 100) {
+      console.log("x!!!!: ", x);
+      if (x < 0) return false;
+      donationPercentage
+        .querySelector(".amount-raised")
+        .querySelector(".count")
+        .setAttribute("src-data", parseInt(x).toFixed(0));
+      donationPercentage
+        .querySelector(".amount-target")
+        .querySelector(".count")
+        .setAttribute("src-data", 100);
+
+      donationPercentage
+        .querySelector(".amount-target")
+        .querySelector(".count").innerHTML = 100;
+
+      return true;
+    }
+    return false;
+  }
+  doSomething();
+
   /**DONATION DATA COUNTERS */
+
+  function doDataCount() {
+    _promise
+      .then((response) => {
+        if (response) {
+          counters();
+        }
+      })
+      .catch((err) => {
+        console.log("err: ", err);
+        throw new Error("There was Donation milestone data error!");
+      });
+  }
+
   function counters() {
     var milestones = document.getElementsByClassName("milestone");
     var inc = [];
@@ -169,8 +242,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
       }, 100);
     });
-    // window.onscroll =
-    // }
 
     function intervalFunc() {
       for (let i = 0; i < milestones.length; i++) {
@@ -185,16 +256,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         const donationRaisedLength = milestones[i].querySelector(".guage");
 
-        if (inc[i] != raisedCount.getAttribute("src-data")) {
-          var percentageIncrease =
-            (inc[i] * 100) / target.getAttribute("src-data");
+        if (raisedCount.getAttribute("src-data") > 0) {
+          if (inc[i] != raisedCount.getAttribute("src-data")) {
+            var percentageIncrease =
+              (inc[i] * 100) / target.getAttribute("src-data");
 
-          if (percentageIncrease < 100) {
-            donationRaisedLength.style.width = percentageIncrease
-              ? percentageIncrease + "%"
-              : "0%";
+            if (percentageIncrease < 100 && percentageIncrease === 100) {
+              donationRaisedLength.style.width = percentageIncrease
+                ? percentageIncrease + "%"
+                : "0%";
+            }
+            inc[i]++;
           }
-          inc[i]++;
         }
 
         raisedCount.innerHTML = inc[i];

@@ -540,19 +540,19 @@
           </h2>
 
           <ul class="milestones-graph">
-            <li class="milestone">
+            <li class="milestone donation-result">
               <!-- A -->
               <div class="label">
-                <div class="amount-raised">$<span class="count" src-data="70">70</span> Raised</div>
-                <div class="amount-target">Target $<span class="count" src-data="230">230</span></div>
+                <div class="amount-raised">$<span class="count" src-data="400">400</span> Raised</div>
+                <div class="amount-target">Target $<span class="count" src-data="20000">20000</span></div>
               </div>
               <div class="guage africa"></div>
             </li>
-            <li class="milestone">
+            <li class="milestone donation-percentage">
               <!-- B -->
               <div class="label">
-                <div class="amount-raised">%<span class="count" src-data="50">50</span></div>
-                <div class="amount-target">%<span class="count" src-data="100">100</span></div>
+                <div class="amount-raised">%<span class="count" src-data=""></span></div>
+                <div class="amount-target">%<span class="count" src-data=""></span></div>
               </div>
               <div class="guage europe"></div>
             </li>
