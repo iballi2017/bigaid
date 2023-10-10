@@ -276,11 +276,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
 
   function handlePieChart() {
-
     /**Handle Pie-chart Data Update On Scroll */
     window.addEventListener("scroll", () => {
-      display()
-    })
+      display();
+    });
 
     function display() {
       var milestonesPieChart = document.querySelector(".pie-chart");
@@ -431,21 +430,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
     /**REJECT COOKIES NOTIFICATION BANNER */
     rejectCookiesButton
       ? rejectCookiesButton.addEventListener("click", () => {
-        if (cookiesNotificationBanner) {
-          cookiesNotificationBanner.classList.add("hidden");
-          // more codes...
-        }
-      })
+          if (cookiesNotificationBanner) {
+            cookiesNotificationBanner.classList.add("hidden");
+            // more codes...
+          }
+        })
       : null;
 
     /**ACCEPT COOKIES NOTIFICATION BANNER */
     acceptCookiesButton
       ? acceptCookiesButton.addEventListener("click", () => {
-        if (cookiesNotificationBanner) {
-          cookiesNotificationBanner.classList.add("hidden");
-          // more codes...
-        }
-      })
+          if (cookiesNotificationBanner) {
+            cookiesNotificationBanner.classList.add("hidden");
+            // more codes...
+          }
+        })
       : null;
   }
 
@@ -543,19 +542,76 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
   window.onresize = reportWindowSize;
 
-
-
-
   /**ACCORDION */
   function handleAccordion() {
-    var accordionItems = document.getElementsByClassName("accordion-item")
+    var accordionItems = document.getElementsByClassName("accordion-item");
     console.log("accordionItems: ", accordionItems);
 
     for (let i = 0; i < accordionItems.length; i++) {
       const accordionItem = accordionItems[i];
-      console.log("accordionItem: ", accordionItem);
-      var btn = accordionItem.querySelector(".accordion-button")
-      console.log("btn: ", btn);
+      var btn = accordionItem?.querySelector(".accordion-button");
+      var expanded = false;
+
+      btn?.addEventListener("click", (e) => {
+        var accordionBtn = e.target;
+        var accordionList =
+          accordionBtn.parentElement.parentElement.parentElement;
+
+        var accordionItems = accordionList.children;
+
+        for (let i = 0; i < accordionItems.length; i++) {
+          const element = accordionItems[i];
+          if (element == accordionBtn.parentElement.parentElement) {
+            element.firstElementChild.firstElementChild.setAttribute(
+              "aria-expanded",
+              true
+            );
+            !element.lastElementChild.classList.contains("show")
+              ? element.lastElementChild.classList.add("show")
+              : element.lastElementChild.classList.remove("show");
+
+            element.lastElementChild.classList.contains("collapse")
+              ? element.lastElementChild.classList.remove("collapse")
+              : element.lastElementChild.classList.add("collapse");
+            !element.lastElementChild.classList.contains("collapsing")
+              ? element.lastElementChild.classList.add("collapsing")
+              : null;
+
+            setTimeout(() => {
+              !element.lastElementChild.classList.contains("collapse")
+                ? element.lastElementChild.classList.add("collapse")
+                : element.lastElementChild.classList.remove("collapse");
+              element.lastElementChild.classList.contains("collapsing")
+                ? element.lastElementChild.classList.remove("collapsing")
+                : null;
+            }, 200);
+          } else {
+            element.firstElementChild.firstElementChild.setAttribute(
+              "aria-expanded",
+              false
+            );
+            element.lastElementChild.classList.contains("show")
+              ? element.lastElementChild.classList.remove("show")
+              : null;
+
+            element.lastElementChild.classList.contains("collapse")
+              ? element.lastElementChild.classList.remove("collapse")
+              : element.lastElementChild.classList.add("collapse");
+            !element.lastElementChild.classList.contains("collapsing")
+              ? element.lastElementChild.classList.add("collapsing")
+              : null;
+
+            setTimeout(() => {
+              !element.lastElementChild.classList.contains("collapse")
+                ? element.lastElementChild.classList.add("collapse")
+                : element.lastElementChild.classList.remove("collapse");
+              element.lastElementChild.classList.contains("collapsing")
+                ? element.lastElementChild.classList.remove("collapsing")
+                : element.lastElementChild.classList.add("collapsing");
+            }, 200);
+          }
+        }
+      });
     }
   }
 

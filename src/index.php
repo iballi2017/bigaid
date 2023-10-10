@@ -375,25 +375,39 @@
           <h6 class="text-red-400 fw-bolder">Accordion</h6>
           <ol class="accordion-list pl-0">
             <li class="accordion-item">
-              <div class="title">
-                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Title 1</button>
+              <div class="accordion-header">
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  1. Seamless Connectivity
+                </button>
               </div>
-              <div id="collapseOne" class="body accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                Body 1
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="body">
+                  <p>We believe that healthcare is a basic right. With minimal monthly, quarterly, or yearly sign-up fees, our app is accessible to low - and mid-income earners.</p>
+                </div>
               </div>
             </li>
             <li class="accordion-item">
-              <div class="title">
-                <button type="button">Title 2</button>
+              <div class="accordion-header">
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Title 2</button>
               </div>
-              <div class="body">Body 2</div>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="body">Body 2</div>
+              </div>
             </li>
             <li class="accordion-item">
-              <div class="title">
+              <div class="accordion-header">
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Title 3</button>
+              </div>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="body">Body 3</div>
+              </div>
+            </li>
+            <!-- <li class="accordion-item">
+              <div class="accordion-header">
                 <button type="button">Title 3</button>
               </div>
               <div class="body">Body 3</div>
-            </li>
+            </li> -->
           </ol>
 
 

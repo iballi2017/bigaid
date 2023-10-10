@@ -1,26 +1,30 @@
 .accordion-list {
-    .accordion-item {
-        .title {
-            button {
-                display: block;
-                width: 100%;
-                text-align: left;
-                background-color: black;
-                color: #ffffff;
-                padding: 0.5em;
-            }
-            & + .body {
-                display: none;
-                &.show {
-                    display: block;
-                }
+  .accordion-item {
+    .accordion-header {
+      button {
+        display: block;
+        width: 100%;
+        text-align: left;
+        background-color: black;
+        color: #ffffff;
+        padding: 0.5em;
+      }
+      & + .accordion-collapse {
+        display: none;
+        &.show {
+          display: block;
 
-                &.collapsing {
-                    height: 0;
-                    overflow: hidden;
-                    transition: height 0.35s ease;
-                }
-            }
+          &.collapse {
+            visibility: visible;
+          }
+  
         }
+        &.collapsing {
+          height: 0;
+          overflow: hidden;
+          transition: height 0.35s ease;
+        }
+      }
     }
+  }
 }
