@@ -4,7 +4,7 @@ $(document).ready(function () {
   var isALtNav = false;
   // var imgSrc = "./assets/images/brand-logo-white.png";
   // var imgAltSrc = "./assets/images/brand-logo-primary.png";
-  
+
   $(window).scroll(function () {
 
     if ($(this).scrollTop() > 300) {
@@ -58,29 +58,30 @@ $(document).ready(function () {
 
   /**PROJECT SLIDER */
   var projectSlider = $(".project-slider")
-  projectSlider.owlCarousel({
-    loop: true,
-    margin: 20,
-    nav: false,
-    autoplay: true,
-    // autoplayTimeout: 7000,
-    lazyLoad: true,
-    animateOut: 'fadeOut',
-    // smartSpeed: 500,
-    responsive: {
-      0: {
-        items: 1
+  if (projectSlider) {
+    projectSlider.owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      autoplay: true,
+      // autoplayTimeout: 7000,
+      lazyLoad: true,
+      animateOut: 'fadeOut',
+      // smartSpeed: 500,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 4
+        }
       },
-      600: {
-        items: 3
-      },
-      1000: {
-        items: 4
-      }
-    },
-    onInitialize: callback
-  });
-
+      onInitialize: callback
+    });
+  }
 
   function callback(event) {
     // console.log("start")

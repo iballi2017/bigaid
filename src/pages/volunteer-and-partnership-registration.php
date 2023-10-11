@@ -18,7 +18,6 @@ include_once("../components/header.php");
                 By joining the BIGAiD Volunteer and Partner Community, you have become a part of our journey: the building of a global community and movement for quality global health, wellness, nutrition, education, community development, and social good.
             </p>
 
-
             <!-- TAB NAVIGATION -->
             <div class="tab-nav vertical mb-8">
                 <div class="tab-nav-item">

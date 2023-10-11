@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     handleScrollToTop();
     handleAnimateOnViewportIntercept();
     handleAccordion();
+    loadMedicalProfessional();
   }
 
   /**main Toolbar State Toggle */
@@ -140,7 +141,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
       },
     },
   };
-  var chart = new Chart(ctx, chartOptions);
+
+  var chart;
+
+  if (ctx) {
+    // remove any instance of ctx
+    const chart_init = Chart.getChart("myChart");
+    if (chart_init != undefined) {
+      chart_init.destroy();
+    }
+    chart = new Chart(ctx, chartOptions);
+  }
 
   var _promise = new Promise((resolve, reject) => {
     if (loadPercentageGuage()) {
@@ -155,12 +166,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     var donationPercentage = document.querySelector(".donation-percentage");
 
     /**For result */
-    var donationRaisedResult = donationResult
-      .querySelector(".amount-raised")
+    var donationRaisedResult = donationResult?.querySelector(".amount-raised")
       .querySelector(".count")
       .getAttribute("src-data");
-    var donationTargetResult = donationResult
-      .querySelector(".amount-target")
+    var donationTargetResult = donationResult?.querySelector(".amount-target")
       .querySelector(".count")
       .getAttribute("src-data");
 
@@ -283,15 +292,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     function display() {
       var milestonesPieChart = document.querySelector(".pie-chart");
-      var topElem = milestonesPieChart.offsetTop;
+      var topElem = milestonesPieChart?.offsetTop;
       var bottomElem =
-        milestonesPieChart.offsetTop + milestonesPieChart.clientHeight;
+        milestonesPieChart?.offsetTop + milestonesPieChart?.clientHeight;
       var topScreen = window.pageYOffset;
       var bottomScreen = window.pageYOffset + window.innerHeight;
       if (bottomScreen > topElem && topScreen < bottomElem) {
-        chart.show(0, 2);
+        chart?.show(0, 2);
       } else {
-        chart.hide(0, 2);
+        chart?.hide(0, 2);
       }
     }
   }
@@ -430,21 +439,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
     /**REJECT COOKIES NOTIFICATION BANNER */
     rejectCookiesButton
       ? rejectCookiesButton.addEventListener("click", () => {
-          if (cookiesNotificationBanner) {
-            cookiesNotificationBanner.classList.add("hidden");
-            // more codes...
-          }
-        })
+        if (cookiesNotificationBanner) {
+          cookiesNotificationBanner.classList.add("hidden");
+          // more codes...
+        }
+      })
       : null;
 
     /**ACCEPT COOKIES NOTIFICATION BANNER */
     acceptCookiesButton
       ? acceptCookiesButton.addEventListener("click", () => {
-          if (cookiesNotificationBanner) {
-            cookiesNotificationBanner.classList.add("hidden");
-            // more codes...
-          }
-        })
+        if (cookiesNotificationBanner) {
+          cookiesNotificationBanner.classList.add("hidden");
+          // more codes...
+        }
+      })
       : null;
   }
 
@@ -496,9 +505,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const appearOnScroll = new IntersectionObserver(
       (entries, appearOnScroll) => {
         entries.forEach((entry) => {
+          // console.log("entry: ", entry.target)
+          let dataDelay = entry.target.getAttribute("data-delay");
+          // console.log("dataDelay: ", dataDelay)
           if (!entry.isIntersecting) return;
-          entry.target.classList.add("appear");
-          appearOnScroll.unobserve(entry.target);
+
+          if (dataDelay) {
+            setTimeout(() => {
+              entry.target.classList.add("appear");
+              appearOnScroll.unobserve(entry.target);
+            }, parseInt(dataDelay));
+          } else {
+            entry.target.classList.add("appear");
+            appearOnScroll.unobserve(entry.target);
+          }
         });
       },
       appearOptions
@@ -525,6 +545,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
   }
 
+
   /**RESIZE SCREEN */
 
   function reportWindowSize() {
@@ -544,35 +565,49 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   /**ACCORDION */
   function handleAccordion() {
+
+    // var data = [
+    //   {
+
+    //   }
+    // ]
+
+
+
     var accordionItems = document.getElementsByClassName("accordion-item");
-    console.log("accordionItems: ", accordionItems);
 
     for (let i = 0; i < accordionItems.length; i++) {
       const accordionItem = accordionItems[i];
       var btn = accordionItem?.querySelector(".accordion-button");
-      var expanded = false;
 
       btn?.addEventListener("click", (e) => {
         var accordionBtn = e.target;
         var accordionList =
           accordionBtn.parentElement.parentElement.parentElement;
-
         var accordionItems = accordionList.children;
 
         for (let i = 0; i < accordionItems.length; i++) {
           const element = accordionItems[i];
           if (element == accordionBtn.parentElement.parentElement) {
-            element.firstElementChild.firstElementChild.setAttribute(
-              "aria-expanded",
-              true
-            );
+            accordionBtn.getAttribute("aria-expanded") == "false" ?
+              accordionBtn.setAttribute(
+                "aria-expanded",
+                true
+              )
+              :
+              accordionBtn.setAttribute(
+                "aria-expanded",
+                false
+              )
+
+
             !element.lastElementChild.classList.contains("show")
               ? element.lastElementChild.classList.add("show")
               : element.lastElementChild.classList.remove("show");
 
             element.lastElementChild.classList.contains("collapse")
               ? element.lastElementChild.classList.remove("collapse")
-              : element.lastElementChild.classList.add("collapse");
+              : null;
             !element.lastElementChild.classList.contains("collapsing")
               ? element.lastElementChild.classList.add("collapsing")
               : null;
@@ -585,6 +620,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 ? element.lastElementChild.classList.remove("collapsing")
                 : null;
             }, 200);
+
+
+
           } else {
             element.firstElementChild.firstElementChild.setAttribute(
               "aria-expanded",
@@ -614,6 +652,96 @@ document.addEventListener("DOMContentLoaded", (event) => {
       });
     }
   }
+
+
+  /**LOAD MEDICAL PROFESSIONAL LIST */
+  function loadMedicalProfessional() {
+    var MedicalProfession = [
+      "Health professional",
+      "Pharmacist",
+      "Physician Associate",
+      "Dentist",
+      "Physician",
+      "Optometrist",
+      "Registered nurse",
+      "Occupational Therapist",
+      "Psychiatrist",
+      "Anaesthesiologist",
+      "Dietitian",
+      "Pharmacy Technician",
+      "General practitioner",
+      "Nurse",
+      "Radiologist",
+      "Neonatologist",
+      "Respiratory therapist",
+      "Geriatrician",
+      "Emergency physician",
+      "Intensivist",
+      "Oncologist",
+      "Nurse Practitioner",
+      "Athletic Trainer",
+      "Sonographer",
+      "Radiation therapist",
+      "Nurse anaesthetist",
+      "Surgical technologist",
+      "Cardiologist",
+      "Genetic counselor",
+      "Medical laboratory scientist",
+      "Neurologist",
+      "Radiographer",
+      "Paramedic",
+      "Dermatologist",
+      "Pulmonologist",
+      "Otorhinolaryngologist",
+      "Nephrologist",
+      "Nurse midwife",
+      "Urologist",
+      "Medical physicist",
+      "orthoptist",
+      "Perfusionist",
+      "Pathologist",
+      "Endocrinologist",
+      "Gastroenterologist",
+      "Veterinarian",
+      "Medical assistant",
+      "Licensed Practical Nurse",
+      "Chiropractor",
+      "Surgeon",
+      "Physical Therapist Assistants and Aides",
+      "General practitioner",
+      "Internal medicine",
+      "Pediatrician",
+      "Surgeon",
+      "Neurologist",
+      "Family medicine",
+      "Pediatrics",
+      "Urologist",
+      "Radiologist",
+      "Obstetrics and gynecology",
+      "Pathologist",
+      "Dermatologist",
+      "Psychiatrist",
+      "Ophthalmology",
+      "Neurology",
+      "Anesthesiologist",
+      "Gastroenterologist",
+      "Oncologist",
+      "Urology",
+      "Anesthesiology",
+      "Cardiologist",
+      "Endocrinologist",
+      "Gastroenterology",
+      "Dermatology"
+    ];
+    var TypeOfMedicalProfessions = document.getElementById("TypeOfMedicalProfessions");
+    var content = ""
+    for (let i = 0; i < MedicalProfession.sort().length; i++) {
+      const profession = MedicalProfession[i];
+      content += ` <option value="${profession}" />`;
+    }
+    TypeOfMedicalProfessions.innerHTML = content
+  }
+
 
   Init();
 });

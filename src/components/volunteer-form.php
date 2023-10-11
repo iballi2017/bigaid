@@ -1,6 +1,16 @@
 <!-- Volunteer Form -->
 
-<h3 class="fs-250 fw-bold">SIGN UP AS A VOLUNTEER</h3>
+<h3 class="fs-250 fw-bold mb-2">Sign Up As a Volunteer (Medical Professional Category)</h3>
+
+<article>
+    <h3 class="fw-bold fs-150"> Where Would You Love To Contribute From?</h3>
+
+    <p>
+        BIGAiD App - (Please note: All App volunteers at this stage are strictly for medical professionals/institutions/Healthcare Providers & Responders)
+        <a href="https://biggulfgroup.com/bigaid/volunteer/" target="_blank" class="btn text-white transition-colors block bg-sky-500 hover:bg-sky-700 mt-2 mb-4 external-link">BIGAiD Foundation</a>
+    </p>
+</article>
+
 <form action="" class="my-4">
     <fieldset>
         <legend class="fs-200 fw-bold">Personal Information</legend>
@@ -44,11 +54,10 @@
                 <label for="TypeOfMedicalProfession" class="block mb-2 cursor-pointer required">Type Of Medical Profession</label>
                 <input list="TypeOfMedicalProfessions" id="TypeOfMedicalProfession" class="form-control block w-full rounded" required>
                 <datalist name="TypeOfMedicalProfession" id="TypeOfMedicalProfessions">
-                    <!-- <option value="" selected>--Select Medical Profession--</option> -->
-                    <option value="Health professional" />
+                    <!-- <option value="Health professional" />
                     <option value="Pharmacist" />
                     <option value="Physician Associate" />
-                    <option value="Dentist" />
+                    <option value="Dentist" /> -->
                 </datalist>
             </div>
             <div class="col-span-12 md:col-span-4">
@@ -185,8 +194,10 @@
     <hr class="my-8" />
     <fieldset>
         <legend class="fs-200 fw-bold">Purpose</legend>
-        <label for="why-would-you-want-to-volunteer-with-BIGAiD" class="block mb-2 cursor-pointer">Why Would You Want To Volunteer With BIGAiD?</label>
-        <input type="text" class="form-control block w-full rounded" id="why-would-you-want-to-volunteer-with-BIGAiD">
+        <label for="why-would-you-want-to-volunteer-with-BIGAiD" class="block mb-2 cursor-pointer">Why would You Want To Volunteer With BIGAiD?</label>
+        <textarea name="why-would-you-want-to-volunteer-with-BIGAiD" id="why-would-you-want-to-volunteer-with-BIGAiD" cols="30" rows="3" class="block w-full rounded"></textarea>
+        <small class="text-sky-600 text-bold">State clearly What You hope to achieve as a volunteer</small>
+
     </fieldset>
     <hr class="my-8" />
 

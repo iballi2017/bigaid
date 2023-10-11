@@ -129,13 +129,13 @@
                 </p>
                 <div class="py-2 lg:py-4"></div>
                 <div class="flex">
-                  <button class="call-to-action animate__animated animate__fadeInLeft">
+                  <a href="./#donate-now" class="call-to-action animate__animated animate__fadeInLeft">
                     Donate
-                  </button>
+                  </a>
                   <div class="mx-1 md:px-2"></div>
-                  <button class="call-to-action animate__animated animate__fadeInRight" data-type="inverted">
+                  <a href="./pages/contact-us.php" class="call-to-action animate__animated animate__fadeInRight" data-type="inverted">
                     Partner With Us
-                  </button>
+                  </a>
                 </div>
               </div>
               <div class="featured-image">
@@ -364,17 +364,18 @@
     </article>
 
     <section class="small-screen-show large-screen-hide">
-      <div class="container mx-auto mb-8">
+      <div class="container mx-auto mb-16">
         <div class="wrap-container pt-8 md:pt-16">
           <h2 class="section-title text-primary text-center mb-4 fade-in">
             5 Key Features Of The App
           </h2>
 
-
+          <div class="featured-image from-bottom anime-phone-image mb-4">
+              <img src="./assets/images/phone-2-min.png" alt="Unleashing the power to health and wellness." loading="lazy" />
+          </div>
           <!-- Accordion -->
-          <h6 class="text-red-400 fw-bolder">Accordion</h6>
           <ol class="accordion-list pl-0">
-            <li class="accordion-item">
+            <li class="accordion-item from-bottom" data-delay="200">
               <div class="accordion-header">
                 <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                   1. Seamless Connectivity
@@ -386,35 +387,61 @@
                 </div>
               </div>
             </li>
-            <li class="accordion-item">
+            <li class="accordion-item from-bottom" data-delay="300">
               <div class="accordion-header">
-                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Title 2</button>
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  2. Affordable Access
+                </button>
               </div>
               <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="body">Body 2</div>
+                <div class="body">
+                  <p>We believe that healthcare is a basic right. With minimal monthly, quarterly, or yearly sign-up fees, our app is accessible to low - and mid-income earners.</p>
+                </div>
               </div>
             </li>
-            <li class="accordion-item">
+            <li class="accordion-item from-bottom" data-delay="400">
               <div class="accordion-header">
-                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Title 3</button>
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  3. Connecting with Healthcare Professionals
+                </button>
               </div>
               <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="body">Body 3</div>
+                <div class="body">
+                  <p>The app facilitates direct connections with health providers, ensuring timely and on-the-go appointments.</p>
+                </div>
               </div>
             </li>
-            <!-- <li class="accordion-item">
+            <li class="accordion-item from-bottom" data-delay="500">
               <div class="accordion-header">
-                <button type="button">Title 3</button>
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  4. Institutional Partners
+                </button>
               </div>
-              <div class="body">Body 3</div>
-            </li> -->
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="body">
+                  <p>Our app streamlines the process of seeking medical care, making hospital interactions more efficient with our intervention partners.</p>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-item from-bottom" data-delay="600">
+              <div class="accordion-header">
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  5. BIGAiD Promax
+                </button>
+              </div>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="body">
+                  <p>Our app identifies the need to act as a mediator and aid people in dire need of saving from life-threatening situations with or without income. We give full support on pro-bono cases.</p>
+                </div>
+              </div>
+            </li>
           </ol>
 
 
 
 
 
-          <ol class="key-features">
+          <!-- <ol class="key-features">
             <li class="key-highlight  rounded-lg p-4 fade-in">
               <div class="card-body">
                 <div class="title | fw-bolder">1. Seamless Connectivity</div>
@@ -437,12 +464,12 @@
               <div class="title | fw-bolder">5. BIGAiD Promax</div>
               <p>Our app identifies the need to act as a mediator and aid people in dire need of saving from life-threatening situations with or without income. We give full support on pro-bono cases.</p>
             </li>
-          </ol>
+          </ol> -->
         </div>
       </div>
     </section>
 
-    <section class="blob-list-wrapper small-screen-hide large-screen-show"">
+    <section class="blob-list-wrapper small-screen-hide large-screen-show">
       <div class=" container mx-auto mb-8">
       <div class="wrap-container pt-8 md:pt-16">
         <h2 class="section-title text-primary text-center mb-4 fade-in">

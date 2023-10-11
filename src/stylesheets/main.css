@@ -36,6 +36,7 @@
     font-size: 2.2rem;
     line-height: 35px;
   }
+
   .md-text-size {
     font-size: 1.3rem;
   }
@@ -90,9 +91,10 @@ svg {
   html:focus-within {
     scroll-behavior: auto;
   }
+
   *,
-  *::before,
-  *::after {
+*::before,
+*::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -238,10 +240,6 @@ html {
 
 .text-primary {
   color: var(--color-primary);
-}
-
-.bg-primary {
-  background-color: var(--color-primary);
 }
 
 .text-secondary {
@@ -489,10 +487,27 @@ html {
   transform: translateY(50%);
 }
 
+.external-link {
+  position: relative;
+}
+.external-link::after {
+  content: "";
+  display: block;
+  height: 12px;
+  width: 12px;
+  background-image: url(../assets/icons/external-link-alt-solid.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+}
+
 @media (min-width: 50em) {
   .large-screen-hide {
     display: none;
   }
+
   .large-screen-show {
     display: block;
   }
@@ -501,6 +516,7 @@ html {
   .small-screen-show {
     display: block;
   }
+
   .small-screen-hide {
     display: none;
   }
@@ -524,7 +540,7 @@ html {
 .wrap-container {
   --max-width: 1222px;
   --padding: 1rem;
-  width: min(var(--max-width), 100% - var(--padding) * 2);
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
   margin-inline: auto;
 }
 
@@ -612,6 +628,7 @@ html {
     border-radius: 0 550px 0 0;
     transform: rotate(-10deg);
   }
+
   .video-section-wrapper {
     margin-top: calc(var(--skew-wave-top-margin) - 3.95em);
   }
@@ -746,6 +763,7 @@ header.sticky.toolbar-bg.alt .nav-link.primary-button {
   header.sticky .toolbar-bg.alt .nav-list {
     background-color: white;
   }
+
   .nav-list {
     padding-left: 1.5em;
     padding-right: 1.5em;
@@ -876,8 +894,8 @@ button:hover {
 
 @media (max-width: 1031px) {
   .primary-button,
-  .secondary-button,
-  .call-to-action {
+.secondary-button,
+.call-to-action {
     padding: 0.7em 1em;
     font-size: var(--fs-50);
   }
@@ -1129,7 +1147,7 @@ button:hover {
   display: block;
   position: absolute;
   right: 3.5%;
-  bottom: calc((var(--margin-bottom)) * -1);
+  bottom: calc(var(--margin-bottom) * -1);
 }
 .donation-info .donation-card {
   background-color: var(--color-secondary);
@@ -1193,7 +1211,7 @@ button:hover {
     gap: 4em;
   }
   .donation-article .article-card,
-  .donation-article .featured-image-container {
+.donation-article .featured-image-container {
     flex-basis: 50%;
   }
 }
@@ -1234,7 +1252,7 @@ button:hover {
   display: block;
   position: absolute;
   right: 3.5%;
-  bottom: calc((var(--margin-bottom)) * -1);
+  bottom: calc(var(--margin-bottom) * -1);
 }
 .home .donation-info .donation-card {
   background-color: var(--color-secondary);
@@ -1332,6 +1350,7 @@ input.invalid:focus {
     width: 100%;
     font-size: 1.2rem;
   }
+
   .init-textarea-control {
     padding: 0.8em 0.5em;
     border: 1px solid #afafaf;
@@ -1578,17 +1597,24 @@ input.invalid:focus {
   }
 }
 .overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-  z-index: 1021; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 1021;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
 }
 .overlay.show {
   display: flex;
@@ -1652,10 +1678,10 @@ input.invalid:focus {
     transform: translate3d(0, -20px, 0);
   }
 }
-ol {
+.ol {
   padding-left: 1em;
 }
-ol[aria-label=numbering] {
+.ol[aria-label=numbering] {
   list-style-type: decimal;
 }
 
@@ -1673,7 +1699,7 @@ ol[aria-label=numbering] {
   z-index: 10000;
   padding-top: 1.3em;
   padding-bottom: 1.3em;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   color: var(--color-white);
   font-size: 0.8rem;
 }
@@ -1706,7 +1732,7 @@ ol[aria-label=numbering] {
   top: 40%;
   z-index: 2;
   opacity: 0.3;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   height: 50px;
   width: 50px;
   display: flex;
@@ -1760,16 +1786,56 @@ ol[aria-label=numbering] {
   margin-bottom: 0;
 }
 
+.accordion-list .accordion-item:nth-child(odd) .accordion-collapse {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+.accordion-list .accordion-item:nth-child(even) .accordion-collapse {
+  background-color: var(--color-secondary-100);
+  color: var(--color-text);
+}
+.accordion-list .accordion-item:first-child {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  overflow: hidden;
+}
+.accordion-list .accordion-item:last-child {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
+}
 .accordion-list .accordion-item .accordion-header button {
-  display: block;
+  font-weight: var(--fw-semi-bold);
   width: 100%;
   text-align: left;
-  background-color: black;
-  color: #ffffff;
-  padding: 0.5em;
+  background-color: var(--color-light);
+  color: var(--color-text);
+  padding: 0.5em 0.7em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.accordion-list .accordion-item .accordion-header button span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.accordion-list .accordion-item .accordion-header button::after {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 10px;
+  background-image: url(../assets/icons/icon-caret-down-solid.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.accordion-list .accordion-item .accordion-header button[aria-expanded=true]::after {
+  transform: rotate(180deg);
 }
 .accordion-list .accordion-item .accordion-header + .accordion-collapse {
   display: none;
+  padding: 0.9em 0.5em;
 }
 .accordion-list .accordion-item .accordion-header + .accordion-collapse.show {
   display: block;
@@ -1783,6 +1849,25 @@ ol[aria-label=numbering] {
   transition: height 0.35s ease;
 }
 
+.anime-phone-image {
+  max-width: 110px;
+  margin: 0 auto 1em;
+  animation-name: toggleExpandPhone;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+}
+
+@keyframes toggleExpandPhone {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
 .hero h1, .hero-alt h1 {
   font-size: 50px;
   font-weight: var(--fw-semi-bold);
