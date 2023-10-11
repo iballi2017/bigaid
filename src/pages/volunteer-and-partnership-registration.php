@@ -15,9 +15,26 @@ include_once("../components/header.php");
         <div class="wrap-container">
             <h2 class="fw-bold fs-300 mb-2 md:mb-6 text-primary">Join the BIGAiD App Expert Community</h2>
             <p class=" mb-2 md:mb-6">Professionals like you volunteering and sacrificing their time and expertise, making a difference in people's lives globally are the reason many lives are been saved and the energy behind organizations fuelling community ideas and ambitious vision to meet global goals of a united and equitable world where health is accessible to all.
-                By joining the BIGAiD Volunteer and Partner Community, you have become a part of our journey: the building of a global community and movement for quality global health, wellness, nutrition, education, community development, and social good.
+                By joining the BIGAiD Volunteer and Partner Community, you have become a part of our journey: the building of a global community and movement for quality global health, wellness, nutrition, education, community development, and social good.
             </p>
+            <article class="mb-8">
+                <h3 class="fw-bold text-2xl"> Where Would You Love To Contribute From?</h3>
+                <br/> 
+                <p>
+                    BIGAiD - Click This Button To Volunteer At The Foundation Programmes<br/>
+                    <a href="https://biggulfgroup.com/bigaid/volunteer/" target="_blank" class="btn text-white transition-colors block bg-sky-500 hover:bg-sky-700 mt-2 external-link">BIGAiD Foundation</a>
+                </p> 
+                <br/>            
+                <p>
+                    BIGAiD App - <em>(Please note: All App volunteers at this stage are strictly for medical professionals/institutions/Healthcare Providers & Responders)</em>
+                </p>
+                <br/>
+                <p class="fs-150">
+                    Continue With The Form Below As A <span class="fw-bolder" style="border-bottom: 2px dashed black;">Medical Professional</span>
+                </p>
+            </article>
 
+            
             <!-- TAB NAVIGATION -->
             <div class="tab-nav vertical mb-8">
                 <div class="tab-nav-item">

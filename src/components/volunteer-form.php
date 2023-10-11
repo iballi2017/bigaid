@@ -197,7 +197,6 @@
         <label for="why-would-you-want-to-volunteer-with-BIGAiD" class="block mb-2 cursor-pointer">Why would You Want To Volunteer With BIGAiD?</label>
         <textarea name="why-would-you-want-to-volunteer-with-BIGAiD" id="why-would-you-want-to-volunteer-with-BIGAiD" cols="30" rows="3" class="block w-full rounded"></textarea>
         <small class="text-sky-600 text-bold">State clearly What You hope to achieve as a volunteer</small>
-
     </fieldset>
     <hr class="my-8" />
 

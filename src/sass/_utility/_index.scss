@@ -273,10 +273,13 @@
 .from-bottom {
   transform: translateY(50%);
 }
+em {
+  font-style: italic;
+}
 
-.external-link{
+.external-link {
   position: relative;
-  &::after{
+  &::after {
     content: "";
     display: block;
     height: 12px;

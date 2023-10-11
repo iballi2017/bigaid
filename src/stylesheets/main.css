@@ -487,6 +487,10 @@ html {
   transform: translateY(50%);
 }
 
+em {
+  font-style: italic;
+}
+
 .external-link {
   position: relative;
 }
