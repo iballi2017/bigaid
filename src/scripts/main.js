@@ -166,10 +166,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
     var donationPercentage = document.querySelector(".donation-percentage");
 
     /**For result */
-    var donationRaisedResult = donationResult?.querySelector(".amount-raised")
+    var donationRaisedResult = donationResult
+      ?.querySelector(".amount-raised")
       .querySelector(".count")
       .getAttribute("src-data");
-    var donationTargetResult = donationResult?.querySelector(".amount-target")
+    var donationTargetResult = donationResult
+      ?.querySelector(".amount-target")
       .querySelector(".count")
       .getAttribute("src-data");
 
@@ -439,21 +441,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
     /**REJECT COOKIES NOTIFICATION BANNER */
     rejectCookiesButton
       ? rejectCookiesButton.addEventListener("click", () => {
-        if (cookiesNotificationBanner) {
-          cookiesNotificationBanner.classList.add("hidden");
-          // more codes...
-        }
-      })
+          if (cookiesNotificationBanner) {
+            cookiesNotificationBanner.classList.add("hidden");
+            // more codes...
+          }
+        })
       : null;
 
     /**ACCEPT COOKIES NOTIFICATION BANNER */
     acceptCookiesButton
       ? acceptCookiesButton.addEventListener("click", () => {
-        if (cookiesNotificationBanner) {
-          cookiesNotificationBanner.classList.add("hidden");
-          // more codes...
-        }
-      })
+          if (cookiesNotificationBanner) {
+            cookiesNotificationBanner.classList.add("hidden");
+            // more codes...
+          }
+        })
       : null;
   }
 
@@ -545,7 +547,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
   }
 
-
   /**RESIZE SCREEN */
 
   function reportWindowSize() {
@@ -565,14 +566,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   /**ACCORDION */
   function handleAccordion() {
-
     // var data = [
     //   {
 
     //   }
     // ]
-
-
 
     var accordionItems = document.getElementsByClassName("accordion-item");
 
@@ -586,20 +584,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
           accordionBtn.parentElement.parentElement.parentElement;
         var accordionItems = accordionList.children;
 
+        console.log("accordionBtn: ", accordionBtn);
+
         for (let i = 0; i < accordionItems.length; i++) {
           const element = accordionItems[i];
           if (element == accordionBtn.parentElement.parentElement) {
-            accordionBtn.getAttribute("aria-expanded") == "false" ?
-              accordionBtn.setAttribute(
-                "aria-expanded",
-                true
-              )
-              :
-              accordionBtn.setAttribute(
-                "aria-expanded",
-                false
-              )
-
+            accordionBtn.getAttribute("aria-expanded") == "false"
+              ? accordionBtn.setAttribute("aria-expanded", true)
+              : accordionBtn.setAttribute("aria-expanded", false);
 
             !element.lastElementChild.classList.contains("show")
               ? element.lastElementChild.classList.add("show")
@@ -620,9 +612,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 ? element.lastElementChild.classList.remove("collapsing")
                 : null;
             }, 200);
-
-
-
           } else {
             element.firstElementChild.firstElementChild.setAttribute(
               "aria-expanded",
@@ -652,7 +641,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
       });
     }
   }
-
 
   /**LOAD MEDICAL PROFESSIONAL LIST */
   function loadMedicalProfessional() {
@@ -731,17 +719,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
       "Cardiologist",
       "Endocrinologist",
       "Gastroenterology",
-      "Dermatology"
+      "Dermatology",
     ];
-    var TypeOfMedicalProfessions = document.getElementById("TypeOfMedicalProfessions");
-    var content = ""
+    var TypeOfMedicalProfessions = document.getElementById(
+      "TypeOfMedicalProfessions"
+    );
+    var content = "";
     for (let i = 0; i < MedicalProfession.sort().length; i++) {
       const profession = MedicalProfession[i];
       content += ` <option value="${profession}" />`;
     }
-    TypeOfMedicalProfessions.innerHTML = content
+    if (TypeOfMedicalProfessions) {
+      TypeOfMedicalProfessions.innerHTML = content;
+    }
   }
-
 
   Init();
 });

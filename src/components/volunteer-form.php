@@ -1,15 +1,6 @@
 <!-- Volunteer Form -->
 
-<h3 class="fs-250 fw-bold mb-2">Sign Up As a Volunteer (Medical Professional Category)</h3>
-
-<article>
-    <h3 class="fw-bold fs-150"> Where Would You Love To Contribute From?</h3>
-
-    <p>
-        BIGAiD App - (Please note: All App volunteers at this stage are strictly for medical professionals/institutions/Healthcare Providers & Responders)
-        <a href="https://biggulfgroup.com/bigaid/volunteer/" target="_blank" class="btn text-white transition-colors block bg-sky-500 hover:bg-sky-700 mt-2 mb-4 external-link">BIGAiD Foundation</a>
-    </p>
-</article>
+<h3 class="fs-250 fw-bold mb-2">Sign Up As a Volunteer</h3>
 
 <form action="" class="my-4">
     <fieldset>

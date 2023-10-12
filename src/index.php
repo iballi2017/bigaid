@@ -371,14 +371,14 @@
           </h2>
 
           <div class="featured-image from-bottom anime-phone-image mb-4">
-              <img src="./assets/images/phone-2-min.png" alt="Unleashing the power to health and wellness." loading="lazy" />
+            <img src="./assets/images/phone-2-min.png" alt="Unleashing the power to health and wellness." loading="lazy" />
           </div>
           <!-- Accordion -->
           <ol class="accordion-list pl-0">
             <li class="accordion-item from-bottom" data-delay="200">
               <div class="accordion-header">
                 <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  1. Seamless Connectivity
+                  Seamless Connectivity
                 </button>
               </div>
               <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -390,7 +390,7 @@
             <li class="accordion-item from-bottom" data-delay="300">
               <div class="accordion-header">
                 <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  2. Affordable Access
+                  Affordable Access
                 </button>
               </div>
               <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -402,7 +402,7 @@
             <li class="accordion-item from-bottom" data-delay="400">
               <div class="accordion-header">
                 <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  3. Connecting with Healthcare Professionals
+                  Connecting with Healthcare Professionals
                 </button>
               </div>
               <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -414,7 +414,7 @@
             <li class="accordion-item from-bottom" data-delay="500">
               <div class="accordion-header">
                 <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  4. Institutional Partners
+                  Institutional Partners
                 </button>
               </div>
               <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -426,7 +426,7 @@
             <li class="accordion-item from-bottom" data-delay="600">
               <div class="accordion-header">
                 <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  5. BIGAiD Promax
+                  BIGAiD Promax
                 </button>
               </div>
               <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -471,49 +471,49 @@
 
     <section class="blob-list-wrapper small-screen-hide large-screen-show">
       <div class=" container mx-auto mb-8">
-      <div class="wrap-container pt-8 md:pt-16">
-        <h2 class="section-title text-primary text-center mb-4 fade-in">
-          5 Key Features Of The App
-        </h2>
+        <div class="wrap-container pt-8 md:pt-16">
+          <h2 class="section-title text-primary text-center mb-4 fade-in">
+            5 Key Features Of The App
+          </h2>
 
-        <div class="blog-highlights | flex">
-          <ul class="blob-list | grid grid-flow-row-dense grid-cols-3 grid-rows-5 gap-4">
-            <li class="blob-item"></li>
-            <li class="blob-item">
-              <div class="blob fade-in" style="left: -15%">
-                <img src="./assets/images/blob-1-min.png" alt="Number 1. Seamless Connectivity: BIGAiD’s web & mobile app is designed for effortless communication between users and healthcare professionals, facilitating easy access to medical guidance and consultations." loading="lazy" />
-              </div>
-            </li>
-            <li class="blob-item"></li>
-            <li class="blob-item row-span-2 fade-in">
-              <img src="./assets/images/phone-2-min.png" alt="Unleashing the power to health and wellness." loading="lazy" />
-            </li>
-            <li class="blob-item col-span-2 fade-in">
-              <div class="blob" style="top: -45%; left: 8%">
-                <img src="./assets/images/blob-2-min.png" alt="Number 2. Affordable Access: We believe that healthcare is a basic right. With minimal monthly, quarterly, or yearly sign-up fees, our app is accessible to low - and mid-income earners." loading="lazy" />
-              </div>
-            </li>
-            <li class="blob-item fade-in">
-              <div class="blob" style="top: -60%; right: -15%">
-                <img src="./assets/images/blob-3-min.png" alt="Number 3. Connecting with Healthcare Professionals: The app facilitates direct connections with health providers, ensuring timely and on-the-go appointments." loading="lazy" />
-              </div>
-            </li>
-            <li class="blob-item"></li>
-            <li class="blob-item"></li>
-            <li class="blob-item col-span-2 fade-in">
-              <div class="blob" style="top: -80%; right: -10%">
-                <img src="./assets/images/blob-4-min.png" alt="Number 4. Institutional Partners: Our app streamlines the process of seeking medical care, making hospital interactions more efficient with our intervention partners." loading="lazy" />
-              </div>
-            </li>
-            <li class="blob-item"></li>
-            <li class="blob-item fade-in">
-              <div class="blob" style="top: -125%; left: -15%">
-                <img src="./assets/images/blob-5-min.png" alt="Number 5. BIGAiD Promax: Our app identifies the need to act as a mediator and aid people in dire need of saving from life-threatening situations with or without income. We give full support on pro-bono cases." loading="lazy" />
-              </div>
-            </li>
-          </ul>
+          <div class="blog-highlights | flex">
+            <ul class="blob-list | grid grid-flow-row-dense grid-cols-3 grid-rows-5 gap-4">
+              <li class="blob-item"></li>
+              <li class="blob-item">
+                <div class="blob fade-in" style="left: -15%">
+                  <img src="./assets/images/blob-1-min.png" alt="Number 1. Seamless Connectivity: BIGAiD’s web & mobile app is designed for effortless communication between users and healthcare professionals, facilitating easy access to medical guidance and consultations." loading="lazy" />
+                </div>
+              </li>
+              <li class="blob-item"></li>
+              <li class="blob-item row-span-2 fade-in">
+                <img src="./assets/images/phone-2-min.png" alt="Unleashing the power to health and wellness." loading="lazy" />
+              </li>
+              <li class="blob-item col-span-2 fade-in">
+                <div class="blob" style="top: -45%; left: 8%">
+                  <img src="./assets/images/blob-2-min.png" alt="Number 2. Affordable Access: We believe that healthcare is a basic right. With minimal monthly, quarterly, or yearly sign-up fees, our app is accessible to low - and mid-income earners." loading="lazy" />
+                </div>
+              </li>
+              <li class="blob-item fade-in">
+                <div class="blob" style="top: -60%; right: -15%">
+                  <img src="./assets/images/blob-3-min.png" alt="Number 3. Connecting with Healthcare Professionals: The app facilitates direct connections with health providers, ensuring timely and on-the-go appointments." loading="lazy" />
+                </div>
+              </li>
+              <li class="blob-item"></li>
+              <li class="blob-item"></li>
+              <li class="blob-item col-span-2 fade-in">
+                <div class="blob" style="top: -80%; right: -10%">
+                  <img src="./assets/images/blob-4-min.png" alt="Number 4. Institutional Partners: Our app streamlines the process of seeking medical care, making hospital interactions more efficient with our intervention partners." loading="lazy" />
+                </div>
+              </li>
+              <li class="blob-item"></li>
+              <li class="blob-item fade-in">
+                <div class="blob" style="top: -125%; left: -15%">
+                  <img src="./assets/images/blob-5-min.png" alt="Number 5. BIGAiD Promax: Our app identifies the need to act as a mediator and aid people in dire need of saving from life-threatening situations with or without income. We give full support on pro-bono cases." loading="lazy" />
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
       </div>
     </section>
 

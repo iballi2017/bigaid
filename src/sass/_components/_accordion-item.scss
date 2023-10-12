@@ -1,6 +1,46 @@
 .accordion-list {
-  // font-size: 14px;
   .accordion-item {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+     border-bottom-color: var(--color-primary-500);
+    &:last-child{
+        border-bottom-color: var(--color-light);;
+    }
+    &:nth-of-type(1) {
+      button {
+        &::before {
+          content: "1.";
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      button {
+        &::before {
+          content: "2.";
+        }
+      }
+    }
+    &:nth-of-type(3) {
+      button {
+        &::before {
+          content: "3.";
+        }
+      }
+    }
+    &:nth-of-type(4) {
+      button {
+        &::before {
+          content: "4.";
+        }
+      }
+    }
+    &:nth-of-type(5) {
+      button {
+        &::before {
+          content: "5.";
+        }
+      }
+    }
     &:nth-child(odd) {
       .accordion-collapse {
         background-color: var(--color-secondary);
@@ -26,20 +66,18 @@
     .accordion-header {
       button {
         // display: block;
-        font-weight: var(--fw-semi-bold);
+        font-weight: var(--fw-bold);
         width: 100%;
         text-align: left;
         background-color: var(--color-light);
         color: var(--color-text);
-        padding: 0.5em 0.7em;
+        padding: 0.7em 0.7em;
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         align-items: flex-start;
-        span {
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-        }
+        // align-items: center;
+        gap: 5px;
+        position: relative;
         &::after {
           content: "";
           display: block;
@@ -49,6 +87,9 @@
           background-repeat: no-repeat;
           background-position: center;
           background-size: contain;
+          position: absolute;
+          right: 5px;
+          top: 40%;
         }
         &[aria-expanded="true"] {
           &::after {
