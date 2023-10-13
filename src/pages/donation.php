@@ -48,6 +48,15 @@ include_once("../components/header.php");
                             </select>
                             <small class="error-msg">This field is required</small>
                         </div>
+                        <div class="col-span-12 md:col-start-1 md:col-span-6">
+                            <label for="Country" class="block mb-2 cursor-pointer">Country</label>
+                            <!-- <input type="text" class="form-control block w-full rounded" id="Country"> -->
+                            <select name="Country" id="Country" class="Country form-control block w-full rounded">
+                                <option value="" selected>--Select Country--</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Angola">Angola</option>
+                            </select>
+                        </div>
                         <div class="col-span-12">
                             <label for="WhoIsDonating" class="block mb-2 cursor-pointer fw-bold">Currency</label>
                             <ul class="flex items-center">

@@ -864,6 +864,22 @@ select {
   grid-column: span 8 / span 8;
 }
 
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.col-start-2 {
+  grid-column-start: 2;
+}
+
+.col-end-6 {
+  grid-column-end: 6;
+}
+
+.col-end-7 {
+  grid-column-end: 7;
+}
+
 .row-span-2 {
   grid-row: span 2 / span 2;
 }
@@ -1726,6 +1742,14 @@ select {
 
   .md\:col-span-8 {
     grid-column: span 8 / span 8;
+  }
+
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:col-start-1 {
+    grid-column-start: 1;
   }
 
   .md\:mb-16 {
