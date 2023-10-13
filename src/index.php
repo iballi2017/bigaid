@@ -89,7 +89,7 @@
               </svg>
             </button>
 
-            <ul class="nav-list nav-collapse drop-shadow-sm" id="primary-navigation">
+            <ul class="nav-list nav-collapse" id="primary-navigation">
               <li class="nav-item"><a href="./pages/contact-us.php" class="nav-link">Home</a></li>
               <li class="nav-item">
                 <a href="https://biggulfgroup.com/bigaid" class="nav-link">About Us</a>

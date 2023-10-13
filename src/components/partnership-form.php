@@ -41,17 +41,29 @@
                 <label for="socialMediaName" class="block mb-2 cursor-pointer">Social media name</label>
                 <input type="text" class="form-control block w-full rounded" id="socialMediaName">
             </div>
-            <div class="col-span-12">
+            <!-- <div class="col-span-12">
                 <label for="TypeOfMedicalProfession" class="block mb-2 cursor-pointer">Type Of Medical Profession</label>
                 <input list="TypeOfMedicalProfessions" id="TypeOfMedicalProfession" class="form-control block w-full rounded">
                 <datalist name="TypeOfMedicalProfession" id="TypeOfMedicalProfessions">
-                    <!-- <option value="" selected>--Select Medical Profession--</option> -->
                     <option value="Health professional" />
                     <option value="Pharmacist" />
                     <option value="Physician Associate" />
                     <option value="Dentist" />
                 </datalist>
+            </div> -->
+
+            <div class="col-span-12 md:col-span-6">
+                <label for="partner_medical_profession" class="block mb-2 cursor-pointer required">Type Of Medical Profession</label>
+                <select name="partner_medical_profession" id="partner_medical_profession" class="form-control block w-full rounded" required>
+                </select>
             </div>
+            <div class="col-span-12 md:col-span-6">
+                <label for="partner_specialization" class="block mb-2 cursor-pointer required">Area of Specialization</label>
+                <input list="partner_specializations" type="text" id="partner_specialization" class="form-control block w-full rounded" required>
+                <datalist name="partner_specialization" id="partner_specializations">
+                </datalist>
+            </div>
+
             <div class="col-span-12 md:col-span-6">
                 <label for="NumberOfBranches" class="block mb-2 cursor-pointer">Number of Branches</label>
                 <input type="number" class="form-control block w-full rounded" id="NumberOfBranches">

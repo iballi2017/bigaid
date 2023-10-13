@@ -658,6 +658,9 @@ header.sticky.toolbar-bg.alt .nav-link {
 header.sticky.toolbar-bg.alt .nav-link.primary-button {
   color: var(--color-white);
 }
+header.sticky.toolbar-bg.alt .alt-toolbar .nav-list {
+  background-color: var(--color-white);
+}
 
 .alt-toolbar {
   padding-top: 1em;

@@ -72,6 +72,8 @@
     <!-- SIGNUP SUCCESS MESSAGE -->
     <div class="overlay">
         <?php include_once("../components/signup-success-message.php"); ?>
+        <!-- COOKIES SETTINGS -->
+        <?php include_once("../components/cookies-settings.php"); ?>
     </div>
 
 
@@ -81,14 +83,18 @@
     </div>
 
 
+
+
+
+
 </footer>
 
 
 
 <!-- jquery-3.7.0 -->
 <script src="../libs/jquery-3.7.0.min.js"></script>
-  <!-- OWL CAROUSEL -->
-  <script src="../libs/owlcarousel/owl.carousel.min.js"></script>
+<!-- OWL CAROUSEL -->
+<script src="../libs/owlcarousel/owl.carousel.min.js"></script>
 <!-- Pie Chart -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="../scripts/main.js"></script>

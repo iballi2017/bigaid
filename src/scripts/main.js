@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
   function Init() {
     mainToolbarStateToggle();
     playPauseVideo();
+    removeModalWidget();
+    showCookiesSettingsPopup();
     toggleForms();
     donationMileStoneGraph();
     doDataCount();
@@ -337,26 +339,40 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
 
   /* NOTIFICATION POPUPS */
-  var cancelNotification = document.querySelectorAll(".cancel-notification");
   var overlay = document.querySelector(".overlay");
   var overlayContent = document.querySelectorAll(".overlay-content");
 
-  for (let index = 0; index < cancelNotification.length; index++) {
-    const element = cancelNotification[index];
-    element.addEventListener("click", () => {
-      if (overlay) {
-        overlay.classList.remove("show");
+  function showCookiesSettingsPopup() {
+    var cookiesSettingsButton = document.getElementById(
+      "cookiesSettingsButton"
+    );
+    var cookiesSettings = document.getElementById("cookiesSettings");
 
-        for (let index = 0; index < overlayContent.length; index++) {
-          const element = overlayContent[index];
-          element.addEventListener("click", () => {
-            if (element) {
-              element.classList.remove("show");
-            }
-          });
-        }
-      }
+    cookiesSettingsButton?.addEventListener("click", () => {
+      overlay.classList.add("show");
+      cookiesSettings.classList.add("show");
     });
+  }
+
+  function removeModalWidget() {
+    var cancelNotification = document.querySelectorAll(".cancel-notification");
+    for (let index = 0; index < cancelNotification.length; index++) {
+      const element = cancelNotification[index];
+      element.addEventListener("click", () => {
+        if (overlay) {
+          overlay.classList.remove("show");
+
+          for (let index = 0; index < overlayContent.length; index++) {
+            const element = overlayContent[index];
+            element.addEventListener("click", () => {
+              if (element) {
+                element.classList.remove("show");
+              }
+            });
+          }
+        }
+      });
+    }
   }
 
   function toggleDonationAmountSelect() {
@@ -427,7 +443,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const cookiesNotificationBanner = document.querySelector(
       "#cookiesNotificationBanner"
     );
-    const rejectCookiesButton = document.querySelector("#rejectCookiesButton");
+    const cookiesSettingsButton = document.querySelector(
+      "#cookiesSettingsButton"
+    );
     const acceptCookiesButton = document.querySelector("#acceptCookiesButton");
 
     /**SHOW COOKIES NOTIFICATION BANNER */
@@ -439,8 +457,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     showCookiesNotificationBanner();
 
     /**REJECT COOKIES NOTIFICATION BANNER */
-    rejectCookiesButton
-      ? rejectCookiesButton.addEventListener("click", () => {
+    cookiesSettingsButton
+      ? cookiesSettingsButton.addEventListener("click", () => {
           if (cookiesNotificationBanner) {
             cookiesNotificationBanner.classList.add("hidden");
             // more codes...
@@ -644,95 +662,512 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   /**LOAD MEDICAL PROFESSIONAL LIST */
   function loadMedicalProfessional() {
-    var MedicalProfession = [
-      "Health professional",
-      "Pharmacist",
-      "Physician Associate",
-      "Dentist",
-      "Physician",
-      "Optometrist",
-      "Registered nurse",
-      "Occupational Therapist",
-      "Psychiatrist",
-      "Anaesthesiologist",
-      "Dietitian",
-      "Pharmacy Technician",
-      "General practitioner",
-      "Nurse",
-      "Radiologist",
-      "Neonatologist",
-      "Respiratory therapist",
-      "Geriatrician",
-      "Emergency physician",
-      "Intensivist",
-      "Oncologist",
-      "Nurse Practitioner",
-      "Athletic Trainer",
-      "Sonographer",
-      "Radiation therapist",
-      "Nurse anaesthetist",
-      "Surgical technologist",
-      "Cardiologist",
-      "Genetic counselor",
-      "Medical laboratory scientist",
-      "Neurologist",
-      "Radiographer",
-      "Paramedic",
-      "Dermatologist",
-      "Pulmonologist",
-      "Otorhinolaryngologist",
-      "Nephrologist",
-      "Nurse midwife",
-      "Urologist",
-      "Medical physicist",
-      "orthoptist",
-      "Perfusionist",
-      "Pathologist",
-      "Endocrinologist",
-      "Gastroenterologist",
-      "Veterinarian",
-      "Medical assistant",
-      "Licensed Practical Nurse",
-      "Chiropractor",
-      "Surgeon",
-      "Physical Therapist Assistants and Aides",
-      "General practitioner",
-      "Internal medicine",
-      "Pediatrician",
-      "Surgeon",
-      "Neurologist",
-      "Family medicine",
-      "Pediatrics",
-      "Urologist",
-      "Radiologist",
-      "Obstetrics and gynecology",
-      "Pathologist",
-      "Dermatologist",
-      "Psychiatrist",
-      "Ophthalmology",
-      "Neurology",
-      "Anesthesiologist",
-      "Gastroenterologist",
-      "Oncologist",
-      "Urology",
-      "Anesthesiology",
-      "Cardiologist",
-      "Endocrinologist",
-      "Gastroenterology",
-      "Dermatology",
-    ];
-    var TypeOfMedicalProfessions = document.getElementById(
-      "TypeOfMedicalProfessions"
-    );
-    var content = "";
-    for (let i = 0; i < MedicalProfession.sort().length; i++) {
-      const profession = MedicalProfession[i];
-      content += ` <option value="${profession}" />`;
+    var area_of_specializations = [];
+
+    const medicalPros = {
+      DOCTOR: {
+        title: "Doctor",
+        value: "doctor",
+        area_of_specializations: [
+          "Chiropractor",
+          "Surgeon",
+          "Internal medicine",
+          "Pediatrician",
+          "Neurologist",
+          "Family medicine",
+          "Urologist",
+          "Obstetrics and gynecology",
+          "Pathologist",
+          "Dermatologist",
+          "Ophthalmology",
+          "Neurology",
+          "Anesthesiologist",
+          "Gastroenterologist",
+          "Oncologist",
+          "Anesthesiology",
+          "Cardiologist",
+          "Endocrinologist",
+        ],
+      },
+      NURSE: {
+        title: "Nurse",
+        value: "nurse",
+        area_of_specializations: [
+          "Registered nurse",
+          "Nurse",
+          "Nurse Practitioner",
+          "Nurse anaesthetist",
+          "Nurse midwife",
+          "Licensed Practical Nurse",
+        ],
+      },
+      LAB_SCIENTIST: {
+        title: "Lab Scientist",
+        value: "lab_scientist",
+        area_of_specializations: [
+          "Surgical technologist",
+          "Cardiologist",
+          "Medical laboratory scientist",
+          "Radiographer",
+          "Medical physicist",
+        ],
+      },
+      SPECIALIST: {
+        title: "Specialist",
+        value: "specialist",
+        area_of_specializations: [
+          "Dentist",
+          "Optometrist",
+          "Occupational Therapist",
+          "Psychiatrist",
+          "Anaesthesiologist",
+          "Dietitian",
+          "Pharmacy Technician",
+          "Radiologist",
+          "Neonatologist",
+          "Geriatrician",
+          "Intensivist",
+          "Oncologist",
+          "Sonographer",
+          "Neurologist",
+          "Dermatologist",
+          "Pulmonologist",
+          "Otorhinolaryngologist",
+          "Nephrologist",
+          "orthoptist",
+          "Perfusionist",
+          "Pathologist",
+          "Endocrinologist",
+          "Gastroenterologist",
+          "Veterinarian",
+          "Pediatrics",
+          "Radiologist",
+          "Dermatology",
+          "Psychiatrist",
+        ],
+      },
+      EMERGENCY_RESPONSE: {
+        title: "Emergency Response",
+        value: "emergency_response",
+        area_of_specializations: [
+          "Emergency physician",
+          "Athletic Trainer",
+          "Paramedic",
+          "Medical assistant",
+          "Physical Therapist Assistants and Aides",
+        ],
+      },
+      CONSULTANT: {
+        title: "Consultant",
+        value: "consultant",
+        area_of_specializations: [
+          "General practitioner",
+          "Respiratory therapist",
+          "Radiation therapist",
+          "Genetic counselor",
+          "General practitioner",
+        ],
+      },
+      OTHERS: {
+        title: "Others",
+        value: "others",
+        area_of_specializations: [
+          "Health professional",
+          "Pharmacist",
+          "Physician Associate",
+          "Dentist",
+          "Physician",
+          "Optometrist",
+          "Registered nurse",
+          "Occupational Therapist",
+          "Psychiatrist",
+          "Anaesthesiologist",
+          "Dietitian",
+          "Pharmacy Technician",
+          "General practitioner",
+          "Nurse",
+          "Radiologist",
+          "Neonatologist",
+          "Respiratory therapist",
+          "Geriatrician",
+          "Emergency physician",
+          "Intensivist",
+          "Oncologist",
+          "Nurse Practitioner",
+          "Athletic Trainer",
+          "Sonographer",
+          "Radiation therapist",
+          "Nurse anaesthetist",
+          "Surgical technologist",
+          "Cardiologist",
+          "Genetic counselor",
+          "Medical laboratory scientist",
+          "Neurologist",
+          "Radiographer",
+          "Paramedic",
+          "Dermatologist",
+          "Pulmonologist",
+          "Otorhinolaryngologist",
+          "Nephrologist",
+          "Nurse midwife",
+          "Urologist",
+          "Medical physicist",
+          "orthoptist",
+          "Perfusionist",
+          "Pathologist",
+          "Endocrinologist",
+          "Gastroenterologist",
+          "Veterinarian",
+          "Medical assistant",
+          "Licensed Practical Nurse",
+          "Chiropractor",
+          "Physical Therapist Assistants and Aides",
+          "General practitioner",
+          "Internal medicine",
+          "Pediatrician",
+          "Surgeon",
+          "Neurologist",
+          "Family medicine",
+          "Pediatrics",
+          "Urologist",
+          "Radiologist",
+          "Obstetrics and gynecology",
+          "Pathologist",
+          "Dermatologist",
+          "Psychiatrist",
+          "Ophthalmology",
+          "Neurology",
+          "Anesthesiologist",
+          "Gastroenterologist",
+          "Oncologist",
+          "Urology",
+          "Anesthesiology",
+          "Cardiologist",
+          "Endocrinologist",
+          "Gastroenterology",
+          "Dermatology",
+        ],
+      },
+    };
+
+    function LoadProfessionals(
+      profession,
+      specializations,
+      medical_profession_select,
+      specialization
+    ) {
+      this.medical_profession = [
+        medicalPros.DOCTOR,
+        medicalPros.NURSE,
+        medicalPros.LAB_SCIENTIST,
+        medicalPros.SPECIALIST,
+        medicalPros.EMERGENCY_RESPONSE,
+        medicalPros.OTHERS,
+      ];
+
+      this.medicalPros = {
+        DOCTOR: {
+          title: "Doctor",
+          value: "doctor",
+          area_of_specializations: [
+            "Chiropractor",
+            "Surgeon",
+            "Internal medicine",
+            "Pediatrician",
+            "Neurologist",
+            "Family medicine",
+            "Urologist",
+            "Obstetrics and gynecology",
+            "Pathologist",
+            "Dermatologist",
+            "Ophthalmology",
+            "Neurology",
+            "Anesthesiologist",
+            "Gastroenterologist",
+            "Oncologist",
+            "Anesthesiology",
+            "Cardiologist",
+            "Endocrinologist",
+          ],
+        },
+        NURSE: {
+          title: "Nurse",
+          value: "nurse",
+          area_of_specializations: [
+            "Registered nurse",
+            "Nurse",
+            "Nurse Practitioner",
+            "Nurse anaesthetist",
+            "Nurse midwife",
+            "Licensed Practical Nurse",
+          ],
+        },
+        LAB_SCIENTIST: {
+          title: "Lab Scientist",
+          value: "lab_scientist",
+          area_of_specializations: [
+            "Surgical technologist",
+            "Cardiologist",
+            "Medical laboratory scientist",
+            "Radiographer",
+            "Medical physicist",
+          ],
+        },
+        SPECIALIST: {
+          title: "Specialist",
+          value: "specialist",
+          area_of_specializations: [
+            "Dentist",
+            "Optometrist",
+            "Occupational Therapist",
+            "Psychiatrist",
+            "Anaesthesiologist",
+            "Dietitian",
+            "Pharmacy Technician",
+            "Radiologist",
+            "Neonatologist",
+            "Geriatrician",
+            "Intensivist",
+            "Oncologist",
+            "Sonographer",
+            "Neurologist",
+            "Dermatologist",
+            "Pulmonologist",
+            "Otorhinolaryngologist",
+            "Nephrologist",
+            "orthoptist",
+            "Perfusionist",
+            "Pathologist",
+            "Endocrinologist",
+            "Gastroenterologist",
+            "Veterinarian",
+            "Pediatrics",
+            "Radiologist",
+            "Dermatology",
+            "Psychiatrist",
+          ],
+        },
+        EMERGENCY_RESPONSE: {
+          title: "Emergency Response",
+          value: "emergency_response",
+          area_of_specializations: [
+            "Emergency physician",
+            "Athletic Trainer",
+            "Paramedic",
+            "Medical assistant",
+            "Physical Therapist Assistants and Aides",
+          ],
+        },
+        CONSULTANT: {
+          title: "Consultant",
+          value: "consultant",
+          area_of_specializations: [
+            "General practitioner",
+            "Respiratory therapist",
+            "Radiation therapist",
+            "Genetic counselor",
+            "General practitioner",
+          ],
+        },
+        OTHERS: {
+          title: "Others",
+          value: "others",
+          area_of_specializations: [
+            "Health professional",
+            "Pharmacist",
+            "Physician Associate",
+            "Dentist",
+            "Physician",
+            "Optometrist",
+            "Registered nurse",
+            "Occupational Therapist",
+            "Psychiatrist",
+            "Anaesthesiologist",
+            "Dietitian",
+            "Pharmacy Technician",
+            "General practitioner",
+            "Nurse",
+            "Radiologist",
+            "Neonatologist",
+            "Respiratory therapist",
+            "Geriatrician",
+            "Emergency physician",
+            "Intensivist",
+            "Oncologist",
+            "Nurse Practitioner",
+            "Athletic Trainer",
+            "Sonographer",
+            "Radiation therapist",
+            "Nurse anaesthetist",
+            "Surgical technologist",
+            "Cardiologist",
+            "Genetic counselor",
+            "Medical laboratory scientist",
+            "Neurologist",
+            "Radiographer",
+            "Paramedic",
+            "Dermatologist",
+            "Pulmonologist",
+            "Otorhinolaryngologist",
+            "Nephrologist",
+            "Nurse midwife",
+            "Urologist",
+            "Medical physicist",
+            "orthoptist",
+            "Perfusionist",
+            "Pathologist",
+            "Endocrinologist",
+            "Gastroenterologist",
+            "Veterinarian",
+            "Medical assistant",
+            "Licensed Practical Nurse",
+            "Chiropractor",
+            "Physical Therapist Assistants and Aides",
+            "General practitioner",
+            "Internal medicine",
+            "Pediatrician",
+            "Surgeon",
+            "Neurologist",
+            "Family medicine",
+            "Pediatrics",
+            "Urologist",
+            "Radiologist",
+            "Obstetrics and gynecology",
+            "Pathologist",
+            "Dermatologist",
+            "Psychiatrist",
+            "Ophthalmology",
+            "Neurology",
+            "Anesthesiologist",
+            "Gastroenterologist",
+            "Oncologist",
+            "Urology",
+            "Anesthesiology",
+            "Cardiologist",
+            "Endocrinologist",
+            "Gastroenterology",
+            "Dermatology",
+          ],
+        },
+      };
+
+      this.profession = profession;
+      this.medical_profession_select = medical_profession_select;
+      this.specializations = specializations;
+      this.specialization = specialization;
+
+      let medical_profession_content = ``;
+      for (let i = 0; i < this.medical_profession.sort().length; i++) {
+        const profession = this.medical_profession[i];
+        medical_profession_content += ` <option value="${profession.value}">${profession.title}</option>`;
+      }
+      if (profession) {
+        profession.innerHTML = medical_profession_content;
+      }
+
+      this.handle_specialization = () => {
+        var content = "";
+        for (let i = 0; i < area_of_specializations.sort().length; i++) {
+          const profession = area_of_specializations[i];
+          content += ` <option value="${profession}" />`;
+        }
+        // console.log("content: ", content);
+        if (specializations) {
+          specializations.innerHTML = content;
+        }
+      };
+      this.handle_specialization();
+
+      this.selectProfessional = () => {
+        this.medical_profession_select?.addEventListener("change", (e) => {
+          let selectedProfession = e.target.value;
+          let specializations = this.medical_profession.findIndex((item) => {
+            return item.value === selectedProfession;
+          });
+          area_of_specializations =
+            this.medical_profession[specializations].area_of_specializations;
+
+          specialization.value = "";
+          this.handle_specialization();
+        });
+      };
+      this.selectProfessional();
     }
-    if (TypeOfMedicalProfessions) {
-      TypeOfMedicalProfessions.innerHTML = content;
+
+    const handle_volunteer_medical_profession = () => {
+      var volunteer_medical_profession = document.getElementById(
+        "volunteer_medical_profession"
+      );
+      var volunteer_specializations = document.getElementById(
+        "volunteer_specializations"
+      );
+      let volunteer_specialization = document.getElementById(
+        "volunteer_specialization"
+      );
+      const TypeOfMedicalProfession = document.querySelector(
+        "#volunteer_medical_profession"
+      );
+      new LoadProfessionals(
+        volunteer_medical_profession,
+        volunteer_specializations,
+        TypeOfMedicalProfession,
+        volunteer_specialization
+      );
+    };
+    handle_volunteer_medical_profession();
+
+    const handle_partner_medical_profession = () => {
+      var partner_medical_profession = document.getElementById(
+        "partner_medical_profession"
+      );
+      var partner_specializations = document.getElementById(
+        "partner_specializations"
+      );
+      let partner_specialization = document.getElementById(
+        "partner_specialization"
+      );
+      const medical_profession = document.querySelector(
+        "#partner_medical_profession"
+      );
+      new LoadProfessionals(
+        partner_medical_profession,
+        partner_specializations,
+        medical_profession,
+        partner_specialization
+      );
+    };
+    handle_partner_medical_profession();
+  }
+
+  /**COOKIES SETTING OPTIONS */
+  function cookiesSettingOptions() {
+    var cookiesSettingOptions = document.querySelectorAll(
+      ".cookies-setting-option"
+    );
+    for (let i = 0; i < cookiesSettingOptions.length; i++) {
+      const element = cookiesSettingOptions[i];
+      let control = element.querySelector("input");
+      control.addEventListener("change", (e) => {
+        if (e.target.getAttribute("id") == "all") {
+          if (e.target.checked) {
+            for (let j = 0; j < cookiesSettingOptions.length; j++) {
+              let _element = cookiesSettingOptions[j];
+              _element.querySelector("input").checked = true;
+            }
+          } else {
+            for (let j = 0; j < cookiesSettingOptions.length; j++) {
+              let _element = cookiesSettingOptions[j];
+              let _control = _element.querySelector("input");
+              if (_control.getAttribute("id") != "functional") {
+                _control.checked = false;
+              }
+            }
+          }
+        }
+      });
     }
   }
+  cookiesSettingOptions();
 
   Init();
 });

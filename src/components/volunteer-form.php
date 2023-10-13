@@ -41,19 +41,18 @@
                     <option value="1995-2012">Generation Z – born 1995-2012</option>
                 </select>
             </div>
+      
+
             <div class="col-span-12 md:col-span-4">
-                <label for="TypeOfMedicalProfession" class="block mb-2 cursor-pointer required">Type Of Medical Profession</label>
-                <input list="TypeOfMedicalProfessions" id="TypeOfMedicalProfession" class="form-control block w-full rounded" required>
-                <datalist name="TypeOfMedicalProfession" id="TypeOfMedicalProfessions">
-                    <!-- <option value="Health professional" />
-                    <option value="Pharmacist" />
-                    <option value="Physician Associate" />
-                    <option value="Dentist" /> -->
-                </datalist>
+                <label for="volunteer_medical_profession" class="block mb-2 cursor-pointer required">Type Of Medical Profession</label>
+                <select name="volunteer_medical_profession" id="volunteer_medical_profession" class="form-control block w-full rounded" required>
+                </select>
             </div>
             <div class="col-span-12 md:col-span-4">
-                <label for="AreaOfSpecialization" class="block mb-2 cursor-pointer required">Area of Specialization</label>
-                <input type="text" class="form-control block w-full rounded" id="AreaOfSpecialization" required>
+                <label for="volunteer_specialization" class="block mb-2 cursor-pointer required">Area of Specialization</label>
+                <input list="volunteer_specializations" type="text" id="volunteer_specialization" class="form-control block w-full rounded" required>
+                <datalist name="volunteer_specialization" id="volunteer_specializations">
+                </datalist>
             </div>
         </div>
     </fieldset>

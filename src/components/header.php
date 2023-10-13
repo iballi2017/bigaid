@@ -81,7 +81,7 @@
               </svg>
             </button>
 
-            <ul class="nav-list nav-collapse drop-shadow-sm" id="primary-navigation">
+            <ul class="nav-list nav-collapse" id="primary-navigation">
               <li class="nav-item"><a href="../" class="nav-link">Home</a></li>
               <li class="nav-item"><a href="../pages/about-us.php" class="nav-link">About Us</a></li>
               <li class="nav-item"><a href="../pages/contact-us.php" class="nav-link">Contact Us</a></li>
