@@ -1071,7 +1071,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
           const profession = area_of_specializations[i];
           content += ` <option value="${profession}" />`;
         }
-        // console.log("content: ", content);
         if (specializations) {
           specializations.innerHTML = content;
         }
@@ -1094,6 +1093,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       this.selectProfessional();
     }
 
+    /**Volunteers control feeds for medical professionals */
     const handle_volunteer_medical_profession = () => {
       var volunteer_medical_profession = document.getElementById(
         "volunteer_medical_profession"
@@ -1116,6 +1116,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     };
     handle_volunteer_medical_profession();
 
+    /**Partners control feeds for medical professionals */
     const handle_partner_medical_profession = () => {
       var partner_medical_profession = document.getElementById(
         "partner_medical_profession"
