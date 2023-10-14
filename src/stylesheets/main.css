@@ -280,6 +280,10 @@ html {
   background-color: var(--color-light-500);
 }
 
+.bg-white-100 {
+  background-color: var(--color-white-100);
+}
+
 .bg-blue-link {
   background-color: var(--color-blue-link);
 }

@@ -1437,6 +1437,23 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   }
 
+  function handleAddSocialLinks() {
+    var add_social_links_btn = document.querySelector("#add_social_links_btn");
+    add_social_links_btn.addEventListener("click", () => {
+      // Get the parent node
+      let social_links = document.querySelector("#social_links");
+
+      let li = document.createElement("li");
+      let div = document.createElement("div");
+      li.append = div;
+      li.textContent = "I am new here.";
+      social_links?.appendChild(li);
+    
+      console.log("social_links: ", social_links);
+    });
+  }
+  handleAddSocialLinks();
+
   listOfCountries();
 
   Init();
