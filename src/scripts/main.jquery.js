@@ -58,6 +58,7 @@ $(document).ready(function () {
 
   /**PROJECT SLIDER */
   var projectSlider = $(".project-slider")
+<<<<<<< HEAD
   if (projectSlider) {
     projectSlider.owlCarousel({
       loop: true,
@@ -78,6 +79,20 @@ $(document).ready(function () {
         1000: {
           items: 4
         }
+=======
+  projectSlider.owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    autoplay: true,
+    // autoplayTimeout: 7000,
+    lazyLoad: true,
+    animateOut: 'fadeOut',
+    // smartSpeed: 500,
+    responsive: {
+      0: {
+        items: 1,
+>>>>>>> f1e66e56613ed85466ca555517e8dc94a48d8f69
       },
       onInitialize: callback
     });
