@@ -1425,12 +1425,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     })
 
     for (let i = 0; i < countrySelects.length; i++) {
-      let content = `<select name="Country">`;
-      content += `<option value="" selected="selected">--Select Country--</option>`
-      for (let i = 0; i < countries.length; i++) {
-        content += `<option value="${countries[i].name}">${countries[i].name}</option>`
+      let content = `<option value="" selected="selected">--Select Country--</option>`;
+      for (let i = 0; i < x.length; i++) {
+        content += `<option value="${x[i].name}">${x[i].name}</option>`
       }
-      content += `</select>`;
+      // content += `</select>`;
       countrySelects[i].innerHTML = content;
 
     }
