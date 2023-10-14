@@ -41,7 +41,7 @@
                     <option value="1995-2012">Generation Z – born 1995-2012</option>
                 </select>
             </div>
-      
+
 
             <div class="col-span-12 md:col-span-4">
                 <label for="volunteer_medical_profession" class="block mb-2 cursor-pointer required">Type Of Medical Profession</label>
@@ -173,10 +173,7 @@
             <div class="col-span-12 md:col-span-3">
                 <label for="Country" class="block mb-2 cursor-pointer">Country</label>
                 <!-- <input type="text" class="form-control block w-full rounded" id="Country"> -->
-                <select name="Country" id="Country" class="form-control block w-full rounded" autocomplete="address-level2">
-                    <option value="" selected>--Select Country--</option>
-                    <option value="afghanistan">Afghanistan</option>
-                    <option value="argentina">Argentina</option>
+                <select name="Country" id="Country" class="Country form-control block w-full rounded" autocomplete="address-level2">
                 </select>
             </div>
         </div>
