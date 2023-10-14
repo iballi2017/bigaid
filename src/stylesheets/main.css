@@ -1678,6 +1678,19 @@ input.invalid:focus {
   list-style-type: decimal;
 }
 
+.cookies-setting-options .check-toggler {
+  display: flex;
+  gap: 10px;
+}
+.cookies-setting-options .check-toggler::before {
+  content: "+";
+  display: block;
+  font-weight: bold;
+}
+.cookies-setting-options .check-toggler label {
+  width: 100%;
+}
+
 .partner-rep-list li:not(.partner-rep-list li:last-child) {
   border-bottom: 2px solid var(--color-light);
   margin-bottom: 1.3em;
@@ -1882,6 +1895,37 @@ input.invalid:focus {
     transform: scale(0.95);
   }
 }
+.check-toggler input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+.check-toggler input[type=checkbox] + label {
+  display: flex;
+  justify-content: space-between;
+}
+.check-toggler input[type=checkbox]:checked + label .fake-toggler .dot {
+  right: 0;
+  transition: all 300ms ease-in-out;
+}
+.check-toggler .fake-toggler {
+  display: block;
+  height: 1.4rem;
+  width: 2.8rem;
+  border-radius: 50px;
+  background-color: var(--color-light);
+  overflow: hidden;
+  position: relative;
+}
+.check-toggler .fake-toggler .dot {
+  display: block;
+  background-color: var(--color-light-400);
+  height: 100%;
+  width: 50%;
+  border-radius: 50px;
+  position: absolute;
+  transition: all 300ms ease-in-out;
+}
+
 .hero h1, .hero-alt h1 {
   font-size: 50px;
   font-weight: var(--fw-semi-bold);

@@ -1,6 +1,21 @@
 .ol {
-    padding-left: 1em;
-    &[aria-label="numbering"] {
-        list-style-type: decimal;
+  padding-left: 1em;
+  &[aria-label="numbering"] {
+    list-style-type: decimal;
+  }
+}
+
+.cookies-setting-options {
+  .check-toggler {
+    display: flex;
+    gap: 10px;
+    &::before {
+      content: "+";
+      display: block;
+      font-weight: bold;
     }
+    label {
+      width: 100%;
+    }
+  }
 }

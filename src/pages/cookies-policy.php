@@ -8,35 +8,7 @@ include_once("../components/header.php");
 
 <div class="container mx-auto py-8 md:py-16">
     <div class="wrap-container">
-        <article class="mb-4">
             <h1 class="fs-250 fw-bold mb-4 text-capitalize">Cookies Policy & Setting</h1>
-            <p class="mb-4">
-            <h2 class="fs-200 fw-bold">COOKIES SETTINGS</h2>
-            We use cookies on our website to improve your user experience. You can accept them all or manage your cookie preferences below to control your privacy. Find out more in our Cookie Policy.
-            </p>
-            <br />
-            <section>
-                <h3 class="fw-semi-bold text-underline">Cookies Setting Options</h3>
-                <dl>
-                    <dt class="fw-bold">Marketing cookies</dt>
-                    <dd>
-                        These allow us to track visitors across our website. The intention is to display ads that are more relevant and engaging for each individual user.
-                    </dd>
-                    <dt class="fw-bold">Analytics cookies</dt>
-                    <dd>
-
-                        These allow us to recognize and count the number of visitors to our website, and see how visitors browse our website, so we can improve it where necessary.
-                    </dd>
-                    <dt class="fw-bold">Functional cookies</dt>
-                    <dd>
-                        Our functional cookies are essential to make sure our website works properly, like showing you the right information for your selected location and enabling basic functions like cookie consent. They can't be disabled.
-                    </dd>
-                    <dt class="fw-bold">Security cookies</dt>
-                    <dd>
-                        Security cookies enable us to protect user data from unauthorized access. These can't be turned off.</dd>
-                </dl>
-            </section>
-        </article>
 
         <article>
             <h2 class="fs-200 fw-bold">COOKIES POLICY</h2>
@@ -103,6 +75,34 @@ include_once("../components/header.php");
                 <br />
                 <p>
                     This Cookies Policy was created and last updated in October 2023.</p>
+            </section>
+        </article>
+        <article class="mb-4">
+            <p class="mb-4">
+            <h2 class="fs-200 fw-bold">COOKIES SETTINGS</h2>
+            We use cookies on our website to improve your user experience. You can accept them all or manage your cookie preferences below to control your privacy. Find out more in our Cookie Policy.
+            </p>
+            <br />
+            <section>
+                <h3 class="fw-semi-bold text-underline">Cookies Setting Options</h3>
+                <dl>
+                    <dt class="fw-bold">Marketing cookies</dt>
+                    <dd>
+                        These allow us to track visitors across our website. The intention is to display ads that are more relevant and engaging for each individual user.
+                    </dd>
+                    <dt class="fw-bold">Analytics cookies</dt>
+                    <dd>
+
+                        These allow us to recognize and count the number of visitors to our website, and see how visitors browse our website, so we can improve it where necessary.
+                    </dd>
+                    <dt class="fw-bold">Functional cookies</dt>
+                    <dd>
+                        Our functional cookies are essential to make sure our website works properly, like showing you the right information for your selected location and enabling basic functions like cookie consent. They can't be disabled.
+                    </dd>
+                    <dt class="fw-bold">Security cookies</dt>
+                    <dd>
+                        Security cookies enable us to protect user data from unauthorized access. These can't be turned off.</dd>
+                </dl>
             </section>
         </article>
     </div>
