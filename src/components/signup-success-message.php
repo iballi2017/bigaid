@@ -1,4 +1,4 @@
-<div class="card overlay-content form-message show">
+<div class="card overlay-content form-message">
     <div class="card-body text-center py-4">
         <div class="fw-bolder fs-200 mb-4">Thank You for Signing Up!</div>
         <p> A confirmation mail has been sent to your registered email</p>

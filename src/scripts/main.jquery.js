@@ -4,7 +4,9 @@ $(document).ready(function () {
   var isALtNav = false;
   // var imgSrc = "./assets/images/brand-logo-white.png";
   // var imgAltSrc = "./assets/images/brand-logo-primary.png";
+
   $(window).scroll(function () {
+
     if ($(this).scrollTop() > 300) {
       $(".sticky").css("top", "0px");
       // $(".sticky").addClass("hello");
@@ -22,12 +24,12 @@ $(document).ready(function () {
 
       // $(".navbar-brand img").attr("src", imgAltSrc);
       //   $(".sticky").css("background-color", "white");
-      $(".sticky .toolbar-bg").addClass("alt");
+      $(".sticky.toolbar-bg").addClass("alt");
     } else {
       // $(".navbar-brand img").attr("src", imgSrc);
       $("#primary-img").removeClass("hidden");
       $("#secondary-img").addClass("hidden");
-      $(".sticky .toolbar-bg").removeClass("alt");
+      $(".sticky.toolbar-bg").removeClass("alt");
       $(".navbar-toggler").removeClass("scrolled-offset");
     }
   });
@@ -52,6 +54,49 @@ $(document).ready(function () {
     'hideMethod': 'fadeOut',
   }
 
+
+
+  /**PROJECT SLIDER */
+  var projectSlider = $(".project-slider")
+  if (projectSlider) {
+    projectSlider.owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      autoplay: true,
+      // autoplayTimeout: 7000,
+      lazyLoad: true,
+      animateOut: 'fadeOut',
+      // smartSpeed: 500,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 4
+        }
+      },
+      onInitialize: callback
+    });
+  }
+
+  function callback(event) {
+    // console.log("start")
+    /**Show custom nav controls when slider initialize */
+    $(".slider-controls").removeClass("hidden")
+  }
+
+  $(".control.previous").click(function () {
+    projectSlider.trigger('prev.owl.carousel', [300]);
+  })
+  $(".control.next").click(function () {
+    projectSlider.trigger('next.owl.carousel', [300]);
+  })
+
+
 });
 
 
@@ -69,5 +114,5 @@ $('#error').click(function (event) {
 });
 $('#warning').click(function (event) {
   toastr.options.progressBar = true,
-  toastr.warning('You clicked Warning Toast')
+    toastr.warning('You clicked Warning Toast')
 });

@@ -39,6 +39,11 @@
   <!-- JQUERY -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+  <!-- OWL CAROUSEL -->
+  <link rel="stylesheet" href="./libs/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="./libs/owlcarousel/owl.theme.default.min.css">
+
+
   <!-- TOASTR -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
@@ -46,9 +51,9 @@
 
 <body>
   <!-- HEADER -->
-  <header class="sticky">
+  <header class="sticky toolbar-bg">
     <div class="container mx-auto bg-wrap">
-      <nav class="alt-toolbar toolbar-bg">
+      <nav class="alt-toolbar">
         <div class="wrap-container">
           <div class="flex items-center justify-between">
             <!-- Brand logo -->
@@ -84,10 +89,10 @@
               </svg>
             </button>
 
-            <ul class="nav-list nav-collapse drop-shadow-sm" id="primary-navigation">
+            <ul class="nav-list nav-collapse" id="primary-navigation">
               <li class="nav-item"><a href="./pages/contact-us.php" class="nav-link">Home</a></li>
               <li class="nav-item">
-                <a href="./pages/about-us.php" class="nav-link">About Us</a>
+                <a href="https://biggulfgroup.com/bigaid" class="nav-link">About Us</a>
               </li>
               <li class="nav-item">
                 <a href="./pages/contact-us.php" class="nav-link">Contact Us</a>
@@ -108,7 +113,7 @@
   <!-- MAIN -->
   <main class="home">
     <!-- HERO -->
-    <section>
+    <section class="bg-secondary">
       <div class="container mx-auto">
         <div class="hero | bg-secondary relative">
           <div class="wrap-container">
@@ -124,13 +129,13 @@
                 </p>
                 <div class="py-2 lg:py-4"></div>
                 <div class="flex">
-                  <button class="call-to-action animate__animated animate__fadeInLeft">
+                  <a href="./#donate-now" class="call-to-action animate__animated animate__fadeInLeft">
                     Donate
-                  </button>
+                  </a>
                   <div class="mx-1 md:px-2"></div>
-                  <button class="call-to-action animate__animated animate__fadeInRight" data-type="inverted">
+                  <a href="./pages/partner-with-us.php" class="call-to-action animate__animated animate__fadeInRight" data-type="inverted">
                     Partner With Us
-                  </button>
+                  </a>
                 </div>
               </div>
               <div class="featured-image">
@@ -168,8 +173,8 @@
       </div>
     </section>
 
-    <section class="video-section-wrapper">
-      <div class="bg-primary container mx-auto pseudo-after-bottom-white-tape">
+    <section class="video-section-wrapper bg-primary pseudo-after-bottom-white-tape">
+      <div class="bg-primary container mx-auto">
         <div class="wrap-container fade-in">
           <div class="video-container">
             <div class="video thumbnail">
@@ -186,13 +191,14 @@
             </div>
           </div>
 
-          <div class="min-full-width flex fade-in">
+          <div class="min-full-width flex fade-in" style="min-height: 280px">
             <div class="">
               <img src="./assets/images/lady-holding-a-phone-arrow-min.png" alt="Featured image" loading="lazy" />
             </div>
             <!-- <div class="bga-mt-50" style="margin-left: -70px;"> -->
             <div class="" style="margin-top: 9%; margin-left: -3.5%">
-              <img src="./assets/images/we-understand-the-challenges-min.png" alt="Featured image" loading="lazy" />
+              <img class="hidden md:block" src="./assets/images/we-understand-the-challenges-min.png" alt="Featured image" loading="lazy" />
+              <img class="block md:hidden" src="./assets/images/we-understand-the-challenges-mobile.png" alt="Featured image" loading="lazy" />
             </div>
           </div>
         </div>
@@ -231,10 +237,10 @@
     <article class="overflow-hidden">
       <div class="container mx-auto">
         <div class="wrap-container py-8">
-          <h2 class="section-title text-primary text-center mb-4 fade-in">
+          <h2 class="section-title text-primary text-center mb-8 fade-in">
             Our Advocacy & Community<br>Projects In Pictures
           </h2>
-          <ul role="list" class="gallery-type-1 | grid grid-cols-12 gap-2 md:gap-4 fade-in">
+          <!-- <ul role="list" class="gallery-type-1 | grid grid-cols-12 gap-2 md:gap-4 fade-in">
             <li class="col-span-6 md:col-span-3">
               <img src="./assets/images/Rectangle-45-min.png" alt="Project image" loading="lazy" />
             </li>
@@ -247,28 +253,79 @@
             <li class="col-span-6 md:col-span-3">
               <img src="./assets/images/Rectangle-48-min.png" alt="Project image" loading="lazy" />
             </li>
-          </ul>
+          </ul> -->
+
+          <!--  -->
+          <!-- Set up your HTML -->
+          <div class="slider-container mb-8">
+            <ul class="project-slider | owl-carousel">
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-1-min.png" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-2-min.png" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-3-min.png" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-4-min.png" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <!-- <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/Rectangle-45-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/Rectangle-46-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/Rectangle-47-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/Rectangle-48-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
+                </div>
+              </li> -->
+            </ul>
+
+            <div class="slider-controls | hidden">
+              <button class="control previous">
+                <span class="sr-only">Previous</span>
+              </button>
+              <button class="control next">
+                <span class="sr-only">Next</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </article>
 
-    <article class="">
-      <div class="bg-light container mx-auto">
+    <article class="bg-light">
+      <div class="container mx-auto">
         <div class="wrap-container py-8 md:py-16">
           <div class="grid grid-cols-12 gap-4 md:gap-8">
             <div class="col-span-12 md:col-span-6">
               <h2 class="section-title text-primary mb-4 fade-in">
                 Your Donation Equals <br>Many Lives Saved
               </h2>
-              <div class="featured-image | mb-6 fade-in" style="
-                    max-height: 300px;
-                    overflow: hidden;
-                    border-radius: 34px;
-                    background-image: url(./assets/images/donation-featured-image-min.png);
-                    height: 300px;
-                    background-position: center;
-                  ">
+              <div class="featured-image | mb-6 fade-in rounded-3xl overflow-hidden">
+                <img src="./assets/images/donation-featured-image.png" alt="" loading="lazy">
               </div>
+
               <p class="md-text-size">
                 Donating to the BIGAiD App & Health Education project gives
                 you the opportunity to save a life, help millions with the
@@ -291,7 +348,7 @@
                 for prompt intervention and intensive advocacy for all to
                 access.
               </p>
-              <br class="hidden md:block" />
+              <!-- <br class="hidden md:block" /> -->
               <br>
               <p class="md-text-size fade-in">
                 Through our innovative app and creative education programs, we
@@ -306,8 +363,114 @@
       </div>
     </article>
 
-    <section class="blob-list-wrapper">
-      <div class="container mx-auto mb-8">
+    <section class="small-screen-show large-screen-hide">
+      <div class="container mx-auto mb-16">
+        <div class="wrap-container pt-8 md:pt-16">
+          <h2 class="section-title text-primary text-center mb-4 fade-in">
+            5 Key Features Of The App
+          </h2>
+
+          <div class="featured-image from-bottom anime-phone-image mb-4">
+            <img src="./assets/images/phone-2-min.png" alt="Unleashing the power to health and wellness." loading="lazy" />
+          </div>
+          <!-- Accordion -->
+          <ol class="accordion-list pl-0">
+            <li class="accordion-item from-bottom" data-delay="200">
+              <div class="accordion-header">
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Seamless Connectivity
+                </button>
+              </div>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="body">
+                  <p>We believe that healthcare is a basic right. With minimal monthly, quarterly, or yearly sign-up fees, our app is accessible to low - and mid-income earners.</p>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-item from-bottom" data-delay="300">
+              <div class="accordion-header">
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Affordable Access
+                </button>
+              </div>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="body">
+                  <p>We believe that healthcare is a basic right. With minimal monthly, quarterly, or yearly sign-up fees, our app is accessible to low - and mid-income earners.</p>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-item from-bottom" data-delay="400">
+              <div class="accordion-header">
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Connecting with Healthcare Professionals
+                </button>
+              </div>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="body">
+                  <p>The app facilitates direct connections with health providers, ensuring timely and on-the-go appointments.</p>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-item from-bottom" data-delay="500">
+              <div class="accordion-header">
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Institutional Partners
+                </button>
+              </div>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="body">
+                  <p>Our app streamlines the process of seeking medical care, making hospital interactions more efficient with our intervention partners.</p>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-item from-bottom" data-delay="600">
+              <div class="accordion-header">
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  BIGAiD Promax
+                </button>
+              </div>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="body">
+                  <p>Our app identifies the need to act as a mediator and aid people in dire need of saving from life-threatening situations with or without income. We give full support on pro-bono cases.</p>
+                </div>
+              </div>
+            </li>
+          </ol>
+
+
+
+
+
+          <!-- <ol class="key-features">
+            <li class="key-highlight  rounded-lg p-4 fade-in">
+              <div class="card-body">
+                <div class="title | fw-bolder">1. Seamless Connectivity</div>
+                <p class="fw-semi-bold">BIGAiD’s web & mobile app is designed for effortless communication between users and healthcare professionals, facilitating easy access to medical guidance and consultations.</p>
+              </div>
+            </li>
+            <li class="key-highlight -100 rounded-lg p-4 fade-in">
+              <div class="title | fw-bolder">2. Affordable Access</div>
+              <p>We believe that healthcare is a basic right. With minimal monthly, quarterly, or yearly sign-up fees, our app is accessible to low - and mid-income earners.</p>
+            </li>
+            <li class="key-highlight bg-light-500 rounded-lg p-4 fade-in">
+              <div class="title | fw-bolder">3. Connecting with Healthcare Professionals</div>
+              <p>The app facilitates direct connections with health providers, ensuring timely and on-the-go appointments.</p>
+            </li>
+            <li class="key-highlight  rounded-lg p-4 fade-in">
+              <div class="title | fw-bolder">4. Institutional Partners</div>
+              <p>Our app streamlines the process of seeking medical care, making hospital interactions more efficient with our intervention partners.</p>
+            </li>
+            <li class="key-highlight -100 rounded-lg p-4 fade-in">
+              <div class="title | fw-bolder">5. BIGAiD Promax</div>
+              <p>Our app identifies the need to act as a mediator and aid people in dire need of saving from life-threatening situations with or without income. We give full support on pro-bono cases.</p>
+            </li>
+          </ol> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="blob-list-wrapper small-screen-hide large-screen-show">
+      <div class=" container mx-auto mb-8">
         <div class="wrap-container pt-8 md:pt-16">
           <h2 class="section-title text-primary text-center mb-4 fade-in">
             5 Key Features Of The App
@@ -353,6 +516,9 @@
         </div>
       </div>
     </section>
+
+
+
 
     <article>
       <div class="bg-light container mx-auto negative-top-margin-500">
@@ -406,35 +572,36 @@
               </p>
             </div>
             <div class="featured-image-container">
-              <div class="featured-image fade-in">
-                <img src="./assets/images/lady-card-transaction-alt-min.png" alt="Featured image" loading="lazy" />
+              <div class="featured-image fade-in rounded-3xl overflow-hidden">
+                <img src="./assets/images/happy-laughing-african-american-girl-shows-credit-card-smartphone-screen-wearing-yellow-casual-tshirt-white-background.png" alt="Featured image" loading="lazy" />
               </div>
             </div>
           </div>
-
-          <div id="donate-now">
-            <form action="" class="py-8">
-              <div class="form-group mb-4 md:mb-8 fade-in">
-                <input type="text" id="Name" placeholder="Name" class="init-control block w-full" />
-              </div>
-              <div class="form-group mb-4 md:mb-8 fade-in">
-                <input type="text" id="Email" placeholder="Email" class="init-control block w-full" />
-              </div>
-
-              <div class="text-center">
-                <button class="call-to-action fade-in">Donate Now</button>
-              </div>
-            </form>
-
-            <p class="text-center md-text-size fw-light fade-in">
-              BIGAiD Foundation is a registered non-profit organization.
-              <br class="hidden md:block" />Your donation is tax-deductible,
-              and you'll receive a receipt for your contribution. Together,
-              let's create a healthier, brighter future through accessible
-              healthcare.
-            </p>
-          </div>
         </div>
+
+        <div id="donate-now">
+          <form action="" class="py-8">
+            <div class="form-group mb-4 md:mb-8 fade-in">
+              <input type="text" id="Name" placeholder="Name" class="init-control block w-full" />
+            </div>
+            <div class="form-group mb-4 md:mb-8 fade-in">
+              <input type="text" id="Email" placeholder="Email" class="init-control block w-full" />
+            </div>
+
+            <div class="text-center">
+              <button class="call-to-action fade-in">Donate Now</button>
+            </div>
+          </form>
+
+          <p class="text-center md-text-size fw-light fade-in">
+            BIGAiD Foundation is a registered non-profit organization.
+            <br class="hidden md:block" />Your donation is tax-deductible,
+            and you'll receive a receipt for your contribution. Together,
+            let's create a healthier, brighter future through accessible
+            healthcare.
+          </p>
+        </div>
+      </div>
       </div>
     </section>
 
@@ -446,42 +613,36 @@
           </h2>
 
           <ul class="milestones-graph">
-            <li class="milestone fade-in">
+            <li class="milestone donation-result">
               <!-- A -->
               <div class="label">
-                <div class="amount-target">Target $100,000</div>
-                <div class="amount-raised">$5000 Raised</div>
+                <div class="amount-raised">$<span class="count" src-data="400">400</span> Raised</div>
+                <div class="amount-target">Target $<span class="count" src-data="20000">20000</span></div>
               </div>
-              <div class="guage africa">
-                <input class="donation-raised" type="text" hidden readonly value="6" />
-              </div>
+              <div class="guage africa"></div>
             </li>
-            <li class="milestone fade-in">
+            <li class="milestone donation-percentage">
               <!-- B -->
               <div class="label">
-                <div class="amount-target">Target $100</div>
-                <div class="amount-raised">%10</div>
+                <div class="amount-raised">%<span class="count" src-data=""></span></div>
+                <div class="amount-target">%<span class="count" src-data=""></span></div>
               </div>
-              <div class="guage europe">
-                <input class="donation-raised" type="text" hidden readonly value="20" />
-              </div>
+              <div class="guage europe"></div>
             </li>
-            <li class="milestone fade-in">
+            <li class="milestone">
               <!-- C -->
               <div class="label">
-                <div class="amount-target">No of Persons</div>
-                <div class="amount-raised">2,124 Donated</div>
+                <div class="amount-target">No of Persons<span class="count" src-data="200"></span></div>
+                <div class="amount-raised"><span class="count" src-data="30">30</span> Donated</div>
               </div>
-              <div class="guage america">
-                <input class="donation-raised" type="text" hidden readonly value="90" />
-              </div>
+              <div class="guage america"></div>
             </li>
           </ul>
 
           <!-- PIE CHART -->
 
           <div class="pie-chart | mx-auto text-center">
-            <canvas id="myChart" class="fade-in"></canvas>
+            <canvas id="myChart"></canvas>
             <p class="mx-auto fw-bolder text-primary fs-250 mt-4 fade-in">
               Donation by Region/Country
             </p>
@@ -509,15 +670,9 @@
                   lives
                 </p>
               </div>
-              <div class="featured-image-container">
-                <div class="featured-image fade-in" style="
-                      max-height: 400px;
-                      overflow: hidden;
-                      border-radius: 34px;
-                      background-image: url(./assets/images/man-woman-laughs-min.png);
-                      height: 400px;
-                      background-position: center;
-                    ">
+              <div class="featured-image-container fade-in">
+                <div class="rounded-3xl overflow-hidden">
+                  <img src="./assets/images/medium-shot-black-family-posing-studio.jpg" alt="featured image" loading="lazy">
                 </div>
               </div>
             </div>
@@ -592,7 +747,7 @@
               Join Us in Transforming<br>Healthcare
             </h2>
 
-            <div class="grid grid-cols-12 gap-4">
+            <div class="grid grid-cols-12 gap-4 md:gap-16 items-center">
               <div class="col-span-12 md:col-span-6">
                 <p class="md-text-size fade-in">
                   The BIGAiD Foundation, in partnership with individuals,
@@ -602,8 +757,8 @@
                 </p>
               </div>
               <div class="col-span-12 md:col-span-6">
-                <div class="featured-image rounded-lg overflow-hidden fade-in" style="max-width: 400px; margin: 0 auto">
-                  <img src="./assets/images/doctor-hand-gloves-alt-min.png" alt="Featured image" loading="lazy" />
+                <div class="featured-image rounded-lg overflow-hidden fade-in">
+                  <img src="./assets/images/group-african-paramedic-crew-doctors-min.png" alt="Featured image" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -619,7 +774,7 @@
           <div class="grid grid-cols-12 gap-2 md:gap-8">
             <div class="col-span-12 md:col-span-6">
               <div class="featured-image rounded-lg overflow-hidden fade-in">
-                <img src="./assets/images/handshakes-alt-min.png" alt="Featured image" loading="lazy" />
+                <img src="./assets/images/close-up-team-health-workers-min.png" alt="Featured image" loading="lazy" />
               </div>
             </div>
 
@@ -681,45 +836,45 @@
             </p>
             <ul class="social-media-handles mb-4">
               <li class="social-icon">
-                <a href="#">
+                <a href="https://www.linkedin.com/company/bigaid/" target="_blank">
                   <span class="sr-only">LinkedIn</span>
-                  <img src="./assets/icons/icon-linkedIn.svg" alt="linkedIn" loading="lazy" />
+                  <img src="./assets/icons/icon-linkedIn.svg" alt="">
                 </a>
               </li>
               <li class="social-icon">
-                <a href="#">
+                <a href="https://facebook.com/bigaidfoundation" target="_blank">
                   <span class="sr-only">Facebook</span>
-                  <img src="./assets/icons/icon-facebook.svg" alt="facebook" loading="lazy" />
+                  <img src="./assets/icons/icon-facebook.svg" alt="">
                 </a>
               </li>
               <li class="social-icon">
-                <a href="#">
+                <a href="https://twitter.com/BIGAiDApp" target="_blank">
                   <span class="sr-only">Twitter</span>
-                  <img src="./assets/icons/icon-twitter.svg" alt="twitter" loading="lazy" />
+                  <img src="./assets/icons/icon-twitter.svg" alt="">
                 </a>
               </li>
               <li class="social-icon">
-                <a href="#">
+                <a href="https://www.instagram.com/bigaidfoundation/" target="_blank">
                   <span class="sr-only">Instagram</span>
-                  <img src="./assets/icons/icon-instagram.svg" alt="instagram" loading="lazy" />
+                  <img src="./assets/icons/icon-instagram.svg" alt="">
                 </a>
               </li>
               <li class="social-icon">
-                <a href="#">
+                <a href="https://www.youtube.com/@BIGAiDFoundation" target="_blank">
                   <span class="sr-only">Youtube</span>
-                  <img src="./assets/icons/icon-youtube.svg" alt="youtube" loading="lazy" />
+                  <img src="./assets/icons/icon-youtube.svg" alt="">
                 </a>
               </li>
               <li class="social-icon">
-                <a href="#">
+                <a href="http://tiktok.com/@bigaidfoundation" target="_blank">
                   <span class="sr-only">Tiktok</span>
-                  <img src="./assets/icons/icon-tiktok.svg" alt="tiktok" loading="lazy" />
+                  <img src="./assets/icons/icon-tiktok.svg" alt="">
                 </a>
               </li>
               <li class="social-icon">
-                <a href="#">
+                <a href="mailto:wecare@bigaid.org" target="_blank">
                   <span class="sr-only">Gmail</span>
-                  <img src="./assets/icons/icon-gmail.svg" alt="gmail" loading="lazy" />
+                  <img src="./assets/icons/icon-gmail.svg" alt="">
                 </a>
               </li>
             </ul>
@@ -769,40 +924,42 @@
 
   <!-- jquery-3.7.0 -->
   <script src="./libs/jquery-3.7.0.min.js"></script>
-  <script src="./scripts/main.js"></script>
-  <script src="./scripts/main.jquery.js"></script>
+  <!-- OWL CAROUSEL -->
+  <script src="./libs/owlcarousel/owl.carousel.min.js"></script>
   <!-- Pie Chart -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./scripts/main.js"></script>
+  <script src="./scripts/main.jquery.js"></script>
 
   <script>
-    const ctx = document.getElementById("myChart");
+    // const ctx = document.getElementById("myChart");
 
-    new Chart(ctx, {
-      type: "pie",
-      data: {
-        labels: ["Africa", "Europe", "America"],
-        datasets: [{
-          label: " % Donation",
-          data: [15, 5, 80].map((num) => {
-            return num / 100;
-          }),
-          backgroundColor: ["#FF00E7", "#48CBFF", "#0A0559"],
-          borderWidth: 5,
-        }, ],
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: {
-            position: "bottom",
-          },
-          title: {
-            display: false,
-            text: "Donation by Region/Country",
-          },
-        },
-      },
-    });
+    // new Chart(ctx, {
+    //   type: "pie",
+    //   data: {
+    //     labels: ["Africa", "Europe", "America"],
+    //     datasets: [{
+    //       label: " % Donation",
+    //       data: [15, 5, 80].map((num) => {
+    //         return num / 100;
+    //       }),
+    //       backgroundColor: ["#FF00E7", "#48CBFF", "#0A0559"],
+    //       borderWidth: 5,
+    //     }, ],
+    //   },
+    //   options: {
+    //     responsive: true,
+    //     plugins: {
+    //       legend: {
+    //         position: "bottom",
+    //       },
+    //       title: {
+    //         display: false,
+    //         text: "Donation by Region/Country",
+    //       },
+    //     },
+    //   },
+    // });
   </script>
 </body>
 

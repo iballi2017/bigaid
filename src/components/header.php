@@ -44,9 +44,9 @@
 <body>
 
   <!-- HEADER -->
-  <header class="sticky">
+  <header class="sticky toolbar-bg">
     <div class="container mx-auto bg-wrap">
-      <nav class="alt-toolbar toolbar-bg">
+      <nav class="alt-toolbar">
         <div class="wrap-container">
           <!-- <div class="mx-auto max-w-screen-xl px-2 md:px-6 lg:px-8"> -->
           <div class="flex items-center justify-between">
@@ -81,7 +81,7 @@
               </svg>
             </button>
 
-            <ul class="nav-list nav-collapse drop-shadow-sm" id="primary-navigation">
+            <ul class="nav-list nav-collapse" id="primary-navigation">
               <li class="nav-item"><a href="../" class="nav-link">Home</a></li>
               <li class="nav-item"><a href="../pages/about-us.php" class="nav-link">About Us</a></li>
               <li class="nav-item"><a href="../pages/contact-us.php" class="nav-link">Contact Us</a></li>

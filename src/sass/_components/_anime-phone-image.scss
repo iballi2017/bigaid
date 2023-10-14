@@ -1,0 +1,23 @@
+.anime-phone-image {
+    // max-width: 110px;
+    margin: 0 auto 1em;
+    animation-name: toggleExpandPhone;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+@keyframes toggleExpandPhone {
+    from {
+        // transform: translateX(15%);
+        // transform: rotate(-15deg);
+        transform: scale(1);
+    }
+    to {
+        // transform: translateX(0);
+        // transform: rotate(15deg);
+        transform: scale(0.95);
+    }
+}
