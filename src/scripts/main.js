@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     controlDonationCurrency();
     toggleDonationAmountSelect();
     controlCurrentlyWorkHere();
-    dismissCookiesNotificationBanner();
+    toggleCookiesNotificationBanner();
+    cookiesSettingOptions();
     handleScrollToTop();
     handleAnimateOnViewportIntercept();
     handleAccordion();
@@ -436,8 +437,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
   }
 
-  function dismissCookiesNotificationBanner() {
-    // alert("hello")
+  function toggleCookiesNotificationBanner() {
     const cookiesNotificationBanner = document.querySelector(
       "#cookiesNotificationBanner"
     );
@@ -1166,7 +1166,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
       });
     }
   }
-  cookiesSettingOptions();
 
 
   function listOfCountries() {

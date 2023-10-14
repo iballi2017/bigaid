@@ -1,7 +1,7 @@
 <div class="card overlay-content form-message" id="cookiesSettings">
     <div class="card-body py-4">
         <div class="fw-bolder fs-200 mb-4 text-center">Cookies setting</div>
-        <p>We use cookies on our website to improve your user experience. You can accept them all or manage your cookie preferences below to control your privacy. Find out more in our <a href="#" class="text-secondary fw-bold">Cookie Policy</a>.</p>
+        <p>We use cookies on our website to improve your user experience. You can accept them all or manage your cookie preferences below to control your privacy. Find out more in our <a href="../pages/cookies-policy.php" class="text-secondary fw-bold">Cookie Policy</a>.</p>
 
         <div>
             <form action="/">

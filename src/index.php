@@ -133,7 +133,7 @@
                     Donate
                   </a>
                   <div class="mx-1 md:px-2"></div>
-                  <a href="./pages/contact-us.php" class="call-to-action animate__animated animate__fadeInRight" data-type="inverted">
+                  <a href="./pages/partner-with-us.php" class="call-to-action animate__animated animate__fadeInRight" data-type="inverted">
                     Partner With Us
                   </a>
                 </div>
@@ -572,35 +572,36 @@
               </p>
             </div>
             <div class="featured-image-container">
-              <div class="featured-image fade-in">
-                <img src="./assets/images/lady-card-transaction-alt-min.png" alt="Featured image" loading="lazy" />
+              <div class="featured-image fade-in rounded-3xl overflow-hidden">
+                <img src="./assets/images/happy-laughing-african-american-girl-shows-credit-card-smartphone-screen-wearing-yellow-casual-tshirt-white-background.png" alt="Featured image" loading="lazy" />
               </div>
             </div>
           </div>
-
-          <div id="donate-now">
-            <form action="" class="py-8">
-              <div class="form-group mb-4 md:mb-8 fade-in">
-                <input type="text" id="Name" placeholder="Name" class="init-control block w-full" />
-              </div>
-              <div class="form-group mb-4 md:mb-8 fade-in">
-                <input type="text" id="Email" placeholder="Email" class="init-control block w-full" />
-              </div>
-
-              <div class="text-center">
-                <button class="call-to-action fade-in">Donate Now</button>
-              </div>
-            </form>
-
-            <p class="text-center md-text-size fw-light fade-in">
-              BIGAiD Foundation is a registered non-profit organization.
-              <br class="hidden md:block" />Your donation is tax-deductible,
-              and you'll receive a receipt for your contribution. Together,
-              let's create a healthier, brighter future through accessible
-              healthcare.
-            </p>
-          </div>
         </div>
+
+        <div id="donate-now">
+          <form action="" class="py-8">
+            <div class="form-group mb-4 md:mb-8 fade-in">
+              <input type="text" id="Name" placeholder="Name" class="init-control block w-full" />
+            </div>
+            <div class="form-group mb-4 md:mb-8 fade-in">
+              <input type="text" id="Email" placeholder="Email" class="init-control block w-full" />
+            </div>
+
+            <div class="text-center">
+              <button class="call-to-action fade-in">Donate Now</button>
+            </div>
+          </form>
+
+          <p class="text-center md-text-size fw-light fade-in">
+            BIGAiD Foundation is a registered non-profit organization.
+            <br class="hidden md:block" />Your donation is tax-deductible,
+            and you'll receive a receipt for your contribution. Together,
+            let's create a healthier, brighter future through accessible
+            healthcare.
+          </p>
+        </div>
+      </div>
       </div>
     </section>
 
