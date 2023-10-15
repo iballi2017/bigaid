@@ -616,8 +616,8 @@
             <li class="milestone donation-result">
               <!-- A -->
               <div class="label">
-                <div class="amount-raised">$<span class="count" src-data="400">400</span> Raised</div>
-                <div class="amount-target">Target $<span class="count" src-data="20000">20000</span></div>
+                <div class="amount-raised">$<span class="count" src-data="90">90</span> Raised</div>
+                <div class="amount-target">Target $<span class="count" src-data="100">100</span></div>
               </div>
               <div class="guage africa"></div>
             </li>

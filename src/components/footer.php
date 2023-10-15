@@ -70,7 +70,7 @@
     </div>
 
     <!-- SIGNUP SUCCESS MESSAGE -->
-    <div class="overlay show">
+    <div class="overlay">
         <?php include_once("../components/signup-success-message.php"); ?>
         <!-- COOKIES SETTINGS -->
         <?php include_once("../components/cookies-settings.php"); ?>

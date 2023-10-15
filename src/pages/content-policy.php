@@ -8,9 +8,32 @@ include_once("../components/header.php");
 
 <div class="container mx-auto py-8 md:py-16">
     <div class="wrap-container">
-            <h1 class="fs-250 fw-bold mb-4 text-capitalize text-primary">Cookies Policy & Setting</h1>
-
         <article>
+            <h1 class="fs-250 fw-bold mb-4 text-capitalize text-primary">BIGAiD Content Policy</h1>
+            <p>Welcome to BIGAiD Foundation's platform. We're excited to have you as part of our community. To ensure a safe and respectful environment for all users, we've established this Content Policy to outline the guidelines and rules for creating and submitting content on our platforms (to include websites, social media platforms, video, text, news, online store, Web and mobile apps).</p>
+            <br />
+            <dl>
+                <dt class="fw-bold text-secondary">1. Content Guidelines:</dt>
+                <dd>
+                    <p class="mb-3">Relevance: We encourage you to submit content that aligns with BIGAiD Foundation's mission and services. This includes but is not limited to discussions, articles, video contents, text contents, audios, resources, and community-driven initiatives related to our goals.</p>
+                    <p class="mb-3">Respect for Others: Your content should always respect the rights, opinions, and diversity of others. Please engage in a constructive and positive manner when discussing topics or interacting with other users.</p>
+                    <p class="mb-3">Legal Compliance: Content submitted to our platform must comply with all applicable laws and regulations. This includes copyright, trademark, and intellectual property rights. Please do not submit content that infringes upon the rights of others.</p>
+                </dd>
+                <dt class="fw-bold text-secondary">2. Prohibited Content:</dt>
+                <dd>
+                    <p class="mb-3">We do not permit the submission of content that is harmful, offensive, misleading, or illegal. Prohibited content includes but is not limited to:
+                    </p>
+                    <p class="mb-3">Hate Speech: Content that promotes hatred, discrimination, or violence against individuals or groups based on attributes such as race, religion, ethnicity, gender, sexual orientation, or disability is strictly prohibited.</p>
+                    <p class="mb-3">Harassment: Harassment in any form, including personal attacks, threats, or bullying, will not be tolerated. Our platform is a place for open and respectful dialogue.</p>
+                    <p class="mb-3">Illegal Content: Content that promotes or engages in illegal activities or encourages others to do so is not allowed. This includes but is not limited to discussions related to illicit drugs, hacking, terrorism, financial fraud and any other unlawful activities.</p>
+                    <p class="mb-3">Misleading Information: Please ensure that the information you provide is accurate and truthful. Misleading content, including false claims or deceptive advertising, is not permitted.</p>
+                </dd>
+                <dt class="fw-bold text-secondary">3. Moderation:</dt>
+                <p class="mb-3">BIGAiD Foundation reserves the right to moderate and, if necessary, remove any content that violates this policy. Our goal is to maintain a welcoming and safe space for all members of our community. If you encounter content that you believe violates our Content Policy, please report it to our moderation team.</p>
+                <p class="mb-3">Thank you for being part of BIGAiD Foundation's mission to make the world a better place and saving lives, innovative solutions and positive contributions. We appreciate your cooperation in maintaining a respectful and engaging environment for all users.</p>
+            </dl>
+        </article>
+        <!-- <article>
             <h2 class="fs-200 fw-bold">COOKIES POLICY</h2>
             <section>
                 <h3 class="fw-semi-bold text-underline">Introduction</h3>
@@ -104,7 +127,7 @@ include_once("../components/header.php");
                         Security cookies enable us to protect user data from unauthorized access. These can't be turned off.</dd>
                 </dl>
             </section>
-        </article>
+        </article> -->
     </div>
 </div>
 

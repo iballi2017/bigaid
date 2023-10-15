@@ -187,12 +187,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     const x = percentageIncrease ? percentageIncrease + "%" : "0%";
 
-    // console.log("data: ", {
-    //   donationRaisedResult: donationRaisedResult,
-    //   donationTargetResult: donationTargetResult,
-    // });
-    // console.log("x: ", x);
-
     if (percentageIncrease < 100 || percentageIncrease === 100) {
       // console.log("x!!!!: ", x);
       if (x < 0) return false;
@@ -274,8 +268,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           if (inc[i] != raisedCount.getAttribute("src-data")) {
             var percentageIncrease =
               (inc[i] * 100) / target.getAttribute("src-data");
-
-            if (percentageIncrease < 100 && percentageIncrease === 100) {
+            if (0 < percentageIncrease < 100) {
               donationRaisedLength.style.width = percentageIncrease
                 ? percentageIncrease + "%"
                 : "0%";
@@ -1165,8 +1158,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
         } else {
           if (!e.target.checked) {
             for (let i = 0; i < cookiesSettingOptions.length; i++) {
-              if (cookiesSettingOptions[i].querySelector("input").getAttribute("id") == "all") {
-                cookiesSettingOptions[i].querySelector("input").checked  = false;
+              if (
+                cookiesSettingOptions[i]
+                  .querySelector("input")
+                  .getAttribute("id") == "all"
+              ) {
+                cookiesSettingOptions[i].querySelector("input").checked = false;
               }
             }
           }
@@ -1439,6 +1436,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
       countrySelects[i].innerHTML = content;
     }
   }
+
+  
+  
 
   listOfCountries();
 
