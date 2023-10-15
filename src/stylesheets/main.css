@@ -1043,7 +1043,6 @@ button:hover {
   content: "";
   display: block;
   width: 100%;
-  height: 135px;
   background-color: var(--color-light);
   left: 0;
   right: 0;
@@ -1052,8 +1051,14 @@ button:hover {
   position: absolute;
   z-index: -1;
 }
+.skew-bg-article::before {
+  height: 135px;
+}
+.skew-bg-article::after {
+  height: 87px;
+}
 .skew-bg-article .float-featured-image {
-  margin-bottom: -8em;
+  margin-bottom: -5em;
 }
 @media (min-width: 50em) {
   .skew-bg-article {
@@ -1949,6 +1954,19 @@ input.invalid:focus {
   border-radius: 50px;
   position: absolute;
   transition: all 300ms ease-in-out;
+}
+
+@media (max-width: 425px) {
+  .man-kids-image {
+    height: 300px;
+    background-image: url(../assets/images/medium-shot-black-family-posing-studio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .man-kids-image img {
+    display: none;
+  }
 }
 
 .hero h1, .hero-alt h1 {

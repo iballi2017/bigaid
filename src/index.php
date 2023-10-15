@@ -317,7 +317,7 @@
     <article class="bg-light">
       <div class="container mx-auto">
         <div class="wrap-container py-8 md:py-16">
-          <div class="grid grid-cols-12 gap-4 md:gap-8">
+          <div class="grid grid-cols-12 gap-4 md:gap-8 text-justify">
             <div class="col-span-12 md:col-span-6">
               <h2 class="section-title text-primary mb-4 fade-in">
                 Your Donation Equals <br>Many Lives Saved
@@ -672,7 +672,7 @@
                 </p>
               </div>
               <div class="featured-image-container fade-in">
-                <div class="rounded-3xl overflow-hidden">
+                <div class="rounded-3xl overflow-hidden man-kids-image">
                   <img src="./assets/images/medium-shot-black-family-posing-studio.jpg" alt="featured image" loading="lazy">
                 </div>
               </div>
@@ -748,10 +748,11 @@
               Join Us in Transforming<br>Healthcare
             </h2>
 
-            <div class="grid grid-cols-12 gap-4 md:gap-16 items-center">
+            <div class="grid grid-cols-12 gap-4 md:gap-16 items-end">
               <div class="col-span-12 md:col-span-6">
                 <p class="md-text-size fade-in">
-                  The BIGAiD Foundation, in partnership with individuals,
+                  <div class="hidden md:block rounded-full bg-secondary mb-16" style="height: 50px; width: 50px"></div>
+                  <span class="fw-bold fs-250">The BIGAiD Foundation</span>, in partnership with individuals,
                   NGOs, organizations, governments, and businesses, is working
                   towards a healthier future. Your support is crucial in
                   making quality healthcare accessible to all.
@@ -759,7 +760,8 @@
               </div>
               <div class="col-span-12 md:col-span-6">
                 <div class="featured-image rounded-lg overflow-hidden fade-in">
-                  <img src="./assets/images/group-african-paramedic-crew-doctors-min.png" alt="Featured image" loading="lazy" />
+                  <!-- <img src="./assets/images/group-african-paramedic-crew-doctors-min.png" alt="Featured image" loading="lazy" /> -->
+                  <img src="./assets/images/group-african-paramedic-crew-doctors.jpg" alt="Featured image" loading="lazy" />
                 </div>
               </div>
             </div>
