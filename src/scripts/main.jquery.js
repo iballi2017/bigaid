@@ -78,6 +78,7 @@ $(document).ready(function () {
         1000: {
           items: 4
         }
+>>>>>>>>> Temporary merge branch 2
       },
       onInitialize: callback
     });

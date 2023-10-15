@@ -1625,6 +1625,7 @@ input.invalid:focus {
   /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer;
   /* Add a pointer on hover */
+  padding: 0.5em;
 }
 .overlay.show {
   display: flex;
