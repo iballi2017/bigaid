@@ -29,7 +29,7 @@ include_once("../components/header.php");
             </p>
             <br />
             <div>
-                <form action="">
+                <form action="" method="GET">
                     <!-- <div class="col-span-12 md:col-span-6">
                             <label for="EmailAddress" class="block mb-2 cursor-pointer required">Email Address</label>
                             <input type="text" class="form-control block w-full rounded invalid" id="EmailAddress">
@@ -127,25 +127,103 @@ include_once("../components/header.php");
                             <div class="col-span-12 md:col-span-6">
                                 <label for="social_media_links" class="block mb-2 cursor-pointer required">Social Media Links</label>
                                 <!-- <input type="text" class="form-control block w-full rounded invalid" id="social_media_links"> -->
-                                <ul id="social_links">
-                                    <li class="flex items-center gap-2">
-                                        <div>
-                                            <select name="social_media" id="social_media" class="rounded">
+                                <ol type="1" id="social_links">
+                                    <li>
+                                        <div class="">
+                                            <select name="social_media_1" id="social_media_1" class="rounded">
                                                 <option value="facebook">Facebook</option>
                                                 <option value="twitter">Threads(Twitter)</option>
                                                 <option value="instagram">Instagram</option>
                                             </select>
-                                            <input type="text" name="social_link" class="rounded">
-                                        </div>
-                                        <div>
-                                            <button type="button" class="btn" id="add_social_links_btn">Add more</button>
+                                            <input type="text" name="social_link_1" class="rounded" placeholder="https://facebook.com/whatever">
                                         </div>
                                     </li>
-                                </ul>
+                                    <li>
+                                        <div>
+                                            <select name="social_media_2" id="social_media_2" class="rounded">
+                                                <option value="facebook">Facebook</option>
+                                                <option value="twitter">Threads(Twitter)</option>
+                                                <option value="instagram">Instagram</option>
+                                            </select>
+                                            <input type="text" name="social_link_2" class="rounded" placeholder="https://facebook.com/whatever">
+                                        </div>
+                                    </li>
+                                </ol>
                             </div>
                     </fieldset>
                 </div>
             </div>
+
+            <!--  -->
+
+            <div class="card flex mt-4">
+                <div class="card-body">
+                    <fieldset>
+                        <legend class="fs-150 fw-bold">Organization/Company Representatives </legend>
+                        <div class="grid grid-cols-12 gap-4">
+                            <div class="col-span-12">
+                                <label for="full_name" class="block mb-2 cursor-pointer required">Full Name</label>
+                                <input type="text" class="form-control block w-full rounded invalid" id="full_name" required>
+                                <small class="error-msg">This field is required</small>
+                            </div>
+                            <div class="col-span-12 md:col-span-6">
+                                <label for="designation_portfolio" class="block mb-2 cursor-pointer required">Designation/Portfolio</label>
+                                <input type="text" class="form-control block w-full rounded invalid" id="designation_portfolio" required>
+                                <small class="error-msg">This field is required</small>
+                            </div>
+                            <div class="col-span-12 md:col-span-6">
+                                <label for="department" class="block mb-2 cursor-pointer required">Department</label>
+                                <input type="text" class="form-control block w-full rounded invalid" id="department" required>
+                                <small class="error-msg">This field is required</small>
+                            </div>
+                            <div class="col-span-12 md:col-span-6">
+                                <label for="email" class="block mb-2 cursor-pointer required">Email Address</label>
+                                <input type="email" class="form-control block w-full rounded invalid" id="email">
+                                <small class="error-msg">Email is required</small>
+                            </div>
+                            <div class="col-span-12 md:col-span-6">
+                                <label for="mobile_number" class="block mb-2 cursor-pointer required">Mobile Number</label>
+                                <input type="tel" class="form-control block w-full rounded invalid" id="mobile_number">
+                            </div>
+                    </fieldset>
+                </div>
+            </div>
+            <fieldset class="mt-4">
+                <legend class="fs-150 fw-bold mb-2">Purpose</legend>
+                <div class="grid grid-cols-12 gap-4">
+                    <div class="col-span-12">
+                        <label for="how_you_wish_to_partner" class="block mb-2 cursor-pointer">Select How Your Organization Wish to Partner</label>
+                        <select name="how_you_wish_to_partner" id="how_you_wish_to_partner" class="form-control block w-full rounded">
+                            <option value="" selected="selected">--Select How Your Organization Wish to Partner--</option>
+                            <option value="corporate Collaborations">Corporate Collaborations</option>
+                            <option value="events & fundraising">Events & Fundraising</option>
+                            <option value="direct community investment">Direct Community Investment</option>
+                            <option value="workplace campaigns">Workplace Campaigns</option>
+                            <option value="group volunteering opportunities">Group Volunteering Opportunities</option>
+                            <option value="pro-bono contributions">Pro-Bono Contributions</option>
+                            <option value="cause marketing">Cause Marketing</option>
+                            <option value="product & donations">Product & Donations</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </div>
+                    <div class="col-span-12">
+                        <label for="how_you_wish_to_partner_others" class="block mb-2 cursor-pointer">If Other (State Clearly)</label>
+                        <textarea name="how_you_wish_to_partner_others" id="how_you_wish_to_partner_others" cols="30" rows="3" class="block w-full rounded"></textarea>
+                    </div>
+                    <div class="col-span-12">
+                        <label for="reason_for_partnership" class="block mb-2 cursor-pointer">What Does Your Organization/Company hope to achieve from this Partnership request with BIGAiD?</label>
+                        <textarea name="reason_for_partnership" id="reason_for_partnership" cols="30" rows="3" class="block w-full rounded"></textarea>
+                    </div>
+                    <div class="col-span-12">
+                        <div>
+                            <input type="checkbox" name="terms-and-condition" id="terms-and-condition" class="mr-2">
+                            <label for="terms-and-condition">I have read and agree the <a href="#" class="text-secondary fw-bold">terms and conditions</a>
+                                and <a href="#" class="text-secondary fw-bold">content policy</a>.</label>
+                        </div>
+                    </div>
+                </div>
+
+            </fieldset>
             <div class="my-4">
                 <button class="primary-button">Submit</button>
             </div>

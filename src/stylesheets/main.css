@@ -526,7 +526,6 @@ em {
   }
 }
 .card {
-  background-color: var(--color-white);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1693,6 +1692,14 @@ input.invalid:focus {
 }
 .cookies-setting-options .check-toggler label {
   width: 100%;
+}
+
+#social_links {
+  list-style-type: decimal !important;
+  padding-left: 1em;
+}
+#social_links li {
+  margin-bottom: 0.5em;
 }
 
 .partner-rep-list li:not(.partner-rep-list li:last-child) {
