@@ -1,6 +1,7 @@
 <!-- Volunteer Form -->
 
-<h3 class="fs-250 fw-bold">SIGN UP AS A VOLUNTEER</h3>
+<h3 class="fs-250 fw-bold mb-2">Sign Up As a Volunteer</h3>
+
 <form action="" class="my-4">
     <fieldset>
         <legend class="fs-200 fw-bold">Personal Information</legend>
@@ -40,20 +41,18 @@
                     <option value="1995-2012">Generation Z – born 1995-2012</option>
                 </select>
             </div>
+
+
             <div class="col-span-12 md:col-span-4">
-                <label for="TypeOfMedicalProfession" class="block mb-2 cursor-pointer required">Type Of Medical Profession</label>
-                <input list="TypeOfMedicalProfessions" id="TypeOfMedicalProfession" class="form-control block w-full rounded" required>
-                <datalist name="TypeOfMedicalProfession" id="TypeOfMedicalProfessions">
-                    <!-- <option value="" selected>--Select Medical Profession--</option> -->
-                    <option value="Health professional" />
-                    <option value="Pharmacist" />
-                    <option value="Physician Associate" />
-                    <option value="Dentist" />
-                </datalist>
+                <label for="volunteer_medical_profession" class="block mb-2 cursor-pointer required">Type Of Medical Profession</label>
+                <select name="volunteer_medical_profession" id="volunteer_medical_profession" class="form-control block w-full rounded" required>
+                </select>
             </div>
             <div class="col-span-12 md:col-span-4">
-                <label for="AreaOfSpecialization" class="block mb-2 cursor-pointer required">Area of Specialization</label>
-                <input type="text" class="form-control block w-full rounded" id="AreaOfSpecialization" required>
+                <label for="volunteer_specialization" class="block mb-2 cursor-pointer required">Area of Specialization</label>
+                <input list="volunteer_specializations" type="text" id="volunteer_specialization" class="form-control block w-full rounded" required>
+                <datalist name="volunteer_specialization" id="volunteer_specializations">
+                </datalist>
             </div>
         </div>
     </fieldset>
@@ -174,10 +173,7 @@
             <div class="col-span-12 md:col-span-3">
                 <label for="Country" class="block mb-2 cursor-pointer">Country</label>
                 <!-- <input type="text" class="form-control block w-full rounded" id="Country"> -->
-                <select name="Country" id="Country" class="form-control block w-full rounded" autocomplete="address-level2">
-                    <option value="" selected>--Select Country--</option>
-                    <option value="afghanistan">Afghanistan</option>
-                    <option value="argentina">Argentina</option>
+                <select name="Country" id="Country" class="Country form-control block w-full rounded" autocomplete="address-level2">
                 </select>
             </div>
         </div>
@@ -185,8 +181,9 @@
     <hr class="my-8" />
     <fieldset>
         <legend class="fs-200 fw-bold">Purpose</legend>
-        <label for="why-would-you-want-to-volunteer-with-BIGAiD" class="block mb-2 cursor-pointer">Why Would You Want To Volunteer With BIGAiD?</label>
-        <input type="text" class="form-control block w-full rounded" id="why-would-you-want-to-volunteer-with-BIGAiD">
+        <label for="why-would-you-want-to-volunteer-with-BIGAiD" class="block mb-2 cursor-pointer">Why would You Want To Volunteer With BIGAiD?</label>
+        <textarea name="why-would-you-want-to-volunteer-with-BIGAiD" id="why-would-you-want-to-volunteer-with-BIGAiD" cols="30" rows="3" class="block w-full rounded"></textarea>
+        <small class="text-sky-600 text-bold">State clearly What You hope to achieve as a volunteer</small>
     </fieldset>
     <hr class="my-8" />
 

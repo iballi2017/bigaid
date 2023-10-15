@@ -1,6 +1,29 @@
-ol {
-    padding-left: 1em;
-    &[aria-label="numbering"] {
-        list-style-type: decimal;
+.ol {
+  padding-left: 1em;
+  &[aria-label="numbering"] {
+    list-style-type: decimal;
+  }
+}
+
+.cookies-setting-options {
+  .check-toggler {
+    display: flex;
+    gap: 10px;
+    &::before {
+      content: "+";
+      display: block;
+      font-weight: bold;
     }
+    label {
+      width: 100%;
+    }
+  }
+}
+
+#social_links{
+  list-style-type: decimal !important;
+  padding-left: 1em;
+  li{
+    margin-bottom: .5em;
+  }
 }

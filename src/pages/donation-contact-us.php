@@ -5,7 +5,7 @@ include_once("../components/header.php");
 <section class="page-header title-bg-one">
     <div class="container mx-auto py-8 md:py-16">
         <div class="wrap-container">
-            <h1 class="title">Donation</h1>
+            <h1 class="title">Donate Now</h1>
         </div>
     </div>
 </section>
@@ -14,11 +14,13 @@ include_once("../components/header.php");
     <article>
         <section>
             <div class="wrap-container mb-4">
-                <p><strong>Over 60% </strong>
+                <p>
+                    <strong class="block fs-250">Over 60% </strong>
                     population lacks access to quality primary healthcare services in Nigeria. The National Primary Healthcare Development Agency (NPHCDA) Stated in 2022 report. Also, a survey conducted by NOI Polls revealed only 17% of the country's population has health insurance coverage in Nigeria, May 2023 report.
                 </p>
                 <br />
-                <p><strong>Over 600,000,000 (million)</strong>
+                <p>
+                    <strong class="block fs-250">Over 600,000,000 (million)</strong>
                     Africans, representing 48% of the continent's population, still lack access to the quality health care they need, WHO Regional Director for Africa, Matshidiso Moeti stated, in an April 2023 report.
                 </p>
                 <br />
@@ -105,10 +107,7 @@ include_once("../components/header.php");
                         <div class="col-span-12 md:col-span-3">
                             <label for="Country" class="block mb-2 cursor-pointer">Country</label>
                             <!-- <input type="text" class="form-control block w-full rounded" id="Country"> -->
-                            <select name="Country" id="Country" class="form-control block w-full rounded">
-                                <option value="" selected>--Select Country--</option>
-                                <option value="Argentina">Argentina</option>
-                                <option value="Angola">Angola</option>
+                            <select name="Country" id="Country" class="Country form-control block w-full rounded">
                             </select>
                         </div>
                     </div>

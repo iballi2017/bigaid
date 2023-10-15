@@ -37,9 +37,6 @@
 .text-primary {
   color: var(--color-primary);
 }
-.bg-primary {
-  background-color: var(--color-primary);
-}
 
 .text-secondary {
   color: var(--color-secondary);
@@ -79,6 +76,11 @@
 
 .bg-light-500 {
   background-color: var(--color-light-500);
+}
+
+
+.bg-white-100 {
+  background-color: var(--color-white-100);
 }
 
 .bg-blue-link {
@@ -276,7 +278,26 @@
 .from-bottom {
   transform: translateY(50%);
 }
+em {
+  font-style: italic;
+}
 
+.external-link {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    height: 12px;
+    width: 12px;
+    // background-color: red;
+    background-image: url(../assets/icons/external-link-alt-solid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -6px;
+    top: -6px;
+  }
+}
 @include mixins.minmq(50em) {
   .large-screen-hide {
     display: none;

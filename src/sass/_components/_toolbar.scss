@@ -1,10 +1,29 @@
 @use "../_partials/mixins";
 
+// header.sticky {
+//   // position: sticky;
+//   z-index: 1020;
+//   transition: 0.5s;
+//   .toolbar-bg {
+//     background-color: var(--color-secondary);
+
+//     &.alt {
+//       background-color: var(--color-white);
+//       .nav-link {
+//         color: var(--color-text);
+//         &.primary-button {
+//           color: var(--color-white);
+//         }
+//       }
+//     }
+//   }
+// }
+
 header.sticky {
   // position: sticky;
   z-index: 1020;
   transition: 0.5s;
-  .toolbar-bg {
+  &.toolbar-bg {
     background-color: var(--color-secondary);
 
     &.alt {
@@ -14,6 +33,10 @@ header.sticky {
         &.primary-button {
           color: var(--color-white);
         }
+      }
+
+      .alt-toolbar .nav-list  {
+        background-color: var(--color-white);
       }
     }
   }

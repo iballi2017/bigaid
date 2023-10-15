@@ -5,7 +5,7 @@ include_once("../components/header.php");
 <section class="page-header title-bg-one">
     <div class="container mx-auto py-8 md:py-16">
         <div class="wrap-container">
-            <h1 class="title">Donation</h1>
+            <h1 class="title">Donate Now</h1>
         </div>
     </div>
 </section>
@@ -14,11 +14,12 @@ include_once("../components/header.php");
     <article>
         <section>
             <div class="wrap-container mb-4">
-                <p><strong>Over 60% </strong>
+                <p>
+                    <strong class="block fs-250">Over 60% </strong>
                     population lacks access to quality primary healthcare services in Nigeria. The National Primary Healthcare Development Agency (NPHCDA) Stated in 2022 report. Also, a survey conducted by NOI Polls revealed only 17% of the country's population has health insurance coverage in Nigeria, May 2023 report.
                 </p>
                 <br />
-                <p><strong>Over 600,000,000 (million)</strong>
+                <p><strong class="block fs-250">Over 600,000,000 (million)</strong>
                     Africans, representing 48% of the continent's population, still lack access to the quality health care they need, WHO Regional Director for Africa, Matshidiso Moeti stated, in an April 2023 report.
                 </p>
                 <br />
@@ -47,6 +48,15 @@ include_once("../components/header.php");
                             </select>
                             <small class="error-msg">This field is required</small>
                         </div>
+                        <div class="col-span-12 md:col-start-1 md:col-span-6">
+                            <label for="Country" class="block mb-2 cursor-pointer">Country</label>
+                            <!-- <input type="text" class="form-control block w-full rounded" id="Country"> -->
+                            <select name="Country" id="Country" class="Country form-control block w-full rounded">
+                                <option value="" selected>--Select Country--</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Angola">Angola</option>
+                            </select>
+                        </div>
                         <div class="col-span-12">
                             <label for="WhoIsDonating" class="block mb-2 cursor-pointer fw-bold">Currency</label>
                             <ul class="flex items-center">
@@ -61,20 +71,7 @@ include_once("../components/header.php");
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-span-12">
-                            <label for="WhoIsDonating" class="block mb-2 cursor-pointer fw-bold">Frequency</label>
-                            <ul class="flex items-center">
-                                <li class="flex items-center">
-                                    <input type="radio" name="Frequency" id="OneTime" class="cursor-pointer mr-2">
-                                    <label for="OneTime">One Time</label>
-                                </li>
-                                <li class="px-4"></li>
-                                <li class="flex items-center">
-                                    <input type="radio" name="Frequency" id="Monthly" class="cursor-pointer mr-2">
-                                    <label for="Monthly">Monthly</label>
-                                </li>
-                            </ul>
-                        </div>
+                        
                         <div class="col-span-12 md:col-span-6 hidden" id="nairaSelect">
                             <label for="NairaDonation" class="block mb-2 cursor-pointer fw-bold required">Your Donation (Naira)</label>
                             <select name="NairaDonation" id="NairaDonation" class="form-control block w-full rounded">
