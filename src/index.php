@@ -546,7 +546,8 @@
               </div>
               <div class="col-span-7 relative">
                 <div class="float-featured-image fade-in">
-                  <img src="./assets/images/man-carry-child-min.png" alt="Featured image" loading="lazy" />
+                  <!-- <img src="./assets/images/man-carry-child-min.png" alt="Featured image" loading="lazy" /> -->
+                  <img src="./assets/images/man-carry-child.png" alt="Featured image" loading="lazy" />
                 </div>
               </div>
             </div>

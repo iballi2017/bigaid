@@ -450,21 +450,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
     /**REJECT COOKIES NOTIFICATION BANNER */
     cookiesSettingsButton
       ? cookiesSettingsButton.addEventListener("click", () => {
-          if (cookiesNotificationBanner) {
-            cookiesNotificationBanner.classList.add("hidden");
-            // more codes...
-          }
-        })
+        if (cookiesNotificationBanner) {
+          cookiesNotificationBanner.classList.add("hidden");
+          // more codes...
+        }
+      })
       : null;
 
     /**ACCEPT COOKIES NOTIFICATION BANNER */
     acceptCookiesButton
       ? acceptCookiesButton.addEventListener("click", () => {
-          if (cookiesNotificationBanner) {
-            cookiesNotificationBanner.classList.add("hidden");
-            // more codes...
-          }
-        })
+        if (cookiesNotificationBanner) {
+          cookiesNotificationBanner.classList.add("hidden");
+          // more codes...
+        }
+      })
       : null;
   }
 
@@ -1437,8 +1437,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   }
 
-  
-  
+
+
 
   listOfCountries();
 
