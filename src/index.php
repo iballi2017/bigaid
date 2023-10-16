@@ -236,7 +236,7 @@
 
     <article class="overflow-hidden">
       <div class="container mx-auto">
-        <div class="wrap-container py-8">
+        <div class="wrap-container py-4 lg:py-8">
           <h2 class="section-title text-primary text-center mb-8 fade-in">
             Our Advocacy & Community<br>Projects In Pictures
           </h2>
@@ -313,21 +313,26 @@
         </div>
       </div>
     </article>
-
+    
+    <section class="fade-in">
+      <h2 class="text-3xl md:text-6xl fw-bolder text-primary text-center mb-4 fade-in animate-charcter">
+        Healthcare Beyond <br/>Boarders
+      </h2>
+    </section>
     <article class="bg-light">
       <div class="container mx-auto">
         <div class="wrap-container py-8 md:py-16">
           <div class="grid grid-cols-12 gap-4 md:gap-8 text-justify">
             <div class="col-span-12 md:col-span-6">
-              <!-- <h2 class="section-title text-primary mb-4 fade-in">
-                Your Donation Equals <br>Many Lives Saved
-              </h2> -->
               <h2 class="section-title text-primary mb-4 fade-in">
+                Your Donation Equals <br>Many Lives Saved
+              </h2>
+              <!-- <h2 class="section-title text-primary mb-4 fade-in">
                 Healthcare Beyond Boarders
               </h2>
               <h3 class="text-secondary section-tagline mb-2 fade-in">
               Your Donation Equals <br>Many Lives Saved
-              </h3>
+              </h3> -->
               <div class="featured-image | mb-6 fade-in rounded-3xl overflow-hidden">
                 <img src="./assets/images/donation-featured-image.png" alt="" loading="lazy">
               </div>
@@ -780,10 +785,11 @@
     <section>
       <div class="container mx-auto py-8 md:py-14">
         <div class="wrap-container">
-          <div class="grid grid-cols-12 gap-2 md:gap-8">
+          <div class="grid grid-cols-12 gap-2 md:gap-8 items-end">
             <div class="col-span-12 md:col-span-6">
               <div class="featured-image rounded-lg overflow-hidden fade-in">
-                <img src="./assets/images/close-up-team-health-workers-min.png" alt="Featured image" loading="lazy" />
+                <!-- <img src="./assets/images/close-up-team-health-workers-min.png" alt="Featured image" loading="lazy" /> -->
+                <img src="./assets/images/close-up-team-health-workers.png" alt="Featured image" loading="lazy" />
               </div>
             </div>
 
