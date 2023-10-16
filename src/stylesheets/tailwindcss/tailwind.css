@@ -888,6 +888,10 @@ select {
   grid-row: span 3 / span 3;
 }
 
+.float-right {
+  float: right;
+}
+
 .m-8 {
   margin: 2rem;
 }
@@ -958,6 +962,10 @@ select {
 
 .ml-3 {
   margin-left: 0.75rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
 }
 
 .ml-6 {
@@ -1208,6 +1216,10 @@ select {
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -1778,8 +1790,8 @@ select {
     grid-column: span 8 / span 8;
   }
 
-  .md\:col-start-1 {
-    grid-column-start: 1;
+  .md\:float-right {
+    float: right;
   }
 
   .md\:mb-16 {
@@ -1798,8 +1810,16 @@ select {
     margin-left: 1.5rem;
   }
 
+  .md\:ml-4 {
+    margin-left: 1rem;
+  }
+
   .md\:block {
     display: block;
+  }
+
+  .md\:grid {
+    display: grid;
   }
 
   .md\:hidden {

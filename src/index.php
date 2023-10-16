@@ -133,14 +133,14 @@
                     Donate
                   </a>
                   <div class="mx-1 md:px-2"></div>
-                  <a href="./pages/partner-with-us.php" class="call-to-action animate__animated animate__fadeInRight" data-type="inverted">
+                  <a href="./pages/corporate-partnership.php" class="call-to-action animate__animated animate__fadeInRight" data-type="inverted">
                     Partner With Us
                   </a>
                 </div>
               </div>
               <div class="featured-image">
                 <div class="img-static">
-                  <img src="./assets/images/beautiful-african-american-doctor-couple-white-min.png" alt="Hero featured image" class="animate__animated animate__fadeInUp" loading="lazy">
+                  <img src="./assets/images/beautiful-african-american-doctor-couple-white.png" alt="Hero featured image" class="animate__animated animate__fadeInUp" loading="lazy">
                 </div>
                 <div class="img-absolute cursor-pointer">
                   <img src="./assets/images/phone-min.png" alt="Phone image" class="animate__animated animate__fadeInRight" loading="lazy">
