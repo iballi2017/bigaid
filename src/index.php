@@ -333,7 +333,7 @@
               <h3 class="text-secondary section-tagline mb-2 fade-in">
               Your Donation Equals <br>Many Lives Saved
               </h3> -->
-              <div class="featured-image | mb-6 fade-in rounded-3xl overflow-hidden">
+              <div class="featured-image | mb-6 fade-in rounded-lg overflow-hidden">
                 <img src="./assets/images/donation-featured-image.png" alt="" loading="lazy">
               </div>
 
@@ -664,26 +664,26 @@
     </section>
 
     <article>
-      <div class="bg-light container mx-auto">
+      <div class="bg-light container mx-auto fade-in">
         <div class="skew-bg-article">
           <div class="wrap-container">
             <div class="donation-article">
               <div class="article-card">
-                <h2 class="section-title text-primary mb-4 fade-in">
+                <h2 class="section-title text-primary mb-4">
                   Changing Lives
                 </h2>
-                <h3 class="text-secondary section-tagline fade-in">
+                <h3 class="text-secondary section-tagline">
                   Your Donation, <br>Many Lives Saved
                 </h3>
-                <p class="md-text-size fade-in">
+                <p class="md-text-size">
                   Every contribution you make directly impacts the lives of
                   those in need. By donating, you're actively participating in
                   reshaping healthcare access for the undeserved and saving
                   lives
                 </p>
               </div>
-              <div class="featured-image-container fade-in">
-                <div class="rounded-3xl overflow-hidden man-kids-image">
+              <div class="featured-image-container">
+                <div class="rounded-lg overflow-hidden man-kids-image">
                   <img src="./assets/images/medium-shot-black-family-posing-studio.jpg" alt="featured image" loading="lazy">
                 </div>
               </div>
@@ -788,7 +788,6 @@
           <div class="grid grid-cols-12 gap-2 md:gap-8 items-end">
             <div class="col-span-12 md:col-span-6">
               <div class="featured-image rounded-lg overflow-hidden fade-in">
-                <!-- <img src="./assets/images/close-up-team-health-workers-min.png" alt="Featured image" loading="lazy" /> -->
                 <img src="./assets/images/close-up-team-health-workers.png" alt="Featured image" loading="lazy" />
               </div>
             </div>

@@ -526,6 +526,7 @@ em {
   }
 }
 .card {
+  background-color: var(--color-white);
   position: relative;
   display: flex;
   flex-direction: column;
