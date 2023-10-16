@@ -319,9 +319,15 @@
         <div class="wrap-container py-8 md:py-16">
           <div class="grid grid-cols-12 gap-4 md:gap-8 text-justify">
             <div class="col-span-12 md:col-span-6">
-              <h2 class="section-title text-primary mb-4 fade-in">
+              <!-- <h2 class="section-title text-primary mb-4 fade-in">
                 Your Donation Equals <br>Many Lives Saved
+              </h2> -->
+              <h2 class="section-title text-primary mb-4 fade-in">
+                Healthcare Beyond Boarders
               </h2>
+              <h3 class="text-secondary section-tagline mb-2 fade-in">
+              Your Donation Equals <br>Many Lives Saved
+              </h3>
               <div class="featured-image | mb-6 fade-in rounded-3xl overflow-hidden">
                 <img src="./assets/images/donation-featured-image.png" alt="" loading="lazy">
               </div>
@@ -751,11 +757,11 @@
             <div class="grid grid-cols-12 gap-4 md:gap-16 items-end">
               <div class="col-span-12 md:col-span-6">
                 <p class="md-text-size fade-in">
-                  <div class="hidden md:block rounded-full bg-secondary mb-16" style="height: 50px; width: 50px"></div>
-                  <span class="fw-bold fs-250">The BIGAiD Foundation</span>, in partnership with individuals,
-                  NGOs, organizations, governments, and businesses, is working
-                  towards a healthier future. Your support is crucial in
-                  making quality healthcare accessible to all.
+                <div class="hidden md:block rounded-full bg-secondary mb-16" style="height: 50px; width: 50px"></div>
+                <span class="fw-bold fs-250">The BIGAiD Foundation</span>, in partnership with individuals,
+                NGOs, organizations, governments, and businesses, is working
+                towards a healthier future. Your support is crucial in
+                making quality healthcare accessible to all.
                 </p>
               </div>
               <div class="col-span-12 md:col-span-6">
