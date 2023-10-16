@@ -10,9 +10,11 @@
     &:checked {
       & + label {
         .fake-toggler {
+          background-color: var(--color-secondary-100);
           .dot {
             right: 0;
             transition: all 300ms ease-in-out;
+            background-color: var(--color-secondary);
           }
         }
       }
