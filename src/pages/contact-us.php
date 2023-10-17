@@ -26,12 +26,12 @@ include_once("../components/header.php");
                     <div class="grid grid-cols-12 gap-4">
                         <div class="col-span-12 md:col-span-6">
                             <label for="FirstName" class="block mb-2 cursor-pointer required">FirstName</label>
-                            <input type="text" class="form-control block w-full rounded invalid" id="FirstName" required>
+                            <input type="text" class="form-control block w-full rounded invalid" id="FirstName" name="FirstName" required>
                             <small class="error-msg">This field is required</small>
                         </div>
                         <div class="col-span-12 md:col-span-6">
                             <label for="LastName" class="block mb-2 cursor-pointer required">LastName</label>
-                            <input type="text" class="form-control block w-full rounded invalid" id="LastName" required>
+                            <input type="text" class="form-control block w-full rounded invalid" id="LastName" name="LastName" required>
                             <small class="error-msg">This field is required</small>
                         </div>
                         <div class="col-span-12 md:col-span-6">
@@ -41,7 +41,7 @@ include_once("../components/header.php");
                         </div>
                         <div class="col-span-12 md:col-span-6">
                             <label for="PhoneNumber" class="block mb-2 cursor-pointer required">Phone Number</label>
-                            <input type="tel" class="form-control block w-full rounded invalid" id="PhoneNumber">
+                            <input type="tel" class="form-control block w-full rounded invalid telephone" id="PhoneNumber" name="PhoneNumber">
                             <small class="error-msg">Email is required</small>
                         </div>
                         <div class="col-span-12">

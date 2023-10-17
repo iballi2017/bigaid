@@ -1997,6 +1997,10 @@ input.invalid:focus {
   }
 }
 
+.iti {
+  width: 100%;
+}
+
 .hero h1, .hero-alt h1 {
   font-size: 50px;
   font-weight: var(--fw-semi-bold);

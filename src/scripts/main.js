@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     handleAnimateOnViewportIntercept();
     handleAccordion();
     loadMedicalProfessional();
+    listOfCountries();
+    handleIntTel();
   }
 
   /**main Toolbar State Toggle */
@@ -1473,7 +1475,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     var third_party_donation = document.getElementById("third_party_donation");
     var organisation_donation = document.getElementById("organisation_donation");
 
-    
+
     version_2_donation?.addEventListener("change", (e) => {
       switch (e.target.value) {
         case donation_types.SELF:
@@ -1509,26 +1511,26 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
       for (i = 0; i < currencyRadios.length; i++) {
 
-        currencyRadios[i].addEventListener("change", ($event)=>{
+        currencyRadios[i].addEventListener("change", ($event) => {
           if ($event.target.checked) {
             switch ($event.target.value) {
               case Curr.USD:
-                for(let i = 0; i<nairaSelects.length;i++){
+                for (let i = 0; i < nairaSelects.length; i++) {
                   nairaSelects[i]?.classList.add("hidden");
                 }
-                for(let i = 0; i<usdSelects.length;i++){
+                for (let i = 0; i < usdSelects.length; i++) {
                   usdSelects[i]?.classList.remove("hidden");
                 }
-                break;  
+                break;
               case Curr.Naira:
-                for(let i = 0; i<nairaSelects.length;i++){
+                for (let i = 0; i < nairaSelects.length; i++) {
                   nairaSelects[i]?.classList.remove("hidden");
                 }
-                for(let i = 0; i<usdSelects.length;i++){
+                for (let i = 0; i < usdSelects.length; i++) {
                   usdSelects[i]?.classList.add("hidden");
                 }
                 break;
-  
+
               default:
                 break;
             }
@@ -1543,8 +1545,28 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
 
+    /**intlTelInput */
+  function handleIntTel() {
+    var tel_inputs = document.querySelectorAll(".telephone");
+    for (let i = 0; i < tel_inputs.length; i++) {
+      window.intlTelInput(tel_inputs[i], ({
+        autoInsertDialCode: true,
+        autoPlaceholder: "off",
+        placeholderNumberType: "MOBILE",
+        preferredCountries: ["us", "gb", "ng"],
+        separateDialCode: false,
+        initialCountry: "ng",
+        nationalMode: false,
+      }));
 
-  listOfCountries();
+      tel_inputs[i].addEventListener("blur", (e) => {
+        // console.log("tel_inputs[i]: ", tel_inputs[i].value)
+        if (tel_inputs[i].value) {
+          tel_inputs[i].setAttribute("value", tel_inputs[i].value);
+        }
+      })
+    }
+  }
 
   Init();
 });

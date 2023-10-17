@@ -97,6 +97,15 @@
 <script src="../libs/owlcarousel/owl.carousel.min.js"></script>
 <!-- Pie Chart -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- intlTelInput -->
+<!-- Use as a Vanilla JS plugin -->
+<script src="../libs/intl-tel-input/build/js/intlTelInput.min.js"></script>
+<!-- Use as a jQuery plugin -->
+<!-- <script src="https://code.jquery.com/jquery-latest.min.js"></script> -->
+<!-- <script src="../libs/intl-tel-input/build/js/intlTelInput-jquery.min.js"></script> -->
+
+
 <script src="../scripts/main.js"></script>
 <script src="../scripts/main.jquery.js"></script>
 </body>

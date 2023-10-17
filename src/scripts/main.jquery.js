@@ -94,7 +94,8 @@ $(document).ready(function () {
   })
   $(".control.next").click(function () {
     projectSlider.trigger('next.owl.carousel', [300]);
-  })
+  });
+
 
 
 });
