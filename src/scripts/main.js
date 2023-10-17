@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     donationMileStoneGraph();
     doDataCount();
     handlePieChart();
-    controlDonationCurrency();
+    controlDonationCurrency();//OLD IMPLEMENTATION
     toggleDonationAmountSelect();
     controlCurrentlyWorkHere();
     toggleCookiesNotificationBanner();
@@ -402,7 +402,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   }
 
-  function controlDonationCurrency() {
+  function controlDonationCurrency() {;//OLD IMPLEMENTATION
     const currencyRadio = document.querySelectorAll("input[name='Currency']");
     for (let i = 0; i < currencyRadio.length; i++) {
       const element = currencyRadio[i];
