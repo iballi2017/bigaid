@@ -2,7 +2,7 @@
 
     <input type="hidden" name="donating-for-self" value="donating-for-self" readonly>
     <!--  -->
-    <div class="card mb-8">
+    <div class="card mb-8 light-form-bg py-4">
         <div class="card-body">
             <fieldset>
                 <legend class="sr-only">Introduction</legend>
@@ -17,7 +17,7 @@
                     </div>
                     <div class="col-span-12 md:col-span-6">
                         <label for="phone_number_donation_organisation" class="block mb-2 cursor-pointer required">Phone Number of Organisation</label>
-                        <input type="tel" id="phone_number_donation_organisation" class="form-control block w-full rounded">
+                        <input type="tel" id="phone_number_donation_organisation" class="form-control block w-full rounded telephone">
                     </div>
                     <div class="col-span-12 md:col-span-6">
                         <label for="industry_donation_organisation" class="block mb-2 cursor-pointer required">Industry</label>
@@ -37,13 +37,13 @@
     </div>
     <!--  -->
 
-    <div class="card mb-8">
+    <div class="card mb-8 light-form-bg py-4">
         <div class="card-body">
             <fieldset>
-                <legend class="fs-200 fw-bold">Address</legend>
+                <legend class="fs-200 fw-bold">Address of Organisation</legend>
                 <div class="grid grid-cols-12 gap-2 md:gap-4">
                     <div class="col-span-12 md:col-span-10">
-                        <label for="address_donation_organisation" class="block mb-2 cursor-pointer">Address of Organisation</label>
+                        <label for="address_donation_organisation" class="block mb-2 cursor-pointer">Address</label>
                         <input type="text" class="form-control block w-full rounded" id="address_donation_organisation" autocomplete="street-address">
                     </div>
                     <div class="col-span-12 md:col-span-2">
@@ -87,40 +87,47 @@
                 <legend class="fs-200 fw-bold">Representative Information</legend>
                 <div class="grid grid-cols-12 gap-2 md:gap-4">
                     <div class="col-span-12">
-                        <label for="representative_fullname" class="block mb-2 cursor-pointer">Full Name</label>
-                        <input type="text" class="form-control block w-full rounded" id="representative_fullname" autocomplete="street-address">
+                        <label for="organisation_representative_fullname" class="block mb-2 cursor-pointer">Your Fullname</label>
+                        <input type="text" class="form-control block w-full rounded" id="organisation_representative_fullname" autocomplete="street-address">
                     </div>
                     <div class="col-span-12 md:col-span-6">
-                        <label for="representative_email_address" class="block mb-2 cursor-pointer required">Email Address</label>
-                        <input type="text" id="representative_email_address" class="form-control block w-full rounded">
+                        <label for="organisation_representative_email_address" class="block mb-2 cursor-pointer required">Email Address</label>
+                        <input type="text" id="organisation_representative_email_address" class="form-control block w-full rounded">
                     </div>
                     <div class="col-span-12 md:col-span-6">
-                        <label for="representative_phone_number" class="block mb-2 cursor-pointer required">Phone Number</label>
-                        <input type="tel" id="representative_phone_number" class="form-control block w-full rounded">
+                        <label for="organisation_representative_phone_number" class="block mb-2 cursor-pointer required">Phone Number</label>
+                        <input type="tel" id="organisation_representative_phone_number" class="form-control block w-full rounded telephone">
                     </div>
                     <div class="col-span-12 md:col-span-6">
-                        <label for="representative_city_designation" class="block mb-2 cursor-pointer required">Designation in Organizations</label>
-                        <input type="tel" id="representative_city_designation" class="form-control block w-full rounded">
+                        <label for="organisation_representative_gender" class="block mb-2 cursor-pointer required">Gender</label>
+                        <select id="organisation_representative_gender" class="form-control block w-full rounded">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="col-span-12 md:col-span-6">
+                        <label for="organisation_representative_city_designation" class="block mb-2 cursor-pointer required">Designation in Organizations</label>
+                        <input type="tel" id="organisation_representative_city_designation" class="form-control block w-full rounded">
                     </div>
                     <div class="col-span-12">
-                        <label for="representative_address" class="block mb-2 cursor-pointer">Address</label>
-                        <input type="text" class="form-control block w-full rounded" id="representative_address" autocomplete="street-address">
+                        <label for="organisation_representative_address" class="block mb-2 cursor-pointer">Address</label>
+                        <input type="text" class="form-control block w-full rounded" id="organisation_representative_address" autocomplete="street-address">
                     </div>
                     <div class="col-span-12 md:col-span-3">
-                        <label for="representative_city" class="block mb-2 cursor-pointer">City</label>
-                        <input type="text" class="form-control block w-full rounded" id="representative_city">
+                        <label for="organisation_representative_city" class="block mb-2 cursor-pointer">City</label>
+                        <input type="text" class="form-control block w-full rounded" id="organisation_representative_city">
                     </div>
                     <div class="col-span-12 md:col-span-3">
-                        <label for="representative_state" class="block mb-2 cursor-pointer">State</label>
-                        <input type="text" class="form-control block w-full rounded" id="representative_state">
+                        <label for="organisation_representative_state" class="block mb-2 cursor-pointer">State</label>
+                        <input type="text" class="form-control block w-full rounded" id="organisation_representative_state">
                     </div>
                     <div class="col-span-12 md:col-span-3">
-                        <label for="representative_postal_code" class="block mb-2 cursor-pointer">Postal Code</label>
-                        <input type="text" class="form-control block w-full rounded" id="representative_postal_code">
+                        <label for="organisation_representative_postal_code" class="block mb-2 cursor-pointer">Postal Code</label>
+                        <input type="text" class="form-control block w-full rounded" id="organisation_representative_postal_code">
                     </div>
                     <div class="col-span-12 md:col-span-3">
-                        <label for="representative_country" class="block mb-2 cursor-pointer">Country</label>
-                        <select name="country" id="representative_country" class="country form-control block w-full rounded">
+                        <label for="organisation_representative_country" class="block mb-2 cursor-pointer">Country</label>
+                        <select name="country" id="organisation_representative_country" class="country form-control block w-full rounded">
                             <option value="" selected>--Select country--</option>
                             <option value="Argentina">Argentina</option>
                             <option value="Angola">Angola</option>
@@ -131,7 +138,7 @@
         </div>
     </div>
 
-    <div class="card">
+    <div class="card shadow">
         <div class="card-body">
             <!--  -->
             <fieldset>
@@ -141,7 +148,7 @@
                         <label for="WhoIsDonating" class="block mb-2 cursor-pointer">Currency</label>
                         <ul class="flex items-center">
                             <li class="flex items-center">
-                                <input type="radio" name="Currency" id="USD_donation_organisation" value="USD" class="usd cursor-pointer mr-2" checked>
+                                <input type="radio" name="Currency" id="USD_donation_organisation" value="USD" class="usd cursor-pointer mr-2">
                                 <label for="USD_donation_organisation">USD</label>
                             </li>
                             <li class="px-4"></li>
@@ -153,7 +160,7 @@
                     </div>
                     <!--  -->
 
-                    <div class="col-span-12 md:col-span-6 hidden nairaSelect">
+                    <div class="col-span-12 md:col-span-6 amount_select_wrapper" data-src="Naira_donation_organisation">
                         <label for="NairaDonation_donation_organisation" class="block mb-2 cursor-pointer required">Your Donation (Naira)</label>
                         <select name="NairaDonation_donation_organisation" id="NairaDonation_donation_organisation" class="form-control block w-full rounded">
                             <option value="" selected>--Select donation--</option>
@@ -166,7 +173,8 @@
                         </select>
                         <small class="error-msg">This field is required</small>
                     </div>
-                    <div class="col-span-12 md:col-span-6 usdSelect">
+                    
+                    <div class="col-span-12 md:col-span-6 amount_select_wrapper" data-src="USD_donation_organisation">
                         <label for="USDDonation_donation_organisation" class="block mb-2 cursor-pointer required">Your Donation (USD)</label>
                         <select name="USDDonation" id="USDDonation_donation_organisation" class="form-control block w-full rounded">
                             <option value="" selected>--Select donation--</option>

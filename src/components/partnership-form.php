@@ -116,7 +116,7 @@
                             </div>
                             <div class="col-span-12 md:col-span-6">
                                 <label for="FirstRepPhoneNumber" class="block mb-2 cursor-pointer required">Phone Number</label>
-                                <input type="tel" class="form-control block w-full rounded" id="FirstRepPhoneNumber">
+                                <input type="tel" class="form-control block w-full rounded telephone" id="FirstRepPhoneNumber">
                             </div>
                         </div>
                     </li>
@@ -140,7 +140,7 @@
                             </div>
                             <div class="col-span-12 md:col-span-6">
                                 <label for="SecondRepPhoneNumber" class="block mb-2 cursor-pointer required">Phone Number</label>
-                                <input type="tel" class="form-control block w-full rounded" id="SecondRepPhoneNumber">
+                                <input type="tel" class="form-control block w-full rounded telephone" id="SecondRepPhoneNumber">
                             </div>
                         </div>
                     </li>

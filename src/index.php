@@ -322,7 +322,7 @@
     <article class="bg-light">
       <div class="container mx-auto">
         <div class="wrap-container py-8 md:py-16">
-          <div class="grid grid-cols-12 gap-4 md:gap-8 text-justify">
+          <div class="grid grid-cols-12 gap-4 md:gap-8">
             <div class="col-span-12 md:col-span-6">
               <h2 class="section-title text-primary mb-4 fade-in">
                 Your Donation Equals <br>Many Lives Saved

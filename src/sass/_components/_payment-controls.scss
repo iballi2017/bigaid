@@ -1,0 +1,13 @@
+// .nairaSelect, .usdSelect{
+//     display: none;
+//     &.show{
+//         display: block;
+//     }
+// }
+
+.amount_select_wrapper{
+    display: none;
+    &.show{
+        display: block;
+    }
+}

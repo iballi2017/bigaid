@@ -1,7 +1,7 @@
 <form action="#" method="POST">
     <input type="hidden" name="donating-for-self" value="donating-for-self" readonly>
     <!--  -->
-    <div class="card mb-8">
+    <div class="card mb-8  light-form-bg py-4">
         <div class="card-body">
             <fieldset>
                 <legend class="sr-only">Introduction</legend>
@@ -16,7 +16,7 @@
                     </div>
                     <div class="col-span-12 md:col-span-6">
                         <label for="phone_number" class="block mb-2 cursor-pointer required">Your Phone Number</label>
-                        <input type="tel" id="phone_number" class="form-control block w-full rounded">
+                        <input type="tel" id="phone_number" class="form-control block w-full rounded telephone">
                     </div>
                     <div class="col-span-12 md:col-span-6">
                         <label for="gender" class="block mb-2 cursor-pointer required">Gender</label>
@@ -31,7 +31,7 @@
     </div>
     <!--  -->
 
-    <div class="card mb-8">
+    <div class="card mb-8 light-form-bg py-4">
         <div class="card-body">
             <fieldset>
                 <legend class="fs-200 fw-bold">Address</legend>
@@ -74,7 +74,7 @@
     </div>
 
     <!--  -->
-    <div class="card mb-8">
+    <div class="card mb-8 shadow">
         <div class="card-body">
             <fieldset>
                 <legend class="fs-200 fw-bold">Payment</legend>
@@ -83,7 +83,7 @@
                         <label for="WhoIsDonating" class="block mb-2 cursor-pointer">Currency</label>
                         <ul class="flex items-center">
                             <li class="flex items-center">
-                                <input type="radio" name="Currency" id="USD_donation_self" value="USD" class="usd cursor-pointer mr-2" checked>
+                                <input type="radio" name="Currency" id="USD_donation_self" value="USD" class="usd cursor-pointer mr-2">
                                 <label for="USD_donation_self">USD</label>
                             </li>
                             <li class="px-4"></li>
@@ -95,9 +95,9 @@
                     </div>
                     <!--  -->
 
-                    <div class="col-span-12 md:col-span-6 hidden nairaSelect">
+                    <div class="col-span-12 md:col-span-6 amount_select_wrapper" data-src="Naira_donation_self">
                         <label for="NairaDonation_donation_self" class="block mb-2 cursor-pointer required">Your Donation (Naira)</label>
-                        <select name="NairaDonation_donation_self" id="NairaDonation_donation_self" class="form-control block w-full rounded">
+                        <select name="naira_donation" id="NairaDonation_donation_self" class="form-control block w-full rounded">
                             <option value="" selected>--Select donation--</option>
                             <option value="2000">2,000</option>
                             <option value="5000">5,000</option>
@@ -108,9 +108,9 @@
                         </select>
                         <small class="error-msg">This field is required</small>
                     </div>
-                    <div class="col-span-12 md:col-span-6 usdSelect">
-                        <label for="USDDonation" class="block mb-2 cursor-pointer required">Your Donation (USD)</label>
-                        <select name="USDDonation" id="USDDonation" class="form-control block w-full rounded">
+                    <div class="col-span-12 md:col-span-6 amount_select_wrapper" data-src="USD_donation_self">
+                        <label for="USDDonation_donation_self" class="block mb-2 cursor-pointer required">Your Donation (USD)</label>
+                        <select name="usd_donation" id="USDDonation_donation_self" class="form-control block w-full rounded">
                             <option value="" selected>--Select donation--</option>
                             <option value="20">20</option>
                             <option value="50">50</option>

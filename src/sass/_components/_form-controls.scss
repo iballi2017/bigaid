@@ -1,62 +1,77 @@
 @use "../_partials/mixins";
 
 .form-group {
-    .init-control {
-        border: 1px solid #afafaf;
-        border-radius: 5px;
-        &:focus {
-            box-shadow: none;
-            border: 1px solid var(--color-primary);
-        }
+  .init-control {
+    border: 1px solid #afafaf;
+    border-radius: 5px;
+    &:focus {
+      box-shadow: none;
+      border: 1px solid var(--color-primary);
     }
+  }
 }
 
 .init-textarea-control {
-    border: 1px solid #afafaf;
-    border-radius: 5px;
+  border: 1px solid #afafaf;
+  border-radius: 5px;
 }
 
-
-label{
-    cursor: pointer;
-    &.required{
-        &::after{
-            content: "*";
-            color: var(--color-danger);
-        }
+label {
+  cursor: pointer;
+  &.required {
+    &::after {
+      content: "*";
+      color: var(--color-danger);
     }
+  }
 }
 
 .error-msg {
-    display: none;
-    color: var(--color-danger);
+  display: none;
+  color: var(--color-danger);
 }
 
 input.invalid {
+  border-color: var(--color-danger);
+  + .error-msg {
+    display: block;
+  }
+  &:focus {
     border-color: var(--color-danger);
-    + .error-msg {
-        display: block;
-    }
-    &:focus {
-        border-color: var(--color-danger);
-    }
+  }
 }
+
+.light-form-bg-100 {
+  background-color: rgba(175, 175, 175, 0.4);
+  .form-control {
+    background-color: unset;
+  }
+}
+
+.light-form-bg {
+  background-color: rgba(175, 175, 175, 0.2);
+  .form-control {
+    background-color: unset;
+  }
+}
+
+
 @include mixins.minmq(60em) {
-    .form-group {
-        .init-control {
-            padding: 0.5em 0.5em;
-            position: relative;
-            border-radius: 13px;
-            height: 60px;
-            display: block;
-            width: 100%;
-            font-size: 1.2rem;
-        }
+  .form-group {
+    .init-control {
+      padding: 0.5em 0.5em;
+      position: relative;
+      border-radius: 13px;
+      height: 60px;
+      display: block;
+      width: 100%;
+      font-size: 1.2rem;
     }
-    .init-textarea-control {
-        padding: 0.8em 0.5em;
-        border: 1px solid #afafaf;
-        border-radius: 13px;
-        font-size: 1.2rem;
-    }
+  }
+  .init-textarea-control {
+    padding: 0.8em 0.5em;
+    border: 1px solid #afafaf;
+    border-radius: 13px;
+    font-size: 1.2rem;
+  }
 }
