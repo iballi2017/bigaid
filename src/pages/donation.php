@@ -92,7 +92,7 @@ include_once("../components/header.php");
                                     </select>
                                 </div>
                                 <div class="col-span-12">
-                                    <label for="WhoIsDonating" class="block mb-2 cursor-pointer fw-bold">Currency</label>
+                                    <label class="block mb-2 cursor-pointer fw-bold">Currency</label>
                                     <ul class="flex items-center">
                                         <li class="flex items-center">
                                             <input type="radio" name="Currency" id="USD" value="USD" class="cursor-pointer mr-2" checked>

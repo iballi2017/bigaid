@@ -376,6 +376,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     };
 
     var ele = document.getElementsByName("Currency");
+    // console.log("ele: ", ele)
     const nairaSelect = document.getElementById("nairaSelect");
     const usdSelect = document.getElementById("usdSelect");
 
@@ -383,13 +384,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
       if (ele[i].checked) {
         switch (ele[i].value) {
           case Curr.USD:
-            nairaSelect.classList.add("hidden");
-            usdSelect.classList.remove("hidden");
+            nairaSelect?.classList.add("hidden");
+            usdSelect?.classList.remove("hidden");
             break;
 
           case Curr.Naira:
-            nairaSelect.classList.remove("hidden");
-            usdSelect.classList.add("hidden");
+            nairaSelect?.classList.remove("hidden");
+            usdSelect?.classList.add("hidden");
             break;
 
           default:
@@ -1436,6 +1437,109 @@ document.addEventListener("DOMContentLoaded", (event) => {
       countrySelects[i].innerHTML = content;
     }
   }
+
+
+  function handle_version_2_donation() {
+    const donation_types = {
+      SELF: "donating-for-self",
+      THIRD_PARTY: "donating-on-behalf-of-third-party",
+      ORGANISATION: "donation-for-or-as-an-organization"
+    }
+
+    const select_options = [{
+      label: "--Select who is donating--",
+      value: ""
+    },
+    {
+      label: "Donating for Yourself",
+      value: donation_types.SELF
+    }, {
+      label: "Donating on Behalf of Third Party",
+      value: donation_types.THIRD_PARTY
+    }, {
+      label: "Donation for Or as An Organization",
+      value: donation_types.ORGANISATION
+    }
+    ]
+    var version_2_donation = document.querySelector("#version-2-donation #WhoIsDonating");
+    let content = "";
+    for (let i = 0; i < select_options.length; i++) {
+      content += `<option value="${select_options[i].value}">${select_options[i].label}</option>`
+    }
+    version_2_donation ? version_2_donation.innerHTML = content : null
+
+    var donation_forms = document.querySelector("#version-2-donation .donation-forms");
+    var self_donation = document.getElementById("self_donation");
+    var third_party_donation = document.getElementById("third_party_donation");
+    var organisation_donation = document.getElementById("organisation_donation");
+
+    
+    version_2_donation?.addEventListener("change", (e) => {
+      switch (e.target.value) {
+        case donation_types.SELF:
+          self_donation?.classList.remove("hidden")
+          third_party_donation?.classList.add("hidden")
+          organisation_donation?.classList.add("hidden")
+          break;
+        case donation_types.THIRD_PARTY:
+          self_donation?.classList.add("hidden")
+          third_party_donation?.classList.remove("hidden")
+          organisation_donation?.classList.add("hidden")
+          break;
+        case donation_types.ORGANISATION:
+          self_donation?.classList.add("hidden")
+          third_party_donation?.classList.add("hidden")
+          organisation_donation?.classList.remove("hidden")
+          break;
+        default:
+          return
+      }
+    });
+
+
+    function toggleDonationAmountSelect() {
+      const Curr = {
+        USD: "USD",
+        Naira: "Naira",
+      };
+
+      var currencyRadios = document.getElementsByName("Currency");
+      const nairaSelects = document.querySelectorAll(".nairaSelect");
+      const usdSelects = document.querySelectorAll(".usdSelect");
+
+      for (i = 0; i < currencyRadios.length; i++) {
+
+        currencyRadios[i].addEventListener("change", ($event)=>{
+          if ($event.target.checked) {
+            switch ($event.target.value) {
+              case Curr.USD:
+                for(let i = 0; i<nairaSelects.length;i++){
+                  nairaSelects[i]?.classList.add("hidden");
+                }
+                for(let i = 0; i<usdSelects.length;i++){
+                  usdSelects[i]?.classList.remove("hidden");
+                }
+                break;  
+              case Curr.Naira:
+                for(let i = 0; i<nairaSelects.length;i++){
+                  nairaSelects[i]?.classList.remove("hidden");
+                }
+                for(let i = 0; i<usdSelects.length;i++){
+                  usdSelects[i]?.classList.add("hidden");
+                }
+                break;
+  
+              default:
+                break;
+            }
+          }
+        })
+      }
+    }
+    toggleDonationAmountSelect();
+
+  }
+  handle_version_2_donation()
 
 
 
