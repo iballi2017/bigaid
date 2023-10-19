@@ -179,7 +179,7 @@
           <div class="video-container">
             <div class="video thumbnail">
               <!-- <video id="video1" width="100%" height="100%"> -->
-              <video id="video1" preload="none" >
+              <video id="video1" preload="none" width="100%" height="100%">
                 <source src="./assets/videos/sample-video.mp4" type="video/mp4" />
                 <!-- <source src="./assets/videos/Bigaid.mp4" type="video/mp4" /> -->
                 <source src="mov_bbb.ogg" type="video/ogg" />
@@ -314,10 +314,10 @@
         </div>
       </div>
     </article>
-    
+
     <section class="fade-in">
       <h2 class="text-3xl md:text-6xl fw-bolder text-primary text-center mb-4 fade-in animate-charcter">
-        Healthcare Beyond <br/>Boarders
+        Healthcare Beyond <br />Boarders
       </h2>
     </section>
     <article class="bg-light">
