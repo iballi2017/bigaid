@@ -179,8 +179,9 @@
           <div class="video-container">
             <div class="video thumbnail">
               <!-- <video id="video1" width="100%" height="100%"> -->
-              <video id="video1">
+              <video id="video1" preload="none" >
                 <source src="./assets/videos/sample-video.mp4" type="video/mp4" />
+                <!-- <source src="./assets/videos/Bigaid.mp4" type="video/mp4" /> -->
                 <source src="mov_bbb.ogg" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
