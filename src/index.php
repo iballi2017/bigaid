@@ -260,46 +260,91 @@
           <!-- Set up your HTML -->
           <div class="slider-container mb-8">
             <ul class="project-slider | owl-carousel">
-              <li>
+              <!-- <li>
                 <div class="img-wrap">
                   <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-1-min.png" alt="Project image" class="owl-lazy" />
                 </div>
-              </li>
-              <li>
-                <div class="img-wrap">
-                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-2-min.png" alt="Project image" class="owl-lazy" />
-                </div>
-              </li>
-              <li>
-                <div class="img-wrap">
-                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-3-min.png" alt="Project image" class="owl-lazy" />
-                </div>
-              </li>
-              <li>
-                <div class="img-wrap">
-                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-4-min.png" alt="Project image" class="owl-lazy" />
-                </div>
-              </li>
-              <!-- <li>
-                <div class="img-wrap">
-                  <img data-src="./assets/images/Rectangle-45-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
-                </div>
-              </li>
-              <li>
-                <div class="img-wrap">
-                  <img data-src="./assets/images/Rectangle-46-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
-                </div>
-              </li>
-              <li>
-                <div class="img-wrap">
-                  <img data-src="./assets/images/Rectangle-47-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
-                </div>
-              </li>
-              <li>
-                <div class="img-wrap">
-                  <img data-src="./assets/images/Rectangle-48-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
-                </div>
               </li> -->
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9505-12-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9512-15-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9516-18-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9518-20-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9531-29-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9533-31-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9546-41-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9552-46-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9561-50-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9567-53-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9571-55-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9575-56-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9596-71-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9600-74-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9603-75-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9630-90-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
             </ul>
 
             <div class="slider-controls | hidden">
@@ -898,16 +943,23 @@
               <div>
                 Copyright © 2023, BIGAiD Foundation. All Rights Reserved
               </div>
-              <div>Privacy Policy | Terms & Condition</div>
+              <!-- <div>Privacy Policy | Terms & Condition</div> -->
+              <div>
+                <a href="./pages/privacy-policy.php">Privacy Policy</a> | <a href="./pages/terms-and-conditions.php">Terms & Conditions</a>
+              </div>
             </div>
           </div>
           <div class="col-span-12 md:col-span-5 flex items-end">
             <ul class="partners-logos">
               <li>
-                <img src="./assets/images/BIGAID-foundation-logo-min.png" alt="BIGAid foundation logo" loading="lazy" />
+                <a href="https://biggulfgroup.com/bigaid/" target="_blank">
+                  <img src="./assets/images/BIGAID-foundation-logo-min.png" alt="BIGAid foundation logo" loading="lazy" />
+                </a>
               </li>
               <li>
-                <img src="./assets/images/SDG-logo-min.png" alt="SDG logo" loading="lazy" />
+                <a href="https://www.globalgoals.org/goals/" target="_blank">
+                  <img src="./assets/images/SDG-logo-min.png" alt="SDG logo" loading="lazy" />
+                </a>
               </li>
             </ul>
           </div>

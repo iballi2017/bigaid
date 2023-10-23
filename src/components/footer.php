@@ -51,7 +51,10 @@
 
                     <div class="copyright-and-policy">
                         <div>Copyright © 2023, BIGAiD Foundation. All Rights Reserved</div>
-                        <div>Privacy Policy | Terms & Condition</div>
+                        <!-- <div>Privacy Policy | Terms & Condition</div> -->
+                        <div>
+                            <a href="../pages/privacy-policy.php">Privacy Policy</a> | <a href="../pages/terms-and-conditions.php">Terms & Conditions</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-span-12 md:col-span-5 flex items-end">
