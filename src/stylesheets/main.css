@@ -2196,4 +2196,19 @@ input.invalid:focus {
   }
 }
 
+.contact-us .contact-icon {
+  width: 20px;
+  min-width: 20px;
+}
+.contact-us iframe {
+  width: 100%;
+  height: 250px;
+}
+@media (min-width: 50em) {
+  .contact-us iframe {
+    width: 100%;
+    height: 500px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

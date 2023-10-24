@@ -1974,6 +1974,10 @@ select {
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;

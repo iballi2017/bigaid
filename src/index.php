@@ -313,10 +313,10 @@
         </div>
       </div>
     </article>
-    
+
     <section class="fade-in">
       <h2 class="text-3xl md:text-6xl fw-bolder text-primary text-center mb-4 fade-in animate-charcter">
-        Healthcare Beyond <br/>Boarders
+        Healthcare Beyond <br />Boarders
       </h2>
     </section>
     <article class="bg-light">
@@ -897,16 +897,20 @@
               <div>
                 Copyright © 2023, BIGAiD Foundation. All Rights Reserved
               </div>
-              <div>Privacy Policy | Terms & Condition</div>
+              <div><a href="http://">Privacy Policy</a> | <a href="./pages/terms-and-conditions.php">Terms & Conditions</a></div>
             </div>
           </div>
           <div class="col-span-12 md:col-span-5 flex items-end">
             <ul class="partners-logos">
               <li>
-                <img src="./assets/images/BIGAID-foundation-logo-min.png" alt="BIGAid foundation logo" loading="lazy" />
+                <a href="https://biggulfgroup.com/bigaid/" target="_blank">
+                  <img src="./assets/images/BIGAID-foundation-logo-min.png" alt="BIGAid foundation logo" loading="lazy" />
+                </a>
               </li>
               <li>
-                <img src="./assets/images/SDG-logo-min.png" alt="SDG logo" loading="lazy" />
+                <a href="https://www.globalgoals.org/goals/" target="_blank">
+                  <img src="./assets/images/SDG-logo-min.png" alt="SDG logo" loading="lazy" />
+                </a>
               </li>
             </ul>
           </div>

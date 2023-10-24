@@ -1,0 +1,20 @@
+@use "../_partials/mixins";
+.contact-us {
+    .contact-icon {
+        width: 20px;
+        min-width: 20px;
+    }
+
+    iframe{
+        width: 100%;
+        height: 250px;
+    }
+
+    @include mixins.minmq(50em){
+        iframe{
+            width: 100%;
+            height: 500px;
+        }
+    
+    }
+}
