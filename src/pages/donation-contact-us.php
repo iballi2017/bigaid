@@ -79,7 +79,7 @@ include_once("../components/header.php");
                         </div>
                         <div class="col-span-12 md:col-span-6">
                             <label for="PhoneNumber" class="block mb-2 cursor-pointer required">Phone Number</label>
-                            <input type="text" class="form-control block w-full rounded" id="PhoneNumber" required>
+                            <input type="text" class="form-control block w-full rounded telephone" id="PhoneNumber" required>
                         </div>
                     </div>
                 </fieldset>

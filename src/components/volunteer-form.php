@@ -25,7 +25,7 @@
             </div>
             <div class="col-span-12 md:col-span-4">
                 <label for="PhoneNumber" class="block mb-2 cursor-pointer required">Phone Number</label>
-                <input type="text" class="form-control block w-full rounded" id="PhoneNumber" required>
+                <input type="text" class="form-control block w-full rounded telephone" id="PhoneNumber" required>
             </div>
             <div class="col-span-12 md:col-span-4">
                 <label for="DateOfBirth" class="block mb-2 cursor-pointer required">Date Of Birth</label>
@@ -138,14 +138,34 @@
                 <label for="endDate" class="block mb-2 cursor-pointer">End date</label>
                 <input type="date" class="form-control block w-full rounded" id="endDate">
             </div>
-            <div class="col-span-12 md:col-span-6">
-                <label for="socialMediaLink" class="block mb-2 cursor-pointer">Social media link <small>e.g LinkedIn, Facebook e.t.c</small></label>
-                <input type="text" class="form-control block w-full rounded" id="socialMediaLink">
+            <div class="col-span-12">
+                <label for="social_media_links" class="block mb-2 cursor-pointer required">Social media Links</label>
+                <ol type="1" id="social_links">
+                    <li>
+                        <div class="flex gap-2 flex-wrap md:flex-nowrap">
+                            <select name="social_media_1" id="social_media_1" class="rounded w-full md:w-auto">
+                                <option value="facebook" selected="selected">Facebook</option>
+                                <option value="twitter">Threads(Twitter)</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="linkedIn">LinkedIn</option>
+                            </select>
+                            <input type="text" name="social_link_1" class="rounded w-full" placeholder="https://facebook.com/whatever">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex gap-2 flex-wrap md:flex-nowrap">
+                            <select name="social_media_2" id="social_media_2" class="rounded w-full md:w-auto">
+                                <option value="facebook">Facebook</option>
+                                <option value="twitter">Threads(Twitter)</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="linkedIn" selected="selected">LinkedIn</option>
+                            </select>
+                            <input type="text" name="social_link_2" class="rounded w-full" placeholder="https://linkedin.com/whatever">
+                        </div>
+                    </li>
+                </ol>
             </div>
-            <div class="col-span-12 md:col-span-6">
-                <label for="socialMediaName" class="block mb-2 cursor-pointer">Social media name</label>
-                <input type="text" class="form-control block w-full rounded" id="socialMediaName">
-            </div>
+            <!--  -->
         </div>
     </fieldset>
 
@@ -172,7 +192,6 @@
             </div>
             <div class="col-span-12 md:col-span-3">
                 <label for="Country" class="block mb-2 cursor-pointer">Country</label>
-                <!-- <input type="text" class="form-control block w-full rounded" id="Country"> -->
                 <select name="Country" id="Country" class="Country form-control block w-full rounded" autocomplete="address-level2">
                 </select>
             </div>

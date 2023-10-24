@@ -93,7 +93,6 @@ include_once("../components/header.php");
                                 </div>
                                 <div class="col-span-12">
                                     <label for="social_media_links" class="block mb-2 cursor-pointer required">Social Media Links</label>
-                                    <!-- <input type="text" class="form-control block w-full rounded invalid" id="social_media_links"> -->
                                     <ol type="1" id="social_links">
                                         <li>
                                             <div class="flex gap-2 flex-wrap md:flex-nowrap">
@@ -101,18 +100,20 @@ include_once("../components/header.php");
                                                     <option value="facebook" selected="selected">Facebook</option>
                                                     <option value="twitter">Threads(Twitter)</option>
                                                     <option value="instagram">Instagram</option>
+                                                    <option value="linkedIn"">LinkedIn</option>
                                                 </select>
-                                                <input type="text" name="social_link_1" class="rounded w-full" placeholder="https://facebook.com/whatever">
+                                                <input type=" text" name="social_link_1" class="rounded w-full" placeholder="https://facebook.com/whatever">
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex gap-2 flex-wrap md:flex-nowrap">
                                                 <select name="social_media_2" id="social_media_2" class="rounded w-full md:w-auto">
                                                     <option value="facebook">Facebook</option>
-                                                    <option value="twitter" selected="selected">Threads(Twitter)</option>
+                                                    <option value="twitter">Threads(Twitter)</option>
                                                     <option value="instagram">Instagram</option>
+                                                    <option value="linkedIn" selected="selected">LinkedIn</option>
                                                 </select>
-                                                <input type="text" name="social_link_2" class="rounded w-full" placeholder="https://threads.com/whatever">
+                                                <input type="text" name="social_link_2" class="rounded w-full" placeholder="https://linkedin.com/whatever">
                                             </div>
                                         </li>
                                     </ol>

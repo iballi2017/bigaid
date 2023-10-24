@@ -1,4 +1,4 @@
-<div class="card overlay-content form-message show" id="cookiesSettings">
+<div class="card overlay-content form-message show" id="cookiesSettings" style="background-color: black; color: white">
     <div class="card-body py-4">
         <div class="fw-bolder fs-200 mb-4 text-center">Cookies setting</div>
         <p>We use cookies on our website to improve your user experience. You can accept them all or manage your cookie preferences below to control your privacy. Find out more in our <a href="../pages/cookies-policy.php" class="text-secondary fw-bold">Cookie Policy</a>.</p>
@@ -12,7 +12,7 @@
                         <div class="check-toggler">
                             <input type="checkbox" id="functional" name="cookies-settings" value="option one" checked onclick="return false;" />
                             <label for="functional">
-                                <span class="label">Functional cookies <small class="text-primary fw-bold">(Always Active)</small></span>
+                                <span class="label">Functional cookies <small class="fw-bolder">(Always Active)</small></span>
                                 <span class="fake-toggler">
                                     <span class="dot"></span>
                                 </span>

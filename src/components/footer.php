@@ -51,7 +51,14 @@
 
                     <div class="copyright-and-policy">
                         <div>Copyright © 2023, BIGAiD Foundation. All Rights Reserved</div>
+<<<<<<< HEAD
                         <div><a href="http://">Privacy Policy</a> | <a href="./pages/terms-and-conditions.php">Terms & Conditions</a></div>
+=======
+                        <!-- <div>Privacy Policy | Terms & Condition</div> -->
+                        <div>
+                            <a href="../pages/privacy-policy.php">Privacy Policy</a> | <a href="../pages/terms-and-conditions.php">Terms & Conditions</a>
+                        </div>
+>>>>>>> 6e903ed365a613e7bcc59c28e15bbcbcf6e25c67
                     </div>
                 </div>
                 <div class="col-span-12 md:col-span-5 flex items-end">
@@ -74,7 +81,7 @@
     </div>
 
     <!-- SIGNUP SUCCESS MESSAGE -->
-    <div class="overlay">
+    <div class="overlay px-2">
         <?php include_once("../components/signup-success-message.php"); ?>
         <!-- COOKIES SETTINGS -->
         <?php include_once("../components/cookies-settings.php"); ?>

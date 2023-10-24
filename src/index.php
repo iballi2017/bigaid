@@ -179,8 +179,9 @@
           <div class="video-container">
             <div class="video thumbnail">
               <!-- <video id="video1" width="100%" height="100%"> -->
-              <video id="video1">
+              <video id="video1" preload="none" width="100%" height="100%">
                 <source src="./assets/videos/sample-video.mp4" type="video/mp4" />
+                <!-- <source src="./assets/videos/Bigaid.mp4" type="video/mp4" /> -->
                 <source src="mov_bbb.ogg" type="video/ogg" />
                 Your browser does not support HTML video.
               </video>
@@ -259,46 +260,91 @@
           <!-- Set up your HTML -->
           <div class="slider-container mb-8">
             <ul class="project-slider | owl-carousel">
-              <li>
+              <!-- <li>
                 <div class="img-wrap">
                   <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-1-min.png" alt="Project image" class="owl-lazy" />
                 </div>
-              </li>
-              <li>
-                <div class="img-wrap">
-                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-2-min.png" alt="Project image" class="owl-lazy" />
-                </div>
-              </li>
-              <li>
-                <div class="img-wrap">
-                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-3-min.png" alt="Project image" class="owl-lazy" />
-                </div>
-              </li>
-              <li>
-                <div class="img-wrap">
-                  <img data-src="./assets/images/slide-show-images/BIGAiD-slide-show-4-min.png" alt="Project image" class="owl-lazy" />
-                </div>
-              </li>
-              <!-- <li>
-                <div class="img-wrap">
-                  <img data-src="./assets/images/Rectangle-45-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
-                </div>
-              </li>
-              <li>
-                <div class="img-wrap">
-                  <img data-src="./assets/images/Rectangle-46-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
-                </div>
-              </li>
-              <li>
-                <div class="img-wrap">
-                  <img data-src="./assets/images/Rectangle-47-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
-                </div>
-              </li>
-              <li>
-                <div class="img-wrap">
-                  <img data-src="./assets/images/Rectangle-48-min.png" alt="Project image" class="owl-lazy" loading="lazy" />
-                </div>
               </li> -->
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9505-12-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9512-15-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9516-18-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9518-20-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9531-29-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9533-31-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9546-41-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9552-46-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9561-50-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9567-53-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9571-55-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9575-56-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9596-71-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9600-74-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9603-75-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
+              <li>
+                <div class="img-wrap">
+                  <img data-src="./assets/images/slide-show-images/slide_IMG_9630-90-min.jpg" alt="Project image" class="owl-lazy" />
+                </div>
+              </li>
             </ul>
 
             <div class="slider-controls | hidden">
@@ -322,7 +368,7 @@
     <article class="bg-light">
       <div class="container mx-auto">
         <div class="wrap-container py-8 md:py-16">
-          <div class="grid grid-cols-12 gap-4 md:gap-8 text-justify">
+          <div class="grid grid-cols-12 gap-4 md:gap-8">
             <div class="col-span-12 md:col-span-6">
               <h2 class="section-title text-primary mb-4 fade-in">
                 Your Donation Equals <br>Many Lives Saved
@@ -897,7 +943,14 @@
               <div>
                 Copyright © 2023, BIGAiD Foundation. All Rights Reserved
               </div>
+<<<<<<< HEAD
               <div><a href="http://">Privacy Policy</a> | <a href="./pages/terms-and-conditions.php">Terms & Conditions</a></div>
+=======
+              <!-- <div>Privacy Policy | Terms & Condition</div> -->
+              <div>
+                <a href="./pages/privacy-policy.php">Privacy Policy</a> | <a href="./pages/terms-and-conditions.php">Terms & Conditions</a>
+              </div>
+>>>>>>> 6e903ed365a613e7bcc59c28e15bbcbcf6e25c67
             </div>
           </div>
           <div class="col-span-12 md:col-span-5 flex items-end">
