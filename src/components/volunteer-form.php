@@ -149,7 +149,7 @@
                                 <option value="instagram">Instagram</option>
                                 <option value="linkedIn">LinkedIn</option>
                             </select>
-                            <input type="text" name="social_link_1" class="rounded w-full" placeholder="Enter social medial link">
+                            <input type="text" name="social_link_1" class="rounded w-full" placeholder="Enter social media link">
                         </div>
                     </li>
                     <li>
