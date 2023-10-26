@@ -54,12 +54,12 @@ include_once("../components/header.php");
                     <form action="">
                         <div class="grid grid-cols-12 gap-4">
                             <div class="col-span-12 lg:col-span-6">
-                                <label for="FirstName" class="block mb-2 cursor-pointer required">FirstName</label>
+                                <label for="FirstName" class="block mb-2 cursor-pointer required">First Name</label>
                                 <input type="text" class="form-control block w-full rounded invalid" id="FirstName" name="FirstName" required>
                                 <small class="error-msg">This field is required</small>
                             </div>
                             <div class="col-span-12 lg:col-span-6">
-                                <label for="LastName" class="block mb-2 cursor-pointer required">LastName</label>
+                                <label for="LastName" class="block mb-2 cursor-pointer required">Last Name</label>
                                 <input type="text" class="form-control block w-full rounded invalid" id="LastName" name="LastName" required>
                                 <small class="error-msg">This field is required</small>
                             </div>
@@ -90,7 +90,7 @@ include_once("../components/header.php");
                             </div>
                             <div class="col-span-12">
                                 <input type="checkbox" name="terms-and-condition" id="terms-and-condition" class="mr-2">
-                                <label for="terms-and-condition">Yes, I would love to receive Updates from the BIGAiD Foundation</label>
+                                <label for="terms-and-condition" class="required">Yes, I would love to receive Updates from the BIGAiD Foundation</label>
                             </div>
                         </div>
                         <small>We treat your personal information confidentially and will not transfer such details to any third parties. </small>

@@ -4,7 +4,7 @@
   text-align: center;
   position: relative;
   --margin-bottom: 3rem;
-  margin-bottom: var(--margin-bottom);
+  // margin-bottom: var(--margin-bottom);
   &::after {
     content: "";
     height: var(--margin-bottom);
@@ -56,15 +56,12 @@
 
 .donation-article {
   display: flex;
-  // align-items: flex-end;
-  // justify-content: space-between;
   gap: 1.5em;
   flex-wrap: wrap;
-  margin-top: 3.5em;
+  // margin-top: 3.5em;
   .article-card {
     flex-basis: 100%;
     height: 100%;
-    // font-size: 1.7rem;
   }
   .featured-image-container {
     flex-basis: 100%;
@@ -74,7 +71,7 @@
     }
   }
   @include mixins.minmq(60em) {
-    margin-top: 5.5em;
+    // margin-top: 5.5em;
     // display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -115,7 +112,7 @@
   .donation-info {
     text-align: center;
     position: relative;
-    --margin-bottom: 3rem;
+    --margin-bottom: 1.5rem;
     margin-bottom: var(--margin-bottom);
     &::after {
       content: "";
@@ -126,7 +123,7 @@
       background-repeat: no-repeat;
       display: block;
       position: absolute;
-      right: 3.5%;
+      right: 15.5%;
       bottom: calc((var(--margin-bottom)) * -1);
     }
     .donation-card {
@@ -149,6 +146,7 @@
     }
 
     @include mixins.minmq(60em) {
+      --margin-bottom: 3rem;
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
@@ -176,6 +174,9 @@
 @include mixins.minmq(60em) {
   .home {
     .donation-info {
+      &::after {
+        right: 3.5%;
+      }
       .donation-card {
         border-radius: 50px;
         padding: 3em;

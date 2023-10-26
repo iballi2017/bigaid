@@ -1,0 +1,31 @@
+@use "../_partials/mixins";
+
+.float-icon-container {
+  .float-icon {
+    max-width: 20px;
+  }
+
+  .float-icon-1,
+  .float-icon-2 {
+    position: absolute;
+  }
+  .float-icon-1 {
+    top: 0;
+    left: 40%;
+  }
+  .float-icon-2 {
+    bottom: 0;
+    left: 5.6em;
+  }
+
+  @include mixins.minmq(50em){
+    .float-icon {
+      max-width: 40px;
+    }
+    .float-icon-2 {
+      left: 9em;
+      bottom: 5em;
+    }
+  
+  }
+}

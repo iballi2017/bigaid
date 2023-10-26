@@ -646,6 +646,38 @@ em {
     right: -150%;
   }
 }
+.skew-plate {
+  /* background-color: red; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.skew-plate.skew-pattern::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  transform: skew(0deg, 353deg);
+  transform-origin: left;
+  z-index: 1;
+}
+.skew-plate.skew-pattern.skew-bg-light::before {
+  background-color: var(--color-light);
+}
+.skew-plate.skew-pattern.skew-bg-primary::before {
+  background-color: var(--color-primary);
+}
+.skew-plate.skew-pattern + .skew-content {
+  position: inherit;
+  z-index: 5;
+  padding-top: 1.7em;
+}
+
 header.sticky {
   z-index: 1020;
   transition: 0.5s;
@@ -922,7 +954,7 @@ button:hover {
 .video-container .video.thumbnail::before {
   content: "";
   display: block;
-  background-image: url(../assets/images/video-thumbnail-min.jpg);
+  background-image: url(../assets/images/slide-show-images/slide_IMG_9505-12-min.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
@@ -1145,7 +1177,6 @@ button:hover {
   text-align: center;
   position: relative;
   --margin-bottom: 3rem;
-  margin-bottom: var(--margin-bottom);
 }
 .donation-info::after {
   content: "";
@@ -1199,7 +1230,6 @@ button:hover {
   display: flex;
   gap: 1.5em;
   flex-wrap: wrap;
-  margin-top: 3.5em;
 }
 .donation-article .article-card {
   flex-basis: 100%;
@@ -1214,7 +1244,6 @@ button:hover {
 }
 @media (min-width: 60em) {
   .donation-article {
-    margin-top: 5.5em;
     align-items: flex-end;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -1249,7 +1278,7 @@ button:hover {
 .home .donation-info {
   text-align: center;
   position: relative;
-  --margin-bottom: 3rem;
+  --margin-bottom: 1.5rem;
   margin-bottom: var(--margin-bottom);
 }
 .home .donation-info::after {
@@ -1261,7 +1290,7 @@ button:hover {
   background-repeat: no-repeat;
   display: block;
   position: absolute;
-  right: 3.5%;
+  right: 15.5%;
   bottom: calc((var(--margin-bottom)) * -1);
 }
 .home .donation-info .donation-card {
@@ -1283,6 +1312,7 @@ button:hover {
 }
 @media (min-width: 60em) {
   .home .donation-info {
+    --margin-bottom: 3rem;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -1305,6 +1335,9 @@ button:hover {
 }
 
 @media (min-width: 60em) {
+  .home .donation-info::after {
+    right: 3.5%;
+  }
   .home .donation-info .donation-card {
     border-radius: 50px;
     padding: 3em;
@@ -1331,6 +1364,11 @@ label {
   cursor: pointer;
 }
 label.required::after {
+  content: "*";
+  color: var(--color-danger);
+}
+
+legend.required::after {
   content: "*";
   color: var(--color-danger);
 }
@@ -2006,6 +2044,31 @@ input.invalid:focus {
 }
 .amount_select_wrapper.show {
   display: block;
+}
+
+.float-icon-container .float-icon {
+  max-width: 20px;
+}
+.float-icon-container .float-icon-1,
+.float-icon-container .float-icon-2 {
+  position: absolute;
+}
+.float-icon-container .float-icon-1 {
+  top: 0;
+  left: 40%;
+}
+.float-icon-container .float-icon-2 {
+  bottom: 0;
+  left: 5.6em;
+}
+@media (min-width: 50em) {
+  .float-icon-container .float-icon {
+    max-width: 40px;
+  }
+  .float-icon-container .float-icon-2 {
+    left: 9em;
+    bottom: 5em;
+  }
 }
 
 .hero h1, .hero-alt h1 {

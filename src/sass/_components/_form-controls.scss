@@ -26,6 +26,15 @@ label {
   }
 }
 
+legend {
+  &.required {
+    &::after {
+      content: "*";
+      color: var(--color-danger);
+    }
+  }
+}
+
 .error-msg {
   display: none;
   color: var(--color-danger);
@@ -53,7 +62,6 @@ input.invalid {
     background-color: unset;
   }
 }
-
 
 @include mixins.minmq(60em) {
   .form-group {

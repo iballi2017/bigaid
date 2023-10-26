@@ -365,7 +365,8 @@
         Healthcare Beyond <br />Boarders
       </h2>
     </section>
-    <article class="bg-light">
+
+    <!-- <article class="bg-light">
       <div class="container mx-auto">
         <div class="wrap-container py-8 md:py-16">
           <div class="grid grid-cols-12 gap-4 md:gap-8">
@@ -373,12 +374,6 @@
               <h2 class="section-title text-primary mb-4 fade-in">
                 Your Donation Equals <br>Many Lives Saved
               </h2>
-              <!-- <h2 class="section-title text-primary mb-4 fade-in">
-                Healthcare Beyond Boarders
-              </h2>
-              <h3 class="text-secondary section-tagline mb-2 fade-in">
-              Your Donation Equals <br>Many Lives Saved
-              </h3> -->
               <div class="featured-image | mb-6 fade-in rounded-lg overflow-hidden">
                 <img src="./assets/images/donation-featured-image.png" alt="" loading="lazy">
               </div>
@@ -394,8 +389,8 @@
               </p>
             </div>
             <div class="col-span-12 md:col-span-6">
-              <p class="md-text-size fade-in">
-                The avoidable loss of lives and the breakdown of citizens’
+              <p class="md-text-size fade-in mb-3">
+                The avoidable loss of lives and the breakdown of citizens'
                 health and well-being due to the several factors associated
                 with the worsening healthcare system, lack of adequate health
                 education, poverty, and the brain drain syndrome of our
@@ -405,8 +400,54 @@
                 for prompt intervention and intensive advocacy for all to
                 access.
               </p>
-              <!-- <br class="hidden md:block" /> -->
-              <br>
+              <p class="md-text-size fade-in">
+                Through our innovative app and creative education programs, we
+                aim to bridge the gap between individuals and quality
+                healthcare. Our platform enables easy connectivity with
+                healthcare providers, hospitals, and doctors, empowering users
+                to access medical assistance promptly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article> -->
+
+    <!--  -->
+
+
+    <article class="bg-light">
+      <div class="container mx-auto">
+        <div class="wrap-container py-8 md:py-16">
+          <div>
+            <div>
+              <h2 class="section-title text-primary mb-4 fade-in">
+                Your Donation Equals <br>Many Lives Saved
+              </h2>
+              <p class="md-text-size md:float-right">
+                Donating to the BIGAiD App & Health Education project gives
+                you the opportunity to save a life, help millions with the
+                opportunity to good healthcare access, contribute to community
+                social good, and help meet the UNSDGs #Envision2030 Goal 3 of
+                global health & well-being vision. The state of healthcare in
+                Nigeria and most African Countries has always been of pressing
+                concern.
+              </p>
+              <div class="featured-image | mb-4 md:mb-0 md:m-4 md:ml-0 fade-in rounded-lg overflow-hidden md:float-left" style="max-width: 600px;">
+                <img src="./assets/images/donation-featured-image.png" alt="" loading="lazy">
+              </div>
+
+              <p class="md-text-size fade-in mb-3">
+                The avoidable loss of lives and the breakdown of citizens'
+                health and well-being due to the several factors associated
+                with the worsening healthcare system, lack of adequate health
+                education, poverty, and the brain drain syndrome of our
+                medical professionals to the West for reasons linked to lack
+                or inadequate economic and social amenities, is now the story
+                of millions of families today. BIGAiD recognizes the dire need
+                for prompt intervention and intensive advocacy for all to
+                access.
+              </p>
               <p class="md-text-size fade-in">
                 Through our innovative app and creative education programs, we
                 aim to bridge the gap between individuals and quality
@@ -419,6 +460,8 @@
         </div>
       </div>
     </article>
+
+    <!--  -->
 
     <section class="small-screen-show large-screen-hide">
       <div class="container mx-auto mb-16">
@@ -577,7 +620,7 @@
 
 
 
-    <article>
+    <!-- <article>
       <div class="bg-light container mx-auto negative-top-margin-500">
         <div class="skew-bg-article">
           <div class="wrap-container">
@@ -585,7 +628,7 @@
               Your Wellness Power Through <br>Health Education
             </h2>
             <div class="grid md:grid-cols-12 md:gap-4">
-              <div class="col-span-5">
+              <div class="col-span12 md:col-span-5">
                 <p class="md-text-size fade-in">
                   We empower communities to prioritize health through. a
                   variety of wellness Programs and initiatives BIGAiD’s
@@ -601,9 +644,8 @@
                   platforms like the Media Convert podcast.
                 </p>
               </div>
-              <div class="col-span-7 relative">
+              <div class="col-span12 md:col-span-7 relative">
                 <div class="float-featured-image fade-in">
-                  <!-- <img src="./assets/images/man-carry-child-min.png" alt="Featured image" loading="lazy" /> -->
                   <img src="./assets/images/man-carry-child.png" alt="Featured image" loading="lazy" />
                 </div>
               </div>
@@ -611,7 +653,55 @@
           </div>
         </div>
       </div>
+    </article> -->
+
+
+    <!--  -->
+    <article class="container mx-auto my-16 relative">
+      <div class="skew-plate skew-pattern skew-bg-light"></div>
+      <div class="skew-content md:py-8">
+        <div class="wrap-container">
+
+          <h2 class="section-title text-primary mb-4 fade-in">
+            Your Wellness Power Through <br>Health Education
+          </h2>
+          <div class="grid md:grid-cols-12 md:gap-4">
+            <div class="col-span12 md:col-span-5">
+              <p class="md-text-size fade-in mb-3">
+                We empower communities to prioritize health through. a
+                variety of wellness Programs and initiatives BIGAiD’s
+                upcoming projects extend beyond immediate medical
+                intervention.
+              </p>
+              <p class="md-text-size fade-in">
+                Our initiatives like the BIGAiD Walk4Wellness Campaign
+                Project and the monthly H&W Media Chat are advocacy that
+                focuses on spreading awareness and empowering individuals
+                with accurate health management information through
+                platforms like the Media Convert podcast.
+              </p>
+            </div>
+            <!-- <div class="col-span12 md:col-span-7 relative" style="padding-bottom: 3em;"> -->
+            <div class="col-span12 md:col-span-7 relative md:pb-16 float-icon-container">
+              <div class="float-icon float-icon-1">
+                <img src="./assets/icons/Polygon-primary.svg" alt="float icon" loading="lazy" />
+              </div>
+              <div class="float-icon float-icon-2">
+                <img src="./assets/icons/Polygon-secondary.svg" alt="float icon" loading="lazy" />
+              </div>
+              <div class="float-featured-image fade-in drop-shadow-md rounded-full" style="max-width: 558px;">
+                <!-- <img src="./assets/images/man-carry-child-min.png" alt="float icon" loading="lazy" /> -->
+                <!-- <img src="./assets/images/man-carry-child-v2.png" alt="float icon" loading="lazy" /> -->
+                <img src="./assets/images/man-carry-child.png" alt="float icon" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </article>
+
+
+    <!--  -->
 
     <section>
       <div class="container mx-auto">
@@ -709,7 +799,7 @@
       </div>
     </section>
 
-    <article>
+    <!-- <article>
       <div class="bg-light container mx-auto fade-in">
         <div class="skew-bg-article">
           <div class="wrap-container">
@@ -737,7 +827,40 @@
           </div>
         </div>
       </div>
+    </article> -->
+
+    <!--  -->
+
+    <article class="container mx-auto mt-16 relative">
+      <div class="skew-plate skew-pattern skew-bg-light"></div>
+      <div class="skew-content">
+        <div class="wrap-container md:pb-20">
+          <div class="donation-article">
+            <div class="article-card">
+              <h2 class="section-title text-primary mb-4">
+                Changing Lives
+              </h2>
+              <h3 class="text-secondary section-tagline">
+                Your Donation, <br>Many Lives Saved
+              </h3>
+              <p class="md-text-size">
+                Every contribution you make directly impacts the lives of
+                those in need. By donating, you're actively participating in
+                reshaping healthcare access for the undeserved and saving
+                lives
+              </p>
+            </div>
+            <div class="featured-image-container">
+              <div class="rounded-lg overflow-hidden man-kids-image drop-shadow-md">
+                <img src="./assets/images/medium-shot-black-family-posing-studio.jpg" alt="featured image" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </article>
+
+    <!--  -->
 
     <article>
       <!-- min-full-width -->
@@ -797,18 +920,17 @@
       </div>
     </section>
 
-    <article>
+    <!-- <article>
       <div class="container mx-auto bg-primary">
         <div class="primary-bg-skew text-white">
           <div class="wrap-container">
-            <h2 class="section-title mb-2 md:mb-16 text-center fade-in">
-              Join Us in Transforming<br>Healthcare
-            </h2>
-
             <div class="grid grid-cols-12 gap-4 md:gap-16 items-end">
               <div class="col-span-12 md:col-span-6">
                 <p class="md-text-size fade-in">
                 <div class="hidden md:block rounded-full bg-secondary mb-16" style="height: 50px; width: 50px"></div>
+                <h2 class="section-title my-2 fade-in">
+                  <span style="font-size: 2.8rem;">Join Us</span> in Transforming<br>Healthcare
+                </h2>
                 <span class="fw-bold fs-250">The BIGAiD Foundation</span>, in partnership with individuals,
                 NGOs, organizations, governments, and businesses, is working
                 towards a healthier future. Your support is crucial in
@@ -817,7 +939,6 @@
               </div>
               <div class="col-span-12 md:col-span-6">
                 <div class="featured-image rounded-lg overflow-hidden fade-in">
-                  <!-- <img src="./assets/images/group-african-paramedic-crew-doctors-min.png" alt="Featured image" loading="lazy" /> -->
                   <img src="./assets/images/group-african-paramedic-crew-doctors.jpg" alt="Featured image" loading="lazy" />
                 </div>
               </div>
@@ -825,7 +946,38 @@
           </div>
         </div>
       </div>
+    </article> -->
+
+    <!--  -->
+
+    <article class="container mx-auto my-16 relative">
+      <div class="skew-plate skew-pattern skew-bg-primary"></div>
+      <div class="skew-content text-white md:py-32">
+        <div class="wrap-container">
+          <div class="grid grid-cols-12 gap-4 md:gap-16 items-end">
+            <div class="col-span-12 md:col-span-6">
+              <p class="md-text-size fade-in">
+              <div class="hidden md:block rounded-full bg-secondary mb-16" style="height: 50px; width: 50px"></div>
+              <h2 class="section-title my-2 fade-in">
+                <span style="font-size: 2.8rem;">Join Us</span> in Transforming<br>Healthcare
+              </h2>
+              <span class="fw-bold fs-250">The BIGAiD Foundation</span>, in partnership with individuals,
+              NGOs, organizations, governments, and businesses, is working
+              towards a healthier future. Your support is crucial in
+              making quality healthcare accessible to all.
+              </p>
+            </div>
+            <div class="col-span-12 md:col-span-6">
+              <div class="featured-image rounded-lg overflow-hidden fade-in drop-shadow-md">
+                <img src="./assets/images/group-african-paramedic-crew-doctors.jpg" alt="Featured image" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </article>
+
+    <!--  -->
 
     <!-- SIGN UP -->
     <section>
@@ -943,14 +1095,10 @@
               <div>
                 Copyright © 2023, BIGAiD Foundation. All Rights Reserved
               </div>
-<<<<<<< HEAD
-              <div><a href="http://">Privacy Policy</a> | <a href="./pages/terms-and-conditions.php">Terms & Conditions</a></div>
-=======
               <!-- <div>Privacy Policy | Terms & Condition</div> -->
               <div>
                 <a href="./pages/privacy-policy.php">Privacy Policy</a> | <a href="./pages/terms-and-conditions.php">Terms & Conditions</a>
               </div>
->>>>>>> 6e903ed365a613e7bcc59c28e15bbcbcf6e25c67
             </div>
           </div>
           <div class="col-span-12 md:col-span-5 flex items-end">

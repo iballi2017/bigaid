@@ -12,7 +12,7 @@
                 <small class="error-msg">This field is required</small>
             </div>
             <div class="col-span-12 md:col-span-4">
-                <label for="MiddleName" class="block mb-2 cursor-pointer">Middle Name</label>
+                <label for="MiddleName" class="block mb-2 cursor-pointer required">Middle Name</label>
                 <input type="text" class="form-control block w-full rounded" id="MiddleName">
             </div>
             <div class="col-span-12 md:col-span-4">
@@ -84,7 +84,7 @@
         <legend class="fs-200 fw-bold">Healthcare Institution</legend>
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12">
-                <legend class="block mb-2 cursor-pointer required">Are you attached to a Healthcare Institution? </legend>
+                <legend class="block mb-2 required">Are you attached to a Healthcare Institution? </legend>
                 <ul class="flex">
                     <li>
                         <input type="radio" name="attached-to-a-healthcare-institution" class="" id="attached-to-a-healthcare-institution-Yes">
@@ -103,7 +103,7 @@
             </div>
 
             <div class="col-span-12 md:col-span-4">
-                <label for="healthcare-institution-ownership" class="block mb-2 cursor-pointer">Healthcare Institution Ownership</label>
+                <label for="healthcare-institution-ownership" class="block mb-2 cursor-pointer required">Healthcare Institution Ownership</label>
                 <select name="healthcare-institution-ownership" id="healthcare-institution-ownership" class="form-control block w-full rounded">
                     <option value="" selected>--Select Type--</option>
                     <option value="1">Public</option>
@@ -113,15 +113,15 @@
                 </select>
             </div>
             <div class="col-span-12 md:col-span-8">
-                <label for="address-of-institution" class="block mb-2 cursor-pointer">Address of institution</label>
+                <label for="address-of-institution" class="block mb-2 cursor-pointer required">Address of institution</label>
                 <input type="text" class="form-control block w-full rounded" id="address-of-institution">
             </div>
             <div class="col-span-12 md:col-span-4">
-                <label for="designation" class="block mb-2 cursor-pointer">Designation</label>
+                <label for="designation" class="block mb-2 cursor-pointer required">Designation</label>
                 <input type="text" class="form-control block w-full rounded" id="designation">
             </div>
             <div class="col-span-12 md:col-span-8">
-                <label for="department" class="block mb-2 cursor-pointer">Department</label>
+                <label for="department" class="block mb-2 cursor-pointer required">Department</label>
                 <input type="text" class="form-control block w-full rounded" id="department">
             </div>
             <div class="col-span-12">
@@ -131,11 +131,11 @@
                 </div>
             </div>
             <div class="col-span-12 md:col-span-6" id="startDateContainer">
-                <label for="startDate" class="block mb-2 cursor-pointer">Start date</label>
+                <label for="startDate" class="block mb-2 cursor-pointer required">Start Date</label>
                 <input type="date" class="form-control block w-full rounded" id="startDate">
             </div>
             <div class="col-span-12 md:col-span-6" id="endDateContainer">
-                <label for="endDate" class="block mb-2 cursor-pointer">End date</label>
+                <label for="endDate" class="block mb-2 cursor-pointer">End Date</label>
                 <input type="date" class="form-control block w-full rounded" id="endDate">
             </div>
             <div class="col-span-12">
@@ -149,7 +149,7 @@
                                 <option value="instagram">Instagram</option>
                                 <option value="linkedIn">LinkedIn</option>
                             </select>
-                            <input type="text" name="social_link_1" class="rounded w-full" placeholder="https://facebook.com/whatever">
+                            <input type="text" name="social_link_1" class="rounded w-full" placeholder="Enter social medial link">
                         </div>
                     </li>
                     <li>
@@ -160,7 +160,7 @@
                                 <option value="instagram">Instagram</option>
                                 <option value="linkedIn" selected="selected">LinkedIn</option>
                             </select>
-                            <input type="text" name="social_link_2" class="rounded w-full" placeholder="https://linkedin.com/whatever">
+                            <input type="text" name="social_link_2" class="rounded w-full" placeholder="Enter social media link">
                         </div>
                     </li>
                 </ol>
@@ -175,15 +175,15 @@
         <legend class="fs-200 fw-bold">Address</legend>
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12 md:col-span-12">
-                <label for="Address" class="block mb-2 cursor-pointer">Address</label>
+                <label for="Address" class="block mb-2 cursor-pointer required">Address</label>
                 <input type="text" class="form-control block w-full rounded" id="Address" autocomplete="street-address">
             </div>
             <div class="col-span-12 md:col-span-3">
-                <label for="City" class="block mb-2 cursor-pointer">City</label>
+                <label for="City" class="block mb-2 cursor-pointer required">City</label>
                 <input type="text" class="form-control block w-full rounded" id="City">
             </div>
             <div class="col-span-12 md:col-span-3">
-                <label for="State" class="block mb-2 cursor-pointer">State</label>
+                <label for="State" class="block mb-2 cursor-pointer required">State</label>
                 <input type="text" class="form-control block w-full rounded" id="State">
             </div>
             <div class="col-span-12 md:col-span-3">
@@ -191,7 +191,7 @@
                 <input type="text" class="form-control block w-full rounded" id="PostalCode">
             </div>
             <div class="col-span-12 md:col-span-3">
-                <label for="Country" class="block mb-2 cursor-pointer">Country</label>
+                <label for="Country" class="block mb-2 cursor-pointer required">Country</label>
                 <select name="Country" id="Country" class="Country form-control block w-full rounded" autocomplete="address-level2">
                 </select>
             </div>
@@ -200,7 +200,7 @@
     <hr class="my-8" />
     <fieldset>
         <legend class="fs-200 fw-bold">Purpose</legend>
-        <label for="why-would-you-want-to-volunteer-with-BIGAiD" class="block mb-2 cursor-pointer">Why would You Want To Volunteer With BIGAiD?</label>
+        <label for="why-would-you-want-to-volunteer-with-BIGAiD" class="block mb-2 cursor-pointer required">Why would You Want To Volunteer With BIGAiD?</label>
         <textarea name="why-would-you-want-to-volunteer-with-BIGAiD" id="why-would-you-want-to-volunteer-with-BIGAiD" cols="30" rows="3" class="block w-full rounded"></textarea>
         <small class="text-sky-600 text-bold">State clearly What You hope to achieve as a volunteer</small>
     </fieldset>
@@ -208,7 +208,7 @@
 
     <div>
         <input type="checkbox" name="terms-and-condition" id="terms-and-condition" class="mr-2">
-        <label for="terms-and-condition">I have read and agree the <a href="#" class="text-secondary fw-bold">terms and conditions</a>
+        <label for="terms-and-condition">I have read and agree the <a href="#" class="text-secondary fw-bold required">terms and conditions</a>
             and <a href="#" class="text-secondary fw-bold">content policy</a>.</label>
     </div>
 

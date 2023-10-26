@@ -22,7 +22,9 @@
       &::before {
         content: "";
         display: block;
-        background-image: url(../assets/images/video-thumbnail-min.jpg);
+        // background-image: url(../assets/images/video-thumbnail-min.jpg);
+        // background-image: url(../../assets/images/slide-show-images/slide_IMG_9505-12-min.jpg);
+        background-image: url(../assets/images/slide-show-images/slide_IMG_9505-12-min.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
