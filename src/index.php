@@ -1135,34 +1135,103 @@
   <script src="./scripts/main.jquery.js"></script>
 
   <script>
-    // const ctx = document.getElementById("myChart");
+    function handlePieChart() {
 
-    // new Chart(ctx, {
-    //   type: "pie",
-    //   data: {
-    //     labels: ["Africa", "Europe", "America"],
-    //     datasets: [{
-    //       label: " % Donation",
-    //       data: [15, 5, 80].map((num) => {
-    //         return num / 100;
-    //       }),
-    //       backgroundColor: ["#FF00E7", "#48CBFF", "#0A0559"],
-    //       borderWidth: 5,
-    //     }, ],
-    //   },
-    //   options: {
-    //     responsive: true,
-    //     plugins: {
-    //       legend: {
-    //         position: "bottom",
-    //       },
-    //       title: {
-    //         display: false,
-    //         text: "Donation by Region/Country",
-    //       },
-    //     },
-    //   },
-    // });
+      /**DONATION PIE-CHART DATASET */
+      var continentDataList = [{
+          title: "Africa",
+          data: 15,
+          color: "#FF00E7",
+        },
+        {
+          title: "Europe",
+          data: 5,
+          color: "#48CBFF",
+        },
+        {
+          title: "America",
+          data: 80,
+          color: "#0A0559",
+        },
+        {
+          title: "Asia",
+          data: 30,
+          color: "#FF00aa",
+        },
+      ];
+
+      const ctx = document.getElementById("myChart");
+      var continentTitles = [];
+      var continentData = [];
+      var continentColor = [];
+      continentDataList.forEach((continent) => {
+        continentTitles.push(continent.title);
+        continentData.push(continent.data);
+        continentColor.push(continent.color);
+      });
+
+      var chartOptions = {
+        type: "pie",
+        data: {
+          // labels: ["Africa", "Europe", "America"],
+          labels: continentTitles,
+          datasets: [{
+            label: " % Donation",
+            data: continentData.map((num) => {
+              return num / 100;
+            }),
+            backgroundColor: continentColor,
+            borderWidth: 5,
+          }, ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: "bottom",
+            },
+            title: {
+              display: false,
+              text: "Donation by Region/Country",
+            },
+          },
+        },
+      };
+
+      var chart;
+
+      if (ctx) {
+        // remove any instance of ctx
+        const chart_init = Chart.getChart("myChart");
+        if (chart_init != undefined) {
+          chart_init.destroy();
+        }
+        chart = new Chart(ctx, chartOptions);
+      }
+
+
+      /**Handle Pie-chart Data Update On Scroll */
+      window.addEventListener("scroll", () => {
+        display();
+      });
+
+      function display() {
+        var milestonesPieChart = document.querySelector(".pie-chart");
+        var topElem = milestonesPieChart?.offsetTop;
+        var bottomElem =
+          milestonesPieChart?.offsetTop + milestonesPieChart?.clientHeight;
+        var topScreen = window.pageYOffset;
+        var bottomScreen = window.pageYOffset + window.innerHeight;
+        if (bottomScreen > topElem && topScreen < bottomElem) {
+          chart?.show(0, 2);
+        } else {
+          chart?.hide(0, 2);
+        }
+      }
+    }
+
+    
+    handlePieChart();
   </script>
 </body>
 

@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     toggleForms();
     donationMileStoneGraph();
     doDataCount();
-    handlePieChart();
     controlDonationCurrency();//OLD IMPLEMENTATION
     toggleDonationAmountSelect();
     controlCurrentlyWorkHere();
@@ -83,80 +82,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   }
 
-  /**DONATION PIE-CHART DATASET */
-  var continentDataList = [
-    {
-      title: "Africa",
-      data: 15,
-      color: "#FF00E7",
-    },
-    {
-      title: "Europe",
-      data: 5,
-      color: "#48CBFF",
-    },
-    {
-      title: "America",
-      data: 80,
-      color: "#0A0559",
-    },
-    {
-      title: "Asia",
-      data: 30,
-      color: "#FF00aa",
-    },
-  ];
-
-  const ctx = document.getElementById("myChart");
-  var continentTitles = [];
-  var continentData = [];
-  var continentColor = [];
-  continentDataList.forEach((continent) => {
-    continentTitles.push(continent.title);
-    continentData.push(continent.data);
-    continentColor.push(continent.color);
-  });
-
-  var chartOptions = {
-    type: "pie",
-    data: {
-      // labels: ["Africa", "Europe", "America"],
-      labels: continentTitles,
-      datasets: [
-        {
-          label: " % Donation",
-          data: continentData.map((num) => {
-            return num / 100;
-          }),
-          backgroundColor: continentColor,
-          borderWidth: 5,
-        },
-      ],
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: {
-          position: "bottom",
-        },
-        title: {
-          display: false,
-          text: "Donation by Region/Country",
-        },
-      },
-    },
-  };
-
-  var chart;
-
-  if (ctx) {
-    // remove any instance of ctx
-    const chart_init = Chart.getChart("myChart");
-    if (chart_init != undefined) {
-      chart_init.destroy();
-    }
-    chart = new Chart(ctx, chartOptions);
-  }
 
   var _promise = new Promise((resolve, reject) => {
     if (loadPercentageGuage()) {
@@ -284,27 +209,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   }
 
-  function handlePieChart() {
-    /**Handle Pie-chart Data Update On Scroll */
-    window.addEventListener("scroll", () => {
-      display();
-    });
-
-    function display() {
-      var milestonesPieChart = document.querySelector(".pie-chart");
-      var topElem = milestonesPieChart?.offsetTop;
-      var bottomElem =
-        milestonesPieChart?.offsetTop + milestonesPieChart?.clientHeight;
-      var topScreen = window.pageYOffset;
-      var bottomScreen = window.pageYOffset + window.innerHeight;
-      if (bottomScreen > topElem && topScreen < bottomElem) {
-        chart?.show(0, 2);
-      } else {
-        chart?.hide(0, 2);
-      }
-    }
-  }
-
   /**SIGNUP FORM TABS */
   const volunteerFormRadio = document.querySelector("#volunteer-form-radio");
   const partnerFormRadio = document.querySelector("#partner-form-radio");
@@ -402,7 +306,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   }
 
-  function controlDonationCurrency() {;//OLD IMPLEMENTATION
+  function controlDonationCurrency() {
+    ;//OLD IMPLEMENTATION
     const currencyRadio = document.querySelectorAll("input[name='Currency']");
     for (let i = 0; i < currencyRadio.length; i++) {
       const element = currencyRadio[i];
@@ -453,21 +358,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
     /**REJECT COOKIES NOTIFICATION BANNER */
     cookiesSettingsButton
       ? cookiesSettingsButton.addEventListener("click", () => {
-          if (cookiesNotificationBanner) {
-            // cookiesNotificationBanner.classList.add("hidden");
-            // more codes...
-          }
-        })
+        if (cookiesNotificationBanner) {
+          cookiesNotificationBanner.classList.add("hidden");
+          // more codes...
+        }
+      })
       : null;
 
     /**ACCEPT COOKIES NOTIFICATION BANNER */
     acceptCookiesButton
       ? acceptCookiesButton.addEventListener("click", () => {
-          if (cookiesNotificationBanner) {
-            // cookiesNotificationBanner.classList.add("hidden");
-            // more codes...
-          }
-        })
+        if (cookiesNotificationBanner) {
+          cookiesNotificationBanner.classList.add("hidden");
+          // more codes...
+        }
+      })
       : null;
   }
 
@@ -1260,6 +1165,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     );
 
     version_2_donation?.addEventListener("change", (e) => {
+      self_donation.querySelector("form").reset();
+      third_party_donation.querySelector("form").reset();
+      organisation_donation.querySelector("form").reset();
       switch (e.target.value) {
         case donation_types.SELF:
           self_donation?.classList.remove("hidden");

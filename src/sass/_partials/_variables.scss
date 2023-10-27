@@ -1,16 +1,17 @@
 :root {
   /* COLORS */
   --color-primary: #00034b;
+  --color-primary-50: rgba(0, 3, 75, .4);
   --color-primary-100: hsl(238, 100%, 10%);
   --color-primary-500: hsl(238, 100%, 0%);
   --color-secondary: #ff0099;
-  --color-secondary-100: #FF9ABB;
+  --color-secondary-100: #ff9abb;
   --color-danger: #dc3545;
   --color-text: #000000;
   --color-white: #ffffff;
   --color-white-100: hsl(0, 0%, 80%);
   --color-light: #e4e4e4;
-  --color-light-500: #AFAFAF;
+  --color-light-500: #afafaf;
   --color-light-400: rgba(2, 2, 2, 0.175);
   --color-success-200: rgb(25, 135, 40);
   --color-success-400: rgb(25, 135, 84);

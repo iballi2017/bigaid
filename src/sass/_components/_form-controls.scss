@@ -35,6 +35,15 @@ legend {
   }
 }
 
+form div {
+  &.required {
+    &::after {
+      content: "*";
+      color: var(--color-danger);
+    }
+  }
+}
+
 .error-msg {
   display: none;
   color: var(--color-danger);
