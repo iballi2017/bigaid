@@ -1,4 +1,4 @@
-<form action="#" method="POST">
+<form action="#" method="POST" id="donation_self_form">
     <input type="hidden" name="donating-for-self" value="donating-for-self" readonly>
     <!--  -->
     <div class="card mb-8  light-form-bg py-4">
