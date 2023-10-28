@@ -1133,37 +1133,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./scripts/main.js"></script>
   <script src="./scripts/main.jquery.js"></script>
-
-  <script>
-    // const ctx = document.getElementById("myChart");
-
-    // new Chart(ctx, {
-    //   type: "pie",
-    //   data: {
-    //     labels: ["Africa", "Europe", "America"],
-    //     datasets: [{
-    //       label: " % Donation",
-    //       data: [15, 5, 80].map((num) => {
-    //         return num / 100;
-    //       }),
-    //       backgroundColor: ["#FF00E7", "#48CBFF", "#0A0559"],
-    //       borderWidth: 5,
-    //     }, ],
-    //   },
-    //   options: {
-    //     responsive: true,
-    //     plugins: {
-    //       legend: {
-    //         position: "bottom",
-    //       },
-    //       title: {
-    //         display: false,
-    //         text: "Donation by Region/Country",
-    //       },
-    //     },
-    //   },
-    // });
-  </script>
+  
 </body>
 
 </html>
