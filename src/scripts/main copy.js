@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     removeModalWidget();
     showCookiesSettingsPopup();
     toggleForms();
-    // donationMileStoneGraph();
+    donationMileStoneGraph();
     doDataCount();
-    controlDonationCurrency(); //OLD IMPLEMENTATION
+    controlDonationCurrency();//OLD IMPLEMENTATION
     toggleDonationAmountSelect();
     controlCurrentlyWorkHere();
     toggleCookiesNotificationBanner();
@@ -63,9 +63,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   }
 
-  //
-
   /**DONATION MILESTONES GRAPH */
+  function donationMileStoneGraph() {
+    const milestones = document.querySelectorAll(
+      ".milestones-graph .milestone"
+    );
+    for (let index = 0; index < milestones.length; index++) {
+      const element = milestones[index];
+
+      const donationRaisedLength = element.querySelector(".guage");
+      const inputControl = donationRaisedLength.querySelector(
+        "input.donation-raised"
+      );
+
+      donationRaisedLength.style.width = inputControl?.value
+        ? inputControl?.value + "%"
+        : "0%";
+    }
+  }
+
 
   var _promise = new Promise((resolve, reject) => {
     if (loadPercentageGuage()) {
@@ -74,86 +90,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
       reject("Error");
     }
   });
-
-  function doDataCount() {
-    _promise
-      .then((response) => {
-        if (response) {
-          counters();
-        }
-      })
-      .catch((err) => {
-        throw new Error("There was Donation milestone data error!");
-      });
-  }
-
-  function counters() {
-    var milestones = document.getElementsByClassName("milestone");
-    var milestonesGraph = document.querySelector(".milestones-graph");
-    var inc = [];
-
-    function loadGuage() {
-      for (let i = 0; i < milestones.length; i++) {
-        const raisedCount = milestones[i].querySelector(
-          ".amount-raised .count"
-        );
-
-        const target = milestones[i].querySelector(".amount-target .count");
-
-
-        inc.push(1);
-
-        const donationRaisedLength = milestones[i].querySelector(".guage");
-
-        if (raisedCount.getAttribute("data-src") > 0.99) {
-          
-          if (inc[i] != raisedCount.getAttribute("data-src")) {
-            inc[i]++;
-          }
-          raisedCount.innerHTML = inc[i];
-
-          // var percentageIncrease =
-          //   (raisedCount.getAttribute("data-src") * 100) /
-          //   target.getAttribute("data-src");
-
-          var percentageIncrease =
-            (inc[i] * 100) /
-            target.getAttribute("data-src");
-
-            if(percentageIncrease < 100 || percentageIncrease == 100){
-              donationRaisedLength.style.width = percentageIncrease
-                ? percentageIncrease + "%"
-                : "0%";
-            }
-        }
-      }
-    }
-
-    window.addEventListener("scroll", () => {
-      var timer = setInterval(() => {
-        var topElem = milestonesGraph.offsetTop;
-        var bottomElem =
-          milestonesGraph.offsetTop + milestonesGraph.clientHeight;
-
-        var topScreen = window.pageYOffset;
-        var bottomScreen = window.pageYOffset + window.innerHeight;
-
-        if (bottomScreen > topElem && topScreen < bottomElem) {
-          loadGuage();
-        } else {
-          clearInterval(timer);
-          for (let i = 0; i < milestones.length; i++) {
-            milestones[i]
-              .querySelector(".amount-raised .count").innerHTML = 1;
-            inc = [];
-          }
-        }
-      }, 100);
-
-    })
-
-  }
-
 
   function loadPercentageGuage() {
     var donationResult = document.querySelector(".donation-result");
@@ -171,33 +107,107 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     /**For percentage */
 
+    // var donationResultAmountRaise = document.querySelector(".donation-result");
+
     var percentageIncrease =
       (donationRaisedResult * 100) / donationTargetResult;
-    // console.warn("percentageIncrease: ", percentageIncrease + "%");
 
     const x = percentageIncrease ? percentageIncrease + "%" : "0%";
 
     if (percentageIncrease < 100 || percentageIncrease === 100) {
+      // console.log("x!!!!: ", x);
       if (x < 0) return false;
       donationPercentage
-        .querySelector(".amount-raised .count")
+        .querySelector(".amount-raised")
+        .querySelector(".count")
         .setAttribute("data-src", parseInt(x).toFixed(0));
-
-      donationPercentage.querySelector(".amount-raised .count").innerHTML =
-        parseInt(x).toFixed(0);
-
       donationPercentage
-        .querySelector(".amount-target .count")
+        .querySelector(".amount-target")
+        .querySelector(".count")
         .setAttribute("data-src", 100);
 
-      donationPercentage.querySelector(".amount-target .count").innerHTML = 100;
+      donationPercentage
+        .querySelector(".amount-target")
+        .querySelector(".count").innerHTML = 100;
 
       return true;
     }
     return false;
   }
-  
+  loadPercentageGuage();
 
+  /**DONATION DATA COUNTERS */
+
+  function doDataCount() {
+    _promise
+      .then((response) => {
+        if (response) {
+          counters();
+        }
+      })
+      .catch((err) => {
+        throw new Error("There was Donation milestone data error!");
+      });
+  }
+
+  function counters() {
+    var milestones = document.getElementsByClassName("milestone");
+    var inc = [];
+    var milestonesGraph = document.querySelector(".milestones-graph");
+
+    window.addEventListener("scroll", () => {
+      /**Handle Pie-chart Data Update On Scroll */
+
+      var timer = setInterval(() => {
+        var topElem = milestonesGraph.offsetTop;
+        var bottomElem =
+          milestonesGraph.offsetTop + milestonesGraph.clientHeight;
+
+        var topScreen = window.pageYOffset;
+        var bottomScreen = window.pageYOffset + window.innerHeight;
+
+        if (bottomScreen > topElem && topScreen < bottomElem) {
+          intervalFunc();
+        } else {
+          clearInterval(timer);
+          milestones[i]
+            .querySelector(".amount-raised")
+            .querySelector(".count").innerHTML = 1;
+          inc = [];
+        }
+      }, 100);
+    });
+
+    function intervalFunc() {
+      for (let i = 0; i < milestones.length; i++) {
+        const raisedCount = milestones[i]
+          .querySelector(".amount-raised")
+          .querySelector(".count");
+        const target = milestones[i]
+          .querySelector(".amount-target")
+          .querySelector(".count");
+
+        inc.push(1);
+
+        const donationRaisedLength = milestones[i].querySelector(".guage");
+
+        if (raisedCount.getAttribute("data-src") > 0) {
+          if (inc[i] != raisedCount.getAttribute("data-src")) {
+            var percentageIncrease =
+              (inc[i] * 100) / target.getAttribute("data-src");
+            if (0 < percentageIncrease < 100) {
+              donationRaisedLength.style.width = percentageIncrease
+                ? percentageIncrease + "%"
+                : "0%";
+            }
+            inc[i]++;
+          }
+        }
+
+        raisedCount.innerHTML = inc[i];
+      }
+    }
+  }
 
   /**SIGNUP FORM TABS */
   const volunteerFormRadio = document.querySelector("#volunteer-form-radio");
@@ -268,7 +278,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   function toggleDonationAmountSelect() {
     const Curr = {
       USD: "USD",
-      Naira: "Naira"
+      Naira: "Naira",
     };
 
     var ele = document.getElementsByName("Currency");
@@ -297,7 +307,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
 
   function controlDonationCurrency() {
-    //OLD IMPLEMENTATION
+    ;//OLD IMPLEMENTATION
     const currencyRadio = document.querySelectorAll("input[name='Currency']");
     for (let i = 0; i < currencyRadio.length; i++) {
       const element = currencyRadio[i];
@@ -409,7 +419,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     const appearOptions = {
       threshold: 0,
-      rootMargin: "0px 0px -100px 0px"
+      rootMargin: "0px 0px -100px 0px",
     };
     const appearOnScroll = new IntersectionObserver(
       (entries, appearOnScroll) => {
@@ -596,8 +606,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
           "Neonatologist",
           "Pediatrician",
           "Family medicine",
-          "Emergency Medicine"
-        ]
+          "Emergency Medicine",
+        ],
       },
       NURSE: {
         title: "Nurse",
@@ -635,8 +645,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
           "Clinical Nurse Specialist (CNS)",
           "Nurse Educator",
           "Nurse Administrator",
-          "Clinical Nurse Leader"
-        ]
+          "Clinical Nurse Leader",
+        ],
       },
       LAB_SCIENTIST: {
         title: "Lab Scientist",
@@ -653,13 +663,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
           "Radiology",
           "Transfusion Medicine",
           "Toxicology",
-          "Molecular Diagnostics"
-        ]
+          "Molecular Diagnostics",
+        ],
       },
       SPECIALIST: {
         title: "Specialist",
         value: "specialist",
-        area_of_specializations: []
+        area_of_specializations: [],
       },
       MEDICAL_EMERGENCIES: {
         title: "Medical Emergencies",
@@ -676,19 +686,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
           "Andrological",
           "Gynaecologic",
           "Obstetric",
-          "First AID"
-        ]
+          "First AID",
+        ],
       },
       CONSULTANT: {
         title: "Consultant",
         value: "consultant",
-        area_of_specializations: []
+        area_of_specializations: [],
       },
       OTHERS: {
         title: "Others",
         value: "others",
-        area_of_specializations: []
-      }
+        area_of_specializations: [],
+      },
     };
 
     function initialize() {
@@ -708,7 +718,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         medicalPros.LAB_SCIENTIST,
         medicalPros.SPECIALIST,
         medicalPros.MEDICAL_EMERGENCIES,
-        medicalPros.OTHERS
+        medicalPros.OTHERS,
       ];
 
       this.profession = profession;
@@ -1091,7 +1101,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       { name: "Western Sahara", code: "EH" },
       { name: "Yemen", code: "YE" },
       { name: "Zambia", code: "ZM" },
-      { name: "Zimbabwe", code: "ZW" }
+      { name: "Zimbabwe", code: "ZW" },
     ];
 
     var countrySelects = document.querySelectorAll("select.Country");
@@ -1115,26 +1125,26 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const donation_types = {
       SELF: "donating-for-self",
       THIRD_PARTY: "donating-on-behalf-of-third-party",
-      ORGANISATION: "donation-for-or-as-an-organization"
+      ORGANISATION: "donation-for-or-as-an-organization",
     };
 
     const select_options = [
       {
         label: "--Select who is donating--",
-        value: ""
+        value: "",
       },
       {
         label: "Donating for Yourself",
-        value: donation_types.SELF
+        value: donation_types.SELF,
       },
       {
         label: "Donating on Behalf of Third Party",
-        value: donation_types.THIRD_PARTY
+        value: donation_types.THIRD_PARTY,
       },
       {
         label: "Donation for Or as An Organization",
-        value: donation_types.ORGANISATION
-      }
+        value: donation_types.ORGANISATION,
+      },
     ];
     var version_2_donation = document.querySelector(
       "#version-2-donation #WhoIsDonating"
@@ -1182,7 +1192,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     function toggleDonationAmountSelect() {
       const Curr = {
         USD: "USD",
-        Naira: "Naira"
+        Naira: "Naira",
       };
 
       var currencyRadios = document.getElementsByName("Currency");
@@ -1245,7 +1255,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         preferredCountries: ["us", "gb", "ng"],
         separateDialCode: false,
         initialCountry: "ng",
-        nationalMode: false
+        nationalMode: false,
       });
 
       tel_inputs[i].addEventListener("blur", (e) => {

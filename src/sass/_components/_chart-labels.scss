@@ -1,0 +1,26 @@
+.chart-label {
+    .chart-label-list {
+        // background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        li {
+            display: flex;
+            align-items: flex-end;
+            gap: 5px;
+            height: 10px;
+            span {
+                display: block;
+                line-height: 10px;
+                font-size: 0.95rem;
+            }
+            .color-label {
+                height: 98%;
+                width: 2.5rem;
+                background-color: greenyellow;
+            }
+        }
+    }
+}

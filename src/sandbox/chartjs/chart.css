@@ -1,0 +1,17 @@
+body{
+    background-color: lightskyblue;
+}
+
+section:nth-child(odd) {
+    min-height: 700px;
+    background-color: lawngreen;
+}
+
+section:nth-child(even) {
+    min-height: 700px;
+}
+
+.pie-chart{
+    max-width: 300px;
+    margin: 0 auto;
+}

@@ -179,7 +179,7 @@
           <div class="video-container">
             <div class="video thumbnail">
               <!-- <video id="video1" width="100%" height="100%"> -->
-              <video id="video1" preload="none" width="100%" height="100%">
+              <video id="video1" preload="none" width="100" height="100">
                 <source src="./assets/videos/sample-video.mp4" type="video/mp4" />
                 <!-- <source src="./assets/videos/Bigaid.mp4" type="video/mp4" /> -->
                 <source src="mov_bbb.ogg" type="video/ogg" />
@@ -481,7 +481,7 @@
                   Seamless Connectivity
                 </button>
               </div>
-              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="body">
                   <p>We believe that healthcare is a basic right. With minimal monthly, quarterly, or yearly sign-up fees, our app is accessible to low - and mid-income earners.</p>
                 </div>
@@ -493,7 +493,7 @@
                   Affordable Access
                 </button>
               </div>
-              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="body">
                   <p>We believe that healthcare is a basic right. With minimal monthly, quarterly, or yearly sign-up fees, our app is accessible to low - and mid-income earners.</p>
                 </div>
@@ -505,7 +505,7 @@
                   Connecting with Healthcare Professionals
                 </button>
               </div>
-              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="body">
                   <p>The app facilitates direct connections with health providers, ensuring timely and on-the-go appointments.</p>
                 </div>
@@ -517,7 +517,7 @@
                   Institutional Partners
                 </button>
               </div>
-              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="body">
                   <p>Our app streamlines the process of seeking medical care, making hospital interactions more efficient with our intervention partners.</p>
                 </div>
@@ -529,7 +529,7 @@
                   BIGAiD Promax
                 </button>
               </div>
-              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="body">
                   <p>Our app identifies the need to act as a mediator and aid people in dire need of saving from life-threatening situations with or without income. We give full support on pro-bono cases.</p>
                 </div>
@@ -761,27 +761,29 @@
           </h2>
 
           <ul class="milestones-graph">
+            <!-- A -->
             <li class="milestone donation-result">
-              <!-- A -->
+            <!-- <li class="milestone"> -->
               <div class="label">
-                <div class="amount-raised">$<span class="count" src-data="90">90</span> Raised</div>
-                <div class="amount-target">Target $<span class="count" src-data="100">100</span></div>
+                <div class="amount-raised">$<span class="count" data-src="450">450</span> Raised</div>
+                <div class="amount-target">Target $<span class="count" data-src="2000">2000</span></div>
               </div>
               <div class="guage africa"></div>
             </li>
+            <!-- B -->
             <li class="milestone donation-percentage">
-              <!-- B -->
+            <!-- <li class="milestone"> -->
               <div class="label">
-                <div class="amount-raised">%<span class="count" src-data=""></span></div>
-                <div class="amount-target">%<span class="count" src-data=""></span></div>
+                <div class="amount-raised">%<span class="count" data-src=""></span></div>
+                <div class="amount-target">%<span class="count" data-src=""></span></div>
               </div>
               <div class="guage europe"></div>
             </li>
+            <!-- C -->
             <li class="milestone">
-              <!-- C -->
               <div class="label">
-                <div class="amount-target">No of Persons<span class="count" src-data="200"></span></div>
-                <div class="amount-raised"><span class="count" src-data="30">30</span> Donated</div>
+                <div class="amount-target">No of Persons<span class="count" data-src="6"></span></div>
+                <div class="amount-raised"><span class="count" data-src="3">3</span> Donated</div>
               </div>
               <div class="guage america"></div>
             </li>
@@ -791,6 +793,7 @@
 
           <div class="pie-chart | mx-auto text-center">
             <canvas id="myChart"></canvas>
+            <div class="chart-label"></div>
             <p class="mx-auto fw-bolder text-primary fs-250 mt-4 fade-in">
               Donation by Region/Country
             </p>
@@ -956,15 +959,15 @@
         <div class="wrap-container">
           <div class="grid grid-cols-12 gap-4 md:gap-16 items-end">
             <div class="col-span-12 md:col-span-6">
-              <p class="md-text-size fade-in">
               <div class="hidden md:block rounded-full bg-secondary mb-16" style="height: 50px; width: 50px"></div>
               <h2 class="section-title my-2 fade-in">
                 <span style="font-size: 2.8rem;">Join Us</span> in Transforming<br>Healthcare
               </h2>
-              <span class="fw-bold fs-250">The BIGAiD Foundation</span>, in partnership with individuals,
-              NGOs, organizations, governments, and businesses, is working
-              towards a healthier future. Your support is crucial in
-              making quality healthcare accessible to all.
+              <p class="md-text-size fade-in">
+                <span class="fw-bold fs-250">The BIGAiD Foundation</span>, in partnership with individuals,
+                NGOs, organizations, governments, and businesses, is working
+                towards a healthier future. Your support is crucial in
+                making quality healthcare accessible to all.
               </p>
             </div>
             <div class="col-span-12 md:col-span-6">
@@ -1189,6 +1192,7 @@
           plugins: {
             legend: {
               position: "bottom",
+              display: false,
             },
             title: {
               display: false,
@@ -1223,6 +1227,7 @@
         var topScreen = window.pageYOffset;
         var bottomScreen = window.pageYOffset + window.innerHeight;
         if (bottomScreen > topElem && topScreen < bottomElem) {
+          // console.log("chart***: ", chart)
           chart?.show(0, 2);
         } else {
           chart?.hide(0, 2);
@@ -1230,8 +1235,40 @@
       }
     }
 
-    
+
     handlePieChart();
+  </script>
+
+
+
+  <script>
+    function custom_label() {
+
+      var db = [{
+          "title": "Africa",
+          "data": 75,
+          "color": "#FF00E7"
+        },
+        {
+          "title": "Europe",
+          "data": 25,
+          "color": "#48CBFF"
+        }
+      ];
+
+      let chart_label = document.querySelector(".chart-label")
+      let content = `<ul class="chart-label-list mt-4">`;
+      for (let i = 0; i < db.length; i++) {
+        content += `<li>`;
+        content += `<span class="color-label" style="background-color: ${db[i].color}"></span>`;
+        content += `<span>${db[i].title}</span>`;
+        content += `</li>`;
+      }
+      content += `</ul>`;
+      chart_label.innerHTML = content;
+    }
+
+    custom_label();
   </script>
 </body>
 

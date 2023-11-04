@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChartJs</title>
+    <link rel="stylesheet" href="./chart.css" />
+  </head>
+  <body>
+    <section>A</section>
+    <section>B</section>
+    <section>
+      <div class="pie-chart | mx-auto text-center">
+        <canvas id="myChart"></canvas>
+        <p class="mx-auto fw-bolder text-primary fs-250 mt-4 fade-in">
+          Donation by Region/Country
+        </p>
+      </div>
+    </section>
+    <section>c</section>
+    <section>D</section>
+
+    <!-- Jquery -->
+    <script src="../../libs/jquery-3.7.0.min.js"></script>
+    <!-- Pie Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./chart.js"></script>
+
+    <script>
+      function handlePieChart() {
+        /**DONATION PIE-CHART DATASET */
+        var dbData = [
+          {
+            title: "Africa",
+            data: 15,
+            color: "#FF00E7"
+          },
+          {
+            title: "Europe",
+            data: 5,
+            color: "#48CBFF"
+          },
+          {
+            title: "America",
+            data: 80,
+            color: "#0A0559"
+          },
+          {
+            title: "Asia",
+            data: 30,
+            color: "#FF00aa"
+          }
+        ];
+        var continentDataList = [
+          ...dbData
+          // {
+          //   title: "Africa",
+          //   data: 15,
+          //   color: "#FF00E7"
+          // },
+          // {
+          //   title: "Europe",
+          //   data: 5,
+          //   color: "#48CBFF"
+          // },
+          // {
+          //   title: "America",
+          //   data: 80,
+          //   color: "#0A0559"
+          // },
+          // {
+          //   title: "Asia",
+          //   data: 30,
+          //   color: "#FF00aa"
+          // }
+        ];
+
+        const ctx = document.getElementById("myChart");
+        var continentTitles = [];
+        var continentData = [];
+        var continentColor = [];
+        continentDataList.forEach((continent) => {
+          continentTitles.push(continent.title);
+          continentData.push(continent.data);
+          continentColor.push(continent.color);
+        });
+
+        var chartOptions = {
+          type: "pie",
+          data: {
+            // labels: ["Africa", "Europe", "America"],
+            labels: continentTitles,
+            datasets: [
+              {
+                label: " % Donation",
+                data: continentData.map((num) => {
+                  return num / 100;
+                }),
+                backgroundColor: continentColor,
+                borderWidth: 5
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                position: "bottom"
+              },
+              title: {
+                display: false,
+                text: "Donation by Region/Country"
+              }
+            }
+          }
+        };
+
+        var chart;
+
+        if (ctx) {
+          // remove any instance of ctx
+          const chart_init = Chart.getChart("myChart");
+          if (chart_init != undefined) {
+            chart_init.destroy();
+          }
+          chart = new Chart(ctx, chartOptions);
+        }
+
+        /**Handle Pie-chart Data Update On Scroll */
+        window.addEventListener("scroll", () => {
+          display();
+        });
+
+        function display() {
+          var milestonesPieChart = document.querySelector(".pie-chart");
+          var topElem = milestonesPieChart?.offsetTop;
+          var bottomElem =
+            milestonesPieChart?.offsetTop + milestonesPieChart?.clientHeight;
+          var topScreen = window.pageYOffset;
+          var bottomScreen = window.pageYOffset + window.innerHeight;
+          if (bottomScreen > topElem && topScreen < bottomElem) {
+            console.log("chart***: ", chart);
+            chart?.show(0, 2);
+          } else {
+            chart?.hide(0, 2);
+          }
+        }
+      }
+
+      handlePieChart();
+    </script>
+  </body>
+</html>
