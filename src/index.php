@@ -763,7 +763,7 @@
           <ul class="milestones-graph">
             <!-- A -->
             <li class="milestone donation-result">
-            <!-- <li class="milestone"> -->
+              <!-- <li class="milestone"> -->
               <div class="label">
                 <div class="amount-raised">$<span class="count" data-src="450">450</span> Raised</div>
                 <div class="amount-target">Target $<span class="count" data-src="2000">2000</span></div>
@@ -772,7 +772,7 @@
             </li>
             <!-- B -->
             <li class="milestone donation-percentage">
-            <!-- <li class="milestone"> -->
+              <!-- <li class="milestone"> -->
               <div class="label">
                 <div class="amount-raised">%<span class="count" data-src=""></span></div>
                 <div class="amount-target">%<span class="count" data-src=""></span></div>
@@ -1027,6 +1027,10 @@
       <button id="warning">Warning</button>
     </div>
   </div>
+
+
+  <!-- newsletter-form popup -->
+  <?php include("components/newsletter-form-popup.php"); ?>
 
 
   <!-- Go to top -->

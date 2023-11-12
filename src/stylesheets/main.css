@@ -2118,6 +2118,40 @@ input.invalid:focus {
   background-color: greenyellow;
 }
 
+.newsletter-form-popup {
+  position: fixed;
+  /* Sit on top of the page content */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 10210000000;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
+}
+.newsletter-form-popup.show {
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+.newsletter-form-popup.show .form-card {
+  width: 100%;
+  max-width: 1000px;
+}
+.newsletter-form-popup .close-btn {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .hero h1, .hero-alt h1 {
   font-size: 50px;
   font-weight: var(--fw-semi-bold);
