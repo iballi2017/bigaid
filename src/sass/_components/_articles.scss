@@ -47,7 +47,7 @@
       display: block;
       width: 100%;
       // height: 350px;
-          height: 164px;
+      height: 164px;
       left: 0;
       right: 0;
       // transform: skew(0deg, -4deg);
@@ -58,7 +58,7 @@
     }
     &::after {
       // height: 250px;
-          height: 164px;
+      height: 164px;
     }
   }
 }
@@ -81,10 +81,10 @@
     position: absolute;
     z-index: -1;
   }
-  &::before{
+  &::before {
     height: 135px;
   }
-  &::after{
+  &::after {
     height: 87px;
   }
   .float-featured-image {
@@ -181,5 +181,47 @@
         }
       }
     }
+  }
+}
+
+.refund_policy_doc {
+  position: fixed; /* Sit on top of the page content */
+  // display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 10210000000; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  .card-body {
+    overflow: hidden;
+    // background-color: red;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    .content {
+      width: 100%;
+      max-width: 1000px;
+      max-height: 550px;
+      overflow-y: auto;
+    }
+  }
+  &.show {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    .form-card {
+      width: 100%;
+      max-width: 1000px;
+    }
+  }
+
+  .close-btn {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }

@@ -128,6 +128,30 @@
     <aside class="my-4">
         <p>For private donation, <a href="./donation-contact-us.php" class="text-secondary fw-bold">Contact us.</a></p>
     </aside>
+
+
+
+    <!-- Refund Policy -->
+    <section class="refund_policy_doc show">
+        <div class="card">
+            <div class="card-body">
+                <div class="content">
+                    <h5 class="fs-250 fw-bold mb-4 text-capitalize text-primary">Refund Policy</h5>
+                    <p>This Refund Policy outlines the guidelines and procedures for refund requests related to donations, Sponsorships and purchases/Subscriptions made through BIGAiD Foundation's platforms. Please read this policy carefully.</p>
+
+
+
+                    <p>
+                        lorem2000
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
     <div class="my-4">
         <button class="secondary-button">Continue to Payment</button>
     </div>

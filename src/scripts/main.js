@@ -100,13 +100,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         const target = milestones[i].querySelector(".amount-target .count");
 
-
         inc.push(1);
 
         const donationRaisedLength = milestones[i].querySelector(".guage");
 
         if (raisedCount.getAttribute("data-src") > 0.99) {
-          
           if (inc[i] != raisedCount.getAttribute("data-src")) {
             inc[i]++;
           }
@@ -117,14 +115,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
           //   target.getAttribute("data-src");
 
           var percentageIncrease =
-            (inc[i] * 100) /
-            target.getAttribute("data-src");
+            (inc[i] * 100) / target.getAttribute("data-src");
 
-            if(percentageIncrease < 100 || percentageIncrease == 100){
-              donationRaisedLength.style.width = percentageIncrease
-                ? percentageIncrease + "%"
-                : "0%";
-            }
+          if (percentageIncrease < 100 || percentageIncrease == 100) {
+            donationRaisedLength.style.width = percentageIncrease
+              ? percentageIncrease + "%"
+              : "0%";
+          }
         }
       }
     }
@@ -143,17 +140,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
         } else {
           clearInterval(timer);
           for (let i = 0; i < milestones.length; i++) {
-            milestones[i]
-              .querySelector(".amount-raised .count").innerHTML = 1;
+            milestones[i].querySelector(".amount-raised .count").innerHTML = 1;
             inc = [];
           }
         }
       }, 100);
-
-    })
-
+    });
   }
-
 
   function loadPercentageGuage() {
     var donationResult = document.querySelector(".donation-result");
@@ -196,8 +189,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
     return false;
   }
-  
-
 
   /**SIGNUP FORM TABS */
   const volunteerFormRadio = document.querySelector("#volunteer-form-radio");

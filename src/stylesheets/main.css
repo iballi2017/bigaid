@@ -1165,6 +1165,51 @@ button:hover {
   }
 }
 
+.refund_policy_doc {
+  position: fixed;
+  /* Sit on top of the page content */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
+  z-index: 10210000000;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
+}
+.refund_policy_doc .card-body {
+  overflow: hidden;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+.refund_policy_doc .card-body .content {
+  width: 100%;
+  max-width: 1000px;
+  max-height: 550px;
+  overflow-y: auto;
+}
+.refund_policy_doc.show {
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+.refund_policy_doc.show .form-card {
+  width: 100%;
+  max-width: 1000px;
+}
+.refund_policy_doc .close-btn {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 @media (min-width: 900px) {
   .blob-list-wrapper + article {
     margin-top: -12em;
@@ -2121,6 +2166,8 @@ input.invalid:focus {
 .newsletter-form-popup {
   position: fixed;
   /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
   width: 100%;
   /* Full width (cover the whole page) */
   height: 100%;
