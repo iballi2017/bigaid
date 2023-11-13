@@ -1021,6 +1021,10 @@ select {
   margin-right: 1rem;
 }
 
+.mr-8 {
+  margin-right: 2rem;
+}
+
 .mt-16 {
   margin-top: 4rem;
 }

@@ -27,7 +27,7 @@
                         </form>
                         <small>Trust us, we won't spam you.</small>
 
-                        <button class="close-btn" id="close_newsletter_popup_widget">
+                        <button class="close-btn" id="close_newsletter_popup_widget_btn">
                             <span class="sr-only">Close</span>
                             <svg class="close h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -43,7 +43,7 @@
 <script>
     function handleNewsletterFormPopup() {
         const newsletter_form_popup = document.querySelector(".newsletter-form-popup");
-        const close_newsletter_popup_widget = document.getElementById("close_newsletter_popup_widget");
+        const close_newsletter_popup_widget_btn = document.getElementById("close_newsletter_popup_widget_btn");
         var is_created;
 
         /**Popup data */
@@ -97,7 +97,7 @@
 
 
         function setPopupTiming() {
-            close_newsletter_popup_widget.addEventListener("click", () => {
+            close_newsletter_popup_widget_btn.addEventListener("click", () => {
                 localStorage.setItem(storage_prop_name, JSON.stringify(data));
                 newsletter_form_popup.classList.contains("show") ? newsletter_form_popup.classList.remove("show") : null;
             })
