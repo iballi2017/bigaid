@@ -49,7 +49,7 @@
         /**Popup data */
         const date = new Date();
         const storage_prop_name = "newsletter_popup";
-        
+
         const data = {
             created: "0",
             expiry_time: date.setTime(date.getTime() + (60 * 60 * 60))
@@ -59,40 +59,46 @@
         var stored_expiry_time;
         var stored_popup_data = localStorage.getItem(storage_prop_name);
 
-        function removePopTiming() {
-            if (stored_popup_data && stored_popup_data != 'null') {
-                stored_expiry_time = JSON.parse(stored_popup_data).expiry_time;
-                is_created = JSON.parse(stored_popup_data).created;
-                secret_key = "bigaid-6735440-secret-044";
+        function removePopupTiming() {
+            setTimeout(() => {
+                handleEffect();
+            }, 5000);
 
-                // Get the current date
-                const currentDate = new Date();
-                const currentTime = currentDate.getTime()
+            function handleEffect() {
+                if (stored_popup_data && stored_popup_data != 'null') {
+                    stored_expiry_time = JSON.parse(stored_popup_data).expiry_time;
+                    is_created = JSON.parse(stored_popup_data).created;
+                    secret_key = "bigaid-6735440-secret-044";
 
-                console.log("stored_expiry_time: ", stored_expiry_time)
-                console.log("new Date(stored_expiry_time): ", new Date(stored_expiry_time))
-                console.warn("currentTime: ", currentTime)
-                console.warn("new Date(currentTime): ", new Date(currentTime));
+                    // Get the current date
+                    const currentDate = new Date();
+                    const currentTime = currentDate.getTime()
 
-                console.log("is_created=>: ", is_created);
+                    console.log("stored_expiry_time: ", stored_expiry_time)
+                    console.log("new Date(stored_expiry_time): ", new Date(stored_expiry_time))
+                    console.warn("currentTime: ", currentTime)
+                    console.warn("new Date(currentTime): ", new Date(currentTime));
 
-                if (is_created != secret_key) {
-                    if (stored_expiry_time < currentTime) {
-                        console.log('The given time is in the past.', currentDate.getTime());
-                        newsletter_form_popup.classList.add("show");
-                    } else {
-                        console.log('The given time is not in the past.', currentDate.getTime());
-                        return;
+                    console.log("is_created=>: ", is_created);
+
+                    if (is_created != secret_key) {
+                        if (stored_expiry_time < currentTime) {
+                            console.log('The given time is in the past.', currentDate.getTime());
+                            newsletter_form_popup.classList.add("show");
+                        } else {
+                            console.log('The given time is not in the past.', currentDate.getTime());
+                            return;
+                        }
                     }
+                } else {
+                    // console.log("It is null");
+                    newsletter_form_popup.classList.add("show")
+                    return;
                 }
-            } else {
-                // console.log("It is null");
-                newsletter_form_popup.classList.add("show")
-                return;
             }
         }
-        removePopTiming();
-        document.addEventListener("scroll", ()=>removePopTiming())
+        removePopupTiming();
+        document.addEventListener("scroll", () => removePopupTiming())
 
 
 

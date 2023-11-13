@@ -130,7 +130,7 @@
         <!--  -->
 
 
-        <div class="card mb-8 shadow">
+        <div class="card mb-8">
             <div class="card-body">
                 <div class="flex items-center" id="accept_refund_policy_wrapper">
                     <input type="checkbox" name="accept-refund-policy" id="accept_refund_policy">
