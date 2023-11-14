@@ -15,7 +15,7 @@
         <p class="mb-3">
             In some cases, you may have the opportunity to make purchases through our platform, such as merchandise, event tickets, or other products and services. The refund policy for these purchases is as follows:
         </p>
-        <ul class="mb-3">
+        <ul class="mb-3" style="list-style:disc; padding-left: 2em">
             <li>
                 For merchandise and physical goods: If you receive a damaged or defective item, please contact us within [2days] of receiving the product. We will evaluate your case and may offer a replacement or refund in such instances.
             </li>
